@@ -1,0 +1,10 @@
+Module,Part,Qty,Length_mm,Width_mm,Thickness_mm,Edge_Work
+Box_Frame,Rail_Foot,1,1544.0,327,19.6,"HPL both faces, edge-band top"
+Box_Frame,Rail_Head,1,1544.0,327,19.6,HPL both faces
+Box_Frame,Rail_Side_L,1,1888.2,327,19.6,"HPL both faces, edge-band top"
+Box_Frame,Rail_Side_R,1,1888.2,327,19.6,"HPL both faces, edge-band top"
+Headboard,Headboard,1,1583.2,1097,19.6,"HPL both faces, edge-band top + sides; bolt to Rail_Head + wall"
+Slats,Slat,12,1544.0,90,18,screw to cleats + spine
+Support,Centre_Spine,1,1849.0,259,18,
+Support,Cleat,2,1849.0,40,18,glue + screw to rail
+Support,Cross_Rib,4,745.0,259,18,
