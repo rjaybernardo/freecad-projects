@@ -1,0 +1,299 @@
+Module,Part,Material,Qty,Length_mm,Width_mm,Note
+Base_Racks_400,Back_Clad,Cladding,1,776,392,
+Base_Racks_400,Bottom_Clad,Cladding,1,586,392,
+Base_Racks_400,DrawerFront_Handle_Rail,Profile with handle,3,397,,"square cut, full width"
+Base_Racks_400,DrawerFront_Insert,Cladding,1,373,142.0,in the profile groove
+Base_Racks_400,DrawerFront_Insert,Cladding,1,373,219.6,in the profile groove
+Base_Racks_400,DrawerFront_Insert,Cladding,1,373,258.4,in the profile groove
+Base_Racks_400,DrawerFront_Rail_Bottom,Profile,3,397,,45 deg both ends
+Base_Racks_400,DrawerFront_Stile,Profile,2,146.0,,"45 deg one end, square at the handle"
+Base_Racks_400,DrawerFront_Stile,Profile,2,223.6,,"45 deg one end, square at the handle"
+Base_Racks_400,DrawerFront_Stile,Profile,2,262.4,,"45 deg one end, square at the handle"
+Base_Racks_400,Kick_Back,2x1,1,265.4,,
+Base_Racks_400,Kick_Bottom_Clad,Cladding,1,400,316.2,
+Base_Racks_400,Kick_Front_Insert,Cladding,1,373,63,in the profile groove
+Base_Racks_400,Kick_Front_Rail_Bottom,Profile,1,397,,45 deg both ends
+Base_Racks_400,Kick_Front_Rail_Top,Profile,1,397,,45 deg both ends
+Base_Racks_400,Kick_Front_Stile,Profile,2,87,,45 deg both ends
+Base_Racks_400,Kick_Inner_Front,2x1,1,265.4,,
+Base_Racks_400,Kick_Side,2x1,2,400,,
+Base_Racks_400,Plinth_Back_Clad,Cladding,1,392,100,
+Base_Racks_400,Plinth_Leg_Back,2x1,2,100,,
+Base_Racks_400,Plinth_Leg_Front,2x1,2,100,,
+Base_Racks_400,Plinth_Rail_Back,2x1,1,341.2,,
+Base_Racks_400,Plinth_Rail_Side,2x1,2,368.4,,
+Base_Racks_400,Plinth_Side_Clad,Cladding,2,474,100,
+Base_Racks_400,Post_Back,2x1,2,772,,
+Base_Racks_400,Post_Front,2x1,2,772,,
+Base_Racks_400,Rail_Back_Bottom,2x1,1,341.2,,
+Base_Racks_400,Rail_Back_Top,2x1,1,341.2,,
+Base_Racks_400,Rail_Front_Bottom,2x1,1,341.2,,
+Base_Racks_400,Rail_Front_Top,2x1,1,341.2,,
+Base_Racks_400,Rail_Side_Bottom,2x1,2,484.4,,
+Base_Racks_400,Rail_Side_Top,2x1,2,484.4,,
+Base_Racks_400,Side_Clad,Cladding,2,776,590,
+Base_Racks_400,Tier_Runner_Rail,2x1,4,484.4,,
+Base_Sink_870,Bottom_Clad,Cladding,1,862,590,
+Base_Sink_870,Door_Handle_Rail,Profile with handle,2,432.0,,"square cut, full width"
+Base_Sink_870,Door_Insert,Cladding,2,724,408.0,in the profile groove
+Base_Sink_870,Door_Rail_Bottom,Profile,2,432.0,,45 deg both ends
+Base_Sink_870,Door_Stile,Profile,4,728,,"45 deg one end, square at the handle"
+Base_Sink_870,Kick_Back,2x1,1,735.4,,
+Base_Sink_870,Kick_Bottom_Clad,Cladding,1,786.2,400,
+Base_Sink_870,Kick_Front_Insert,Cladding,1,843,63,in the profile groove
+Base_Sink_870,Kick_Front_Rail_Bottom,Profile,1,867,,45 deg both ends
+Base_Sink_870,Kick_Front_Rail_Top,Profile,1,867,,45 deg both ends
+Base_Sink_870,Kick_Front_Stile,Profile,2,87,,45 deg both ends
+Base_Sink_870,Kick_Inner_Front,2x1,1,735.4,,
+Base_Sink_870,Kick_Side,2x1,2,400,,
+Base_Sink_870,Plinth_Back_Clad,Cladding,1,862,100,
+Base_Sink_870,Plinth_Leg_Back,2x1,2,100,,
+Base_Sink_870,Plinth_Leg_Front,2x1,2,100,,
+Base_Sink_870,Plinth_Rail_Back,2x1,1,811.2,,
+Base_Sink_870,Plinth_Rail_Side,2x1,2,368.4,,
+Base_Sink_870,Plinth_Side_Clad,Cladding,2,474,100,
+Base_Sink_870,Post_Back,2x1,2,772,,
+Base_Sink_870,Post_Front,2x1,2,772,,
+Base_Sink_870,Rail_Back_Bottom,2x1,1,811.2,,
+Base_Sink_870,Rail_Back_Top,2x1,1,811.2,,
+Base_Sink_870,Rail_Front_Bottom,2x1,1,811.2,,
+Base_Sink_870,Rail_Front_Top,2x1,1,811.2,,
+Base_Sink_870,Rail_Side_Bottom,2x1,2,488.4,,
+Base_Sink_870,Rail_Side_Top,2x1,2,488.4,,
+Base_Sink_870,Side_Clad,Cladding,2,776,590,
+Island,Countertop (cooktop cut-out 700x400),Countertop,1,1825.2,968.4,solid surface / granite / quartz
+Island,Island_Back_Panel_Clad,Cladding,2,1718.4,876,
+Island,Island_Back_Panel_Rail,2x1,9,505.1,,
+Island,Island_Back_Panel_Stud,2x1,4,876,,
+Island,Island_End_Panel_Clad,Cladding,4,876,643.4,
+Island,Island_End_Panel_Rail,2x1,6,541.8,,
+Island,Island_End_Panel_Stud,2x1,4,876,,
+Island_1_Racks_473,Back_Clad,Cladding,1,776,464.8,
+Island_1_Racks_473,Bottom_Clad,Cladding,1,586,464.8,
+Island_1_Racks_473,DrawerFront_Handle_Rail,Profile with handle,3,469.8,,"square cut, full width"
+Island_1_Racks_473,DrawerFront_Insert,Cladding,1,445.8,142.0,in the profile groove
+Island_1_Racks_473,DrawerFront_Insert,Cladding,1,445.8,219.6,in the profile groove
+Island_1_Racks_473,DrawerFront_Insert,Cladding,1,445.8,258.4,in the profile groove
+Island_1_Racks_473,DrawerFront_Rail_Bottom,Profile,3,469.8,,45 deg both ends
+Island_1_Racks_473,DrawerFront_Stile,Profile,2,146.0,,"45 deg one end, square at the handle"
+Island_1_Racks_473,DrawerFront_Stile,Profile,2,223.6,,"45 deg one end, square at the handle"
+Island_1_Racks_473,DrawerFront_Stile,Profile,2,262.4,,"45 deg one end, square at the handle"
+Island_1_Racks_473,Kick_Back,2x1,1,338.2,,
+Island_1_Racks_473,Kick_Bottom_Clad,Cladding,1,400,389.0,
+Island_1_Racks_473,Kick_Front_Insert,Cladding,1,445.8,63,in the profile groove
+Island_1_Racks_473,Kick_Front_Rail_Bottom,Profile,1,469.8,,45 deg both ends
+Island_1_Racks_473,Kick_Front_Rail_Top,Profile,1,469.8,,45 deg both ends
+Island_1_Racks_473,Kick_Front_Stile,Profile,2,87,,45 deg both ends
+Island_1_Racks_473,Kick_Inner_Front,2x1,1,338.2,,
+Island_1_Racks_473,Kick_Side,2x1,2,400,,
+Island_1_Racks_473,Plinth_Back_Clad,Cladding,1,464.8,100,
+Island_1_Racks_473,Plinth_Leg_Back,2x1,2,100,,
+Island_1_Racks_473,Plinth_Leg_Front,2x1,2,100,,
+Island_1_Racks_473,Plinth_Rail_Back,2x1,1,414.0,,
+Island_1_Racks_473,Plinth_Rail_Side,2x1,2,368.4,,
+Island_1_Racks_473,Plinth_Side_Clad,Cladding,2,474,100,
+Island_1_Racks_473,Post_Back,2x1,2,772,,
+Island_1_Racks_473,Post_Front,2x1,2,772,,
+Island_1_Racks_473,Rail_Back_Bottom,2x1,1,414.0,,
+Island_1_Racks_473,Rail_Back_Top,2x1,1,414.0,,
+Island_1_Racks_473,Rail_Front_Bottom,2x1,1,414.0,,
+Island_1_Racks_473,Rail_Front_Top,2x1,1,414.0,,
+Island_1_Racks_473,Rail_Side_Bottom,2x1,2,484.4,,
+Island_1_Racks_473,Rail_Side_Top,2x1,2,484.4,,
+Island_1_Racks_473,Side_Clad,Cladding,2,776,590,
+Island_1_Racks_473,Tier_Runner_Rail,2x1,4,484.4,,
+Island_2_Induction_773,Back_Clad,Cladding,1,776,764.8,
+Island_2_Induction_773,Bottom_Clad,Cladding,1,764.8,586,
+Island_2_Induction_773,DrawerFront_Handle_Rail,Profile with handle,3,769.8,,"square cut, full width"
+Island_2_Induction_773,DrawerFront_Insert,Cladding,1,745.8,68,in the profile groove
+Island_2_Induction_773,DrawerFront_Insert,Cladding,2,745.8,276.0,in the profile groove
+Island_2_Induction_773,DrawerFront_Rail_Bottom,Profile,3,769.8,,45 deg both ends
+Island_2_Induction_773,DrawerFront_Stile,Profile,2,72,,"45 deg one end, square at the handle"
+Island_2_Induction_773,DrawerFront_Stile,Profile,4,280.0,,"45 deg one end, square at the handle"
+Island_2_Induction_773,Kick_Back,2x1,1,638.2,,
+Island_2_Induction_773,Kick_Bottom_Clad,Cladding,1,689.0,400,
+Island_2_Induction_773,Kick_Front_Insert,Cladding,1,745.8,63,in the profile groove
+Island_2_Induction_773,Kick_Front_Rail_Bottom,Profile,1,769.8,,45 deg both ends
+Island_2_Induction_773,Kick_Front_Rail_Top,Profile,1,769.8,,45 deg both ends
+Island_2_Induction_773,Kick_Front_Stile,Profile,2,87,,45 deg both ends
+Island_2_Induction_773,Kick_Inner_Front,2x1,1,638.2,,
+Island_2_Induction_773,Kick_Side,2x1,2,400,,
+Island_2_Induction_773,Plinth_Back_Clad,Cladding,1,764.8,100,
+Island_2_Induction_773,Plinth_Leg_Back,2x1,2,100,,
+Island_2_Induction_773,Plinth_Leg_Front,2x1,2,100,,
+Island_2_Induction_773,Plinth_Rail_Back,2x1,1,714.0,,
+Island_2_Induction_773,Plinth_Rail_Side,2x1,2,368.4,,
+Island_2_Induction_773,Plinth_Side_Clad,Cladding,2,474,100,
+Island_2_Induction_773,Post_Back,2x1,2,772,,
+Island_2_Induction_773,Post_Front,2x1,2,772,,
+Island_2_Induction_773,Rail_Back_Bottom,2x1,1,714.0,,
+Island_2_Induction_773,Rail_Back_Top,2x1,1,714.0,,
+Island_2_Induction_773,Rail_Front_Bottom,2x1,1,714.0,,
+Island_2_Induction_773,Rail_Front_Top,2x1,1,714.0,,
+Island_2_Induction_773,Rail_Side_Bottom,2x1,2,484.4,,
+Island_2_Induction_773,Rail_Side_Top,2x1,2,484.4,,
+Island_2_Induction_773,Side_Clad,Cladding,2,776,590,
+Island_2_Induction_773,Tier_Runner_Rail,2x1,2,484.4,,
+Island_3_Racks_473,Back_Clad,Cladding,1,776,464.8,
+Island_3_Racks_473,Bottom_Clad,Cladding,1,586,464.8,
+Island_3_Racks_473,DrawerFront_Handle_Rail,Profile with handle,3,469.8,,"square cut, full width"
+Island_3_Racks_473,DrawerFront_Insert,Cladding,1,445.8,142.0,in the profile groove
+Island_3_Racks_473,DrawerFront_Insert,Cladding,1,445.8,219.6,in the profile groove
+Island_3_Racks_473,DrawerFront_Insert,Cladding,1,445.8,258.4,in the profile groove
+Island_3_Racks_473,DrawerFront_Rail_Bottom,Profile,3,469.8,,45 deg both ends
+Island_3_Racks_473,DrawerFront_Stile,Profile,2,146.0,,"45 deg one end, square at the handle"
+Island_3_Racks_473,DrawerFront_Stile,Profile,2,223.6,,"45 deg one end, square at the handle"
+Island_3_Racks_473,DrawerFront_Stile,Profile,2,262.4,,"45 deg one end, square at the handle"
+Island_3_Racks_473,Kick_Back,2x1,1,338.2,,
+Island_3_Racks_473,Kick_Bottom_Clad,Cladding,1,400,389.0,
+Island_3_Racks_473,Kick_Front_Insert,Cladding,1,445.8,63,in the profile groove
+Island_3_Racks_473,Kick_Front_Rail_Bottom,Profile,1,469.8,,45 deg both ends
+Island_3_Racks_473,Kick_Front_Rail_Top,Profile,1,469.8,,45 deg both ends
+Island_3_Racks_473,Kick_Front_Stile,Profile,2,87,,45 deg both ends
+Island_3_Racks_473,Kick_Inner_Front,2x1,1,338.2,,
+Island_3_Racks_473,Kick_Side,2x1,2,400,,
+Island_3_Racks_473,Plinth_Back_Clad,Cladding,1,464.8,100,
+Island_3_Racks_473,Plinth_Leg_Back,2x1,2,100,,
+Island_3_Racks_473,Plinth_Leg_Front,2x1,2,100,,
+Island_3_Racks_473,Plinth_Rail_Back,2x1,1,414.0,,
+Island_3_Racks_473,Plinth_Rail_Side,2x1,2,368.4,,
+Island_3_Racks_473,Plinth_Side_Clad,Cladding,2,474,100,
+Island_3_Racks_473,Post_Back,2x1,2,772,,
+Island_3_Racks_473,Post_Front,2x1,2,772,,
+Island_3_Racks_473,Rail_Back_Bottom,2x1,1,414.0,,
+Island_3_Racks_473,Rail_Back_Top,2x1,1,414.0,,
+Island_3_Racks_473,Rail_Front_Bottom,2x1,1,414.0,,
+Island_3_Racks_473,Rail_Front_Top,2x1,1,414.0,,
+Island_3_Racks_473,Rail_Side_Bottom,2x1,2,484.4,,
+Island_3_Racks_473,Rail_Side_Top,2x1,2,484.4,,
+Island_3_Racks_473,Side_Clad,Cladding,2,776,590,
+Island_3_Racks_473,Tier_Runner_Rail,2x1,4,484.4,,
+Over_Ref_Cabinet,Back_Clad,Cladding,1,942,457,notched for pipe - see model
+Over_Ref_Cabinet,Bottom_Clad,Cladding,1,942,760.0,notched for pipe - see model
+Over_Ref_Cabinet,Door_Handle_Rail,Profile with handle,2,472.0,,"square cut, full width"
+Over_Ref_Cabinet,Door_Insert,Cladding,2,448.0,405,in the profile groove
+Over_Ref_Cabinet,Door_Rail_Top,Profile,2,472.0,,45 deg both ends
+Over_Ref_Cabinet,Door_Stile,Profile,4,409,,"45 deg one end, square at the handle"
+Over_Ref_Cabinet,Pipe_Chase_Front_Clad,Cladding,1,457,133.4,
+Over_Ref_Cabinet,Pipe_Chase_Post,2x1,1,449,,
+Over_Ref_Cabinet,Pipe_Chase_Side_Clad,Cladding,1,457,124,
+Over_Ref_Cabinet,Post_Back,2x1,1,449,,
+Over_Ref_Cabinet,Post_Front,2x1,2,449,,
+Over_Ref_Cabinet,Rail_Back_Bottom,2x1,1,891.2,,cut back at pipe chase - see model
+Over_Ref_Cabinet,Rail_Back_Top,2x1,1,891.2,,cut back at pipe chase - see model
+Over_Ref_Cabinet,Rail_Front_Bottom,2x1,1,891.2,,
+Over_Ref_Cabinet,Rail_Front_Top,2x1,1,891.2,,
+Over_Ref_Cabinet,Rail_Side_Bottom,2x1,1,658.4,,
+Over_Ref_Cabinet,Rail_Side_Bottom,2x1,1,658.4,,cut back at pipe chase - see model
+Over_Ref_Cabinet,Rail_Side_Top,2x1,1,658.4,,
+Over_Ref_Cabinet,Rail_Side_Top,2x1,1,658.4,,cut back at pipe chase - see model
+Over_Ref_Cabinet,Shelf,Cladding,1,891.2,740.0,notched for pipe - see model
+Over_Ref_Cabinet,Shelf_Front_Rail,2x1,1,840.4,,
+Over_Ref_Cabinet,Shelf_Support,2x1,1,760.0,,
+Over_Ref_Cabinet,Shelf_Support,2x1,1,760.0,,cut back at pipe chase - see model
+Over_Ref_Cabinet,Side_Clad,Cladding,1,764.0,457,
+Over_Ref_Cabinet,Side_Clad,Cladding,1,764.0,457,notched for pipe - see model
+Over_Ref_Cabinet,Top_Clad,Cladding,1,942,760.0,notched for pipe - see model
+Ref_Tower,End_Panel_Ref_Clad,Cladding,1,2286,784.0,
+Ref_Tower,End_Panel_Ref_Rail,2x1,10,315.8,,
+Ref_Tower,End_Panel_Ref_Stud,2x1,3,2286,,
+Ref_Tower,Filler_Ref_Clad,Cladding,1,2286,30,
+Ref_Tower,Filler_Ref_Post,2x1,1,2286,,
+Ref_Tower,Tall_Panel_Clad,Cladding,1,2286,784.0,
+Ref_Tower,Tall_Panel_Rail,2x1,10,315.8,,
+Ref_Tower,Tall_Panel_Stud,2x1,3,2286,,
+Scribe_Strips,Crown_Ref_Clad,Cladding,1,1038.8,50.8,
+Scribe_Strips,Crown_Ref_Ledger,2x1,1,1038.8,,
+Scribe_Strips,Crown_Uppers_Clad,Cladding,1,1919.4,50.8,
+Scribe_Strips,Crown_Uppers_Ledger,2x1,1,1919.4,,
+Scribe_Strips,Crown_Washer_Clad,Cladding,1,648.6,50.8,
+Scribe_Strips,Crown_Washer_Ledger,2x1,1,648.6,,
+Sink_Counter,Countertop (sink cut-out 770x420),Countertop,1,1270,635,solid surface / granite / quartz
+Stove_Bay,Platform_Cross,2x1,3,558.8,,
+Stove_Bay,Platform_Rail_Back,2x1,1,609.6,,
+Stove_Bay,Platform_Rail_Front,2x1,1,609.6,,
+Stove_Bay,Platform_Top_Clad,Cladding,1,609.6,609.6,
+Upper_400,Back_Clad,Cladding,1,914,392,
+Upper_400,Bottom_Clad,Cladding,1,392,306,
+Upper_400,Door_Handle_Rail,Profile with handle,1,397.0,,"square cut, full width"
+Upper_400,Door_Insert,Cladding,1,862,373.0,in the profile groove
+Upper_400,Door_Rail_Top,Profile,1,397.0,,45 deg both ends
+Upper_400,Door_Stile,Profile,2,866,,"45 deg one end, square at the handle"
+Upper_400,Post_Back,2x1,2,906,,
+Upper_400,Post_Front,2x1,2,906,,
+Upper_400,Rail_Back_Bottom,2x1,1,341.2,,
+Upper_400,Rail_Back_Top,2x1,1,341.2,,
+Upper_400,Rail_Front_Bottom,2x1,1,341.2,,
+Upper_400,Rail_Front_Top,2x1,1,341.2,,
+Upper_400,Rail_Side_Bottom,2x1,2,204.4,,
+Upper_400,Rail_Side_Top,2x1,2,204.4,,
+Upper_400,Shelf,Cladding,2,341.2,286,
+Upper_400,Shelf_Support,2x1,4,306,,
+Upper_400,Side_Clad,Cladding,2,914,310,
+Upper_400,Top_Clad,Cladding,1,392,306,
+Upper_Hood_620,Back_Clad,Cladding,1,672,612,
+Upper_Hood_620,Bottom_Clad,Cladding,1,612,306,hood cut-out - see model
+Upper_Hood_620,Door_Handle_Rail,Profile with handle,1,617.0,,"square cut, full width"
+Upper_Hood_620,Door_Insert,Cladding,1,620,593.0,in the profile groove
+Upper_Hood_620,Door_Rail_Top,Profile,1,617.0,,45 deg both ends
+Upper_Hood_620,Door_Stile,Profile,2,624,,"45 deg one end, square at the handle"
+Upper_Hood_620,Post_Back,2x1,2,664,,
+Upper_Hood_620,Post_Front,2x1,2,664,,
+Upper_Hood_620,Rail_Back_Top,2x1,1,561.2,,
+Upper_Hood_620,Rail_Front_Top,2x1,1,561.2,,
+Upper_Hood_620,Rail_Side_Bottom,2x1,2,204.4,,
+Upper_Hood_620,Rail_Side_Top,2x1,2,204.4,,
+Upper_Hood_620,Shelf,Cladding,2,561.2,185.2,
+Upper_Hood_620,Shelf_Support,2x1,4,306,,
+Upper_Hood_620,Side_Clad,Cladding,2,672,310,
+Upper_Hood_620,Top_Clad,Cladding,1,612,306,duct cut-out - see model
+Upper_Over_Washer,Back_Clad,Cladding,1,914,640.6,notched for pipe - see model
+Upper_Over_Washer,Bottom_Clad,Cladding,1,640.6,306,notched for pipe - see model
+Upper_Over_Washer,Door_Handle_Rail,Profile with handle,2,321.3,,"square cut, full width"
+Upper_Over_Washer,Door_Insert,Cladding,2,862,297.3,in the profile groove
+Upper_Over_Washer,Door_Rail_Top,Profile,2,321.3,,45 deg both ends
+Upper_Over_Washer,Door_Stile,Profile,4,866,,"45 deg one end, square at the handle"
+Upper_Over_Washer,Pipe_Chase_Front_Clad,Cladding,1,914,153.4,
+Upper_Over_Washer,Pipe_Chase_Post,2x1,1,906,,
+Upper_Over_Washer,Pipe_Chase_Side_Clad,Cladding,1,914,124,
+Upper_Over_Washer,Post_Back,2x1,1,906,,
+Upper_Over_Washer,Post_Front,2x1,2,906,,
+Upper_Over_Washer,Rail_Back_Bottom,2x1,1,589.8,,cut back at pipe chase - see model
+Upper_Over_Washer,Rail_Back_Top,2x1,1,589.8,,cut back at pipe chase - see model
+Upper_Over_Washer,Rail_Front_Bottom,2x1,1,589.8,,
+Upper_Over_Washer,Rail_Front_Top,2x1,1,589.8,,
+Upper_Over_Washer,Rail_Side_Bottom,2x1,1,204.4,,
+Upper_Over_Washer,Rail_Side_Bottom,2x1,1,204.4,,cut back at pipe chase - see model
+Upper_Over_Washer,Rail_Side_Top,2x1,1,204.4,,
+Upper_Over_Washer,Rail_Side_Top,2x1,1,204.4,,cut back at pipe chase - see model
+Upper_Over_Washer,Shelf,Cladding,2,589.8,286,notched for pipe - see model
+Upper_Over_Washer,Shelf_Support,2x1,2,306,,
+Upper_Over_Washer,Shelf_Support,2x1,2,306,,cut back at pipe chase - see model
+Upper_Over_Washer,Side_Clad,Cladding,1,914,310,
+Upper_Over_Washer,Side_Clad,Cladding,1,914,310,notched for pipe - see model
+Upper_Over_Washer,Top_Clad,Cladding,1,640.6,306,notched for pipe - see model
+Upper_Sink_870,Back_Clad,Cladding,1,914,862,
+Upper_Sink_870,Bottom_Clad,Cladding,1,862,306,
+Upper_Sink_870,Door_Handle_Rail,Profile with handle,2,432.0,,"square cut, full width"
+Upper_Sink_870,Door_Insert,Cladding,2,862,408.0,in the profile groove
+Upper_Sink_870,Door_Rail_Top,Profile,2,432.0,,45 deg both ends
+Upper_Sink_870,Door_Stile,Profile,4,866,,"45 deg one end, square at the handle"
+Upper_Sink_870,Post_Back,2x1,2,906,,
+Upper_Sink_870,Post_Front,2x1,2,906,,
+Upper_Sink_870,Rail_Back_Bottom,2x1,1,811.2,,
+Upper_Sink_870,Rail_Back_Top,2x1,1,811.2,,
+Upper_Sink_870,Rail_Front_Bottom,2x1,1,811.2,,
+Upper_Sink_870,Rail_Front_Top,2x1,1,811.2,,
+Upper_Sink_870,Rail_Side_Bottom,2x1,2,204.4,,
+Upper_Sink_870,Rail_Side_Top,2x1,2,204.4,,
+Upper_Sink_870,Side_Clad,Cladding,2,914,310,
+Upper_Sink_870,Top_Clad,Cladding,1,862,306,
+Washer_Bay,Back_Rail,2x1,1,619.2,,
+Washer_Bay,Countertop (corner notch 153x153 for pipe),Countertop,1,678.0,635,solid surface / granite / quartz
+Washer_Bay,End_Panel_Clad,Cladding,1,876,486,
+Washer_Bay,End_Panel_Rail,2x1,3,384.4,,
+Washer_Bay,End_Panel_Stud,2x1,2,876,,
+Washer_Bay,Panel_Stove_Side_Clad,Cladding,1,876,610,
+Washer_Bay,Panel_Stove_Side_Rail,2x1,3,508.4,,
+Washer_Bay,Panel_Stove_Side_Stud,2x1,2,876,,
+Washer_Bay,Rail_Front,2x1,1,619.2,,

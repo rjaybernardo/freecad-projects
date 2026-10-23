@@ -1,0 +1,53 @@
+Module,Item,Size_mm,Qty
+Over_Ref_Cabinet,"Shelf pins (5 mm, 32 mm system)",-,4
+Base_Sink_900,"Toe-kick drawer runner pair 400 mm, low profile, push-to-open",-,1
+Base_Sink_900,Under-sink pull-out tray (door-mounted cabinet),839 W x 450 D x 120 H,1
+Base_Sink_900,"Full-extension soft-close runner pair, 450 mm",-,1
+Base_Racks_400,"Toe-kick drawer runner pair 400 mm, low profile, push-to-open",-,1
+Base_Racks_400,"Pot / pan basket (400 cabinet size, 364 clear, 500 runners)",339 W x 500 D x 200 H,1
+Base_Racks_400,"Full-extension soft-close runner pair, 500 mm",-,1
+Base_Racks_400,"Bowl + plate basket (400 cabinet size, 364 clear, 500 runners)",339 W x 500 D x 150 H,1
+Base_Racks_400,"Full-extension soft-close runner pair, 500 mm",-,1
+Base_Racks_400,"Cutlery / utensil tray (400 cabinet size, 364 clear, 500 runners)",339 W x 500 D x 70 H,1
+Base_Racks_400,"Full-extension soft-close runner pair, 500 mm",-,1
+Upper_Hood_620,"Flat duct 204x60 + 150 round-to-flat adapter, up the cabinet back to the ceiling (cut-out in the cabinet top)",-,1
+Upper_Hood_620,"Shelf pins (5 mm, 32 mm system)",-,4
+Upper_Hood_620,"Built-in telescopic range hood 60 cm (body <= 560 W for a 584 clear cabinet), ducted, 150 outlet",560 W x 280 D x 180 H,1
+Washer_Bay,Paint / wrap the exposed pipe (counter -> wall cabinet) to match the backsplash,458 H,1
+Upper_Over_Washer,"Shelf pins (5 mm, 32 mm system)",-,8
+Upper_Sink_900,Dish drainer drip tray,854 W x 274 D x 25 H,1
+Upper_Sink_900,"Dish drainer, plate tier (900 cabinet)",854 W x 274 D x 120 H,1
+Upper_Sink_900,"Dish drainer, cup / bowl tier (900 cabinet)",854 W x 274 D x 80 H,1
+Upper_400,"Shelf pins (5 mm, 32 mm system)",-,8
+Island_1_Racks_450,"Toe-kick drawer runner pair 400 mm, low profile, push-to-open",-,1
+Island_1_Racks_450,"Pot / pan basket (450 cabinet size, 414 clear, 500 runners)",389 W x 500 D x 200 H,1
+Island_1_Racks_450,"Full-extension soft-close runner pair, 500 mm",-,1
+Island_1_Racks_450,"Bowl + plate basket (450 cabinet size, 414 clear, 500 runners)",389 W x 500 D x 150 H,1
+Island_1_Racks_450,"Full-extension soft-close runner pair, 500 mm",-,1
+Island_1_Racks_450,"Cutlery / utensil tray (450 cabinet size, 414 clear, 500 runners)",389 W x 500 D x 70 H,1
+Island_1_Racks_450,"Full-extension soft-close runner pair, 500 mm",-,1
+Island_2_Induction_750,"Toe-kick drawer runner pair 400 mm, low profile, push-to-open",-,1
+Island_2_Induction_750,"Deep pot basket (750 cabinet size, 714 clear, 500 runners)",689 W x 500 D x 250 H,1
+Island_2_Induction_750,"Full-extension soft-close runner pair, 500 mm",-,1
+Island_2_Induction_750,"Pot / pan basket (750 cabinet size, 714 clear, 500 runners)",689 W x 500 D x 200 H,1
+Island_2_Induction_750,"Full-extension soft-close runner pair, 500 mm",-,1
+Island_2_Induction_750,Vent grille / 6 mm gap behind the top fixed front (induction air),-,1
+Island_3_Racks_450,"Toe-kick drawer runner pair 400 mm, low profile, push-to-open",-,1
+Island_3_Racks_450,"Pot / pan basket (450 cabinet size, 414 clear, 500 runners)",389 W x 500 D x 200 H,1
+Island_3_Racks_450,"Full-extension soft-close runner pair, 500 mm",-,1
+Island_3_Racks_450,"Bowl + plate basket (450 cabinet size, 414 clear, 500 runners)",389 W x 500 D x 150 H,1
+Island_3_Racks_450,"Full-extension soft-close runner pair, 500 mm",-,1
+Island_3_Racks_450,"Cutlery / utensil tray (450 cabinet size, 414 clear, 500 runners)",389 W x 500 D x 70 H,1
+Island_3_Racks_450,"Full-extension soft-close runner pair, 500 mm",-,1
+Island,Induction power: dedicated circuit in floor conduit to the island,-,1
+Lighting_LED,Ch1 under-cabinet: 24 V COB LED strip 4000K 10 W/m + Al profile 16x7 with diffuser,1.81 m,1
+Lighting_LED,Ch1 under-cabinet: 24 V LED driver 30 W,-,1
+Lighting_LED,Ch2 toe-kick wall run: 24 V COB LED strip 4000K 10 W/m + Al profile 16x7 with diffuser,1.29 m,1
+Lighting_LED,Ch2 toe-kick wall run: 24 V LED driver 20 W,-,1
+Lighting_LED,Ch3 toe-kick island: 24 V COB LED strip 4000K 10 W/m + Al profile 16x7 with diffuser,1.64 m,1
+Lighting_LED,Ch3 toe-kick island: 24 V LED driver 30 W,-,1
+Lighting_LED,Wall switch (backsplash) for the under-cabinet lights,-,1
+Lighting_LED,PIR motion sensor for 24 V strip (toe-kick),-,2
+Lighting_LED,24 V cable 2 x 0.75 mm2 (+20% spare),9.2 m,1
+Lighting_LED,"230 V feed to drivers / switch (electrician, in conduit)",7.4 m,1
+Lighting_LED,Cable grommets 10 mm (cabinet top / bottom / carcass holes),-,8

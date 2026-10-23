@@ -1,0 +1,39 @@
+# Kitchen_OpenClose: toggle all cabinet doors open / closed and all drawers pulled out / in.
+# Works on models from build_kitchen_v2.py:
+#   - doors carry the Woodworking workbench front attributes (Woodworking_Type = "Front", hinge edge,
+#     angle) -> rotated about their hinge edge
+#   - drawers are App::Part containers with a Kitchen_Slide property -> moved along X
+# Run it from Macro > Macros..., or add it to a toolbar (Tools > Customize > Macros).
+
+import FreeCAD as App
+
+
+def kitchen_fronts(doc, open_):
+    sign = 1 if open_ else -1
+    for o in doc.Objects:
+        if getattr(o, "Woodworking_Type", "") == "Front" and getattr(o, "Woodworking_Open", True):
+            ref = doc.getObject(o.Woodworking_OpenObj)
+            centre = ref.getSubObject(o.Woodworking_OpenEdge).CenterOfMass
+            axis = {"X": App.Vector(1, 0, 0), "Y": App.Vector(0, 1, 0)}.get(o.Woodworking_OpenAxis,
+                                                                              App.Vector(0, 0, 1))
+            turn = App.Placement(App.Vector(0, 0, 0), App.Rotation(axis, sign * o.Woodworking_OpenAngleStep), centre)
+            o.Placement = turn.multiply(o.Placement)
+        if hasattr(o, "Kitchen_Slide"):
+            p = o.Placement
+            p.Base = p.Base + App.Vector(sign * o.Kitchen_Slide, 0, 0)
+            o.Placement = p
+    doc.recompute()
+
+
+def toggle(doc):
+    holder = next((o for o in doc.Objects if hasattr(o, "Kitchen_Open")), None)
+    if holder is None:
+        App.Console.PrintError("Kitchen_OpenClose: no kitchen model (Kitchen_Open property) in this document\n")
+        return
+    holder.Kitchen_Open = not holder.Kitchen_Open
+    kitchen_fronts(doc, holder.Kitchen_Open)
+    App.Console.PrintMessage(f"Kitchen fronts {'open' if holder.Kitchen_Open else 'closed'}\n")
+
+
+if __name__ == "__main__" and App.ActiveDocument:
+    toggle(App.ActiveDocument)

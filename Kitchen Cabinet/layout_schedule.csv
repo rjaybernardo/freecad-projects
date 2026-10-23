@@ -1,0 +1,23 @@
+Run,Item,Width_in,Note
+back,Corner_LazySusan_36x36,36,bi-fold corner doors
+back,Dishwasher,24,appliance
+back,Sink_Base_36,36,false drawer front + 2 doors
+back,Drawer_Base_15,15,3 drawers
+back,Fridge_36 (opening),36,counter-depth recommended; 30" deep shown
+back upper,Over_Fridge_36x18x24,36,24" deep
+back,Filler,1,full height, fridge door clearance
+back upper,Upper_Corner_24,24,blind corner
+back upper,Upper_36_A,36,
+back upper,Upper_36_Sink,36,
+back upper,Upper_15,15,
+left,Drawer_Base_18_A,18,3 drawers
+left,Range_30,30,freestanding / slide-in
+left,Drawer_Base_18_B,18,3 drawers
+left,Door_Base_24,24,1 drawer + 1 door
+left,End_Panel,0.75,finished end
+left upper,Upper_24_A,24,
+left upper,Upper_18_A,18,
+left upper,Hood_30,30,vent to exterior
+left upper,Upper_18_B,18,
+left upper,Upper_24_B,24,
+island,Island_Base_46 (2 x 23),46,drawers + doors, work side faces back wall
