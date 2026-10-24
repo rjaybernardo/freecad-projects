@@ -1,0 +1,503 @@
+<title>Bedroom Cabinet Pocket-Hole Plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: shop-drawing sheets, one job per sheet (overview, carcass, shelves, drawers, centre, order); A4-printable */
+:root {
+  --bg: #f5f6f4; --sheet: #ffffff; --ink: #1d2321; --muted: #5d6763; --rule: #c9cfcb;
+  --panel: #eadfc6; --panel-line: #6b604a; --ghost: #9aa39f; --plinth: #4a4743;
+  --pocket: #d9600f; --pocket-soft: rgba(217,96,15,.28); --screw: #2563a8; --noscrew: #c0332b;
+  --mirror: #cfe3ee; --tv: #2b2f31; --eye: rgba(37,99,168,.12);
+  --display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #121615; --sheet: #1a1f1d; --ink: #e4e9e6; --muted: #9aa6a1; --rule: #34403b;
+  --panel: #4a4335; --panel-line: #c8b892; --ghost: #6c7773; --plinth: #8a857d;
+  --pocket: #f08a3c; --pocket-soft: rgba(240,138,60,.3); --screw: #6aa8ee; --noscrew: #f0675e;
+  --mirror: #2d4552; --tv: #050606; --eye: rgba(106,168,238,.14); color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #121615; --sheet: #1a1f1d; --ink: #e4e9e6; --muted: #9aa6a1; --rule: #34403b;
+  --panel: #4a4335; --panel-line: #c8b892; --ghost: #6c7773; --plinth: #8a857d;
+  --pocket: #f08a3c; --pocket-soft: rgba(240,138,60,.3); --screw: #6aa8ee; --noscrew: #f0675e;
+  --mirror: #2d4552; --tv: #050606; --eye: rgba(106,168,238,.14); color-scheme: dark }
+
+body { background: var(--bg); color: var(--ink); font: 15px/1.5 var(--body); margin: 0; }
+.wrap { max-width: 980px; margin: 0 auto; padding-inline: 16px; padding-block: 24px 48px; display: grid; gap: 22px; }
+header.title { display: grid; gap: 6px; }
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; line-height: 1.1; }
+h1 { font-size: clamp(30px, 5vw, 44px); font-weight: 700; letter-spacing: .01em; }
+h2 { font-size: 26px; font-weight: 600; }
+h3 { font-size: 19px; font-weight: 600; }
+.meta { font-family: var(--mono); font-size: 12.5px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 18px; }
+.sheet { background: var(--sheet); border: 1px solid var(--rule); border-radius: 4px; padding: 20px clamp(14px, 3vw, 28px); display: grid; gap: 14px; min-width: 0; }
+.sheet-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; border-bottom: 1.5px solid var(--ink); padding-bottom: 6px; }
+.sheet-no { font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
+p { margin: 0; max-width: 68ch; }
+.note { color: var(--muted); font-size: 14px; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 14px; }
+.legend span { display: inline-flex; align-items: center; gap: 7px; }
+.sw { width: 26px; height: 12px; display: inline-block; border-radius: 6px; }
+.sw.p { background: var(--pocket-soft); border: 2px solid var(--pocket); }
+.sw.s { height: 3px; background: var(--screw); border-radius: 0; }
+.sw.v { height: 5px; background: var(--noscrew); border-radius: 0; }
+.sw.w { height: 12px; border-radius: 0; background: repeating-linear-gradient(45deg, var(--ghost) 0 2px, transparent 2px 6px); border: 1px solid var(--ghost); }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+figure { margin: 0; display: grid; gap: 6px; min-width: 0; }
+figcaption { font-size: 13.5px; color: var(--muted); }
+figcaption b { color: var(--ink); }
+svg.dwg { width: 100%; height: auto; display: block; }
+.tbl { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-family: var(--display); font-size: 15px; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; color: var(--muted); }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; font-family: var(--mono); font-size: 13px; }
+.mono { font-family: var(--mono); font-size: 13px; }
+.face { font-weight: 700; }
+.face.p { color: var(--pocket); }
+.face.s { color: var(--screw); }
+ol.steps { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; counter-reset: s; }
+ol.steps li { display: grid; grid-template-columns: 22px 34px 1fr; gap: 8px; align-items: start; counter-increment: s; }
+ol.steps li::before { content: counter(s); font-family: var(--display); font-weight: 700; font-size: 20px; line-height: 1.2; grid-column: 2; grid-row: 1; color: var(--muted); }
+ol.steps input { grid-column: 1; grid-row: 1; width: 18px; height: 18px; margin-top: 3px; accent-color: var(--pocket); }
+ol.steps .txt { grid-column: 3; grid-row: 1; min-width: 0; }
+ol.steps input:checked ~ .txt { color: var(--muted); text-decoration: line-through; text-decoration-color: var(--ghost); }
+input:focus-visible { outline: 2px solid var(--screw); outline-offset: 2px; }
+.callout { border-left: 4px solid var(--pocket); padding: 8px 12px; background: var(--pocket-soft); border-radius: 0 4px 4px 0; font-size: 14.5px; }
+
+/* drawing classes */
+.dwg .pan { fill: var(--panel); stroke: var(--panel-line); stroke-width: var(--sw, 2); }
+.dwg .adj { fill: var(--panel); stroke: var(--panel-line); stroke-width: var(--sw, 2); stroke-dasharray: 10 6; }
+.dwg .wallside { fill: url(#hatch); stroke: var(--panel-line); stroke-width: var(--sw, 2); }
+.dwg .visside { fill: var(--panel); stroke: var(--noscrew); stroke-width: calc(var(--sw, 2) * 2.2); }
+.dwg .ghost { fill: none; stroke: var(--ghost); stroke-width: var(--sw, 2); stroke-dasharray: 8 5; }
+.dwg .ghostfill { fill: var(--sheet); stroke: var(--ghost); stroke-width: var(--sw, 2); stroke-dasharray: 8 5; }
+.dwg .plinth { fill: var(--plinth); opacity: .55; }
+.dwg .backp { fill: var(--panel); opacity: .45; stroke: var(--panel-line); stroke-width: var(--sw, 2); }
+.dwg .mirror { fill: var(--mirror); stroke: var(--ghost); stroke-width: var(--sw, 2); }
+.dwg .tv { fill: var(--tv); }
+.dwg .drw { fill: none; stroke: var(--panel-line); stroke-width: var(--sw, 2); stroke-dasharray: 4 4; }
+.dwg .rail { fill: var(--ghost); }
+.dwg .wall { fill: url(#hatch); stroke: none; }
+.dwg .scribe { fill: var(--ghost); opacity: .5; }
+.dwg .eye { fill: var(--eye); stroke: var(--screw); stroke-width: var(--sw, 2); stroke-dasharray: 6 6; }
+.dwg .vis { stroke: var(--noscrew); stroke-width: calc(var(--sw, 2) * 3); fill: none; }
+.dwg .ph { fill: var(--pocket-soft); stroke: var(--pocket); stroke-width: calc(var(--sw, 2) * 1.2); }
+.dwg .bore { stroke: var(--pocket-soft); stroke-linecap: round; fill: none; }
+.dwg .so { stroke: var(--pocket); stroke-width: calc(var(--sw, 2) * 1.6); stroke-linecap: round; fill: none; }
+.dwg .sb { stroke: var(--screw); stroke-width: calc(var(--sw, 2) * 1.8); stroke-linecap: round; fill: none; }
+.dwg .dot { fill: var(--screw); }
+.dwg .lbl { fill: var(--ink); font-family: var(--body); }
+.dwg .dim { fill: var(--muted); font-family: var(--mono); }
+.dwg .tag { fill: var(--ink); font-family: var(--display); font-weight: 700; }
+.dwg .tagc { fill: var(--sheet); stroke: var(--ink); }
+.dwg .hl { fill: var(--pocket); font-family: var(--body); font-weight: 700; }
+.dwg .hb { fill: var(--screw); font-family: var(--body); font-weight: 700; }
+.dwg .hr { fill: var(--noscrew); font-family: var(--body); font-weight: 700; }
+.dwg .floor { stroke: var(--ink); fill: none; }
+
+@media print {
+  :root { --bg: #fff; --sheet: #fff; --ink: #111; --muted: #444; --rule: #bbb; --panel: #efe6d2; --panel-line: #6b604a;
+    --ghost: #888; --pocket: #d9600f; --pocket-soft: rgba(217,96,15,.25); --screw: #1f5aa0; --noscrew: #c0332b;
+    --mirror: #d6e8f2; --tv: #222; color-scheme: light; }
+  @page { size: A4; margin: 11mm; }
+  body { font-size: 11.5pt; }
+  .wrap { max-width: none; padding: 0; gap: 0; }
+  .sheet { border: none; padding: 0; break-before: page; }
+  .sheet.first { break-before: auto; }
+  figure, table, .callout, ol.steps li { break-inside: avoid; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+
+<div class="wrap">
+  <header class="title">
+    <h1>Bedroom Cabinet v5: where the pocket holes go</h1>
+    <div class="meta">
+      <span>Wall 2286 × 2380 mm</span><span>Panels 19.6 mm (18 marine ply + HPL both faces)</span>
+      <span>Jig set to 3/4" (19 mm)</span><span>Pocket screws 1-1/4" (32 mm) coarse</span>
+    </div>
+    <div class="legend" aria-label="Legend">
+      <span><i class="sw p"></i>Pocket hole (slot on that face)</span>
+      <span><i class="sw s"></i>Straight screw</span>
+      <span><i class="sw v"></i>Visible face: no screws through it</span>
+      <span><i class="sw w"></i>Against a wall: straight screws are fine</span>
+    </div>
+    <p class="note">The sizes follow cut list v5. If you cut from v4, the joints are the same, but v4 has no <span class="mono">Shelf_Top_2</span>, its table is at 750 and its rail is at 1750.</p>
+  </header>
+
+  <section class="sheet first" aria-labelledby="s1">
+    <div class="sheet-head"><h2 id="s1">The boxes, doors removed</h2><span class="sheet-no">Sheet 1 / 6</span></div>
+    <figure>
+      <div id="overview"></div>
+      <figcaption><b>A</b> left wardrobe · <b>B</b> right shelf tower · <b>C</b> drawer tower · <b>D</b> centre loose panels (back panels, table top, divider, makeup shelves, TV ledge) · <b>E F G</b> top boxes. The two red sides face the TV/mirror area, so never screw through them from outside. Screw from inside the box instead.</figcaption>
+    </figure>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>What</th><th class="num">Holes / screws</th><th>Buy</th></tr></thead>
+        <tbody>
+          <tr><td>Pocket holes: carcass tops + bottoms (6 boxes × 2 panels × 2 ends × 3)</td><td class="num">72</td><td rowspan="5">~214 holes → <b>250 pocket screws</b>, 1-1/4" coarse thread</td></tr>
+          <tr><td>Pocket holes: wardrobe fixed shelves (3 × 2 ends × 3)</td><td class="num">18</td></tr>
+          <tr><td>Pocket holes: 5 small drawer boxes (19 each)</td><td class="num">95</td></tr>
+          <tr><td>Pocket holes: table drawer box</td><td class="num">17</td></tr>
+          <tr><td>Pocket holes: centre panels (table, ledge, divider, makeup shelves)</td><td class="num">12</td></tr>
+          <tr><td>Straight screws into panel edges (backs, base boards, side units → centre panels)</td><td class="num">~150</td><td><b>200 × 4 × 40 mm</b> countersunk, with a 2.5 mm pilot</td></tr>
+          <tr><td>Straight screws through two panels face-to-face (box to box, 39.2 mm total)</td><td class="num">~30</td><td>Use the 32 mm pocket screws, so the tip stays 7 mm under the laminate</td></tr>
+          <tr><td>Wall plugs: 2 per tall box, 3 per centre back panel, 2 for top box F</td><td class="num">~12</td><td>Plugs + 50 mm screws (more for the TV bracket)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="sheet" aria-labelledby="s2">
+    <div class="sheet-head"><h2 id="s2">Carcass tops and bottoms (all 6 boxes)</h2><span class="sheet-no">Sheet 2 / 6</span></div>
+    <p>The sides run full height and the top and bottom sit between them. Drill the pocket holes in the top and bottom. Put them on the face that ends up hidden.</p>
+    <div class="grid2">
+      <figure><div id="cornerTop"></div><figcaption><b>Top corner</b> (front section). Holes go on the top face. The box above covers them.</figcaption></figure>
+      <figure><div id="cornerBot"></div><figcaption><b>Bottom corner.</b> Holes go on the underside. The base hides them. Screw the base boards on through the bottom from inside.</figcaption></figure>
+    </div>
+    <figure><div id="panelPlan"></div><figcaption><b>Bottom panel, underside up</b> (wardrobe size shown). 3 holes per end, 100 / 215 / 330 mm from the front edge. The blue dots are the base-board screws, 40 and 361 mm from the front, so they don't hit the pocket screws. Tops get the same holes but no blue dots.</figcaption></figure>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>Box</th><th>Panel</th><th class="num">Size</th><th>Holes on</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td>A wardrobe</td><td>Top / Bottom</td><td class="num">480.8 × 430.8</td><td><span class="face p">top face / underside</span></td><td>Top box E covers the top; the base hides the bottom</td></tr>
+          <tr><td>B right tower</td><td>Top / Bottom</td><td class="num">416.8 × 430.8</td><td><span class="face p">top face / underside</span></td><td>Top box G covers the top; the base hides the bottom</td></tr>
+          <tr><td>C drawer tower</td><td>Top / Bottom</td><td class="num">460.8 × 430.8</td><td><span class="face p">top face / underside</span></td><td>The table top covers the top</td></tr>
+          <tr><td>E left top box</td><td>Top / Bottom</td><td class="num">480.8 × 430.8</td><td><span class="face p">top face / underside</span></td><td>It sits on A, so its underside is hidden</td></tr>
+          <tr><td>G right top box</td><td>Top / Bottom</td><td class="num">430.8 × 416.8</td><td><span class="face p">top face / underside</span></td><td>It sits on B, so its underside is hidden</td></tr>
+          <tr><td>F centre top box</td><td>Top / <b>Bottom</b></td><td class="num">1260.8 × 430.8</td><td><span class="face p">top face / <u>inside face</u></span></td><td>Its underside is in plain view over the TV niche</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout">Backs: screw them flat onto the rear edges with 4 × 40 straight screws every ~200 mm, 10 mm in from the edge. Measure both diagonals first. When the diagonals are equal, the box is square. On A, also screw through the back into the three fixed shelves.</div>
+  </section>
+
+  <section class="sheet" aria-labelledby="s3">
+    <div class="sheet-head"><h2 id="s3">Wardrobe A: fixed shelves and eye height</h2><span class="sheet-no">Sheet 3 / 6</span></div>
+    <p>Whether a shelf's holes go on top or underneath depends on where your eyes are. Below eye height you look down at the top face, so drill the underside. Above eye height you only see the underside, so drill the top face.</p>
+    <div class="grid2">
+      <figure><div id="wardrobe"></div><figcaption><b>Wardrobe A, inside, front view.</b> 3 holes per shelf end, 80 / 205 / 330 mm from the shelf front. The shelves are set back 20 mm from the carcass front.</figcaption></figure>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>Shelf</th><th class="num">Height</th><th>Holes on</th></tr></thead>
+          <tbody>
+            <tr><td><span class="mono">Shelf_Above_Drawers</span></td><td class="num">450</td><td><span class="face p">underside</span>: you look down on it, and the drawers hide the underside</td></tr>
+            <tr><td><span class="mono">Shelf_Top</span> (hat shelf)</td><td class="num">1700</td><td><span class="face p">top face</span>: above your eyes</td></tr>
+            <tr><td><span class="mono">Shelf_Top_2</span></td><td class="num">1875</td><td><span class="face p">top face</span>: above your eyes</td></tr>
+            <tr><td>Hanging rail, 25 mm</td><td class="num">1650</td><td>Rail sockets screwed into both sides. Drill them before assembly</td></tr>
+            <tr><td>Right tower B, shelves 1–5</td><td class="num">380–1580</td><td><b>No pocket holes.</b> Use shelf pins, 4 per shelf, so you can move them. The screwed-on back stiffens the tower</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="sheet" aria-labelledby="s4">
+    <div class="sheet-head"><h2 id="s4">Drawer boxes (6)</h2><span class="sheet-no">Sheet 4 / 6</span></div>
+    <p>Each box has 2 sides, a back between the sides, and a bottom between the sides that stops at the back. The front panel is also the box front, so there's no separate inner front. The runners screw onto the outer faces of the sides, so keep those faces free of holes.</p>
+    <div class="grid3">
+      <figure><div id="drwBottom"></div><figcaption><b>Bottom, underside up.</b> 3 holes into each side, 3 into the front, 2 into the back.</figcaption></figure>
+      <figure><div id="drwBack"></div><figcaption><b>Back, outside face.</b> 2 holes per end into the sides. This face points at the cabinet back, so nobody sees it.</figcaption></figure>
+      <figure><div id="drwSide"></div><figcaption><b>Side, inner face.</b> 2 holes at the front end into the drawer front. They're only seen when the drawer is open.</figcaption></figure>
+    </div>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>Drawer</th><th class="num">Qty</th><th class="num">Bottom</th><th class="num">Back</th><th class="num">Side</th><th>Holes per box</th></tr></thead>
+        <tbody>
+          <tr><td>Drawer tower C</td><td class="num">3</td><td class="num">396.6 × 360.8</td><td class="num">396.6 × 163.7</td><td class="num">380.4 × 163.7</td><td>bottom 11 · back 4 · sides 4 = <b>19</b></td></tr>
+          <tr><td>Wardrobe A (inner, behind the door)</td><td class="num">2</td><td class="num">416.6 × 360.8</td><td class="num">416.6 × 130</td><td class="num">380.4 × 130</td><td>bottom 11 · back 4 · sides 4 = <b>19</b></td></tr>
+          <tr><td>Makeup table</td><td class="num">1</td><td class="num">735.8 × 360.8</td><td class="num">735.8 × 70</td><td class="num">380.4 × 70</td><td>bottom 13 (4 front, 3 back) · back 2 · sides 2 = <b>17</b>. The 70 mm parts take 1 hole per end</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Assembly order for each box: back → sides, then slide the bottom in and screw it, then put the front on. Fit the runners (400 mm, side mount) to the box sides before you fit the front.</p>
+  </section>
+
+  <section class="sheet" aria-labelledby="s5">
+    <div class="sheet-head"><h2 id="s5">Centre D: table, ledge, divider, makeup shelves</h2><span class="sheet-no">Sheet 5 / 6</span></div>
+    <p>The centre panels hang between boxes A, B and C. Their ends are screwed straight from inside those boxes, where the doors hide the heads. Pocket holes only hold their back edges and the small joints in between.</p>
+    <div class="grid2">
+      <figure><div id="centreSide"></div><figcaption><b>Side section through the makeup shelves.</b> The table top's pocket holes go underneath at the back edge. The TV ledge's go on <b>top</b> at the back edge, behind the TV.</figcaption></figure>
+      <figure><div id="centreFront"></div><figcaption><b>Front view, right part of the centre.</b> Blue screws are driven from inside tower B and drawer tower C.</figcaption></figure>
+    </div>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>Panel</th><th>Fix the ends</th><th>Pocket holes</th></tr></thead>
+        <tbody>
+          <tr><td><span class="mono">Table_Top</span> 1300 × 450.4</td><td><span class="face s">3 straight screws per end</span>, from inside A and inside B. <span class="face s">4 up through C's top</span> from inside its top drawer opening</td><td><span class="face p">3 on the underside at the back edge</span>, into the back panel. Keep them in the knee space, at x ≈ 130 / 400 / 670 from the left end, not over C</td></tr>
+          <tr><td><span class="mono">TV_Ledge</span> 1300 × 450.4</td><td><span class="face s">3 straight screws per end</span>, from inside A and inside B</td><td><span class="face p">3 on the top face at the back edge</span>, behind the TV. Seated at the table you'd see holes on the underside, which is why they don't go there</td></tr>
+          <tr><td><span class="mono">Divider</span> 560.4 × 450.4</td><td><span class="face s">2 countersunk screws down through the ledge</span>, covered with screw caps</td><td><span class="face p">2 on the shelf-side face at the bottom</span>, into the table top</td></tr>
+          <tr><td><span class="mono">Makeup_Shelf_1 / 2</span> 480.4 × 300</td><td><span class="face s">2 straight screws</span> from inside B, at the right end</td><td><span class="face p">2 on the underside at the divider end</span>. They sit below eye height, so the underside isn't seen</td></tr>
+          <tr><td><span class="mono">Back_Panel_L / R</span> 2070 × 650</td><td><span class="face s">Plugs into the wall</span>, behind the TV, the mirror and C</td><td>None</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="sheet" aria-labelledby="s6">
+    <div class="sheet-head"><h2 id="s6">Order of work</h2><span class="sheet-no">Sheet 6 / 6</span></div>
+    <div class="grid2">
+      <div>
+        <h3>Before assembly, panels flat</h3>
+        <ol class="steps" id="prep">
+          <li><input type="checkbox" id="p1"><span class="txt">Label every part with its cut list name.</span></li>
+          <li><input type="checkbox" id="p2"><span class="txt">Edge band all visible edges.</span></li>
+          <li><input type="checkbox" id="p3"><span class="txt">Drill all pocket holes from sheets 2–5. Jig at 3/4".</span></li>
+          <li><input type="checkbox" id="p4"><span class="txt">Hinge cups, 35 mm: tall doors 4 each, top box doors 2 each.</span></li>
+          <li><input type="checkbox" id="p5"><span class="txt">Fix the runners to the cabinet sides: A × 2, C × 3. The table drawer runners go on A's right side and C's left side.</span></li>
+          <li><input type="checkbox" id="p6"><span class="txt">Shelf-pin holes in tower B. Rail socket holes at 1650 in A.</span></li>
+        </ol>
+      </div>
+      <div>
+        <h3>Assembly</h3>
+        <ol class="steps" id="build">
+          <li><input type="checkbox" id="b1"><span class="txt">Lay out the base boards and <b>level them</b> with shims.</span></li>
+          <li><input type="checkbox" id="b2"><span class="txt">Build A on its back: sides, top, bottom, fixed shelves. Check the diagonals, then screw on the back.</span></li>
+          <li><input type="checkbox" id="b3"><span class="txt">Stand A on its base and screw it down. Do the same with B, leaving <b>1300</b> between them (use the table top to check).</span></li>
+          <li><input type="checkbox" id="b4"><span class="txt">Plug A and B to the wall at the top so they can't tip.</span></li>
+          <li><input type="checkbox" id="b5"><span class="txt">Plug the centre back panels to the wall. The seam goes behind the TV.</span></li>
+          <li><input type="checkbox" id="b6"><span class="txt">Build C with no back. Set it on its base and screw it to B from inside C.</span></li>
+          <li><input type="checkbox" id="b7"><span class="txt">Table top, then the table drawer.</span></li>
+          <li><input type="checkbox" id="b8"><span class="txt">Divider, makeup shelves, TV ledge.</span></li>
+          <li><input type="checkbox" id="b9"><span class="txt">Top boxes E and G: screw down into A and B. Then F, held up on a prop and screwed sideways into E and G (4 screws per side).</span></li>
+          <li><input type="checkbox" id="b10"><span class="txt">Doors. Half-overlay hinges on the wall-side doors, full overlay on F. Set a 3 mm gap all round.</span></li>
+          <li><input type="checkbox" id="b11"><span class="txt">Drawer fronts, mirror, rail, scribe strips, then the TV.</span></li>
+        </ol>
+      </div>
+    </div>
+    <div class="callout">Glue: wood glue doesn't stick to laminate. If your boards are already laminated, use screws only, so you can still take the boxes apart. If they're plain plywood that you'll laminate later, glue and screw every fixed joint, and wipe off the squeeze-out.</div>
+  </section>
+</div>
+
+<script>
+(function () {
+  const HATCH = (k) => `<defs><pattern id="hatch" width="${8*k}" height="${8*k}" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="${8*k}" height="${8*k}" fill="var(--sheet)"/><line x1="0" y1="0" x2="0" y2="${8*k}" stroke="var(--ghost)" stroke-width="${1.6*k}"/></pattern></defs>`;
+  const svg = (vb, sw, k, inner, label) =>
+    `<svg class="dwg" viewBox="${vb}" style="--sw:${sw}" role="img" aria-label="${label}">${HATCH(k)}${inner}</svg>`;
+  const R = (x, y, w, h, c, ex = "") => `<rect x="${x}" y="${y}" width="${w}" height="${h}" class="${c}" ${ex}/>`;
+  const L = (x1, y1, x2, y2, c, ex = "") => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" class="${c}" ${ex}/>`;
+  const T = (x, y, s, fs, c = "lbl", a = "middle") => `<text x="${x}" y="${y}" font-size="${fs}" class="${c}" text-anchor="${a}">${s}</text>`;
+  const C = (x, y, r, c) => `<circle cx="${x}" cy="${y}" r="${r}" class="${c}"/>`;
+  // pocket slot on a face seen from above; (ex,ey) = edge where the screw exits; dir points from slot to edge
+  function P(ex, ey, dir, len = 38, wid = 10, off = 8) {
+    let x, y, w, h;
+    if (dir === "L") { x = ex + off; y = ey - wid / 2; w = len; h = wid; }
+    if (dir === "R") { x = ex - off - len; y = ey - wid / 2; w = len; h = wid; }
+    if (dir === "U") { x = ex - wid / 2; y = ey + off; w = wid; h = len; }
+    if (dir === "D") { x = ex - wid / 2; y = ey - off - len; w = wid; h = len; }
+    return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${wid / 2}" class="ph"/>`;
+  }
+  // pocket screw in section: bore (fat translucent) + screw line
+  const PS = (bx1, by1, bx2, by2, sx1, sy1, sx2, sy2, bw) =>
+    `<line x1="${bx1}" y1="${by1}" x2="${bx2}" y2="${by2}" class="bore" stroke-width="${bw}"/>` + L(sx1, sy1, sx2, sy2, "so");
+  const tag = (x, y, s, r) => C(x, y, r, "tagc") + T(x, y + r * 0.36, s, r * 1.05, "tag");
+
+  /* ---------- Sheet 1: overview elevation ---------- */
+  (function () {
+    const H = 2380, Z = (z) => H - z, E = (x, z, w, h, c) => R(x, Z(z + h), w, h, c);
+    let s = "";
+    s += R(-60, -10, 60, H + 10, "wall") + R(2286, -10, 60, H + 10, "wall");
+    s += L(-60, H, 2346, H, "floor", 'stroke-width="5"');
+    s += E(0, 0, 520, 80, "plinth") + E(1320, 0, 500, 80, "plinth") + E(1820, 0, 456, 80, "plinth");
+    s += E(520, 0, 650, 2070, "backp") + E(1170, 0, 650, 2070, "backp");
+    s += E(580, 800, 680, 450, "mirror") + E(555, 1340, 1230, 700, "tv");
+    // A wardrobe
+    s += E(0, 80, 19.6, 1990, "wallside") + E(500.4, 80, 19.6, 1990, "visside");
+    s += E(19.6, 2050.4, 480.8, 19.6, "pan") + E(19.6, 80, 480.8, 19.6, "pan");
+    [449.6, 1700, 1875.2].forEach((z) => (s += E(19.6, z, 480.8, 19.6, "pan")));
+    s += E(21.6, 99.6, 476.8, 160, "drw") + E(21.6, 269.6, 476.8, 160, "drw");
+    s += E(19.6, 1637.5, 480.8, 25, "rail");
+    // B right tower
+    s += E(1820, 80, 19.6, 1990, "visside") + E(2256.4, 80, 19.6, 1990, "wallside");
+    s += E(1839.6, 2050.4, 416.8, 19.6, "pan") + E(1839.6, 80, 416.8, 19.6, "pan");
+    [379.6, 679.6, 979.6, 1279.6, 1579.6].forEach((z) => (s += E(1839.6, z, 416.8, 19.6, "adj")));
+    // C drawer tower
+    s += E(1320, 80, 19.6, 620.4, "pan") + E(1800.4, 80, 19.6, 620.4, "pan");
+    s += E(1339.6, 80, 460.8, 19.6, "pan") + E(1339.6, 680.8, 460.8, 19.6, "pan");
+    for (let i = 0; i < 3; i++) s += E(1321.5, 81.5 + i * 206.8, 497, 178.8, "drw");
+    // D centre
+    s += E(520, 700.4, 1300, 19.6, "pan") + E(522, 598.4, 796, 100, "drw");
+    s += E(1320, 720, 19.6, 560.4, "pan") + E(1339.6, 900, 480.4, 19.6, "pan") + E(1339.6, 1080, 480.4, 19.6, "pan");
+    s += E(520, 1280.4, 1300, 19.6, "pan");
+    // top boxes
+    [[0, 520], [520, 1300], [1820, 456]].forEach(([x, w]) => {
+      s += E(x, 2070, 19.6, 300, "pan") + E(x + w - 19.6, 2070, 19.6, 300, "pan");
+      s += E(x + 19.6, 2350.4, w - 39.2, 19.6, "pan") + E(x + 19.6, 2070, w - 39.2, 19.6, "pan");
+    });
+    s += L(520, Z(2068), 1820, Z(2068), "vis");
+    s += T(1170, Z(2068) - 40, "F's underside is visible", 40, "hr");
+    s += E(2276, 0, 10, 2380, "scribe") + E(0, 2370, 2276, 10, "scribe");
+    // tags
+    s += tag(260, Z(1250), "A", 52) + tag(2048, Z(1150), "B", 52) + tag(1570, Z(560), "C", 52);
+    s += tag(1170, Z(760) + 120, "D", 52) + tag(260, Z(2220), "E", 44) + tag(1170, Z(2220), "F", 44) + tag(2048, Z(2220), "G", 44);
+    // dims
+    const fs = 40;
+    s += T(260, H + 70, "520", fs, "dim") + T(1170, H + 70, "1300", fs, "dim") + T(2048, H + 70, "456", fs, "dim");
+    [[80, "80 base"], [720, "720 table"], [1300, "1300 ledge"], [1650, "1650 rail"], [2070, "2070"], [2370, "2370"]].forEach(([z, lab]) => {
+      s += L(2346, Z(z), 2380, Z(z), "floor", 'stroke-width="3"') + T(2392, Z(z) + 13, lab, fs, "dim", "start");
+    });
+    s += T(-30, Z(1150), "left wall", fs, "dim", "middle").replace("<text", `<text transform="rotate(-90 -30 ${Z(1150)})"`);
+    document.getElementById("overview").innerHTML = svg("-80 -40 2760 2500", 4, 4, s, "Front elevation of the bedroom cabinet with doors removed");
+  })();
+
+  /* ---------- Sheet 2: corner details ---------- */
+  (function () {
+    let s = "";
+    s += R(0, 0.4, 230, 19.6, "ghost") + T(140, 13.5, "top box E / G sits here", 9, "dim");
+    s += R(0, 20, 19.6, 190, "pan") + R(19.6, 20, 210.4, 19.6, "pan");
+    s += PS(74, 20, 24, 31, 62, 24, 4, 36, 8);
+    s += L(-14, 29.8, 46, 29.8, "sb");
+    s += T(10, 120, "SIDE", 10, "lbl").replace("<text", `<text transform="rotate(-90 10 120)"`);
+    s += T(150, 33.5, "TOP", 10, "lbl");
+    s += T(48, 62, "pocket hole on the top face", 9.5, "hl", "start");
+    s += T(48, 75, "screw angles into the side", 9, "dim", "start");
+    s += T(26, 100, "wall side only:", 8.5, "hb", "start") + T(26, 111, "straight screw OK", 8.5, "hb", "start");
+    document.getElementById("cornerTop").innerHTML = svg("-24 -6 260 222", 0.8, 0.8, s, "Top corner section");
+
+    let b = "";
+    b += R(0, 0, 19.6, 140, "pan") + R(19.6, 120.4, 210.4, 19.6, "pan");
+    b += R(0, 140, 230, 80, "plinth");
+    b += PS(74, 140, 24, 129, 62, 136, 4, 124, 8);
+    b += L(160, 112, 160, 168, "sb") + L(152, 112, 168, 112, "sb");
+    b += T(10, 70, "SIDE", 10, "lbl").replace("<text", `<text transform="rotate(-90 10 70)"`);
+    b += T(150, 134, "BOTTOM", 10, "lbl");
+    b += T(30, 98, "pocket hole on the underside", 9.5, "hl", "start");
+    b += T(30, 110, "(drill before the base goes on)", 9, "dim", "start");
+    b += T(115, 190, "base board", 10, "lbl");
+    b += T(166, 160, "4×40 from inside", 9, "hb", "start");
+    document.getElementById("cornerBot").innerHTML = svg("-10 0 250 232", 0.8, 0.8, b, "Bottom corner section");
+
+    // panel plan
+    let p = "";
+    const W = 480.8, D = 430.8;
+    p += R(-19.6, 0, 19.6, D, "ghostfill") + R(W, 0, 19.6, D, "ghostfill");
+    p += R(0, 0, W, D, "pan");
+    [100, 215, 330].forEach((d) => { p += P(0, D - d, "L", 38, 10) + P(W, D - d, "R", 38, 10); });
+    [40, 361].forEach((d) => [90, 240, 390].forEach((x) => (p += C(x, D - d, 5, "dot"))));
+    p += T(W / 2, -16, "480.8 (wardrobe)", 14, "dim");
+    p += T(W / 2, D + 26, "FRONT EDGE", 14, "lbl");
+    p += T(W / 2, 12 + D / 2, "BOTTOM: underside up", 16, "lbl");
+    [100, 215, 330].forEach((d) => (p += T(-28, D - d + 5, d, 12, "dim", "end")));
+    p += T(-28, D - 375, "from front", 11, "dim", "end");
+    p += T(W + 28, D / 2 - 8, "SIDE", 12, "dim", "start") + T(-28, D / 2 + 30, "SIDE", 12, "dim", "end");
+    p += T(W + 28, D - 36, "base screw", 11, "hb", "start") + T(W + 28, D - 22, "lines 40 / 361", 11, "hb", "start");
+    document.getElementById("panelPlan").innerHTML = svg("-110 -36 720 500", 1.4, 1.4, p, "Bottom panel plan with pocket holes");
+  })();
+
+  /* ---------- Sheet 3: wardrobe shelves ---------- */
+  (function () {
+    const top = 2100, Z = (z) => top - z, E = (x, z, w, h, c) => R(x, Z(z + h), w, h, c);
+    let s = "";
+    s += R(-30, Z(1520), 590, 110, "eye");
+    s += T(560, Z(1520) + 30, "your eye height", 30, "hb", "start") + T(560, Z(1520) + 66, "1410–1520", 28, "dim", "start");
+    s += E(0, 80, 19.6, 1990, "wallside") + E(500.4, 80, 19.6, 1990, "visside");
+    s += E(19.6, 2050.4, 480.8, 19.6, "pan") + E(19.6, 80, 480.8, 19.6, "pan") + E(0, 0, 520, 80, "plinth");
+    s += E(21.6, 99.6, 476.8, 160, "drw") + E(21.6, 269.6, 476.8, 160, "drw");
+    s += E(19.6, 1637.5, 480.8, 25, "rail");
+    const shelf = (z, onTop, name, lab) => {
+      let o = E(19.6, z, 480.8, 19.6, "pan");
+      const y = onTop ? Z(z + 19.6) - 12 : Z(z) + 2;
+      o += `<rect x="${25}" y="${y}" width="44" height="10" rx="5" class="ph"/>` + `<rect x="${451}" y="${y}" width="44" height="10" rx="5" class="ph"/>`;
+      o += T(560, Z(z) - 14, name, 30, "lbl", "start") + T(560, Z(z) + 22, lab, 28, "hl", "start");
+      return o;
+    };
+    s += shelf(449.6, false, "Shelf above drawers · 450", "holes UNDER");
+    s += shelf(1700, true, "Hat shelf · 1700", "holes ON TOP");
+    s += shelf(1875.2, true, "Shelf_Top_2 · 1875", "holes ON TOP");
+    s += T(560, Z(1650) + 10, "rail 1650", 28, "dim", "start");
+    s += T(260, Z(180), "2 drawers", 30, "dim");
+    document.getElementById("wardrobe").innerHTML = svg("-40 -20 1060 2140", 3, 3, s, "Wardrobe shelves and eye height");
+  })();
+
+  /* ---------- Sheet 4: drawer parts ---------- */
+  (function () {
+    let a = "";
+    const W = 396.6, D = 360.8;
+    a += R(-19.6, -19.6, 19.6, D + 19.6, "ghostfill") + R(W, -19.6, 19.6, D + 19.6, "ghostfill");
+    a += R(0, -19.6, W, 19.6, "ghostfill") + R(-22, D, W + 44, 19.6, "ghostfill");
+    a += R(0, 0, W, D, "pan");
+    [60, 180, 300].forEach((d) => (a += P(0, D - d, "L") + P(W, D - d, "R")));
+    [70, 198, 327].forEach((x) => (a += P(x, D, "D")));
+    [100, 297].forEach((x) => (a += P(x, 0, "U")));
+    a += T(W / 2, D + 50, "FRONT", 26, "lbl") + T(W / 2, -28, "BACK", 26, "lbl");
+    a += T(W / 2, D / 2 + 6, "BOTTOM", 28, "lbl");
+    document.getElementById("drwBottom").innerHTML = svg("-40 -56 477 476", 1.4, 1.4, a, "Drawer bottom pocket holes");
+
+    let b = "";
+    const BH = 163.7;
+    b += R(-19.6, 0, 19.6, BH, "ghostfill") + R(W, 0, 19.6, BH, "ghostfill");
+    b += R(0, 0, W, BH, "pan");
+    [40, 124].forEach((y) => (b += P(0, y, "L") + P(W, y, "R")));
+    b += T(W / 2, BH / 2 + 8, "BACK, outside", 27, "lbl");
+    b += T(W / 2, BH + 34, "396.6 × 163.7 (tower)", 24, "dim");
+    document.getElementById("drwBack").innerHTML = svg("-36 -16 469 236", 1.4, 1.4, b, "Drawer back pocket holes");
+
+    let c = "";
+    const SL = 380.4;
+    c += R(-19.6, -8, 19.6, BH + 16, "ghostfill");
+    c += R(0, 0, SL, BH, "pan");
+    [45, 119].forEach((y) => (c += P(0, y, "L")));
+    c += T(-10, BH + 34, "FRONT", 24, "lbl", "middle");
+    c += T(SL / 2 + 30, BH / 2 + 8, "SIDE, inner", 27, "lbl");
+    c += T(SL / 2 + 40, BH + 34, "380.4 × 163.7", 24, "dim");
+    document.getElementById("drwSide").innerHTML = svg("-60 -16 464 236", 1.4, 1.4, c, "Drawer side pocket holes");
+  })();
+
+  /* ---------- Sheet 5: centre ---------- */
+  (function () {
+    const top = 1430, Z = (z) => top - z, E = (y, z, w, h, c) => R(y, Z(z + h), w, h, c);
+    let s = "";
+    s += R(470, Z(1430), 50, 760, "wall");
+    s += E(450.4, 680, 19.6, 750, "pan");
+    s += E(0, 700.4, 450.4, 19.6, "pan") + E(0, 1280.4, 450.4, 19.6, "pan");
+    s += E(150.4, 900, 300, 19.6, "pan") + E(150.4, 1080, 300, 19.6, "pan");
+    s += E(390.4, 1340, 40, 90, "tv");
+    s += PS(398, Z(700.4), 446, Z(711), 410, Z(703), 462, Z(713), 9);
+    s += PS(398, Z(1300), 446, Z(1289), 410, Z(1297), 462, Z(1287), 9);
+    s += L(436, Z(990), 505, Z(990), "sb") + L(436, Z(982), 436, Z(998), "sb");
+    s += T(225, Z(720) + 40, "TABLE TOP · 720", 16, "lbl");
+    s += T(380, Z(700.4) + 34, "holes under, back edge", 14, "hl", "end");
+    s += T(225, Z(1300) - 10, "TV LEDGE · 1300", 16, "lbl");
+    s += T(380, Z(1300) - 46, "holes on top, behind TV", 14, "hl", "end");
+    s += T(300, Z(919.6) - 8, "makeup shelf", 13, "dim") + T(300, Z(1099.6) - 8, "makeup shelf", 13, "dim");
+    s += T(420, Z(990) - 12, "wall plug", 13, "hb", "end");
+    s += T(410, Z(1380) + 6, "TV", 13, "dim", "end");
+    s += T(0, Z(680) + 30, "← door face", 14, "dim", "start") + T(495, Z(680) + 30, "wall", 14, "dim");
+    document.getElementById("centreSide").innerHTML = svg("-16 -10 560 800", 1.4, 1.4, s, "Centre side section");
+
+    const t2 = 1330, X = (x) => x - 1290, Z2 = (z) => t2 - z, F = (x, z, w, h, c) => R(X(x), Z2(z + h), w, h, c);
+    let f = "";
+    f += F(1290, 700.4, 530, 19.6, "pan") + F(1290, 1280.4, 530, 19.6, "pan");
+    f += F(1320, 690, 19.6, 10.4, "pan") + F(1800.4, 690, 19.6, 10.4, "pan") + F(1339.6, 680.8, 460.8, 19.6, "pan");
+    f += F(1320, 720, 19.6, 560.4, "pan");
+    f += F(1339.6, 900, 480.4, 19.6, "pan") + F(1339.6, 1080, 480.4, 19.6, "pan");
+    f += F(1820, 680, 19.6, 640, "visside");
+    // straight screws from inside B
+    [710.2, 909.8, 1089.8, 1290.2].forEach((z) => (f += L(X(1862), Z2(z), X(1790), Z2(z), "sb") + L(X(1862), Z2(z) - 8, X(1862), Z2(z) + 8, "sb")));
+    // up through C's top
+    f += L(X(1560), Z2(668), X(1560), Z2(716), "sb") + L(X(1552), Z2(668), X(1568), Z2(668), "sb");
+    // down through ledge into divider
+    f += L(X(1329.8), Z2(1312), X(1329.8), Z2(1240), "sb") + L(X(1321), Z2(1312), X(1338.6), Z2(1312), "sb");
+    // divider foot pocket hole into table
+    f += PS(X(1352), Z2(772), X(1331), Z2(724), X(1344), Z2(758), X(1327), Z2(707), 8);
+    // makeup shelves: pocket under, divider end
+    [900, 1080].forEach((z) => (f += PS(X(1392), Z2(z), X(1343), Z2(z + 11), X(1380), Z2(z + 3), X(1325), Z2(z + 12), 8)));
+    f += T(X(1580), Z2(720) + 36, "TABLE TOP", 21, "lbl") + T(X(1580), Z2(1300) - 10, "TV LEDGE", 21, "lbl");
+    f += T(X(1600), Z2(919.6) - 8, "makeup shelf 1", 19, "dim") + T(X(1600), Z2(1099.6) - 8, "makeup shelf 2", 19, "dim");
+    f += T(X(1329.8), Z2(1000), "DIVIDER", 19, "lbl").replace("<text", `<text transform="rotate(-90 ${X(1329.8)} ${Z2(1000)})"`);
+    f += T(X(1872), Z2(1180), "inside B", 19, "hb", "start") + T(X(1872), Z2(1180) + 22, "(behind", 18, "dim", "start") + T(X(1872), Z2(1180) + 43, "its door)", 18, "dim", "start");
+    f += T(X(1580), Z2(680.8) + 30, "inside C, top drawer out", 19, "hb");
+    f += T(X(1400), Z2(820), "pocket into table", 18, "hl", "start");
+    document.getElementById("centreFront").innerHTML = svg("-14 -24 700 720", 1.4, 1.4, f, "Centre front view with screws");
+  })();
+
+  /* checklist memory, per viewer */
+  document.querySelectorAll("ol.steps input").forEach((cb) => {
+    try { cb.checked = localStorage.getItem("cab5-" + cb.id) === "1"; } catch (e) {}
+    cb.addEventListener("change", () => { try { localStorage.setItem("cab5-" + cb.id, cb.checked ? "1" : "0"); } catch (e) {} });
+  });
+})();
+</script>
