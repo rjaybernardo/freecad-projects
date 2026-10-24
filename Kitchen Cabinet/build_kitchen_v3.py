@@ -1,8 +1,11 @@
 # Kitchen v3 = v2 + a BACK-WALL run: base cabinets + countertop + hanging (wall) cabinets.
 # The left-wall run (REF -> SINK -> STOVE + exhaust -> WASHER) is unchanged from v2: its outlets, drains and the
 # hood duct are already installed. The back run starts WASHER_CLEAR past the washer front so the washer door
-# and the person loading it keep clear floor in the back corner; the island moves toward the open front to
-# keep a BACK_AISLE work aisle in front of the new counter.
+# and the person loading it keep clear floor in the back corner; the island is centred
+# between the entrance (accordion door) and the new back counter.
+# v3 also: the 400 drawer base beside the stove is a ventilated LPG TANK CABINET (same width, no positions move);
+# the wall cabinet over the washer is the SOAP CABINET (one door, tall-bottle shelf, detergent caddy); wall cabinets
+# continue along the back wall from the left-run corner, so the top cabinet line has no gaps.
 # (v2 header follows.)
 # Kitchen v2: left-wall run  REF -> SINK -> STOVE -> WASHER  +  island with a top-mount induction cooktop.
 # Room: 148" W x 142" L x 92" ceiling, open front (no wall), back / left / right walls.
@@ -119,7 +122,6 @@ ISLAND_SEAT_OH = 300   # counter overhang on the seating side (knee space for st
 ISLAND_END_OH = 20
 ISLAND_MODULES = [(450 + RACK_EXTRA, "racks"), (750 + RACK_EXTRA, "induction"), (450 + RACK_EXTRA, "racks")]
 STOOLS = 3
-BACK_AISLE = 1100      # back-run counter edge -> island end (island moves toward the open front to keep it)
 
 # ---------------- back-wall run (v3) ----------------
 WASHER_CLEAR = 915     # 36" clear floor in front of the front-loader washer before the back run starts
@@ -129,6 +131,11 @@ PANTRY_W = 600         # pantry tower against the right wall, floor to UPPER_TOP
 GARAGE_D = 400         # appliance garage + the wall cabinet over it (microwave needs ~370 + plug)
 PANTRY_PITCH = 350     # pantry shelf spacing
 PANTRY_SPLIT = 1372    # pantry lower / upper door split (= wall-cabinet bottom line)
+CORNER_FILLER = 30     # back-wall uppers start this far past the left-run uppers' face (door / handle clearance)
+CORNER_UPPERS = 2      # equal wall cabinets between the corner and the prep cabinet (over the washer floor zone)
+
+# ---------------- LPG tank beside the stove (v3) ----------------
+GAS_TANK = (320, 650)  # 11 kg LPG tank: diameter, height incl. regulator (measure yours)
 
 DOC_NAME = "Kitchen_v3"
 REV = "v3"
@@ -353,7 +360,8 @@ def base_cabinet(parent, name, u, w, kind, colour=C_DOOR, **frame):
     """610 base on a plinth; inside is free for stainless pull-out racks."""
     m = Module(parent, name, u, w, **frame)
     cd = BASE_D - T
-    m.plinth(kick=True)
+    if kind != "gas":
+        m.plinth(kick=True)
     h = BASE_TOP - PLINTH_H
     inner = w - 2 * T
     rack_w = inner - 2 * RUNNER_CLR
@@ -386,6 +394,24 @@ def base_cabinet(parent, name, u, w, kind, colour=C_DOOR, **frame):
         tiers([((h - vent) / 2, 250, "Deep pot basket"), ((h - vent) / 2, 200, "Pot / pan basket"),
                (vent, 0, "")], PLINTH_H)
         hardware.append((m.g.Label, "Vent grille / 6 mm gap behind the top fixed front (induction air)", "-", 1))
+    elif kind == "gas":
+        # LPG tank cabinet: no plinth / bottom (tank stands on the floor, rolls out without lifting), open back,
+        # full-height door from the floor with low + high vents (LPG is heavier than air)
+        dia, th = GAS_TANK
+        assert inner >= dia + 20 and BASE_TOP - T - KICK_FLOOR >= th + 30, "LPG tank does not fit the cabinet"
+        m.box("Side_A", 0, 0, 0, T, cd, BASE_TOP)
+        m.box("Side_B", w - T, 0, 0, T, cd, BASE_TOP)
+        m.box("Stretcher_Front", T, cd - 100, BASE_TOP - T, inner, 100, T)
+        m.box("Stretcher_Back", T, 0, BASE_TOP - T, inner, 100, T)
+        m.doors(1, KICK_FLOOR, BASE_TOP - KICK_FLOOR, cd, colour=colour)
+        x, y, _, _ = m.place(w / 2, cd / 2, 0, 0)
+        gbox(m.g, "LPG_Tank_11kg", 0, 0, 0, 0, 0, 0, C_STEEL, cut=False,
+             shape=Part.makeCylinder(dia / 2, th, App.Vector(x, y, 0)))
+        for item in ("LPG regulator + 1.5 m rubber hose with clamps (stove side panel -> stove)",
+                     "Grommet 50 mm in the stove-side panel for the gas hose",
+                     "Vent grilles in the tank door: low (100 mm from the floor) + high, ~100 cm2 each",
+                     "Heat-shield sheet (aluminium-faced) on the stove side of the tank cabinet panel"):
+            hardware.append((m.g.Label, item, "-", 1 if "Vent" not in item else 2))
     elif kind == "shelf":                                       # 2 doors, 1 adjustable shelf (pots, small appliances)
         m.carcass(PLINTH_H, h, cd, stretchers=True)
         m.shelf("Shelf_1", PLINTH_H + T + (h - 3 * T) / 2, cd)
@@ -394,7 +420,7 @@ def base_cabinet(parent, name, u, w, kind, colour=C_DOOR, **frame):
     return m
 
 
-def wall_cabinet(parent, name, u, w, z0, z1, depth=UPPER_D, ndoors=2, pipe=None, shelf=True, **frame):
+def wall_cabinet(parent, name, u, w, z0, z1, depth=UPPER_D, ndoors=2, pipe=None, shelf=True, shelves=None, **frame):
     """Wall cabinet on the masonry. pipe=(u0, u1): a corner pipe runs through its back corner -> the side,
     back, top, bottom and shelf are notched around it and a small L-shaped chase (2 panels) boxes it in."""
     m = Module(parent, name, u, w, **frame)
@@ -402,7 +428,7 @@ def wall_cabinet(parent, name, u, w, z0, z1, depth=UPPER_D, ndoors=2, pipe=None,
     m.carcass(z0, z1 - z0, cd)
     if shelf:                                    # adjustable shelves (pins), ~300 mm compartments
         clear = z1 - z0 - 2 * T
-        n = int(clear // SHELF_PITCH)
+        n = int(clear // SHELF_PITCH) if shelves is None else shelves
         for k in range(n):
             m.shelf(f"Shelf_{k + 1}", z0 + T + (k + 1) * (clear - n * T) / (n + 1) + k * T, cd)
         if n:
@@ -440,7 +466,7 @@ wall_cabinet(gF, "Over_Ref_Cabinet", u_fridge, FRIDGE_BAY, over_z, UPPER_TOP, de
 # ================= SINK + RACK BASE + COUNTER =================
 gS = group("Sink_Counter", run)
 base_cabinet(gS, "Base_Sink_900", u_sink, SINK_W, "sink")
-base_cabinet(gS, f"Base_Racks_{RACK_W:.0f}", u_rack, RACK_W, "racks")
+base_cabinet(gS, f"Base_Gas_Tank_{RACK_W:.0f}", u_rack, RACK_W, "gas")      # beside the stove (v3)
 ctop_len = SINK_W + RACK_W
 ctop = Part.makeBox(CTOP_D, ctop_len, CTOP_T, App.Vector(0, ry(u_sink, ctop_len), BASE_TOP))
 sw, sd = SINK
@@ -503,7 +529,13 @@ gbox(gW, "Countertop_Washer", 0, 0, 0, 0, 0, 0, C_CTOP, cut=False, shape=wshape)
 cut_list.append(("Washer_Bay", "Countertop (solid surface / granite, corner notch 144x144 for pipe)",
                  round(w_ctop, 1), CTOP_D, CTOP_T))
 hardware.append(("Washer_Bay", "Paint / wrap the exposed pipe (counter -> wall cabinet) to match the backsplash", "458 H", 1))
-wall_cabinet(gW, "Upper_Over_Washer", u_washer, ROOM_L - u_washer, UPPER_Z, UPPER_TOP, pipe=PIPE_U[1])
+# soap cabinet: one door hinged on the stove side (a corner-side door would hit the back-wall cabinets),
+# 1 shelf -> a tall-bottle compartment below (liquid detergent / softener), powders + pegs above
+ms = wall_cabinet(gW, "Soap_Cabinet_Over_Washer", u_washer, ROOM_L - u_washer, UPPER_Z, UPPER_TOP, ndoors=1,
+                  shelves=1, pipe=PIPE_U[1])
+cdp_s = PIPE_OD + 10 + T + 5                          # caddy stays in front of the pipe chase
+ms.basket("SS_Detergent_Caddy", T + 5, cdp_s, UPPER_Z + T + 2, ROOM_L - u_washer - 2 * T - 10,
+          UPPER_D - T - cdp_s - 10, 120, "Stainless detergent caddy (lift-out, drip-proof)")
 
 # ================= WALL CABINETS over the counter =================
 gU = group("Wall_Cabinets", run)
@@ -587,14 +619,21 @@ hardware.append((mp.g.Label, "Door-mounted pantry racks (optional, lower door): 
 
 # --- wall cabinet over the prep counter, end panel, fillers, crown ---
 gBU = group("Back_Wall_Cabinets", gB)
-gbox(gBU, "End_Panel_Back_Upper", xb0, ROOM_L - UPPER_D, UPPER_Z, T, UPPER_D, UPPER_TOP - UPPER_Z, C_DOOR)
+# corner uppers: from the left-run uppers' face to the prep cabinet, over the washer floor zone (no counter below)
+xc0 = UPPER_D + CORNER_FILLER
+cw = (xb_prep - xc0) / CORNER_UPPERS
+gbox(gBU, "Filler_Back_Corner", UPPER_D, ROOM_L - UPPER_D, UPPER_Z, CORNER_FILLER, T, UPPER_TOP - UPPER_Z, C_DOOR)
+for i in range(CORNER_UPPERS):
+    wall_cabinet(gBU, f"Upper_Back_Corner_{i + 1}_{cw:.0f}", xc0 + i * cw, cw, UPPER_Z, UPPER_TOP,
+                 ndoors=1 if cw <= 600 else 2, back=True)
 wall_cabinet(gBU, f"Upper_Prep_{PREP_W}", xb_prep, PREP_W, UPPER_Z, UPPER_TOP, ndoors=1, back=True)
-back_uppers = [(f"Upper_Prep_{PREP_W}", xb_prep, PREP_W, UPPER_D),
-               (f"Upper_Appliance_{APPL_W}", xb_app, APPL_W, GARAGE_D)]     # strip under the appliance cabinet
+back_uppers = [(f"Upper_Back_Corner_{i + 1}_{cw:.0f}", xc0 + i * cw, cw, UPPER_D) for i in range(CORNER_UPPERS)]
+back_uppers += [(f"Upper_Prep_{PREP_W}", xb_prep, PREP_W, UPPER_D),
+                (f"Upper_Appliance_{APPL_W}", xb_app, APPL_W, GARAGE_D)]     # strip under the appliance cabinet
 fd_b = BASE_D - PLINTH_SETBACK - T                                           # lights the garage inside
 gbox(gPa, "Filler_Pantry", xb_fill, ROOM_L - BASE_D, PLINTH_H, BACK_FILLER, T, UPPER_TOP - PLINTH_H, C_DOOR)
 gbox(gPa, "Filler_Pantry_Plinth", xb_fill, ROOM_L - fd_b - T, 0, BACK_FILLER, T, PLINTH_H, C_PLINTH)
-for nm, x0_, x1_, dep in (("Crown_Back_Prep", xb0, xb_app, UPPER_D), ("Crown_Back_Appliance", xb_app, xb_pan, GARAGE_D),
+for nm, x0_, x1_, dep in (("Crown_Back_Prep", UPPER_D, xb_app, UPPER_D), ("Crown_Back_Appliance", xb_app, xb_pan, GARAGE_D),
                           ("Crown_Pantry", xb_pan, ROOM_W, BASE_D)):
     gbox(gK, nm, x0_, ROOM_L - dep, UPPER_TOP, x1_ - x0_, T, crown_h, C_DOOR)
 
@@ -607,8 +646,7 @@ ctop_x0 = CTOP_D + ISLAND_AISLE                    # work-side counter edge
 front_x = ctop_x0 + ISLAND_OH                      # cabinet door faces
 back_x = front_x + BASE_D                          # cabinet backs
 ctop_x1 = back_x + T + ISLAND_SEAT_OH              # seating-side counter edge
-isl_y0 = min(ROOM_L / 2 - isl_len / 2,             # centred along the room (v2) ...
-             ROOM_L - CTOP_D - BACK_AISLE - isl_len)  # ... unless that crowds the back-run counter (v3)
+isl_y0 = (ROOM_L - CTOP_D - isl_len) / 2           # centred between the entrance and the back-run counter (v3)
 cab_y0 = isl_y0 + ISLAND_END_OH
 gbox(gI, "Island_End_Panel_A", front_x, cab_y0, 0, BASE_D + T, T, BASE_TOP, C_ISLAND)
 gbox(gI, "Island_End_Panel_B", front_x, cab_y0 + cab_len - T, 0, BASE_D + T, T, BASE_TOP, C_ISLAND)
@@ -686,7 +724,7 @@ gbox(gL, "Driver_1_UnderCabinet", 30, Y(u_tall - 30) - 0, over_z + T, 60, 200, 3
      shape=Part.makeBox(60, 200, 30, App.Vector(30, ry(u_tall - 230, 200), over_z + T)))
 cable("Cable_24V_Ch1_Riser", [drv1, (cx, drv1[1], drv1[2]), (cx, drv1[1], top_z)], "24V")
 under = [("Upper_Sink_900", u_sink, SINK_W), (f"Upper_{RACK_W:.0f}", u_rack, RACK_W),
-         ("Upper_Over_Washer", u_washer, ROOM_L - u_washer)]
+         ("Soap_Cabinet_Over_Washer", u_washer, ROOM_L - u_washer)]
 cable("Cable_24V_Ch1_Top", [(cx, drv1[1], top_z), (cx, Y(under[-1][1] + T + 30), top_z)], "24V")
 for nm, u0, w in under:
     a0 = u0 + T + 5
@@ -703,15 +741,15 @@ cable("Cable_230V_Ch1", [(-15, Y(sw_u), ROOM_H), (-15, Y(sw_u), 1150), (-15, Y(s
 
 # --- channel 2: toe-kick, wall run ---
 x_kick = BASE_D - PLINTH_SETBACK + 5                  # just in front of the kick-drawer faces
-led("LED_Kick_Wall_Run", 2, x_kick, ry(u_sink + 5, SINK_W + RACK_W - 10), PLINTH_H - LED_H, LED_W,
-    SINK_W + RACK_W - 10)
+led("LED_Kick_Wall_Run", 2, x_kick, ry(u_sink + 5, SINK_W - 10), PLINTH_H - LED_H, LED_W,
+    SINK_W - 10)                                      # gas-tank cabinet has no plinth (v3)
 drv2 = (320, Y(u_rack - T - 60), 760)
 gbox(gL, "Driver_2_Kick_Wall", 290, ry(u_rack - T - 160, 200), 745, 60, 200, 30, C_METAL, cut=False)
 cable("Cable_24V_Ch2", [drv2, (drv2[0], drv2[1], PLINTH_H + T + 3), (x_kick + LED_W / 2, drv2[1], PLINTH_H + T + 3),
                         (x_kick + LED_W / 2, drv2[1], PLINTH_H - LED_H / 2)], "24V")
 cable("Cable_230V_Ch2", [(-15, Y(u_rack - 200), 450), (5, Y(u_rack - 200), 450), (5, Y(u_rack - 200), 760),
                          (290, Y(u_rack - 200), 760)], "230V")
-gbox(gL, "Sensor_Kick_Wall", x_kick, ry(u_rack + 100, 40), PLINTH_H - 20, 20, 40, 20, C_BLACK, cut=False)
+gbox(gL, "Sensor_Kick_Wall", x_kick, ry(u_rack - 140, 40), PLINTH_H - 20, 20, 40, 20, C_BLACK, cut=False)
 
 # --- channel 3: toe-kick, island work side (kept in the Island group) ---
 gLI = group("Lighting_Island", gI)
@@ -771,7 +809,7 @@ doc.recompute()
 # ---------------- report ----------------
 print("Left wall run (from the open front), mm:")
 for label, a, b in [("end panel", 0, u_filler), ("filler", u_filler, u_fridge), ("fridge bay", u_fridge, u_tall),
-                    ("tall panel", u_tall, u_sink), ("sink base", u_sink, u_rack), ("rack base", u_rack, u_stove),
+                    ("tall panel", u_tall, u_sink), ("sink base", u_sink, u_rack), ("gas tank", u_rack, u_stove),
                     ("stove bay", u_stove, u_wpanel), ("washer panel", u_wpanel, u_washer),
                     ("washer bay", u_washer, u_end), ("end panel", u_end, ROOM_L)]:
     print(f"  {label:13s} {a:7.1f} -> {b:7.1f}  ({b - a:6.1f})")
@@ -783,8 +821,7 @@ print(f"Back wall run X {xb0:.0f} -> {ROOM_W:.0f} ({ROOM_W - xb0:.0f}): end pane
       f"appliance station {APPL_W} (garage {GARAGE_D} D x {UPPER_Z - COUNTER_Z} H) | pantry {PANTRY_W} | "
       f"filler {BACK_FILLER:.0f}; counter {xb_pan - xb0:.0f}")
 print(f"  clear floor washer front -> back run {xb0 - PIPE_CLR - WASHER[2]:.0f}, "
-      f"back counter -> island {ROOM_L - CTOP_D - isl_y0 - isl_len:.0f}, island moved "
-      f"{ROOM_L / 2 - isl_len / 2 - isl_y0:.0f} toward the open front")
+      f"entrance -> island {isl_y0:.0f}, island -> back counter {ROOM_L - CTOP_D - isl_y0 - isl_len:.0f}")
 
 # ---------------- colours + views (GUI only) ----------------
 if App.GuiUp:

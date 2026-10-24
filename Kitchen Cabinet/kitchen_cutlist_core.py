@@ -19,7 +19,7 @@ SHEET_L, SHEET_W = 2440, 1220      # 4 x 8 ft board
 TRIM = 5                           # factory-edge trim each side
 KERF = 4                           # saw blade
 WALL_CABINETS = 5                  # v2: over-ref, over-sink, over-rack, hood, over-washer (from the model)
-WALL_CABINETS_REV = {"v2": 5, "v3": 7}   # v3 adds the prep + appliance wall cabinets (pantry stands on the floor)
+WALL_CABINETS_REV = {"v2": 5, "v3": 9}   # v3 adds 2 corner + prep + appliance wall cabinets (pantry stands on the floor)
 
 PVC18 = "PVC board 18 mm"
 PVC6 = "PVC board 6 mm"
