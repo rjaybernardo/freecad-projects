@@ -1,4 +1,4 @@
-# Bedroom layout: the v4 cabinet + the v2 bed wall unit in one room, and a dimensioned floor plan.
+# Bedroom layout: the v5 cabinet + the v3 bed wall unit (Filipino heights; v4 + v2 are in git history) in one room, and a dimensioned floor plan.
 # Both models already share one coordinate system (X = width, Y = 0 at the cabinet door face,
 # cabinet wall at +Y, bed wall at -Y), so they are simply linked into one document.
 # Links (App::Link) keep each model's colours and follow it when you re-run its build script.
@@ -6,14 +6,14 @@
 # Run inside FreeCAD (Macro > Macros... or the Python console):
 #   exec(open("/home/rjaybernardo/Documents/FreeCAD/Bedroom Cabinet/build_bedroom_layout.py").read())
 # or headless:  freecadcmd build_bedroom_layout.py
-# Re-run build_cabinet_v4.py / build_bed_v2.py first if you changed them.
+# Re-run build_cabinet_v5.py / build_bed_v3.py first if you changed them.
 
 import os
 import FreeCAD as App
 
 OUT_DIR = "/home/rjaybernardo/Documents/FreeCAD/Bedroom Cabinet"
-CABINET = os.path.join(OUT_DIR, "Bedroom_Cabinet_Modern_v4.FCStd")
-BED = os.path.join(OUT_DIR, "Bed_Wall_Unit_v2.FCStd")
+CABINET = os.path.join(OUT_DIR, "Bedroom_Cabinet_Modern_v5.FCStd")
+BED = os.path.join(OUT_DIR, "Bed_Wall_Unit_v3.FCStd")
 DOC_NAME = "Bedroom_Layout"
 PLAN = os.path.join(OUT_DIR, "bedroom_layout_plan.png")
 
@@ -44,11 +44,11 @@ def link(src_doc, name, parent):
     return lk
 
 
-g_cab = doc.addObject("App::DocumentObjectGroup", "Cabinet_v4")
+g_cab = doc.addObject("App::DocumentObjectGroup", "Cabinet_v5")
 for name in ("Wardrobe_Left_Hanging", "Tower_Right_Shelves", "Centre_TV_Makeup", "Top_Boxes", "Scribe_Strips"):
     link(cab, name, g_cab)
-g_bed = doc.addObject("App::DocumentObjectGroup", "Bed_Wall_Unit_v2")
-bed_root = bed.getObject("Bed_Wall_Unit_v2")
+g_bed = doc.addObject("App::DocumentObjectGroup", "Bed_Wall_Unit_v3")
+bed_root = bed.getObject("Bed_Wall_Unit_v3")
 for o in bed_root.Group:
     if o.Name != "Reference_Room":
         link(bed, o.Name, g_bed)
@@ -117,7 +117,7 @@ cab_bb = App.BoundBox()
 for g in ("Wardrobe_Left_Hanging", "Tower_Right_Shelves", "Centre_TV_Makeup", "Top_Boxes"):
     rect(ax, group_bb(cab, g), fc="#e9e3d6", ec="#555", lw=0.8)
     cab_bb.add(group_bb(cab, g))
-ax.text((x_l + x_r) / 2, cab_bb.YMax - 230, "CABINET v4\nwardrobe | TV + makeup table | shelves",
+ax.text((x_l + x_r) / 2, cab_bb.YMax - 230, "CABINET v5\nwardrobe | TV + makeup table | shelves",
         ha="center", va="center", fontsize=8)
 for grp, hinge_left in (("Wardrobe_Left_Hanging", True), ("Tower_Right_Shelves", False)):
     door = next(o for o in cab.getObject(grp).Group if o.Name.startswith("Door"))
