@@ -6,6 +6,13 @@
 # v3 also: the 400 drawer base beside the stove is a ventilated LPG TANK CABINET (same width, no positions move);
 # the wall cabinet over the washer is the SOAP CABINET (one door, tall-bottle shelf, detergent caddy); wall cabinets
 # continue along the back wall from the left-run corner, so the top cabinet line has no gaps.
+# v3 is HANDLELESS, Gola style: aluminium handle profiles built into the base cabinets + a 45 deg bevel on the
+# BACK of every pull edge (no handles):
+#   base cabinets + island: L profile under the counter (top front), C profile between drawers; the carcass sides
+#   and front stretcher are notched for the profiles; fronts stop below the profile, bevel on the top edge
+#   wall-cabinet doors: no profile - the door drops WALL_DOOR_DROP below the cabinet, bevel on the bottom edge
+#   appliance garage: SHADOW_GAP grooves above the counter and under the cabinet above; pantry: bevel on the
+#   vertical edge away from the hinges; toe-kick drawers stay push-to-open.
 # (v2 header follows.)
 # Kitchen v2: left-wall run  REF -> SINK -> STOVE -> WASHER  +  island with a top-mount induction cooktop.
 # Room: 148" W x 142" L x 92" ceiling, open front (no wall), back / left / right walls.
@@ -36,6 +43,7 @@
 #                wrapped to match the backsplash (no enclosure).
 
 import csv
+import math
 import os
 import FreeCAD as App
 import Part
@@ -61,6 +69,12 @@ INDUCTION_BODY = 60                        # depth of the unit below the counter
 BOARD = 18             # 3/4" PVC board
 T = BOARD              # finished panel thickness (no laminate)
 GAP = 3                # reveal around doors / fronts
+BEVEL = 10             # 45 deg bevel on the back of the pull edge (leaves an 8 mm lip on 18 mm PVC)
+L_PROF = (56, 27)      # Gola-style L profile (top of base cabinets, under the counter): height, depth - measure yours
+C_PROF = (73, 27)      # Gola-style C profile (between drawers): height, depth
+PROF_WALL = 2          # aluminium wall thickness (model only)
+WALL_DOOR_DROP = 20    # wall-cabinet doors hang this far below the cabinet bottom: finger pull from below
+SHADOW_GAP = 25        # finger groove above base fronts / below the appliance-garage doors
 
 PLINTH_H = 100         # toe kick
 PLINTH_SETBACK = 60
@@ -161,6 +175,7 @@ C_FLOOR = (0.60, 0.50, 0.40)
 C_ISLAND = (0.25, 0.35, 0.45)
 C_DRAWER = (0.85, 0.78, 0.65)
 C_LED = (1.0, 0.85, 0.30)
+C_ALU = (0.70, 0.71, 0.73)
 C_24V = (0.10, 0.30, 0.90)
 C_230V = (0.85, 0.10, 0.10)
 
@@ -169,6 +184,8 @@ if App.listDocuments().get(DOC_NAME):
     App.closeDocument(DOC_NAME)
 doc = App.newDocument(DOC_NAME)
 cut_list = []   # (module, part, length, width, thickness)
+PROFILE_LEN = {"L": 0, "C": 0}   # handle-profile length per type (mm)
+PROFILE_PIECES = [0]             # number of profile pieces (one per cabinet front)
 hardware = []   # (module, item, size, qty)
 _colours = {}
 _hidden = []    # Part::Cut bases / tools, hidden in the GUI
@@ -253,6 +270,14 @@ def set_front(o, sgn, hinge_low, back=False):
         setattr(o, prop, val)
 
 
+def copy_front(src, dst):
+    """Give dst the same hinge attributes as src (both turn about src's hinge edge in Kitchen_OpenClose)."""
+    for prop in ("Woodworking_Type", "Woodworking_Open", "Woodworking_OpenObj", "Woodworking_OpenEdge",
+                 "Woodworking_OpenAxis", "Woodworking_OpenAngleStep"):
+        dst.addProperty(src.getTypeIdOfProperty(prop), prop, "Woodworking")
+        setattr(dst, prop, getattr(src, prop))
+
+
 def ry(u, du):
     """Room Y of a span [u, u + du] along the wall run (u = 0 at the open front, REF end)."""
     return u if START_AT_OPEN_END else ROOM_L - u - du
@@ -272,6 +297,7 @@ class Module:
         self.g, self.u, self.w = group(name, parent), u, w
         self.x0, self.sgn, self.on_run, self.back = x0, sgn, on_run, back
         self.objs = []
+        self.repl = {}      # box name -> latest Part::Cut that notches it
 
     def place(self, a, d, da, dd):
         """Global (x, y, dx, dy) of a local box."""
@@ -334,11 +360,73 @@ class Module:
             gbox(self.g, f"Kick_Runner_{side}", rx, ry_, bz + 10, rdx, rdy, 35, C_METAL, cut=False)
         hardware.append((self.g.Label, f"Toe-kick drawer runner pair {KICK_D} mm, low profile, push-to-open", "-", 1))
 
-    def doors(self, n, z, h, front_d, label="Door", colour=C_DOOR):
+    def profile(self, kind, z_top, d_front):
+        """Gola-style aluminium handle profile across the module front, its top at z_top, behind the front
+        plane d_front. kind 'L' (top, open to the counter above) or 'C' (between drawers). Every carcass
+        panel it crosses (sides, front stretcher) is notched to take it."""
+        ph, pd = L_PROF if kind == "L" else C_PROF
+        x, y, dx, dy = self.place(0, d_front - pd, self.w, pd)
+        env = Part.makeBox(dx, dy, ph, App.Vector(x, y, z_top - ph))
+        hx, hy, hdx, hdy = self.place(0, d_front - pd + PROF_WALL, self.w, pd)   # channel open to the front
+        top_open = 1 if kind == "L" else -PROF_WALL
+        hollow = Part.makeBox(hdx, hdy, ph - PROF_WALL + top_open, App.Vector(hx, hy, z_top - ph + PROF_WALL))
+        gbox(self.g, f"Profile_{kind}_{z_top:.0f}", 0, 0, 0, 0, 0, 0, C_ALU, cut=False, shape=env.cut(hollow))
+        PROFILE_LEN[kind] += self.w
+        PROFILE_PIECES[0] += 1
+        for o in list(self.objs):
+            if o.TypeId != "Part::Box" or o.Name.startswith(("Door", "DrawerFront", "Kick")):
+                continue
+            o.recompute()
+            if o.Shape.common(env).Volume < 1:
+                continue
+            cur = doc.getObject(self.repl.get(o.Name, o.Name))
+            if cur.TypeId == "Part::Cut":
+                cur.recompute()
+            c = cut_panel(self.g, cur, env, f"notched for {kind} profile")
+            self.repl[o.Name] = c.Name
+            if o.Name in _cut_idx:
+                cut_list[_cut_idx[o.Name]][5] = "notched for handle profile(s) - see model"
+
+    def bevel(self, o, pull):
+        """Handleless finger pull: 45 deg chamfer on the BACK of the pull edge of a front, as a Part::Cut
+        (Base = the Part::Box front, Tool = the hidden wedge). pull: 'top' / 'bottom' / 'lo' / 'hi' (along the run).
+        Returns [cut, box, tool]; a hinged front's wedge gets the box's hinge attributes so they turn together."""
+        o.recompute()
+        b = o.Shape.BoundBox
+        if self.back:
+            bax, bval, rax = "y", b.YMax, "x"            # back face toward the back wall (+Y)
+        else:
+            bax, bval, rax = "x", (b.XMin if self.sgn > 0 else b.XMax), "y"
+        pax, pval = {"top": ("z", b.ZMax), "bottom": ("z", b.ZMin)}.get(pull) or \
+            (rax, getattr(b, f"{rax.upper()}{'Min' if pull == 'lo' else 'Max'}"))
+        edge = next(e for e in o.Shape.Edges
+                    if abs(getattr(e.CenterOfMass, bax) - bval) < 1e-6 and abs(getattr(e.CenterOfMass, pax) - pval) < 1e-6)
+        tool = doc.addObject("Part::Feature", o.Name + "_Bevel")
+        tool.Shape = o.Shape.cut(o.Shape.makeChamfer(BEVEL, [edge]))
+        c = doc.addObject("Part::Cut", o.Name + "_Pull")
+        c.Base, c.Tool = o, tool
+        c.Label = o.Label + " (45deg pull)"
+        side = {"top": "top", "bottom": "bottom", "lo": "side", "hi": "side"}[pull]
+        if o.Name in _cut_idx:
+            cut_list[_cut_idx[o.Name]][5] = f"45deg bevel {side} edge (back), {BEVEL} mm"
+        self.g.removeObject(o)
+        self.g.addObject(c)
+        self.g.addObject(tool)
+        _hidden.extend([o.Name, tool.Name])
+        _colours[c.Name] = _colours.get(o.Name, C_DOOR)
+        if hasattr(o, "Woodworking_Type"):
+            copy_front(o, tool)
+        return [c, o, tool]
+
+    def doors(self, n, z, h, front_d, label="Door", colour=C_DOOR, pull=None, gap_top=0, gap_bottom=0):
+        """n doors over the module width; pull = bevel edge (None = plain); gap_top / gap_bottom = shadow groove."""
         dw = self.w / n
         for i in range(n):
-            o = self.box(f"{label}_{i + 1}", i * dw + GAP / 2, front_d, z + GAP / 2, dw - GAP, T, h - GAP, colour)
+            o = self.box(f"{label}_{i + 1}", i * dw + GAP / 2, front_d, z + GAP / 2 + gap_bottom, dw - GAP, T,
+                         h - GAP - gap_top - gap_bottom, colour)
             set_front(o, self.sgn, i == 0, self.back)    # 2 doors: hinges on the outer sides; 1 door: hinge on the low-Y side
+            if pull:
+                self.bevel(o, pull)
 
     def shelf(self, name, z, depth, setback=20):
         self.box(name, T, T, z, self.w - 2 * T, depth - 2 * T - setback, T)
@@ -373,16 +461,21 @@ def base_cabinet(parent, name, u, w, kind, colour=C_DOOR, **frame):
     def tiers(spec, z0):
         fz = z0
         for i, (fh, bh, item) in enumerate(spec):
-            fr = m.box(f"DrawerFront_{i + 1}", GAP / 2, cd, fz + GAP / 2, w - GAP, T, fh - GAP, colour)
+            kind_p = ("L" if i == len(spec) - 1 else "C") if bh else None     # profile above an opening front
+            ph = (L_PROF if kind_p == "L" else C_PROF)[0] if bh else 0
+            fr = m.box(f"DrawerFront_{i + 1}", GAP / 2, cd, fz + GAP / 2, w - GAP, T, fh - GAP - ph, colour)
             if bh:
+                m.profile(kind_p, fz + fh, cd)
+                fr = m.bevel(fr, "top")                 # handleless: fingers in the profile above the front
                 bk = m.basket(f"SS_Basket_{i + 1}", T + RUNNER_CLR, cd - RACK_D, fz + 30, rack_w, RACK_D,
-                              min(bh, fh - 60), f"{item} ({size})", runners=True)
-                m.drawer(f"Drawer_{i + 1}", [fr, bk], RACK_D * 0.75)
+                              min(bh, fh - 60 - ph), f"{item} ({size})", runners=True)
+                m.drawer(f"Drawer_{i + 1}", fr + [bk], RACK_D * 0.75)
             fz += fh
 
     if kind == "sink":
         m.carcass(PLINTH_H, h, cd, back=False, stretchers=True)   # open back for plumbing
-        m.doors(2, PLINTH_H, h, cd, colour=colour)
+        m.profile("L", BASE_TOP, cd)
+        m.doors(2, PLINTH_H, h, cd, colour=colour, pull="top", gap_top=L_PROF[0])
         tray = m.basket("SS_UnderSink_Tray", T + RUNNER_CLR, cd - SINK_RACK_D, PLINTH_H + T + 10, rack_w,
                         SINK_RACK_D, 120, "Under-sink pull-out tray (door-mounted cabinet)", runners=True)
         m.drawer("Drawer_UnderSink", [tray], SINK_RACK_D * 0.75)
@@ -406,7 +499,8 @@ def base_cabinet(parent, name, u, w, kind, colour=C_DOOR, **frame):
         m.box("Side_B", w - T, 0, 0, T, cd, BASE_TOP)
         m.box("Stretcher_Front", T, cd - 100, BASE_TOP - T, inner, 100, T)
         m.box("Stretcher_Back", T, 0, BASE_TOP - T, inner, 100, T)
-        m.doors(1, KICK_FLOOR, BASE_TOP - KICK_FLOOR, cd, colour=colour)
+        m.profile("L", BASE_TOP, cd)
+        m.doors(1, KICK_FLOOR, BASE_TOP - KICK_FLOOR, cd, colour=colour, pull="top", gap_top=L_PROF[0])
         x, y, _, _ = m.place(w / 2, cd / 2, 0, 0)
         gbox(m.g, "LPG_Tank_11kg", 0, 0, 0, 0, 0, 0, C_STEEL, cut=False,
              shape=Part.makeCylinder(dia / 2, th, App.Vector(x, y, 0)))
@@ -419,11 +513,13 @@ def base_cabinet(parent, name, u, w, kind, colour=C_DOOR, **frame):
         m.carcass(PLINTH_H, h, cd, stretchers=True)
         m.shelf("Shelf_1", PLINTH_H + T + (h - 3 * T) / 2, cd)
         hardware.append((m.g.Label, "Shelf pins (5 mm, 32 mm system)", "-", 4))
-        m.doors(2, PLINTH_H, h, cd, colour=colour)
+        m.profile("L", BASE_TOP, cd)
+        m.doors(2, PLINTH_H, h, cd, colour=colour, pull="top", gap_top=L_PROF[0])
     return m
 
 
-def wall_cabinet(parent, name, u, w, z0, z1, depth=UPPER_D, ndoors=2, pipe=None, shelf=True, shelves=None, **frame):
+def wall_cabinet(parent, name, u, w, z0, z1, depth=UPPER_D, ndoors=2, pipe=None, shelf=True, shelves=None,
+                 drop=WALL_DOOR_DROP, **frame):
     """Wall cabinet on the masonry. pipe=(u0, u1): a corner pipe runs through its back corner -> the side,
     back, top, bottom and shelf are notched around it and a small L-shaped chase (2 panels) boxes it in."""
     m = Module(parent, name, u, w, **frame)
@@ -436,7 +532,7 @@ def wall_cabinet(parent, name, u, w, z0, z1, depth=UPPER_D, ndoors=2, pipe=None,
             m.shelf(f"Shelf_{k + 1}", z0 + T + (k + 1) * (clear - n * T) / (n + 1) + k * T, cd)
         if n:
             hardware.append((m.g.Label, "Shelf pins (5 mm, 32 mm system)", "-", 4 * n))
-    m.doors(ndoors, z0, z1 - z0, cd)
+    m.doors(ndoors, z0 - drop, z1 - z0 + drop, cd, pull="bottom")  # handleless: door drops below, pulled from below
     if pipe:
         cu0, cu1 = max(pipe[0] - 10, u), min(pipe[1] + 10, u + w)   # chase interior along the run
         cdp = PIPE_OD + 10                                          # chase interior depth from the wall
@@ -599,12 +695,13 @@ gh = UPPER_Z - COUNTER_Z                            # 450 clear: counter -> wall
 gd = GARAGE_D - T                                   # sides stop behind the doors
 mg.box("Side_A", 0, 0, COUNTER_Z, T, gd, gh)
 mg.box("Side_B", APPL_W - T, 0, COUNTER_Z, T, gd, gh)
-mg.doors(2, COUNTER_Z, gh, gd)
+mg.doors(2, COUNTER_Z, gh, gd, pull="bottom", gap_bottom=SHADOW_GAP, gap_top=SHADOW_GAP)  # grooves: counter + cabinet above
 hardware.append((mg.g.Label, "Appliance-garage outlets: double socket x2 on the back wall inside the garage "
                  "(coffee maker, microwave, mixer) - electrician, own 20 A circuit for the microwave", "-", 2))
 hardware.append((mg.g.Label, "Garage doors: open the doors while the microwave / coffee maker runs (heat + steam); "
                  "max microwave ~ 500 W x 300 H x 370 D", "-", 1))
-wall_cabinet(gA, f"Upper_Appliance_{APPL_W}", xb_app, APPL_W, UPPER_Z, UPPER_TOP, depth=GARAGE_D, back=True)
+wall_cabinet(gA, f"Upper_Appliance_{APPL_W}", xb_app, APPL_W, UPPER_Z, UPPER_TOP, depth=GARAGE_D, back=True,
+             drop=0)                                # pulled from the groove above the garage doors
 
 # --- pantry: floor to 90", 610 deep, adjustable shelves, 2 stacked doors hinged on the wall side ---
 gPa = group("Pantry", gB)
@@ -621,6 +718,7 @@ hardware.append((mp.g.Label, "Shelf pins (5 mm, 32 mm system)", "-", 4 * n_sh))
 for nm, z0, z1 in (("Door_Lower", PLINTH_H, PANTRY_SPLIT), ("Door_Upper", PANTRY_SPLIT, UPPER_TOP)):
     o = mp.box(nm, GAP / 2, cdp_, z0 + GAP / 2, PANTRY_W - GAP, T, z1 - z0 - GAP, C_DOOR)
     set_front(o, 1, False, back=True)              # hinge on the right-wall side: opens toward the counter
+    mp.bevel(o, "lo")                               # pull edge on the counter side (beside the recessed garage)
 hardware.append((mp.g.Label, "Door-mounted pantry racks (optional, lower door): check shelf setback", "-", 1))
 
 # --- wall cabinet over the prep counter, end panel, fillers, crown ---
@@ -802,6 +900,14 @@ hardware.append(("Lighting_LED", "24 V cable 2 x 0.75 mm2 (+20% spare)", f"{cabl
 hardware.append(("Lighting_LED", "230 V feed to drivers / switch (electrician, in conduit)",
                  f"{cable_len['230V'] * 1.2 / 1000:.1f} m", 1))
 hardware.append(("Lighting_LED", "Cable grommets 10 mm (cabinet top / bottom / carcass holes)", "-", 8))
+
+# ================= handle profiles (hardware list) =================
+for kind, (ph, pd) in (("L", L_PROF), ("C", C_PROF)):
+    m_ = PROFILE_LEN[kind] / 1000
+    where = "top of base cabinets, under the counter" if kind == "L" else "between drawers"
+    hardware.append(("Handle_Profiles", f"Gola-style {kind} handle profile {ph} x {pd}, anodised aluminium ({where}); "
+                     f"sold in 3 m bars: {math.ceil(m_ * 1.1 / 3)} bars", f"{m_:.2f} m", 1))
+hardware.append(("Handle_Profiles", "Profile end caps + fixing clips", "-", 2 * PROFILE_PIECES[0]))
 
 # ================= ROOM (reference, open front) =================
 gR = group("Room", root)

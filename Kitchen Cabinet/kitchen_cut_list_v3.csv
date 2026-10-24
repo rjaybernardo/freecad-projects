@@ -1,13 +1,13 @@
 Module,Part,Qty,Length_mm,Width_mm,Thickness_mm,Note
-Appliance_Garage_900,Door_1,1,447.0,447,18,
-Appliance_Garage_900,Door_2,1,447.0,447,18,
+Appliance_Garage_900,Door_1,1,447.0,397,18,"45deg bevel bottom edge (back), 10 mm"
+Appliance_Garage_900,Door_2,1,447.0,397,18,"45deg bevel bottom edge (back), 10 mm"
 Appliance_Garage_900,Side_A,1,450,382,18,
 Appliance_Garage_900,Side_B,1,450,382,18,
 Back_Appliance_Racks_900,Back,1,900,712,18,
 Back_Appliance_Racks_900,Bottom,1,864,574,18,
-Back_Appliance_Racks_900,DrawerFront_1,1,897,281.8,18,
-Back_Appliance_Racks_900,DrawerFront_2,1,897,246.2,18,
-Back_Appliance_Racks_900,DrawerFront_3,1,897,175.0,18,
+Back_Appliance_Racks_900,DrawerFront_1,1,897,208.8,18,"45deg bevel top edge (back), 10 mm"
+Back_Appliance_Racks_900,DrawerFront_2,1,897,173.2,18,"45deg bevel top edge (back), 10 mm"
+Back_Appliance_Racks_900,DrawerFront_3,1,897,119.0,18,"45deg bevel top edge (back), 10 mm"
 Back_Appliance_Racks_900,Kick_Back,1,803.0,73,18,
 Back_Appliance_Racks_900,Kick_Bottom_6mm_PVC,1,839.0,400,6,
 Back_Appliance_Racks_900,Kick_DrawerFront,1,897,87,18,
@@ -17,17 +17,17 @@ Back_Appliance_Racks_900,Kick_Side_B,1,400,73,18,
 Back_Appliance_Racks_900,Plinth_Back,1,900,100,18,
 Back_Appliance_Racks_900,Plinth_Side_A,1,454,100,18,
 Back_Appliance_Racks_900,Plinth_Side_B,1,454,100,18,
-Back_Appliance_Racks_900,Side_A,1,712,574,18,
-Back_Appliance_Racks_900,Side_B,1,712,574,18,
+Back_Appliance_Racks_900,Side_A,1,712,574,18,notched for handle profile(s) - see model
+Back_Appliance_Racks_900,Side_B,1,712,574,18,notched for handle profile(s) - see model
 Back_Appliance_Racks_900,Stretcher_Back,1,864,100,18,
-Back_Appliance_Racks_900,Stretcher_Front,1,864,100,18,
+Back_Appliance_Racks_900,Stretcher_Front,1,864,100,18,notched for handle profile(s) - see model
 Back_Base,"Countertop (solid surface / granite, back wall, no cut-outs)",1,1518,635,38,
 Back_Base,End_Panel_Back_Base,1,812,610,18,
 Back_Prep_Racks_600,Back,1,712,600,18,
 Back_Prep_Racks_600,Bottom,1,574,564,18,
-Back_Prep_Racks_600,DrawerFront_1,1,597,281.8,18,
-Back_Prep_Racks_600,DrawerFront_2,1,597,246.2,18,
-Back_Prep_Racks_600,DrawerFront_3,1,597,175.0,18,
+Back_Prep_Racks_600,DrawerFront_1,1,597,208.8,18,"45deg bevel top edge (back), 10 mm"
+Back_Prep_Racks_600,DrawerFront_2,1,597,173.2,18,"45deg bevel top edge (back), 10 mm"
+Back_Prep_Racks_600,DrawerFront_3,1,597,119.0,18,"45deg bevel top edge (back), 10 mm"
 Back_Prep_Racks_600,Kick_Back,1,503.0,73,18,
 Back_Prep_Racks_600,Kick_Bottom_6mm_PVC,1,539.0,400,6,
 Back_Prep_Racks_600,Kick_DrawerFront,1,597,87,18,
@@ -37,19 +37,19 @@ Back_Prep_Racks_600,Kick_Side_B,1,400,73,18,
 Back_Prep_Racks_600,Plinth_Back,1,600,100,18,
 Back_Prep_Racks_600,Plinth_Side_A,1,454,100,18,
 Back_Prep_Racks_600,Plinth_Side_B,1,454,100,18,
-Back_Prep_Racks_600,Side_A,1,712,574,18,
-Back_Prep_Racks_600,Side_B,1,712,574,18,
+Back_Prep_Racks_600,Side_A,1,712,574,18,notched for handle profile(s) - see model
+Back_Prep_Racks_600,Side_B,1,712,574,18,notched for handle profile(s) - see model
 Back_Prep_Racks_600,Stretcher_Back,1,564,100,18,
-Back_Prep_Racks_600,Stretcher_Front,1,564,100,18,
+Back_Prep_Racks_600,Stretcher_Front,1,564,100,18,notched for handle profile(s) - see model
 Back_Wall_Cabinets,Filler_Back_Corner,1,986,30,18,
-Base_Gas_Tank_400,Door_1,1,799,397.0,18,
-Base_Gas_Tank_400,Side_A,1,812,592,18,
-Base_Gas_Tank_400,Side_B,1,812,592,18,
+Base_Gas_Tank_400,Door_1,1,743,397.0,18,"45deg bevel top edge (back), 10 mm"
+Base_Gas_Tank_400,Side_A,1,812,592,18,notched for handle profile(s) - see model
+Base_Gas_Tank_400,Side_B,1,812,592,18,notched for handle profile(s) - see model
 Base_Gas_Tank_400,Stretcher_Back,1,364,100,18,
-Base_Gas_Tank_400,Stretcher_Front,1,364,100,18,
+Base_Gas_Tank_400,Stretcher_Front,1,364,100,18,notched for handle profile(s) - see model
 Base_Sink_900,Bottom,1,864,592,18,
-Base_Sink_900,Door_1,1,709,447.0,18,
-Base_Sink_900,Door_2,1,709,447.0,18,
+Base_Sink_900,Door_1,1,653,447.0,18,"45deg bevel top edge (back), 10 mm"
+Base_Sink_900,Door_2,1,653,447.0,18,"45deg bevel top edge (back), 10 mm"
 Base_Sink_900,Kick_Back,1,803.0,73,18,
 Base_Sink_900,Kick_Bottom_6mm_PVC,1,839.0,400,6,
 Base_Sink_900,Kick_DrawerFront,1,897,87,18,
@@ -59,19 +59,19 @@ Base_Sink_900,Kick_Side_B,1,400,73,18,
 Base_Sink_900,Plinth_Back,1,900,100,18,
 Base_Sink_900,Plinth_Side_A,1,454,100,18,
 Base_Sink_900,Plinth_Side_B,1,454,100,18,
-Base_Sink_900,Side_A,1,712,592,18,
-Base_Sink_900,Side_B,1,712,592,18,
+Base_Sink_900,Side_A,1,712,592,18,notched for handle profile(s) - see model
+Base_Sink_900,Side_B,1,712,592,18,notched for handle profile(s) - see model
 Base_Sink_900,Stretcher_Back,1,864,100,18,
-Base_Sink_900,Stretcher_Front,1,864,100,18,
+Base_Sink_900,Stretcher_Front,1,864,100,18,notched for handle profile(s) - see model
 Island,"Countertop (solid surface / granite, cooktop cut-out 700x400)",1,1726,953,38,
 Island,Island_Back_Panel (seating side),1,1650,812,18,
 Island,Island_End_Panel_A,1,812,628,18,
 Island,Island_End_Panel_B,1,812,628,18,
 Island_1_Racks_450,Back,1,712,450,18,
 Island_1_Racks_450,Bottom,1,574,414,18,
-Island_1_Racks_450,DrawerFront_1,1,447,281.8,18,
-Island_1_Racks_450,DrawerFront_2,1,447,246.2,18,
-Island_1_Racks_450,DrawerFront_3,1,447,175.0,18,
+Island_1_Racks_450,DrawerFront_1,1,447,208.8,18,"45deg bevel top edge (back), 10 mm"
+Island_1_Racks_450,DrawerFront_2,1,447,173.2,18,"45deg bevel top edge (back), 10 mm"
+Island_1_Racks_450,DrawerFront_3,1,447,119.0,18,"45deg bevel top edge (back), 10 mm"
 Island_1_Racks_450,Kick_Back,1,353.0,73,18,
 Island_1_Racks_450,Kick_Bottom_6mm_PVC,1,400,389.0,6,
 Island_1_Racks_450,Kick_DrawerFront,1,447,87,18,
@@ -81,14 +81,14 @@ Island_1_Racks_450,Kick_Side_B,1,400,73,18,
 Island_1_Racks_450,Plinth_Back,1,450,100,18,
 Island_1_Racks_450,Plinth_Side_A,1,454,100,18,
 Island_1_Racks_450,Plinth_Side_B,1,454,100,18,
-Island_1_Racks_450,Side_A,1,712,574,18,
-Island_1_Racks_450,Side_B,1,712,574,18,
+Island_1_Racks_450,Side_A,1,712,574,18,notched for handle profile(s) - see model
+Island_1_Racks_450,Side_B,1,712,574,18,notched for handle profile(s) - see model
 Island_1_Racks_450,Stretcher_Back,1,414,100,18,
-Island_1_Racks_450,Stretcher_Front,1,414,100,18,
+Island_1_Racks_450,Stretcher_Front,1,414,100,18,notched for handle profile(s) - see model
 Island_2_Induction_750,Back,1,750,712,18,
 Island_2_Induction_750,Bottom,1,714,574,18,
-Island_2_Induction_750,DrawerFront_1,1,747,293.0,18,
-Island_2_Induction_750,DrawerFront_2,1,747,293.0,18,
+Island_2_Induction_750,DrawerFront_1,1,747,220.0,18,"45deg bevel top edge (back), 10 mm"
+Island_2_Induction_750,DrawerFront_2,1,747,220.0,18,"45deg bevel top edge (back), 10 mm"
 Island_2_Induction_750,DrawerFront_3,1,747,117,18,
 Island_2_Induction_750,Kick_Back,1,653.0,73,18,
 Island_2_Induction_750,Kick_Bottom_6mm_PVC,1,689.0,400,6,
@@ -99,15 +99,15 @@ Island_2_Induction_750,Kick_Side_B,1,400,73,18,
 Island_2_Induction_750,Plinth_Back,1,750,100,18,
 Island_2_Induction_750,Plinth_Side_A,1,454,100,18,
 Island_2_Induction_750,Plinth_Side_B,1,454,100,18,
-Island_2_Induction_750,Side_A,1,712,574,18,
-Island_2_Induction_750,Side_B,1,712,574,18,
+Island_2_Induction_750,Side_A,1,712,574,18,notched for handle profile(s) - see model
+Island_2_Induction_750,Side_B,1,712,574,18,notched for handle profile(s) - see model
 Island_2_Induction_750,Stretcher_Back,1,714,100,18,
 Island_2_Induction_750,Stretcher_Front,1,714,100,18,
 Island_3_Racks_450,Back,1,712,450,18,
 Island_3_Racks_450,Bottom,1,574,414,18,
-Island_3_Racks_450,DrawerFront_1,1,447,281.8,18,
-Island_3_Racks_450,DrawerFront_2,1,447,246.2,18,
-Island_3_Racks_450,DrawerFront_3,1,447,175.0,18,
+Island_3_Racks_450,DrawerFront_1,1,447,208.8,18,"45deg bevel top edge (back), 10 mm"
+Island_3_Racks_450,DrawerFront_2,1,447,173.2,18,"45deg bevel top edge (back), 10 mm"
+Island_3_Racks_450,DrawerFront_3,1,447,119.0,18,"45deg bevel top edge (back), 10 mm"
 Island_3_Racks_450,Kick_Back,1,353.0,73,18,
 Island_3_Racks_450,Kick_Bottom_6mm_PVC,1,400,389.0,6,
 Island_3_Racks_450,Kick_DrawerFront,1,447,87,18,
@@ -117,14 +117,14 @@ Island_3_Racks_450,Kick_Side_B,1,400,73,18,
 Island_3_Racks_450,Plinth_Back,1,450,100,18,
 Island_3_Racks_450,Plinth_Side_A,1,454,100,18,
 Island_3_Racks_450,Plinth_Side_B,1,454,100,18,
-Island_3_Racks_450,Side_A,1,712,574,18,
-Island_3_Racks_450,Side_B,1,712,574,18,
+Island_3_Racks_450,Side_A,1,712,574,18,notched for handle profile(s) - see model
+Island_3_Racks_450,Side_B,1,712,574,18,notched for handle profile(s) - see model
 Island_3_Racks_450,Stretcher_Back,1,414,100,18,
-Island_3_Racks_450,Stretcher_Front,1,414,100,18,
+Island_3_Racks_450,Stretcher_Front,1,414,100,18,notched for handle profile(s) - see model
 Over_Ref_Cabinet,Back,1,950,457,18,notched for pipe - see model
 Over_Ref_Cabinet,Bottom,1,914,748.0,18,notched for pipe - see model
-Over_Ref_Cabinet,Door_1,1,472.0,454,18,
-Over_Ref_Cabinet,Door_2,1,472.0,454,18,
+Over_Ref_Cabinet,Door_1,1,474,472.0,18,"45deg bevel bottom edge (back), 10 mm"
+Over_Ref_Cabinet,Door_2,1,474,472.0,18,"45deg bevel bottom edge (back), 10 mm"
 Over_Ref_Cabinet,Pipe_Chase_Front,1,457,122,18,
 Over_Ref_Cabinet,Pipe_Chase_Side,1,457,124,18,
 Over_Ref_Cabinet,Shelf_1,1,914,710.0,18,notched for pipe - see model
@@ -135,8 +135,8 @@ Pantry,Filler_Pantry,1,2186,47.2,18,
 Pantry,Filler_Pantry_Plinth,1,100,47.2,18,
 Pantry_600,Back,1,2186,600,18,
 Pantry_600,Bottom,1,574,564,18,
-Pantry_600,Door_Lower,1,1197,597,18,
-Pantry_600,Door_Upper,1,983,597,18,
+Pantry_600,Door_Lower,1,1197,597,18,"45deg bevel side edge (back), 10 mm"
+Pantry_600,Door_Upper,1,983,597,18,"45deg bevel side edge (back), 10 mm"
 Pantry_600,Kick_Back,1,503.0,73,18,
 Pantry_600,Kick_Bottom_6mm_PVC,1,539.0,400,6,
 Pantry_600,Kick_DrawerFront,1,597,87,18,
@@ -167,7 +167,7 @@ Scribe_Strips,Crown_Washer,1,652.8,50.8,18,
 Sink_Counter,"Countertop (solid surface / granite, sink cut-out 770x420)",1,1300,635,38,
 Soap_Cabinet_Over_Washer,Back,1,986,652.8,18,notched for pipe - see model
 Soap_Cabinet_Over_Washer,Bottom,1,616.8,294,18,notched for pipe - see model
-Soap_Cabinet_Over_Washer,Door_1,1,983,649.8,18,
+Soap_Cabinet_Over_Washer,Door_1,1,1003,649.8,18,"45deg bevel bottom edge (back), 10 mm"
 Soap_Cabinet_Over_Washer,Pipe_Chase_Front,1,986,142.0,18,
 Soap_Cabinet_Over_Washer,Pipe_Chase_Side,1,986,124,18,
 Soap_Cabinet_Over_Washer,Shelf_1,1,616.8,256,18,notched for pipe - see model
@@ -176,7 +176,7 @@ Soap_Cabinet_Over_Washer,Side_B,1,986,294,18,notched for pipe - see model
 Soap_Cabinet_Over_Washer,Top,1,616.8,294,18,notched for pipe - see model
 Upper_400,Back,1,986,400,18,
 Upper_400,Bottom,1,364,294,18,
-Upper_400,Door_1,1,983,397.0,18,
+Upper_400,Door_1,1,1003,397.0,18,"45deg bevel bottom edge (back), 10 mm"
 Upper_400,Shelf_1,1,364,256,18,
 Upper_400,Shelf_2,1,364,256,18,
 Upper_400,Side_A,1,986,294,18,
@@ -184,8 +184,8 @@ Upper_400,Side_B,1,986,294,18,
 Upper_400,Top,1,364,294,18,
 Upper_Appliance_900,Back,1,986,900,18,
 Upper_Appliance_900,Bottom,1,864,364,18,
-Upper_Appliance_900,Door_1,1,983,447.0,18,
-Upper_Appliance_900,Door_2,1,983,447.0,18,
+Upper_Appliance_900,Door_1,1,983,447.0,18,"45deg bevel bottom edge (back), 10 mm"
+Upper_Appliance_900,Door_2,1,983,447.0,18,"45deg bevel bottom edge (back), 10 mm"
 Upper_Appliance_900,Shelf_1,1,864,326,18,
 Upper_Appliance_900,Shelf_2,1,864,326,18,
 Upper_Appliance_900,Side_A,1,986,364,18,
@@ -193,8 +193,8 @@ Upper_Appliance_900,Side_B,1,986,364,18,
 Upper_Appliance_900,Top,1,864,364,18,
 Upper_Back_Corner_1_626,Back,1,986,626.0,18,
 Upper_Back_Corner_1_626,Bottom,1,590.0,294,18,
-Upper_Back_Corner_1_626,Door_1,1,983,310.0,18,
-Upper_Back_Corner_1_626,Door_2,1,983,310.0,18,
+Upper_Back_Corner_1_626,Door_1,1,1003,310.0,18,"45deg bevel bottom edge (back), 10 mm"
+Upper_Back_Corner_1_626,Door_2,1,1003,310.0,18,"45deg bevel bottom edge (back), 10 mm"
 Upper_Back_Corner_1_626,Shelf_1,1,590.0,256,18,
 Upper_Back_Corner_1_626,Shelf_2,1,590.0,256,18,
 Upper_Back_Corner_1_626,Side_A,1,986,294,18,
@@ -202,8 +202,8 @@ Upper_Back_Corner_1_626,Side_B,1,986,294,18,
 Upper_Back_Corner_1_626,Top,1,590.0,294,18,
 Upper_Back_Corner_2_626,Back,1,986,626.0,18,
 Upper_Back_Corner_2_626,Bottom,1,590.0,294,18,
-Upper_Back_Corner_2_626,Door_1,1,983,310.0,18,
-Upper_Back_Corner_2_626,Door_2,1,983,310.0,18,
+Upper_Back_Corner_2_626,Door_1,1,1003,310.0,18,"45deg bevel bottom edge (back), 10 mm"
+Upper_Back_Corner_2_626,Door_2,1,1003,310.0,18,"45deg bevel bottom edge (back), 10 mm"
 Upper_Back_Corner_2_626,Shelf_1,1,590.0,256,18,
 Upper_Back_Corner_2_626,Shelf_2,1,590.0,256,18,
 Upper_Back_Corner_2_626,Side_A,1,986,294,18,
@@ -211,7 +211,7 @@ Upper_Back_Corner_2_626,Side_B,1,986,294,18,
 Upper_Back_Corner_2_626,Top,1,590.0,294,18,
 Upper_Hood_620,Back,1,736,620,18,
 Upper_Hood_620,Bottom,1,584,294,18,hood cut-out - see model
-Upper_Hood_620,Door_1,1,733,617.0,18,
+Upper_Hood_620,Door_1,1,753,617.0,18,"45deg bevel bottom edge (back), 10 mm"
 Upper_Hood_620,Shelf_1,1,584,224,18,
 Upper_Hood_620,Shelf_2,1,584,224,18,
 Upper_Hood_620,Side_A,1,736,294,18,
@@ -219,7 +219,7 @@ Upper_Hood_620,Side_B,1,736,294,18,
 Upper_Hood_620,Top,1,584,294,18,
 Upper_Prep_600,Back,1,986,600,18,
 Upper_Prep_600,Bottom,1,564,294,18,
-Upper_Prep_600,Door_1,1,983,597.0,18,
+Upper_Prep_600,Door_1,1,1003,597.0,18,"45deg bevel bottom edge (back), 10 mm"
 Upper_Prep_600,Shelf_1,1,564,256,18,
 Upper_Prep_600,Shelf_2,1,564,256,18,
 Upper_Prep_600,Side_A,1,986,294,18,
@@ -227,8 +227,8 @@ Upper_Prep_600,Side_B,1,986,294,18,
 Upper_Prep_600,Top,1,564,294,18,
 Upper_Sink_900,Back,1,986,900,18,
 Upper_Sink_900,Bottom,1,864,294,18,
-Upper_Sink_900,Door_1,1,983,447.0,18,
-Upper_Sink_900,Door_2,1,983,447.0,18,
+Upper_Sink_900,Door_1,1,1003,447.0,18,"45deg bevel bottom edge (back), 10 mm"
+Upper_Sink_900,Door_2,1,1003,447.0,18,"45deg bevel bottom edge (back), 10 mm"
 Upper_Sink_900,Side_A,1,986,294,18,
 Upper_Sink_900,Side_B,1,986,294,18,
 Upper_Sink_900,Top,1,864,294,18,

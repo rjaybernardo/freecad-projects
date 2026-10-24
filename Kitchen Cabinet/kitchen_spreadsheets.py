@@ -178,8 +178,11 @@ def add(doc, rev="v2"):
                       "Solid surface / granite / quartz; fabricator measures on site"))
     M.append(("Fittings", "Concealed hinge 35 mm, soft-close, clip-on", "full overlay", f"={S}.hinges", "pcs",
               "Fronts & Hinges"))
-    M.append(("Fittings", "Handles or push-to-open latches", "per door / drawer front", f"={fr.name}.J{ft}", "pcs",
-              "Toe-kick drawers excluded (push-to-open runners)"))
+    if rev == "v2":
+        M.append(("Fittings", "Handles or push-to-open latches", "per door / drawer front", f"={fr.name}.J{ft}", "pcs",
+                  "Toe-kick drawers excluded (push-to-open runners)"))
+    else:
+        M.append(("Tools", "Router bit 45 deg chamfer, 1/2\" shank (or table-saw bevel) - handleless finger pulls", "12 mm bevel on the back of each pull edge", 1, "pc", "v3 is handleless: no handles"))
     M.append(("Fasteners", "Screws for PVC board (confirmat 7x50 or 4x40 coarse-thread)", "carcass joints",
               f"=round(4 * {S}.pvc18_pieces / 10) * 10", "pcs", "~4 per panel (rule of thumb); pre-drill PVC"))
     short_screw_row = len(M)
