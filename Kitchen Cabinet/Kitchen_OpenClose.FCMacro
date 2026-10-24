@@ -3,6 +3,7 @@
 #   - doors carry the Woodworking workbench front attributes (Woodworking_Type = "Front", hinge edge,
 #     angle) -> rotated about their hinge edge
 #   - drawers are App::Part containers with a Kitchen_Slide property -> moved along X
+#     (or along Kitchen_SlideAxis = "Y": back-wall drawers in v3)
 # Run it from Macro > Macros..., or add it to a toolbar (Tools > Customize > Macros).
 
 import FreeCAD as App
@@ -20,7 +21,8 @@ def kitchen_fronts(doc, open_):
             o.Placement = turn.multiply(o.Placement)
         if hasattr(o, "Kitchen_Slide"):
             p = o.Placement
-            p.Base = p.Base + App.Vector(sign * o.Kitchen_Slide, 0, 0)
+            d = sign * o.Kitchen_Slide
+            p.Base = p.Base + (App.Vector(0, d, 0) if getattr(o, "Kitchen_SlideAxis", "X") == "Y" else App.Vector(d, 0, 0))
             o.Placement = p
     doc.recompute()
 

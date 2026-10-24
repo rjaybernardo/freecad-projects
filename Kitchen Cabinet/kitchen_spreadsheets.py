@@ -3,7 +3,7 @@
 # Totals are live spreadsheet formulas (edit a Qty in "Cut List" and the Summary / Materials follow).
 # Sheet counts come from the nesting at build time: re-run build_kitchen_v2.py after model changes.
 
-from kitchen_cutlist_core import (CTOP, KERF, PVC6, PVC18, SHEET_L, SHEET_W, TRIM, WALL_CABINETS, front_kind,
+from kitchen_cutlist_core import (CTOP, KERF, PVC6, PVC18, SHEET_L, SHEET_W, TRIM, WALL_CABINETS_REV, csv_paths, front_kind,
                                   hinges_for, hw_category, hw_qty_unit, layout, read_hardware, read_rows)
 
 GROUP = "Cut_List_Materials"
@@ -57,16 +57,19 @@ class _Sheet:
         self.s.setBackground(rng, TOTAL_BG)
 
 
-def add(doc):
-    rows = read_rows()
-    hw = read_hardware()
+def add(doc, rev="v2"):
+    cut_csv, hw_csv = csv_paths(rev)
+    rows = read_rows(cut_csv)
+    hw = read_hardware(hw_csv)
+    WALL_CABINETS = WALL_CABINETS_REV[rev]
+    name = f"Kitchen {rev}"
     layouts, sheet_of = layout(rows)
 
     grp = doc.getObject(GROUP) or doc.addObject("App::DocumentObjectGroup", GROUP)
     grp.Label = "Cut List & Materials"
 
     # ---------------- Cut List
-    cl = _Sheet(doc, grp, "CutList", "Cut List", "Cut list - Kitchen v2, 3/4\" PVC board (mm)",
+    cl = _Sheet(doc, grp, "CutList", "Cut List", f"Cut list - {name}, 3/4\" PVC board (mm)",
                 "PVC has no grain: parts may be rotated on the sheet. Notched parts: cut the full rectangle, "
                 "then the notch shown in the model. 'On sheet' = cutting diagram page.")
     HR = 4
@@ -132,7 +135,7 @@ def add(doc):
     fr.total_row(ft, 11)
 
     # ---------------- Summary
-    sm = _Sheet(doc, grp, "Summary", "Summary", "Kitchen v2 - cut list & materials summary",
+    sm = _Sheet(doc, grp, "Summary", "Summary", f"{name} - cut list & materials summary",
                 "3/4\" PVC (18 mm) for every cabinet panel; 6 mm PVC for toe-kick drawer bottoms. Blue = from the "
                 "nesting at build time.")
     sm.header(4, ["Item", "Value", "Unit", "Basis"], [230, 70, 60, 420])
@@ -215,7 +218,7 @@ def add(doc):
 
     # ---------------- Sheet Layout
     sl = _Sheet(doc, grp, "SheetLayout", "Sheet Layout",
-                "Nesting on 4x8 sheets (x, y from the sheet corner, mm) - see kitchen_v2_cutting_diagram.pdf",
+                f"Nesting on 4x8 sheets (x, y from the sheet corner, mm) - see kitchen_{rev}_cutting_diagram.pdf",
                 f"Sheet {SHEET_L} x {SHEET_W}, {TRIM} mm edge trim, {KERF} mm saw kerf, guillotine cuts.")
     sl.header(4, ["Sheet", "Material", "Ref #", "Module", "Part", "X", "Y", "Along 2440", "Along 1220", "Rotated"],
               [55, 130, 50, 170, 190, 55, 55, 75, 75, 60])

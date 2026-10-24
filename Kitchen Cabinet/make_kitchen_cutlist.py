@@ -1,10 +1,11 @@
-# Cut list + materials workbook and cutting diagrams for Kitchen v2 (3/4" PVC board).
-# Reads the CSVs written by build_kitchen_v2.py (run that in FreeCAD first), then:
+# Cut list + materials workbook and cutting diagrams for Kitchen v2 / v3 (3/4" PVC board).
+# Reads the CSVs written by build_kitchen_<rev>.py (run that in FreeCAD first), then:
 #   - nests every PVC part onto 4x8 sheets (guillotine, best-area fit, parts may rotate: PVC has no grain)
-#   - writes Kitchen_v2_CutList_Materials.xlsx and kitchen_v2_cutting_diagram.pdf
-# Run:  python3 make_kitchen_cutlist.py   (needs openpyxl + matplotlib)
+#   - writes Kitchen_<rev>_CutList_Materials.xlsx and kitchen_<rev>_cutting_diagram.pdf
+# Run:  python3 make_kitchen_cutlist.py [v2|v3]   (default v2; needs openpyxl + matplotlib)
 
 import os
+import sys
 
 from openpyxl import Workbook
 from openpyxl.comments import Comment
@@ -17,14 +18,17 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 from matplotlib.patches import Rectangle
 
-from kitchen_cutlist_core import (CTOP, KERF, OUT_DIR, PVC6, PVC18, SHEET_L, SHEET_W, TRIM, WALL_CABINETS,
+from kitchen_cutlist_core import (CTOP, KERF, OUT_DIR, PVC6, PVC18, SHEET_L, SHEET_W, TRIM, WALL_CABINETS_REV, csv_paths,
                                   hw_category, hw_qty_unit, layout, read_hardware, read_rows)
 
-XLSX = os.path.join(OUT_DIR, "Kitchen_v2_CutList_Materials.xlsx")
-PDF = os.path.join(OUT_DIR, "kitchen_v2_cutting_diagram.pdf")
+REV = sys.argv[1] if len(sys.argv) > 1 else "v2"
+WALL_CABINETS = WALL_CABINETS_REV[REV]
+XLSX = os.path.join(OUT_DIR, f"Kitchen_{REV}_CutList_Materials.xlsx")
+PDF = os.path.join(OUT_DIR, f"kitchen_{REV}_cutting_diagram.pdf")
+OPT = "" if REV == "v2" else f"_{REV}"     # cutlistoptimizer file suffix (v2 keeps its old names)
 
-rows = read_rows()
-hw = read_hardware()
+rows = read_rows(csv_paths(REV)[0])
+hw = read_hardware(csv_paths(REV)[1])
 layouts, sheet_of = layout(rows)
 
 # ---------------------------------------------------------------- workbook
@@ -63,9 +67,9 @@ def put(ws, row, col, val, font=B_FONT, fmt=None):
 # ---- Cut List
 cl = wb.active
 cl.title = "Cut List"
-cl["A1"] = "Kitchen v2 - Cut List (all sizes in mm, finished size, no edge allowance)"
+cl["A1"] = f"Kitchen {REV} - Cut List (all sizes in mm, finished size, no edge allowance)"
 cl["A1"].font = TITLE
-cl["A2"] = ("From build_kitchen_v2.py. PVC has no grain: parts may be rotated on the sheet. "
+cl["A2"] = (f"From build_kitchen_{REV}.py. PVC has no grain: parts may be rotated on the sheet. "
             "'Notched' parts: cut the full rectangle, then the notch shown in the FreeCAD model.")
 cl["A2"].font = NOTE
 HR = 4
@@ -129,7 +133,7 @@ put(fr, ft, 10, f"=SUM(J{f0}:J{fl_})", BOLD, "0.00")
 
 # ---- Sheet Layout
 sl = wb.create_sheet("Sheet Layout")
-sl["A1"] = "Nesting on 4x8 sheets (x, y from the sheet corner, mm) - see kitchen_v2_cutting_diagram.pdf"
+sl["A1"] = f"Nesting on 4x8 sheets (x, y from the sheet corner, mm) - see kitchen_{REV}_cutting_diagram.pdf"
 sl["A1"].font = TITLE
 sl["A2"] = f"Sheet {SHEET_L} x {SHEET_W}, {TRIM} mm edge trim, {KERF} mm saw kerf, guillotine cuts."
 sl["A2"].font = NOTE
@@ -148,7 +152,7 @@ for mat, sheets in layouts.items():
 
 # ---- Summary (sheet counts come from the nesting above)
 sm = wb.create_sheet("Summary", 0)
-sm["A1"] = "Kitchen v2 - Cut list & materials summary"
+sm["A1"] = f"Kitchen {REV} - Cut list & materials summary"
 sm["A1"].font = TITLE
 sm["A2"] = "Material: 3/4\" PVC board (18 mm) for every cabinet panel; 6 mm PVC for toe-kick drawer bottoms."
 sm["A2"].font = NOTE
@@ -261,23 +265,23 @@ print("wrote", XLSX, "and", PDF)
 # Columns are matched by heading. Countertops are left out (fabricator-made).
 import csv
 CLO_MAT = {PVC18: "PVC 18mm", PVC6: "PVC 6mm"}
-with open(os.path.join(OUT_DIR, "cutlistoptimizer_panels.csv"), "w", newline="") as f:
+with open(os.path.join(OUT_DIR, f"cutlistoptimizer_panels{OPT}.csv"), "w", newline="") as f:
     wr = csv.writer(f)
     wr.writerow(["Length", "Width", "Qty", "Label", "Material"])
     for ref, mod, part, q, L, W, th, mat, note in rows:
         if mat in CLO_MAT:
             wr.writerow([f"{max(L, W):g}", f"{min(L, W):g}", q, f"{ref} {mod} {part}", CLO_MAT[mat]])
-with open(os.path.join(OUT_DIR, "cutlistoptimizer_stock.csv"), "w", newline="") as f:
+with open(os.path.join(OUT_DIR, f"cutlistoptimizer_stock{OPT}.csv"), "w", newline="") as f:
     wr = csv.writer(f)
     wr.writerow(["Length", "Width", "Qty", "Label", "Material"])
     for mat, label in CLO_MAT.items():
         wr.writerow([SHEET_L, SHEET_W, len(layouts[mat]) + 3, f"4x8 {label}", label])
 # one file per board thickness (Length, Width, Qty, Label only): import with that board as the only stock
 for mat, label in CLO_MAT.items():
-    with open(os.path.join(OUT_DIR, f"cutlistoptimizer_{label.replace(' ', '_')}_boards.csv"), "w", newline="") as f:
+    with open(os.path.join(OUT_DIR, f"cutlistoptimizer_{label.replace(' ', '_')}_boards{OPT}.csv"), "w", newline="") as f:
         wr = csv.writer(f)
         wr.writerow(["Length", "Width", "Qty", "Label"])
         for ref, mod, part, q, L, W, th, m, note in rows:
             if m == mat:
                 wr.writerow([f"{max(L, W):g}", f"{min(L, W):g}", q, f"{ref} {mod} {part}"])
-print("wrote cutlistoptimizer_panels.csv, cutlistoptimizer_stock.csv and one boards CSV per thickness")
+print(f"wrote cutlistoptimizer_panels{OPT}.csv, cutlistoptimizer_stock{OPT}.csv and one boards CSV per thickness")

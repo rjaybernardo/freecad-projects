@@ -10,10 +10,16 @@ OUT_DIR = os.path.dirname(os.path.abspath(__file__))
 CUT_CSV = os.path.join(OUT_DIR, "kitchen_cut_list_v2.csv")
 HW_CSV = os.path.join(OUT_DIR, "kitchen_hardware_v2.csv")
 
+
+def csv_paths(rev="v2"):
+    """Cut-list + hardware CSVs written by build_kitchen_<rev>.py."""
+    return (os.path.join(OUT_DIR, f"kitchen_cut_list_{rev}.csv"), os.path.join(OUT_DIR, f"kitchen_hardware_{rev}.csv"))
+
 SHEET_L, SHEET_W = 2440, 1220      # 4 x 8 ft board
 TRIM = 5                           # factory-edge trim each side
 KERF = 4                           # saw blade
-WALL_CABINETS = 5                  # over-ref, over-sink, over-rack, hood, over-washer (from the model)
+WALL_CABINETS = 5                  # v2: over-ref, over-sink, over-rack, hood, over-washer (from the model)
+WALL_CABINETS_REV = {"v2": 5, "v3": 7}   # v3 adds the prep + appliance wall cabinets (pantry stands on the floor)
 
 PVC18 = "PVC board 18 mm"
 PVC6 = "PVC board 6 mm"
