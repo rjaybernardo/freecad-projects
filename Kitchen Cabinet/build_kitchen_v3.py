@@ -67,13 +67,16 @@ PLINTH_SETBACK = 60
 KICK_D = 400           # toe-kick drawer depth / runner length
 KICK_FLOOR = 10        # toe-kick drawer bottom clearance above the floor
 BASE_D = 610           # base depth incl. doors (24")
-BASE_TOP = 876         # top of base carcass (34.5")
+# v3: heights for Filipino users (average ~163 cm men / ~151 cm women): counter 850 instead of the US 914 -
+# about 10-15 cm below elbow height, and flush with the top of the 850 mm stove (no platform needed).
+BASE_TOP = 812         # top of base carcass -> counter 850 (v2: 876 -> 914)
+WASHER_TOP = 876       # the washer bay keeps the old height: an 850 front loader needs 10 mm under the counter
 CTOP_T = 38            # countertop (1.5")  -> counter height 914 (36")
 CTOP_D = 635           # 25"
 COUNTER_Z = BASE_TOP + CTOP_T
 
 UPPER_D = 330          # wall cabinets incl. doors
-UPPER_Z = 1372         # 54": 458 above the counter
+UPPER_Z = COUNTER_Z + 450   # 1300: wall-cabinet bottoms 450 above the counter (v2: 1372)
 UPPER_TOP = 2286       # 90"; 51 mm crown/scribe to the ceiling
 HOOD_Z = COUNTER_Z + 700          # hood underside 700 above the cooktop (check the hood manual: 650-750)
 HOOD = (560, 280, 180)            # 60 cm built-in telescopic hood: body W x D x H (fits a 584 clear cabinet)
@@ -100,7 +103,7 @@ FRIDGE_BAY = 950       # 18 mm air gap each side of the 914 fridge
 SINK_W = 900
 RACK_W = 400 + RACK_EXTRA  # 403.2 -> standard "400" rack
 STOVE_BAY = 620        # 5 mm each side of the 610 stove
-STOVE_PLINTH = COUNTER_Z - STOVE[1]   # 64 mm platform so the cooktop is flush with the counter
+STOVE_PLINTH = COUNTER_Z - STOVE[1]   # platform so the cooktop is flush with the counter (0 at an 850 counter)
 TOWER_D = PIPE_CLR + FRIDGE[2] + 20   # 784: ref tower panels, flush just past the fridge doors
 
 u_filler = T
@@ -113,7 +116,7 @@ u_wpanel = u_stove + STOVE_BAY
 u_washer = u_wpanel + T
 u_end = ROOM_L - T
 WASHER_BAY = u_end - u_washer
-assert WASHER_BAY >= WASHER[0] + 20 and WASHER[1] <= BASE_TOP - 10, f"washer bay too small: {WASHER_BAY:.0f}"
+assert WASHER_BAY >= WASHER[0] + 20 and WASHER[1] <= WASHER_TOP - 10, f"washer bay too small: {WASHER_BAY:.0f}"
 
 # ---------------- island ----------------
 ISLAND_AISLE = 1100    # run counter edge -> island counter edge (NKBA work aisle >= 1070 for 2 cooks)
@@ -130,7 +133,7 @@ APPL_W = 900           # appliance station: base racks + appliance garage on the
 PANTRY_W = 600         # pantry tower against the right wall, floor to UPPER_TOP, BASE_D deep
 GARAGE_D = 400         # appliance garage + the wall cabinet over it (microwave needs ~370 + plug)
 PANTRY_PITCH = 350     # pantry shelf spacing
-PANTRY_SPLIT = 1372    # pantry lower / upper door split (= wall-cabinet bottom line)
+PANTRY_SPLIT = UPPER_Z # pantry lower / upper door split (= wall-cabinet bottom line)
 CORNER_FILLER = 30     # back-wall uppers start this far past the left-run uppers' face (door / handle clearance)
 CORNER_UPPERS = 2      # equal wall cabinets between the corner and the prep cabinet (over the washer floor zone)
 
@@ -484,7 +487,8 @@ gbox(gS, "Sink_770x420", 0, 0, 0, 0, 0, 0, C_STEEL, cut=False,
 gC = group("Stove_Bay", run)
 sw_, sh_, sd_ = STOVE
 sy = ry(u_stove + STOVE_BAY / 2 - sw_ / 2, sw_)
-gbox(gC, "Stove_Platform", 0, sy, 0, sd_, sw_, STOVE_PLINTH, C_PLINTH)
+if STOVE_PLINTH > 1:
+    gbox(gC, "Stove_Platform", 0, sy, 0, sd_, sw_, STOVE_PLINTH, C_PLINTH)
 gbox(gC, "Stove_2ft", 0, sy, STOVE_PLINTH, sd_, sw_, sh_, C_STEEL, cut=False)
 gbox(gC, "Stove_Top", 30, sy + 20, COUNTER_Z, sd_ - 60, sw_ - 40, 8, C_BLACK, cut=False)
 # concealed hood: built-in telescopic hood in the bottom of a wall cabinet over the stove; only the slim
@@ -515,20 +519,22 @@ hardware.append((mh.g.Label, "Built-in telescopic range hood 60 cm (body <= 560 
 
 # ================= WASHING MACHINE =================
 gW = group("Washer_Bay", run)
-wbox(gW, "Panel_Stove_Side", u_wpanel, 0, 0, 0, T, BASE_D, BASE_TOP, C_DOOR)
-wbox(gW, "End_Panel", u_end, 0, PIPE_CLR - 5, 0, T, BASE_D - PIPE_CLR + 5, BASE_TOP, C_DOOR)  # clear of the pipe
-wbox(gW, "Back_Rail", u_washer, 0, PIPE_CLR - 5, BASE_TOP - 100, WASHER_BAY, T, 100)          # in front of the pipe
-wbox(gW, "Rail_Front", u_washer, 0, BASE_D - 100, BASE_TOP - T, WASHER_BAY, 100, T)
+# washer counter stays at WASHER_TOP + CTOP_T (914): 64 mm above the 850 counters (separate piece, stove bay between)
+wbox(gW, "Panel_Stove_Side", u_wpanel, 0, 0, 0, T, BASE_D, WASHER_TOP, C_DOOR)
+wbox(gW, "End_Panel", u_end, 0, PIPE_CLR - 5, 0, T, BASE_D - PIPE_CLR + 5, WASHER_TOP, C_DOOR)  # clear of the pipe
+wbox(gW, "Back_Rail", u_washer, 0, PIPE_CLR - 5, WASHER_TOP - 100, WASHER_BAY, T, 100)          # in front of the pipe
+wbox(gW, "Rail_Front", u_washer, 0, BASE_D - 100, WASHER_TOP - T, WASHER_BAY, 100, T)
 ww, wh, wd = WASHER
 wbox(gW, "Washer_60x55", u_washer + (WASHER_BAY - ww) / 2, 0, PIPE_CLR, 0, ww, wd, wh, C_WASHER, cut=False)
 w_ctop = ROOM_L - u_wpanel
 pipe_notch = Part.makeBox(PIPE_OD + 10 + T, PIPE_U[1][1] - PIPE_U[1][0] + 10 + T, CTOP_T + 2,
-                          App.Vector(0, ry(PIPE_U[1][0] - 10 - T, PIPE_OD + 10 + T), BASE_TOP - 1))
-wshape = Part.makeBox(CTOP_D, w_ctop, CTOP_T, App.Vector(0, ry(u_wpanel, w_ctop), BASE_TOP)).cut(pipe_notch)
+                          App.Vector(0, ry(PIPE_U[1][0] - 10 - T, PIPE_OD + 10 + T), WASHER_TOP - 1))
+wshape = Part.makeBox(CTOP_D, w_ctop, CTOP_T, App.Vector(0, ry(u_wpanel, w_ctop), WASHER_TOP)).cut(pipe_notch)
 gbox(gW, "Countertop_Washer", 0, 0, 0, 0, 0, 0, C_CTOP, cut=False, shape=wshape)
 cut_list.append(("Washer_Bay", "Countertop (solid surface / granite, corner notch 144x144 for pipe)",
                  round(w_ctop, 1), CTOP_D, CTOP_T))
-hardware.append(("Washer_Bay", "Paint / wrap the exposed pipe (counter -> wall cabinet) to match the backsplash", "458 H", 1))
+hardware.append(("Washer_Bay", "Paint / wrap the exposed pipe (counter -> wall cabinet) to match the backsplash",
+                 f"{UPPER_Z - WASHER_TOP - CTOP_T:.0f} H", 1))
 # soap cabinet: one door hinged on the stove side (a corner-side door would hit the back-wall cabinets),
 # 1 shelf -> a tall-bottle compartment below (liquid detergent / softener), powders + pegs above
 ms = wall_cabinet(gW, "Soap_Cabinet_Over_Washer", u_washer, ROOM_L - u_washer, UPPER_Z, UPPER_TOP, ndoors=1,
@@ -544,7 +550,7 @@ mu = wall_cabinet(gU, "Upper_Sink_900", u_sink, SINK_W, UPPER_Z, UPPER_TOP, shel
 dr_w, dr_d = SINK_W - 2 * T - 10, UPPER_D - 2 * T - 20
 mu.basket("SS_Drip_Tray", T + 5, T, UPPER_Z + T + 5, dr_w, dr_d, 25, "Dish drainer drip tray")
 mu.basket("SS_Plate_Rack", T + 5, T, UPPER_Z + T + 60, dr_w, dr_d, 120, "Dish drainer, plate tier (900 cabinet)")
-mu.basket("SS_Cup_Rack", T + 5, T, UPPER_Z + 520, dr_w, dr_d, 80, "Dish drainer, cup / bowl tier (900 cabinet)")
+mu.basket("SS_Cup_Rack", T + 5, T, UPPER_Z + 330, dr_w, dr_d, 80, "Dish drainer, cup / bowl tier (900 cabinet)")
 wall_cabinet(gU, f"Upper_{RACK_W:.0f}", u_rack, RACK_W, UPPER_Z, UPPER_TOP, ndoors=1)
 
 # crown / ceiling scribe over the full run (cut to fit on site)
@@ -589,7 +595,7 @@ hardware.append(("Back_Base", "Backsplash outlet over the prep counter (electric
 # --- appliance garage on the counter ---
 gA = group("Appliance_Station", gB)
 mg = Module(gA, f"Appliance_Garage_{APPL_W}", xb_app, APPL_W, back=True)
-gh = UPPER_Z - COUNTER_Z                            # 458 clear: counter -> wall cabinet bottom
+gh = UPPER_Z - COUNTER_Z                            # 450 clear: counter -> wall cabinet bottom
 gd = GARAGE_D - T                                   # sides stop behind the doors
 mg.box("Side_A", 0, 0, COUNTER_Z, T, gd, gh)
 mg.box("Side_B", APPL_W - T, 0, COUNTER_Z, T, gd, gh)
@@ -674,8 +680,9 @@ hardware.append(("Island", "Induction power: dedicated circuit in floor conduit 
 for i in range(STOOLS):
     sy_ = isl_y0 + isl_len * (i + 1) / (STOOLS + 1)
     sx = ctop_x1 - ISLAND_SEAT_OH / 2
-    seat = Part.makeCylinder(190, 40, App.Vector(sx, sy_, 650))
-    leg = Part.makeCylinder(25, 650, App.Vector(sx, sy_, 0))
+    seat_z = COUNTER_Z - 290                        # 560 seat for an 850 counter (~25-30 cm below the top)
+    seat = Part.makeCylinder(190, 40, App.Vector(sx, sy_, seat_z))
+    leg = Part.makeCylinder(25, seat_z, App.Vector(sx, sy_, 0))
     gbox(gI, f"Stool_{i + 1}", 0, 0, 0, 0, 0, 0, C_BLACK, cut=False, shape=seat.fuse(leg))
 
 # ================= LED LIGHTING + WIRING =================
