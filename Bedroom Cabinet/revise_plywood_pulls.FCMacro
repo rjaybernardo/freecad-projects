@@ -1,0 +1,40 @@
+"""Build bed v5 and cabinet v7, then capture their separate screenshot sets.
+
+Older model files and build scripts remain available for comparison.
+"""
+from pathlib import Path
+import runpy
+import traceback
+import FreeCAD as App
+import FreeCADGui as Gui
+from PySide import QtCore
+
+PROJECT = Path('/home/rjaybernardo/Documents/FreeCAD/Bedroom Cabinet')
+
+
+def build_revisions():
+    log = PROJECT / 'screenshots' / 'revision-build.log'
+    log.parent.mkdir(exist_ok=True)
+    log.write_text('Building square fronts and plywood L/C pull channels.\n')
+    try:
+        for script in ('build_bed_v5.py', 'build_cabinet_v7.py'):
+            result = runpy.run_path(str(PROJECT / script))
+            doc = result['doc']
+            with log.open('a') as f:
+                f.write(f'{script}: {doc.FileName}\n')
+            App.closeDocument(doc.Name)
+        with log.open('a') as f:
+            f.write('BUILD DONE\n')
+        macro = PROJECT / 'capture_screenshots.FCMacro'
+        exec(compile(macro.read_text(), str(macro), 'exec'), globals())
+    except Exception:
+        for name in ("Bed_Wall_Unit_v5", "Bedroom_Cabinet_Modern_v7"):
+            if name in App.listDocuments():
+                App.closeDocument(name)
+        with log.open('a') as f:
+            f.write(traceback.format_exc())
+        if App.ConfigGet('UserParameter').startswith('/tmp/freecad-capture-'):
+            Gui.getMainWindow().close()
+
+
+QtCore.QTimer.singleShot(1200, build_revisions)

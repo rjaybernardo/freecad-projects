@@ -1,8 +1,21 @@
 # Bedroom furniture design review — 2026-11-14
 
-The current saved revisions are `Bed_Wall_Unit_v4.FCStd` and
-`Bedroom_Cabinet_Modern_v6.FCStd`. They include the divider corrections below.
-The wheel conversion, stock reconciliation, and lighting revision are still pending.
+The current saved revisions are `Bed_Wall_Unit_v5.FCStd` and
+`Bedroom_Cabinet_Modern_v7.FCStd`. They include the divider corrections below.
+The current models also use plywood L/C pull channels and square-edged fronts. The wheel conversion, stock reconciliation, and lighting revision are still pending.
+
+## Completed: plywood L/C pull channels and square fronts
+
+See [construction details](PLYWOOD_PULLS.md). The new channel members are actual
+plywood parts in both saved models and in the cut lists; routed side-panel notches
+are modeled. All 28 door/drawer fronts are square solids. Closed-position checks
+and sampled drawer translations pass without intersections. Wardrobe internal
+drawers are narrowed and mounted beside a partition so they can pass the vertical
+pull recess. Scribe strips now report their actual 19.6 mm stock thickness.
+
+![Updated bed drawer pull construction](screenshots/bedframe_v5_drawer_pulls.png)
+
+![Updated makeup cabinet drawer pull construction](screenshots/cabinet_v7_drawer_pulls.png)
 
 ## Completed: overhead cabinet compartments
 
@@ -15,9 +28,9 @@ The wheel conversion, stock reconciliation, and lighting revision are still pend
 - The two middle bed overhead doors mount to opposite faces of the centre divider
   with half-overlay hinges. The outside doors mount on the outside sides.
 
-![Bed overhead divider revision](screenshots/bedframe_v4_top_detail.png)
+![Bed overhead divider revision](screenshots/bedframe_v5_top_detail.png)
 
-![TV/makeup top cabinet divider revision](screenshots/cabinet_v6_top_detail.png)
+![TV/makeup top cabinet divider revision](screenshots/cabinet_v7_top_detail.png)
 
 ## Findings to resolve before final cutting layouts
 
@@ -25,7 +38,7 @@ The wheel conversion, stock reconciliation, and lighting revision are still pend
 | --- | --- | --- |
 | Two headboard plywood parts cannot be cut from a 4×8 sheet | Backer 1593.2 × 1717 mm; upholstery base 1587.2 × 1450 mm. Both exceed the 1220 mm stock width in either orientation. | Split the plywood backing into sheet-sized panels and keep the upholstery appearance continuous. Update the model and cut list together. |
 | Bed stock does not yet match the user's material requirement | Bed v4 cut list has 54 pieces recorded as raw 18 mm and one 12 mm upholstery base, alongside the 19.6 mm laminated panels. | Reconcile furniture panels with 3/4-inch plywood laminated on both faces. Recalculate internal drawer dimensions and clearances when thickness changes. |
-| Narrow scribe strips have incorrect cut-list thickness fields | The scripts sort all three box dimensions. A 10 mm-wide strip made from 19.6 mm stock is consequently listed as 10 mm thick. This affects one bed strip and two TV/makeup cabinet strips. | Record actual panel thickness separately from length/width. Keep the narrow strip width in the width column. |
+| Corrected in bed v5 / cabinet v7: narrow scribe-strip thickness fields | The scripts sort all three box dimensions. A 10 mm-wide strip made from 19.6 mm stock is consequently listed as 10 mm thick. This affects one bed strip and two TV/makeup cabinet strips. | New builders record actual panel thickness separately; narrow width stays in the width column. |
 | Nightstand plinth cut-list entries describe assemblies | Two 301.4 × 400 × 57 mm blocks represent rings of four strips, rather than individual plywood parts. | Model and list the actual ring strips so the nesting layout does not treat 57 mm as plywood thickness. |
 | Edge-band allowances are not included in existing cutting sizes | The model supplies panel sizes; the older materials helper estimates banding, but the cut CSV does not deduct band thickness or identify all four banded edges. | Specify each exposed edge and export finished panel sizes separately from plywood blank sizes. Deduct the selected band thickness on the corresponding edges once. |
 | Floor-running wheels would be obstructed by the existing drawer-bay bottoms | Six under-bed drawer bays currently contain raised bottom panels on 20 mm cleats. | Confirm the rolling surface. For floor-running wheels, redesign the bottom panels/bracing to clear the wheel paths; for an internal track, provide a continuous supported rolling surface through the intended travel. |
@@ -61,9 +74,10 @@ sheet utilization, offcuts, and edge-band information.
 - Both revised models open in FreeCAD 1.1.4 on CachyOS.
 - All non-null solid shapes checked are valid.
 - Divider-to-panel intersection checks pass.
-- A wider pairwise check of furniture solids found no positive-volume intersections:
-  142 bed furniture objects and 92 TV/makeup furniture objects, excluding room reference
-  objects and LED placeholders. This checks geometry, not hardware/load ratings.
+- The plywood-channel revision passed pairwise checks with 170 bed furniture objects and
+  111 TV/makeup furniture objects, excluding reference objects and LED placeholders.
+  Sampled drawer translations at 1, 20, 42, 80, 150 mm and full travel also passed.
+  These checks cover the modeled geometry, not hardware/load ratings.
 - The bed drawing has three valid TechDraw pages; its overhead view shows the dividers.
 - Seven original model/script/drawing/cut-list files were hash-checked and remain unchanged.
 
