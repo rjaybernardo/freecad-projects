@@ -1,0 +1,9 @@
+Project,Module,Part,Qty,Length_mm,Width_mm,Thickness_mm,Edge_Work
+Bed v4,Bridge,Bridge_Divider_1,1,610.8,332,19.6,HPL both faces; edge-band front; full height between top and bottom
+Bed v4,Bridge,Bridge_Divider_2,1,610.8,332,19.6,HPL both faces; edge-band front; full height between top and bottom
+Bed v4,Bridge,Bridge_Divider_3,1,610.8,332,19.6,HPL both faces; edge-band front; full height between top and bottom
+Bed v4,Bridge,Bridge_Shelf_1,1,368.9,322,19.6,"HPL both faces, edge-band front; fits between vertical dividers"
+Bed v4,Bridge,Bridge_Shelf_2,1,378.7,322,19.6,"HPL both faces, edge-band front; fits between vertical dividers"
+Bed v4,Bridge,Bridge_Shelf_3,1,378.7,322,19.6,"HPL both faces, edge-band front; fits between vertical dividers"
+Bed v4,Bridge,Bridge_Shelf_4,1,368.9,322,19.6,"HPL both faces, edge-band front; fits between vertical dividers"
+TV/makeup cabinet v6,Top_Box_Centre,Centre_Top_Divider_1,1,430.8,260.8,19.6,HPL both faces; edge-band front; full height between top and bottom
