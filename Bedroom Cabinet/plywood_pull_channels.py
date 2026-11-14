@@ -13,9 +13,10 @@ class PlywoodPullChannels:
     L_HEIGHT = 60.0
     C_HEIGHT = 80.0
 
-    def __init__(self, doc, thickness, cut_list, colours, colour):
+    def __init__(self, doc, thickness, cut_list, colours, colour, closed_ends=False):
         self.doc, self.t = doc, thickness
         self.cut_list, self.colours, self.colour = cut_list, colours, colour
+        self.closed_ends = closed_ends
 
     def _notch(self, parent, envelope, label):
         self.doc.recompute()
@@ -66,6 +67,11 @@ class PlywoodPullChannels:
         return obj
 
     def horizontal(self, parent, label, x, inner_y, z0, width, facing=1, kind='L', opening='up'):
+        if self.closed_ends:
+            # The existing rectangular sides close the ends; no cover layer or
+            # routing through the visible outside faces is needed.
+            x += self.t
+            width -= 2 * self.t
         height = self.C_HEIGHT if kind == 'C' else self.L_HEIGHT
         depth, t = self.DEPTH, self.t
         y0 = inner_y if facing == 1 else inner_y - depth

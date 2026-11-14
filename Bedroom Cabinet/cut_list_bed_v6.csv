@@ -1,0 +1,98 @@
+Module,Part,Qty,Length_mm,Width_mm,Thickness_mm,Edge_Work
+Bridge,Back,1,1593.2,650,18,
+Bridge,Bottom,1,1554.0,307,19.6,HPL both faces; plain front setback 25 mm for square door grip
+Bridge,Bridge_Divider_1,1,610.8,332,19.6,HPL both faces; edge-band front; full height between top and bottom
+Bridge,Bridge_Divider_2,1,610.8,332,19.6,HPL both faces; edge-band front; full height between top and bottom
+Bridge,Bridge_Divider_3,1,610.8,332,19.6,HPL both faces; edge-band front; full height between top and bottom
+Bridge,Bridge_Shelf_1,1,368.9,322,19.6,"HPL both faces, edge-band front; fits between vertical dividers"
+Bridge,Bridge_Shelf_2,1,378.7,322,19.6,"HPL both faces, edge-band front; fits between vertical dividers"
+Bridge,Bridge_Shelf_3,1,378.7,322,19.6,"HPL both faces, edge-band front; fits between vertical dividers"
+Bridge,Bridge_Shelf_4,1,368.9,322,19.6,"HPL both faces, edge-band front; fits between vertical dividers"
+Bridge,Door,4,647,395.3,19.6,HPL both faces; Square pull edge; edge-band exposed edges
+Bridge,Side_L,1,650,332,19.6,HPL both faces
+Bridge,Side_R,1,650,332,19.6,HPL both faces
+Bridge,Top,1,1554.0,332,19.6,HPL both faces
+Foot_Box,Bottom,2,752.4,480.4,18,on 20 mm cleats; 2x 30 mm vent holes
+Foot_Box,Drawer_Back,2,691.4,162.4,18,
+Foot_Box,Drawer_Bottom,2,691.4,432,18,
+Foot_Box,Drawer_Front,2,749.4,214.4,19.6,HPL both faces; Square pull edge; edge-band exposed edges
+Foot_Box,Drawer_Side_L,2,450,162.4,18,
+Foot_Box,Drawer_Side_R,2,450,162.4,18,
+Foot_Box,Head,2,752.4,277.4,19.6,HPL both faces
+Foot_Box,Side_L,2,500,277.4,19.6,HPL both faces
+Foot_Box,Side_R,2,500,277.4,19.6,HPL both faces
+Foot_Box,Top,2,791.6,500,19.6,"HPL both faces, edge-band 4 sides"
+Head_Box,Bottom,2,752.4,352.8,18,on 20 mm cleats; 2x 30 mm vent holes
+Head_Box,Foot,2,752.4,277.4,19.6,HPL both faces
+Head_Box,Head,2,752.4,277.4,19.6,HPL both faces
+Head_Box,Lid,2,791.6,392,19.6,"HPL both faces, edge-band 4 sides; hinged at the head edge"
+Head_Box,Side_L,2,392,277.4,19.6,HPL both faces
+Head_Box,Side_R,2,392,277.4,19.6,HPL both faces
+Headboard,Headboard_Backer,1,1717,1593.2,18,screw to wall + towers; behind the upholstery
+Headboard,Upholstered_Panel_Base,1,1587.2,1450,12,"12 mm ply; 38 mm foam + fabric, diamond tufted, buttons on a 180 mm grid"
+Nightstand,Back,2,440,341.4,18,
+Nightstand,Bottom,2,432,302.2,19.6,HPL both faces
+Nightstand,Drawer_Back,2,241.2,108.9,18,
+Nightstand,Drawer_Back,2,241.2,130.9,18,
+Nightstand,Drawer_Bottom,4,332,241.2,18,
+Nightstand,Drawer_Front,4,299.2,172.4,19.6,HPL both faces; Square pull edge; edge-band exposed edges
+Nightstand,Drawer_Side_L,2,350,108.9,18,
+Nightstand,Drawer_Side_L,2,350,130.9,18,
+Nightstand,Drawer_Side_R,2,350,108.9,18,
+Nightstand,Drawer_Side_R,2,350,130.9,18,
+Nightstand,Plinth,2,400,301.4,57,4 strips glued as a ring; sizes = outside of the ring
+Nightstand,Side_L,2,440,432,19.6,HPL both faces
+Nightstand,Side_R,2,440,432,19.6,HPL both faces
+Nightstand,Top,2,432,302.2,19.6,HPL both faces
+Pull_Foot_Box_L,Pull_Foot_Box_L_L_Back,1,752.4,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Foot_Box_L,Pull_Foot_Box_L_L_Lower,1,752.4,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Foot_Box_R,Pull_Foot_Box_R_L_Back,1,752.4,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Foot_Box_R,Pull_Foot_Box_R_L_Lower,1,752.4,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Nightstand_Left,Pull_Nightstand_Left_L_Back,1,302.2,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Nightstand_Left,Pull_Nightstand_Left_L_Lower,1,302.2,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Nightstand_Left_C,Pull_Nightstand_Left_C_Back,1,302.2,80.0,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Nightstand_Left_C,Pull_Nightstand_Left_C_Lower,1,302.2,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Nightstand_Left_C,Pull_Nightstand_Left_C_Upper,1,302.2,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Nightstand_Right,Pull_Nightstand_Right_L_Back,1,302.2,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Nightstand_Right,Pull_Nightstand_Right_L_Lower,1,302.2,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Nightstand_Right_C,Pull_Nightstand_Right_C_Back,1,302.2,80.0,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Nightstand_Right_C,Pull_Nightstand_Right_C_Lower,1,302.2,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Nightstand_Right_C,Pull_Nightstand_Right_C_Upper,1,302.2,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Side_Box_1L,Pull_Side_Box_1L_Back,1,458.9,60,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Side_Box_1L,Pull_Side_Box_1L_Lower,1,458.9,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Side_Box_1R,Pull_Side_Box_1R_Back,1,458.9,60,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Side_Box_1R,Pull_Side_Box_1R_Lower,1,458.9,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Side_Box_2L,Pull_Side_Box_2L_Back,1,458.9,60,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Side_Box_2L,Pull_Side_Box_2L_Lower,1,458.9,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Side_Box_2R,Pull_Side_Box_2R_Back,1,458.9,60,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Side_Box_2R,Pull_Side_Box_2R_Lower,1,458.9,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Scribe_Strips,Scribe_Ceiling,1,2276,10,19.6,cut to fit on site
+Side_Box1,Bottom,2,772.0,458.9,18,on 20 mm cleats; 2x 30 mm vent holes
+Side_Box1,Drawer_Back,2,397.9,162.4,18,
+Side_Box1,Drawer_Bottom,2,432,397.9,18,
+Side_Box1,Drawer_Front,2,455.9,214.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Side_Box1,Drawer_Side_Foot,2,450,162.4,18,
+Side_Box1,Drawer_Side_Head,2,450,162.4,18,
+Side_Box1,Foot,2,791.6,277.4,19.6,HPL both faces
+Side_Box1,Head,2,791.6,277.4,19.6,HPL both faces
+Side_Box1,Inner_Side,2,458.9,277.4,19.6,HPL both faces
+Side_Box1,Top,2,791.6,498.1,19.6,"HPL both faces, edge-band 4 sides"
+Side_Box2,Bottom,2,772.0,458.9,18,on 20 mm cleats; 2x 30 mm vent holes
+Side_Box2,Drawer_Back,2,397.9,162.4,18,
+Side_Box2,Drawer_Bottom,2,432,397.9,18,
+Side_Box2,Drawer_Front,2,455.9,214.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Side_Box2,Drawer_Side_Foot,2,450,162.4,18,
+Side_Box2,Drawer_Side_Head,2,450,162.4,18,
+Side_Box2,Foot,2,791.6,277.4,19.6,HPL both faces
+Side_Box2,Head,2,791.6,277.4,19.6,HPL both faces
+Side_Box2,Inner_Side,2,458.9,277.4,19.6,HPL both faces
+Side_Box2,Top,2,791.6,498.1,19.6,"HPL both faces, edge-band 4 sides"
+Upper,Back,2,1870,341.4,18,
+Upper,Bottom,2,332,302.2,19.6,HPL both faces
+Upper,Door,2,1287,338.4,19.6,HPL both faces; Square pull edge; edge-band exposed edges
+Upper,Shelf_Behind_Door,2,322,302.2,19.6,"HPL both faces, edge-band front"
+Upper,Shelf_Lit_Niche,2,307,302.2,19.6,"HPL both faces, edge-band front; LED groove underside"
+Upper,Shelf_Open_Niche,2,322,302.2,19.6,"HPL both faces, edge-band front"
+Upper,Side_L,2,1870,332,19.6,HPL both faces
+Upper,Side_R,2,1870,332,19.6,HPL both faces
+Upper,Top,2,332,302.2,19.6,HPL both faces

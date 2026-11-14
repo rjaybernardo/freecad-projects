@@ -1,102 +1,32 @@
 Project,Module,Part,Qty,Length_mm,Width_mm,Thickness_mm,Edge_Work
-Bed v5,Bridge,Bottom,1,1554.0,332,19.6,HPL both faces; Bridge_Lower_L plywood pull recess; see model
-Bed v5,Bridge,Bridge_Divider_1,1,610.8,332,19.6,HPL both faces; edge-band front; full height between top and bottom; Bridge_Lower_L plywood pull recess; see model
-Bed v5,Bridge,Bridge_Divider_2,1,610.8,332,19.6,HPL both faces; edge-band front; full height between top and bottom; Bridge_Lower_L plywood pull recess; see model
-Bed v5,Bridge,Bridge_Divider_3,1,610.8,332,19.6,HPL both faces; edge-band front; full height between top and bottom; Bridge_Lower_L plywood pull recess; see model
-Bed v5,Bridge,Side_L,1,650,332,19.6,HPL both faces; Bridge_Lower_L plywood pull recess; see model
-Bed v5,Bridge,Side_R,1,650,332,19.6,HPL both faces; Bridge_Lower_L plywood pull recess; see model
-Bed v5,Foot_Box,Side_L,1,500,277.4,19.6,HPL both faces; Foot_Box_L_L plywood pull recess; see model
-Bed v5,Foot_Box,Side_L,1,500,277.4,19.6,HPL both faces; Foot_Box_R_L plywood pull recess; see model
-Bed v5,Foot_Box,Side_R,1,500,277.4,19.6,HPL both faces; Foot_Box_L_L plywood pull recess; see model
-Bed v5,Foot_Box,Side_R,1,500,277.4,19.6,HPL both faces; Foot_Box_R_L plywood pull recess; see model
-Bed v5,Nightstand,Side_L,1,440,432,19.6,HPL both faces; Nightstand_Left_L plywood pull recess; see model; Nightstand_Left_C plywood pull recess; see model
-Bed v5,Nightstand,Side_L,1,440,432,19.6,HPL both faces; Nightstand_Right_L plywood pull recess; see model; Nightstand_Right_C plywood pull recess; see model
-Bed v5,Nightstand,Side_R,1,440,432,19.6,HPL both faces; Nightstand_Left_L plywood pull recess; see model; Nightstand_Left_C plywood pull recess; see model
-Bed v5,Nightstand,Side_R,1,440,432,19.6,HPL both faces; Nightstand_Right_L plywood pull recess; see model; Nightstand_Right_C plywood pull recess; see model
-Bed v5,Pull_Bridge_Lower,Pull_Bridge_Lower_L_Back,1,1593.2,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Bridge_Lower,Pull_Bridge_Lower_L_Upper,1,1593.2,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Foot_Box_L,Pull_Foot_Box_L_L_Back,1,791.6,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Foot_Box_L,Pull_Foot_Box_L_L_Lower,1,791.6,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Foot_Box_R,Pull_Foot_Box_R_L_Back,1,791.6,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Foot_Box_R,Pull_Foot_Box_R_L_Lower,1,791.6,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Nightstand_Left,Pull_Nightstand_Left_L_Back,1,341.4,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Nightstand_Left,Pull_Nightstand_Left_L_Lower,1,341.4,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Nightstand_Left_C,Pull_Nightstand_Left_C_Back,1,341.4,80.0,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Nightstand_Left_C,Pull_Nightstand_Left_C_Lower,1,341.4,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Nightstand_Left_C,Pull_Nightstand_Left_C_Upper,1,341.4,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Nightstand_Right,Pull_Nightstand_Right_L_Back,1,341.4,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Nightstand_Right,Pull_Nightstand_Right_L_Lower,1,341.4,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Nightstand_Right_C,Pull_Nightstand_Right_C_Back,1,341.4,80.0,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Nightstand_Right_C,Pull_Nightstand_Right_C_Lower,1,341.4,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Nightstand_Right_C,Pull_Nightstand_Right_C_Upper,1,341.4,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Side_Box_1L,Pull_Side_Box_1L_Back,1,498.1,60,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Side_Box_1L,Pull_Side_Box_1L_Lower,1,498.1,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Side_Box_1R,Pull_Side_Box_1R_Back,1,498.1,60,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Side_Box_1R,Pull_Side_Box_1R_Lower,1,498.1,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Side_Box_2L,Pull_Side_Box_2L_Back,1,498.1,60,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Side_Box_2L,Pull_Side_Box_2L_Lower,1,498.1,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Side_Box_2R,Pull_Side_Box_2R_Back,1,498.1,60,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Side_Box_2R,Pull_Side_Box_2R_Lower,1,498.1,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Upper_Left_Lower,Pull_Upper_Left_Lower_L_Back,1,341.4,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Upper_Left_Lower,Pull_Upper_Left_Lower_L_Upper,1,341.4,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Upper_Right_Lower,Pull_Upper_Right_Lower_L_Back,1,341.4,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Pull_Upper_Right_Lower,Pull_Upper_Right_Lower_L_Upper,1,341.4,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v5,Side_Box1,Foot,1,791.6,277.4,19.6,HPL both faces; Side_Box_1L_L plywood pull recess; see model
-Bed v5,Side_Box1,Foot,1,791.6,277.4,19.6,HPL both faces; Side_Box_1R_L plywood pull recess; see model
-Bed v5,Side_Box1,Head,1,791.6,277.4,19.6,HPL both faces; Side_Box_1L_L plywood pull recess; see model
-Bed v5,Side_Box1,Head,1,791.6,277.4,19.6,HPL both faces; Side_Box_1R_L plywood pull recess; see model
-Bed v5,Side_Box2,Foot,1,791.6,277.4,19.6,HPL both faces; Side_Box_2L_L plywood pull recess; see model
-Bed v5,Side_Box2,Foot,1,791.6,277.4,19.6,HPL both faces; Side_Box_2R_L plywood pull recess; see model
-Bed v5,Side_Box2,Head,1,791.6,277.4,19.6,HPL both faces; Side_Box_2L_L plywood pull recess; see model
-Bed v5,Side_Box2,Head,1,791.6,277.4,19.6,HPL both faces; Side_Box_2R_L plywood pull recess; see model
-Bed v5,Upper,Shelf_Lit_Niche,1,322,302.2,19.6,"HPL both faces, edge-band front; LED groove underside; Upper_Left_Lower_L plywood pull recess; see model"
-Bed v5,Upper,Shelf_Lit_Niche,1,322,302.2,19.6,"HPL both faces, edge-band front; LED groove underside; Upper_Right_Lower_L plywood pull recess; see model"
-Bed v5,Upper,Side_L,1,1870,332,19.6,HPL both faces; Upper_Left_Lower_L plywood pull recess; see model
-Bed v5,Upper,Side_L,1,1870,332,19.6,HPL both faces; Upper_Right_Lower_L plywood pull recess; see model
-Bed v5,Upper,Side_R,1,1870,332,19.6,HPL both faces; Upper_Left_Lower_L plywood pull recess; see model
-Bed v5,Upper,Side_R,1,1870,332,19.6,HPL both faces; Upper_Right_Lower_L plywood pull recess; see model
-TV/makeup v7,Drawer_Tower,Side_L,1,620.4,430.8,19.6,Tower_L plywood pull recess; see model; Tower_C_1 plywood pull recess; see model; Tower_C_2 plywood pull recess; see model
-TV/makeup v7,Drawer_Tower,Side_R,1,620.4,430.8,19.6,Tower_L plywood pull recess; see model; Tower_C_1 plywood pull recess; see model; Tower_C_2 plywood pull recess; see model
-TV/makeup v7,Drawer_Tower,Top,1,460.8,430.8,19.6,Tower_L plywood pull recess; see model
-TV/makeup v7,Pull_ShelfTower_Vertical_L,Pull_ShelfTower_Vertical_L_Back,1,1990,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
-TV/makeup v7,Pull_ShelfTower_Vertical_L,Pull_ShelfTower_Vertical_L_Return,1,1990,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-TV/makeup v7,Pull_Top_Box_Centre_Lower_L,Pull_Top_Box_Centre_Lower_L_Back,1,1300.0,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
-TV/makeup v7,Pull_Top_Box_Centre_Lower_L,Pull_Top_Box_Centre_Lower_L_Upper,1,1300.0,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-TV/makeup v7,Pull_Top_Box_Left_Lower_L,Pull_Top_Box_Left_Lower_L_Back,1,520.0,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
-TV/makeup v7,Pull_Top_Box_Left_Lower_L,Pull_Top_Box_Left_Lower_L_Upper,1,520.0,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-TV/makeup v7,Pull_Top_Box_Right_Lower_L,Pull_Top_Box_Right_Lower_L_Back,1,456.0,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
-TV/makeup v7,Pull_Top_Box_Right_Lower_L,Pull_Top_Box_Right_Lower_L_Upper,1,456.0,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-TV/makeup v7,Pull_Tower_C_1,Pull_Tower_C_1_Back,1,500,80.0,19.6,HPL both faces; square edges; edge-band exposed edges
-TV/makeup v7,Pull_Tower_C_1,Pull_Tower_C_1_Lower,1,500,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-TV/makeup v7,Pull_Tower_C_1,Pull_Tower_C_1_Upper,1,500,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-TV/makeup v7,Pull_Tower_C_2,Pull_Tower_C_2_Back,1,500,80.0,19.6,HPL both faces; square edges; edge-band exposed edges
-TV/makeup v7,Pull_Tower_C_2,Pull_Tower_C_2_Lower,1,500,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-TV/makeup v7,Pull_Tower_C_2,Pull_Tower_C_2_Upper,1,500,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-TV/makeup v7,Pull_Tower_L,Pull_Tower_L_Back,1,500,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
-TV/makeup v7,Pull_Tower_L,Pull_Tower_L_Lower,1,500,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-TV/makeup v7,Pull_Wardrobe_Vertical_L,Pull_Wardrobe_Vertical_L_Back,1,1990,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
-TV/makeup v7,Pull_Wardrobe_Vertical_L,Pull_Wardrobe_Vertical_L_Return,1,1990,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-TV/makeup v7,Top_Box_Centre,Bottom,1,1260.8,430.8,19.6,Top_Box_Centre_Lower_L plywood pull recess; see model
-TV/makeup v7,Top_Box_Centre,Centre_Top_Divider_1,1,430.8,260.8,19.6,HPL both faces; edge-band front; full height between top and bottom; Top_Box_Centre_Lower_L plywood pull recess; see model
-TV/makeup v7,Top_Box_Centre,Side_L,1,430.8,300,19.6,Top_Box_Centre_Lower_L plywood pull recess; see model
-TV/makeup v7,Top_Box_Centre,Side_R,1,430.8,300,19.6,Top_Box_Centre_Lower_L plywood pull recess; see model
-TV/makeup v7,Top_Box_Left,Bottom,1,480.8,430.8,19.6,Top_Box_Left_Lower_L plywood pull recess; see model
-TV/makeup v7,Top_Box_Left,Side_L,1,430.8,300,19.6,Top_Box_Left_Lower_L plywood pull recess; see model
-TV/makeup v7,Top_Box_Left,Side_R,1,430.8,300,19.6,Top_Box_Left_Lower_L plywood pull recess; see model
-TV/makeup v7,Top_Box_Right,Bottom,1,430.8,416.8,19.6,Top_Box_Right_Lower_L plywood pull recess; see model
-TV/makeup v7,Top_Box_Right,Side_L,1,430.8,300,19.6,Top_Box_Right_Lower_L plywood pull recess; see model
-TV/makeup v7,Top_Box_Right,Side_R,1,430.8,300,19.6,Top_Box_Right_Lower_L plywood pull recess; see model
-TV/makeup v7,Tower_Right_Shelves,Bottom,1,430.8,416.8,19.6,ShelfTower_Vertical_L plywood pull recess; see model
-TV/makeup v7,Tower_Right_Shelves,Shelf_1,1,416.8,410.8,19.6,ShelfTower_Vertical_L plywood pull recess; see model
-TV/makeup v7,Tower_Right_Shelves,Shelf_2,1,416.8,410.8,19.6,ShelfTower_Vertical_L plywood pull recess; see model
-TV/makeup v7,Tower_Right_Shelves,Shelf_3,1,416.8,410.8,19.6,ShelfTower_Vertical_L plywood pull recess; see model
-TV/makeup v7,Tower_Right_Shelves,Shelf_4,1,416.8,410.8,19.6,ShelfTower_Vertical_L plywood pull recess; see model
-TV/makeup v7,Tower_Right_Shelves,Shelf_5,1,416.8,410.8,19.6,ShelfTower_Vertical_L plywood pull recess; see model
-TV/makeup v7,Tower_Right_Shelves,Side_L,1,1990,430.8,19.6,ShelfTower_Vertical_L plywood pull recess; see model
-TV/makeup v7,Tower_Right_Shelves,Top,1,430.8,416.8,19.6,ShelfTower_Vertical_L plywood pull recess; see model
-TV/makeup v7,Wardrobe_Left_Hanging,Bottom,1,480.8,430.8,19.6,Wardrobe_Vertical_L plywood pull recess; see model
-TV/makeup v7,Wardrobe_Left_Hanging,Shelf_Above_Drawers,1,480.8,410.8,19.6,Wardrobe_Vertical_L plywood pull recess; see model
-TV/makeup v7,Wardrobe_Left_Hanging,Shelf_Top,1,480.8,410.8,19.6,Wardrobe_Vertical_L plywood pull recess; see model
-TV/makeup v7,Wardrobe_Left_Hanging,Shelf_Top_2,1,480.8,410.8,19.6,Wardrobe_Vertical_L plywood pull recess; see model
-TV/makeup v7,Wardrobe_Left_Hanging,Side_R,1,1990,430.8,19.6,Wardrobe_Vertical_L plywood pull recess; see model
-TV/makeup v7,Wardrobe_Left_Hanging,Top,1,480.8,430.8,19.6,Wardrobe_Vertical_L plywood pull recess; see model
+Bed v6,Pull_Foot_Box_L,Pull_Foot_Box_L_L_Back,1,752.4,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
+Bed v6,Pull_Foot_Box_L,Pull_Foot_Box_L_L_Lower,1,752.4,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Bed v6,Pull_Foot_Box_R,Pull_Foot_Box_R_L_Back,1,752.4,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
+Bed v6,Pull_Foot_Box_R,Pull_Foot_Box_R_L_Lower,1,752.4,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Bed v6,Pull_Nightstand_Left,Pull_Nightstand_Left_L_Back,1,302.2,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
+Bed v6,Pull_Nightstand_Left,Pull_Nightstand_Left_L_Lower,1,302.2,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Bed v6,Pull_Nightstand_Left_C,Pull_Nightstand_Left_C_Back,1,302.2,80.0,19.6,HPL both faces; square edges; edge-band exposed edges
+Bed v6,Pull_Nightstand_Left_C,Pull_Nightstand_Left_C_Lower,1,302.2,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Bed v6,Pull_Nightstand_Left_C,Pull_Nightstand_Left_C_Upper,1,302.2,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Bed v6,Pull_Nightstand_Right,Pull_Nightstand_Right_L_Back,1,302.2,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
+Bed v6,Pull_Nightstand_Right,Pull_Nightstand_Right_L_Lower,1,302.2,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Bed v6,Pull_Nightstand_Right_C,Pull_Nightstand_Right_C_Back,1,302.2,80.0,19.6,HPL both faces; square edges; edge-band exposed edges
+Bed v6,Pull_Nightstand_Right_C,Pull_Nightstand_Right_C_Lower,1,302.2,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Bed v6,Pull_Nightstand_Right_C,Pull_Nightstand_Right_C_Upper,1,302.2,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Bed v6,Pull_Side_Box_1L,Pull_Side_Box_1L_Back,1,458.9,60,19.6,HPL both faces; square edges; edge-band exposed edges
+Bed v6,Pull_Side_Box_1L,Pull_Side_Box_1L_Lower,1,458.9,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Bed v6,Pull_Side_Box_1R,Pull_Side_Box_1R_Back,1,458.9,60,19.6,HPL both faces; square edges; edge-band exposed edges
+Bed v6,Pull_Side_Box_1R,Pull_Side_Box_1R_Lower,1,458.9,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Bed v6,Pull_Side_Box_2L,Pull_Side_Box_2L_Back,1,458.9,60,19.6,HPL both faces; square edges; edge-band exposed edges
+Bed v6,Pull_Side_Box_2L,Pull_Side_Box_2L_Lower,1,458.9,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Bed v6,Pull_Side_Box_2R,Pull_Side_Box_2R_Back,1,458.9,60,19.6,HPL both faces; square edges; edge-band exposed edges
+Bed v6,Pull_Side_Box_2R,Pull_Side_Box_2R_Lower,1,458.9,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+TV/makeup v8,Drawer_Tower,Top,1,460.8,430.8,19.6,Tower_L plywood pull recess; see model
+TV/makeup v8,Pull_Tower_C_1,Pull_Tower_C_1_Back,1,460.8,80.0,19.6,HPL both faces; square edges; edge-band exposed edges
+TV/makeup v8,Pull_Tower_C_1,Pull_Tower_C_1_Lower,1,460.8,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+TV/makeup v8,Pull_Tower_C_1,Pull_Tower_C_1_Upper,1,460.8,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+TV/makeup v8,Pull_Tower_C_2,Pull_Tower_C_2_Back,1,460.8,80.0,19.6,HPL both faces; square edges; edge-band exposed edges
+TV/makeup v8,Pull_Tower_C_2,Pull_Tower_C_2_Lower,1,460.8,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+TV/makeup v8,Pull_Tower_C_2,Pull_Tower_C_2_Upper,1,460.8,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+TV/makeup v8,Pull_Tower_L,Pull_Tower_L_Back,1,460.8,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
+TV/makeup v8,Pull_Tower_L,Pull_Tower_L_Lower,1,460.8,22.4,19.6,HPL both faces; square edges; edge-band exposed edges

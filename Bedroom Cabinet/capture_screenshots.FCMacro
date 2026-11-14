@@ -92,31 +92,31 @@ def run():
         prefs = App.ParamGet('User parameter:BaseApp/Preferences/View')
         prefs.SetBool('UseVBO', False)
         prefs.SetUnsigned('AntiAliasing', 0)
-        cab = scene('Bedroom_Cabinet_Modern_v7.FCStd', 'Cabinet_Screenshots')
-        capture(cab, 'cabinet_v7_front.png', (0, -1, 0))
-        capture(cab, 'cabinet_v7_perspective.png', (0.6, -1, 0.55))
+        cab = scene('Bedroom_Cabinet_Modern_v8.FCStd', 'Cabinet_Screenshots')
+        capture(cab, 'cabinet_v8_front.png', (0, -1, 0))
+        capture(cab, 'cabinet_v8_perspective.png', (0.6, -1, 0.55))
         doors = [o for o in cab.Objects if o.Name.startswith('Door') and hasattr(o, 'Shape')]
         for o in doors:
             o.ViewObject.Visibility = False
-        capture(cab, 'cabinet_v7_interior.png', (0.3, -1, 0.3))
+        capture(cab, 'cabinet_v8_interior.png', (0.3, -1, 0.3))
         for o in doors:
             o.ViewObject.Visibility = True
 
-        bed = scene('Bed_Wall_Unit_v5.FCStd', 'Bedframe_Screenshots')
+        bed = scene('Bed_Wall_Unit_v6.FCStd', 'Bedframe_Screenshots')
         bed.getObject('Mattress_5x6').ViewObject.Visibility = True
-        capture(bed, 'bedframe_v5_front.png', (0, 1, 0))
-        capture(bed, 'bedframe_v5_perspective.png', (0.65, 1, 0.65))
+        capture(bed, 'bedframe_v6_front.png', (0, 1, 0))
+        capture(bed, 'bedframe_v6_perspective.png', (0.65, 1, 0.65))
         for o in bed.Objects:
             if o.Name.startswith('Door') and hasattr(o, 'Shape'):
                 o.ViewObject.Visibility = False
         bed.getObject('Mattress_5x6').ViewObject.Visibility = False
-        capture(bed, 'bedframe_v5_interior.png', (0.65, 1, 0.85))
+        capture(bed, 'bedframe_v6_interior.png', (0.65, 1, 0.85))
         for o in bed.Objects:
             o.ViewObject.Visibility = 'Bridge' in o.SourceGroup.split(',') and not o.Name.startswith('Door')
-        capture(bed, 'bedframe_v5_top_detail.png', (0.3, 1, 0.25))
+        capture(bed, 'bedframe_v6_top_detail.png', (0.3, 1, 0.25))
         for o in cab.Objects:
             o.ViewObject.Visibility = any(g.startswith('Top_Box_') for g in o.SourceGroup.split(',')) and not o.Name.startswith('Door')
-        capture(cab, 'cabinet_v7_top_detail.png', (0.2, -1, 0.3))
+        capture(cab, 'cabinet_v8_top_detail.png', (0.2, -1, 0.3))
         # Pull drawers out in focused views so the plywood L/C members are visible.
         import re
         for o in cab.Objects:
@@ -124,13 +124,13 @@ def run():
             match = re.match(r'Drawer_([123])_', o.Name)
             if o.ViewObject.Visibility and match:
                 o.Placement.Base.y -= 100 + int(match.group(1)) * 35
-        capture(cab, 'cabinet_v7_drawer_pulls.png', (0.7, -1, 0.65))
+        capture(cab, 'cabinet_v8_drawer_pulls.png', (0.7, -1, 0.65))
         for o in bed.Objects:
             o.ViewObject.Visibility = 'Nightstand_Left' in o.SourceGroup.split(',')
             match = re.match(r'Drawer_([12])_', o.Name)
             if o.ViewObject.Visibility and match:
                 o.Placement.Base.y += 120 + int(match.group(1)) * 40
-        capture(bed, 'bedframe_v5_drawer_pulls.png', (0.7, 1, 0.65))
+        capture(bed, 'bedframe_v6_drawer_pulls.png', (0.7, 1, 0.65))
         with LOG.open('a') as f:
             f.write('DONE\n')
     except Exception:
