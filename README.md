@@ -1,8 +1,26 @@
 # FreeCAD projects
 
-[Bedroom furniture project](Bedroom%20Cabinet/README.md) · [Kitchen cabinet project](Kitchen%20Cabinet/)
+## Latest approved design — bed v6 and makeup cabinet v8
 
-## Bedroom cabinet and bed frame
+Updated screenshots are embedded here after every major design change, and in the session notes.
+
+Bed frame with cabinets — full design:
+
+![Latest approved bed frame and cabinets v6](Bedroom%20Cabinet/screenshots/bedframe_v6_perspective.png)
+
+TV/makeup cabinet — full design:
+
+![Latest approved TV and makeup cabinet v8](Bedroom%20Cabinet/screenshots/cabinet_v8_perspective.png)
+
+Bed cabinet drawer detail — solid sides and concealed L/C ends:
+
+![Latest approved bed v6 drawer detail](Bedroom%20Cabinet/screenshots/bedframe_v6_drawer_pulls.png)
+
+Makeup cabinet drawer detail — solid sides and concealed L/C ends:
+
+![Latest approved makeup cabinet v8 drawer detail](Bedroom%20Cabinet/screenshots/cabinet_v8_drawer_pulls.png)
+
+---
 
 Two separate FreeCAD furniture designs, reviewed on CachyOS with FreeCAD 1.1.4.
 Latest major design update: **2026-11-15 — solid channel ends; drawer-only L/C pulls**.
@@ -19,10 +37,6 @@ stacked drawers**. The channels stop between the existing solid sides, so their 
 are concealed without extra cover panels. Door-only cabinets have no L/C cutouts.
 All fronts retain square, edge-banded edges.
 
-### Updated drawer pull detail — drawers open
-
-![Bed v6 plywood L and C drawer recesses](Bedroom%20Cabinet/screenshots/bedframe_v6_drawer_pulls.png)
-
 The four-door overhead cabinet now has **three full-height dividers**, one
 compartment behind each door, and four separate shelf panels. Shelf widths are
 368.9 / 378.7 / 378.7 / 368.9 mm, replacing the former 1554 mm span.
@@ -31,10 +45,6 @@ The outside dimensions and existing door sizes are preserved.
 ### Overhead cabinet detail — doors hidden
 
 ![Bed v6 overhead cabinet with three dividers](Bedroom%20Cabinet/screenshots/bedframe_v6_top_detail.png)
-
-### Angled view
-
-![Bed v6 with side and overhead cabinets](Bedroom%20Cabinet/screenshots/bedframe_v6_perspective.png)
 
 ### Front view
 
@@ -54,10 +64,6 @@ The channels stop at the inside faces of the existing side panels; their ends do
 not cut through the visible sides. L/C channels are restricted to drawer units.
 Door-only units have plain panels and simple setbacks for finger access.
 
-### Updated drawer pull detail — drawers open
-
-![Cabinet v8 plywood L and C drawer recesses](Bedroom%20Cabinet/screenshots/cabinet_v8_drawer_pulls.png)
-
 A **centre divider** now separates the two-door top box above the TV. Each side
 top box already has its own compartment. Outside dimensions and door sizes are
 preserved, including the 720 mm makeup table and 1650 mm hanging rail.
@@ -65,10 +71,6 @@ preserved, including the 720 mm makeup table and 1650 mm hanging rail.
 ### Top cabinet detail — doors hidden
 
 ![Cabinet v8 top boxes with centre divider](Bedroom%20Cabinet/screenshots/cabinet_v8_top_detail.png)
-
-### Angled view
-
-![Cabinet v8 with TV and makeup table](Bedroom%20Cabinet/screenshots/cabinet_v8_perspective.png)
 
 ### Front view
 
@@ -113,3 +115,5 @@ remain to be repaired.
 
 **After every major design change, update both the session notes and this GitHub
 README with fresh screenshots of each affected design.**
+
+[Bedroom furniture project](Bedroom%20Cabinet/README.md) · [Kitchen cabinet project](Kitchen%20Cabinet/)
