@@ -1,0 +1,75 @@
+{
+  "project": "cabinet",
+  "voltage_assumption": 24,
+  "watts_per_m_assumption": 10.0,
+  "profile_envelope_mm": [
+    16,
+    10
+  ],
+  "total_length_m": 1.58,
+  "load_w": 15.8,
+  "load_a": 0.658,
+  "design_margin": 1.25,
+  "minimum_capacity_with_margin_w": 19.75,
+  "provisional_driver_w": 30,
+  "branches": [
+    {
+      "id": "C_T",
+      "length_mm": 760,
+      "location": [
+        540,
+        80,
+        1280.4
+      ],
+      "direction": "X",
+      "watts": 7.6,
+      "cable_route_mm": 1605.4,
+      "cable_allowance_mm": 1805.4
+    },
+    {
+      "id": "C_L",
+      "length_mm": 410,
+      "location": [
+        550,
+        444.4,
+        820
+      ],
+      "direction": "Z",
+      "watts": 4.1,
+      "cable_route_mm": 1701.4,
+      "cable_allowance_mm": 1901.4
+    },
+    {
+      "id": "C_R",
+      "length_mm": 410,
+      "location": [
+        1284,
+        444.4,
+        820
+      ],
+      "direction": "Z",
+      "watts": 4.1,
+      "cable_route_mm": 2435.4,
+      "cable_allowance_mm": 2635.4
+    }
+  ],
+  "drilled_cut_rows": [
+    36,
+    68,
+    73,
+    75,
+    78
+  ],
+  "driver_location_mm": [
+    40,
+    330,
+    2110
+  ],
+  "pending": [
+    "Strip voltage / W per metre / cut pitch",
+    "Actual profile and diffuser dimensions",
+    "Driver thermal / ventilation requirements",
+    "Wire gauge, fuse and connector ratings from actual cable lengths and products",
+    "Grommet OD and local mains outlet location"
+  ]
+}

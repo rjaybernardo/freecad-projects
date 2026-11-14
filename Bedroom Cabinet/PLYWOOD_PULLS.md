@@ -1,6 +1,6 @@
 # Plywood drawer pulls — concealed ends
 
-Current models: **Bed_Wall_Unit_v6.FCStd** and **Bedroom_Cabinet_Modern_v8.FCStd**.
+Current models: **Bed_Wall_Unit_v7.FCStd** and **Bedroom_Cabinet_Modern_v9.FCStd**.
 
 The user rejected exposed notch ends and drawer-style notches on cabinets that
 contain only doors. This revision keeps the existing outside side/end panels
@@ -23,9 +23,9 @@ plywood returns. Return width is 22.4 mm before final edge-band deductions.
 - Fixed tops can have internal recess operations, but the outside sides stay intact.
 - All fronts stay square-edged, with no angled pull cuts or aluminium grip rails.
 
-![Bed drawer channels ending between solid sides](screenshots/bedframe_v6_drawer_pulls.png)
+![Bed drawer channels ending between solid sides](screenshots/bedframe_v7_drawer_pulls.png)
 
-![Makeup drawer channels ending between solid sides](screenshots/cabinet_v8_drawer_pulls.png)
+![Makeup drawer channels ending between solid sides](screenshots/cabinet_v9_drawer_pulls.png)
 
 ## Plain door cabinets
 
@@ -46,8 +46,4 @@ units and that the visible side/end panels have no routed cutouts.
 
 ## Fabrication status
 
-Finished stock is still assumed to be 18 mm plywood + 0.8 mm laminate per face =
-19.6 mm. The lists contain actual plywood channel members and any internal routing
-operations. Measure the purchased stock before fabrication. Final per-edge band
-deductions, material reconciliation, oversized headboard splitting, plinth parts,
-wheel hardware, lighting, and optimized nesting remain pending audit work.
+Finished stock is assumed to be 18 mm core + 0.8 mm laminate per face = 19.6 mm. The current native CutSchedule records all four band flags and separate blank/finished sizes. Headboard halves, plinth strips, wheels and provisional lighting are in the current models; [workshop guide](WORKSHOP_GUIDE.md) and [lighting guide](LIGHTING_AND_WIRING.md) describe remaining hardware assumptions. Aluminium LED profiles are separate from these plywood grip channels.

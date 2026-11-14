@@ -1,0 +1,168 @@
+"""Export views of the saved cabinet and bed, without saving model changes.
+
+Run with FreeCAD's Macro menu. Images go in screenshots/ beside this macro.
+Each project is captured separately.
+"""
+from pathlib import Path
+import traceback
+import shutil
+import tempfile
+import FreeCAD as App
+import FreeCADGui as Gui
+from PySide import QtCore
+from pivy import coin
+
+PROJECT = Path('/home/rjaybernardo/Documents/FreeCAD/Bedroom Cabinet')
+OUTPUT = PROJECT / 'screenshots'
+LOG = OUTPUT / 'capture.log'
+opened = []
+temporary = tempfile.TemporaryDirectory(prefix='freecad-screenshot-')
+
+
+def camera(view, doc, eye):
+    z = App.Vector(*eye)
+    z.normalize()
+    x = App.Vector(0, 0, 1).cross(z)
+    x.normalize()
+    y = z.cross(x)
+    y.normalize()
+    bounds = App.BoundBox()
+    for o in doc.Objects:
+        if o.isDerivedFrom('Part::Feature') and o.ViewObject.Visibility:
+            bounds.add(o.Shape.BoundBox)
+    corners = [App.Vector(a, b, c) for a in (bounds.XMin, bounds.XMax)
+               for b in (bounds.YMin, bounds.YMax) for c in (bounds.ZMin, bounds.ZMax)]
+    width = max(v.dot(x) for v in corners) - min(v.dot(x) for v in corners)
+    height = max(v.dot(y) for v in corners) - min(v.dot(y) for v in corners)
+    distance = bounds.DiagonalLength * 3
+    position = bounds.Center + z * distance
+    node = view.getCameraNode()
+    node.orientation.setValue(coin.SbRotation(*App.Rotation(x, y, z, 'ZXY').Q))
+    node.position.setValue(position.x, position.y, position.z)
+    node.focalDistance.setValue(distance)
+    node.nearDistance.setValue(1)
+    node.farDistance.setValue(distance * 3)
+    node.height.setValue(max(height, width / (1800 / 1400)) * 1.15)
+
+
+def capture(doc, filename, eye):
+    App.setActiveDocument(doc.Name)
+    view = Gui.activeDocument().activeView()
+    view.setCameraType('Orthographic')
+    camera(view, doc, eye)
+    Gui.updateGui()
+    with LOG.open('a') as f:
+        f.write(view.getCamera() + '\n')
+    view.saveImage(str(OUTPUT / filename), 1800, 1400, 'White')
+    with LOG.open('a') as f:
+        f.write(filename + '\n')
+
+
+def scene(filename, name):
+    # Open disposable copies so GUI recovery or Save All cannot alter originals.
+    copy = Path(temporary.name) / filename
+    shutil.copyfile(PROJECT / filename, copy)
+    source = App.openDocument(str(copy))
+    opened.append(source.Name)
+    target = App.newDocument(name)
+    opened.append(target.Name)
+    excluded = {o.Name for o in source.getObject('Reference_Room').OutListRecursive}
+    excluded.discard('Mattress_5x6')
+    for src in source.Objects:
+        if not src.isDerivedFrom('Part::Feature') or src.Name in excluded:
+            continue
+        dst = target.addObject('Part::Feature', src.Name)
+        dst.Shape = src.Shape.copy()
+        for prop in ['PartID','MovingDrawer']:
+            if prop in src.PropertiesList:
+                dst.addProperty('App::PropertyBool' if prop=='MovingDrawer' else 'App::PropertyString',prop,'Screenshot')
+                setattr(dst,prop,getattr(src,prop))
+        dst.addProperty('App::PropertyString', 'SourceGroup', 'Screenshot')
+        dst.SourceGroup = ','.join(o.Name for o in src.InListRecursive
+                                   if o.TypeId == 'App::DocumentObjectGroup')
+        dst.ViewObject.ShapeColor = src.ViewObject.ShapeColor
+        dst.ViewObject.LineColor = (0.25, 0.25, 0.25)
+        dst.ViewObject.DisplayMode = 'Flat Lines'
+    Gui.activeDocument()
+    target.recompute()
+    return target
+
+
+def run():
+    try:
+        OUTPUT.mkdir(exist_ok=True)
+        LOG.write_text('Rendering saved FreeCAD models; source files are not saved.\n')
+        Gui.getMainWindow().resize(1500, 1100)
+        prefs = App.ParamGet('User parameter:BaseApp/Preferences/View')
+        prefs.SetBool('UseVBO', False)
+        prefs.SetUnsigned('AntiAliasing', 0)
+        cab = scene('Bedroom_Cabinet_Modern_v9.FCStd', 'Cabinet_Screenshots')
+        capture(cab, 'cabinet_v9_front.png', (0, -1, 0))
+        capture(cab, 'cabinet_v9_perspective.png', (0.6, -1, 0.55))
+        doors = [o for o in cab.Objects if o.Name.startswith('Door') and hasattr(o, 'Shape')]
+        for o in doors:
+            o.ViewObject.Visibility = False
+        capture(cab, 'cabinet_v9_interior.png', (0.3, -1, 0.3))
+        for o in doors:
+            o.ViewObject.Visibility = True
+
+        bed = scene('Bed_Wall_Unit_v7.FCStd', 'Bedframe_Screenshots')
+        bed.getObject('Mattress_5x6').ViewObject.Visibility = True
+        capture(bed, 'bedframe_v7_front.png', (0, 1, 0))
+        capture(bed, 'bedframe_v7_perspective.png', (0.65, 1, 0.65))
+        for o in bed.Objects:
+            if o.Name.startswith('Door') and hasattr(o, 'Shape'):
+                o.ViewObject.Visibility = False
+        bed.getObject('Mattress_5x6').ViewObject.Visibility = False
+        capture(bed, 'bedframe_v7_interior.png', (0.65, 1, 0.85))
+        for o in bed.Objects:
+            o.ViewObject.Visibility = 'Bridge' in o.SourceGroup.split(',') and not o.Name.startswith('Door')
+        capture(bed, 'bedframe_v7_top_detail.png', (0.3, 1, 0.25))
+        for o in cab.Objects:
+            o.ViewObject.Visibility = any(g.startswith('Top_Box_') for g in o.SourceGroup.split(',')) and not o.Name.startswith('Door')
+        capture(cab, 'cabinet_v9_top_detail.png', (0.2, -1, 0.3))
+        # Pull drawers out in focused views so the plywood L/C members are visible.
+        import re
+        for o in cab.Objects:
+            o.ViewObject.Visibility = 'Drawer_Tower' in o.SourceGroup.split(',')
+            match = re.match(r'Drawer_([123])_', o.Name)
+            if o.ViewObject.Visibility and match:
+                o.Placement.Base.y -= 100 + int(match.group(1)) * 35
+        capture(cab, 'cabinet_v9_drawer_pulls.png', (0.7, -1, 0.65))
+        for o in bed.Objects:
+            o.ViewObject.Visibility = 'Nightstand_Left' in o.SourceGroup.split(',')
+            match = re.match(r'Drawer_([12])_', o.Name)
+            if o.ViewObject.Visibility and match:
+                o.Placement.Base.y += 120 + int(match.group(1)) * 40
+        capture(bed, 'bedframe_v7_drawer_pulls.png', (0.7, 1, 0.65))
+        for o in bed.Objects:
+            o.ViewObject.Visibility = 'Drawer_Assembly_Side_Box_1L' in o.SourceGroup.split(',')
+        capture(bed, 'bedframe_v7_wheels.png', (0.7, 1, -0.55))
+        for o in bed.Objects:
+            o.ViewObject.Visibility = not o.Name.startswith('Door') and o.Name != 'Mattress_5x6'
+            if 'MovingDrawer' in o.PropertiesList and o.MovingDrawer:
+                groups=o.SourceGroup.split(',')
+                side=next((g for g in groups if g.startswith('Side_Box_')),None)
+                o.Placement.Base += App.Vector((-337 if side.endswith('L') else 337),0,0) if side else App.Vector(0,450,0)
+        capture(bed, 'bedframe_v7_drawers_open.png', (0.8, 1, 0.9))
+        for target, filename, eye in [(bed,'bedframe_v7_lighting.png',(0.4,1,0.4)),(cab,'cabinet_v9_lighting.png',(0.4,-1,0.4))]:
+            for o in target.Objects:
+                o.ViewObject.Visibility = o.Name.startswith('LED_') or (('Upper_Left' in o.SourceGroup or 'Upper_Right' in o.SourceGroup or 'Bridge' in o.SourceGroup or 'Top_Box' in o.SourceGroup or 'Centre_TV_Makeup' in o.SourceGroup) and 'PartID' in o.PropertiesList and not o.Name.startswith(('Door','Drawer','Table_Drawer')))
+                if not o.Name.startswith('LED_'):o.ViewObject.Transparency=80
+            capture(target,filename,eye)
+        with LOG.open('a') as f:
+            f.write('DONE\n')
+    except Exception:
+        OUTPUT.mkdir(exist_ok=True)
+        with LOG.open('a') as f:
+            f.write(traceback.format_exc())
+    finally:
+        for name in reversed(opened):
+            App.closeDocument(name)
+        temporary.cleanup()
+        # Only exit an isolated capture process, never a user's normal GUI session.
+        if App.ConfigGet('UserParameter').startswith('/tmp/freecad-capture-'):
+            Gui.getMainWindow().close()
+
+
+QtCore.QTimer.singleShot(1200, run)

@@ -1,0 +1,28 @@
+{
+  "bed": {
+    "valid_solids": 328,
+    "plywood_panels": 207,
+    "square_fronts": 16,
+    "sheets": 12,
+    "manual_pages": 12,
+    "closed_collisions": 0,
+    "sampled_drawer_motion_collisions": 0,
+    "led_wood_collisions": 0,
+    "panel_layout_bounds_and_kerf": "passed",
+    "embedded_svg_pages": "valid"
+  },
+  "cabinet": {
+    "valid_solids": 124,
+    "plywood_panels": 97,
+    "square_fronts": 12,
+    "sheets": 9,
+    "manual_pages": 9,
+    "closed_collisions": 0,
+    "sampled_drawer_motion_collisions": 0,
+    "led_wood_collisions": 0,
+    "panel_layout_bounds_and_kerf": "passed",
+    "embedded_svg_pages": "valid"
+  },
+  "editable_layout_check": "Passed in disposable document: 2 mm edge band and one changed band flag regenerated matching blank sizes and native pages",
+  "saw_sequence_check": "Reconstructed every cut into the final panel and offcut rectangles for both projects"
+}

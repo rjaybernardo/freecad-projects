@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420mm" height="297mm" viewBox="0 0 420 297">
+<rect width="420" height="297" fill="white"/>
+<style>text {font-family:DejaVu Sans,sans-serif;fill:#203446} .small{font-size:2.5px} .body{font-size:3.1px}</style>
+<text x="12" y="15" font-size="6" font-weight="bold">LED WIRING — parallel low-voltage branches</text>
+<text x="12" y="23" font-size="3.2">CABINET | PROVISIONAL 24 V constant-voltage, 10 W/m | confirm purchased products</text>
+<text x="12" y="290" class="small">BEDROOM WORKSHOP | mm | verify stock and purchased hardware before cutting | revision 2026-11-15</text>
+<rect x="12" y="37" width="57" height="24" rx="2" fill="#e4edf0" stroke="#334d5b" stroke-width=".4"/>
+<text x="15" y="44" font-size="3.2" >Existing outlet</text>
+<text x="15" y="49" font-size="3.2" >Use certified plug-in supply</text>
+<rect x="83" y="37" width="75" height="34" rx="2" fill="#e4edf0" stroke="#334d5b" stroke-width=".4"/>
+<text x="86" y="44" font-size="3.2" >24 V DC driver</text>
+<text x="86" y="49" font-size="3.2" >30 W provisional</text>
+<text x="86" y="54" font-size="3.2" >Accessible + ventilated</text>
+<rect x="176" y="37" width="90" height="34" rx="2" fill="#e4edf0" stroke="#334d5b" stroke-width=".4"/>
+<text x="179" y="44" font-size="3.2" >DC fuse / distribution</text>
+<text x="179" y="49" font-size="3.2" >Compatible dimmer or switch</text>
+<text x="179" y="54" font-size="3.2" >Ratings per actual products</text>
+<path d="M69 49 L83 49" stroke="#415566" stroke-width=".7" fill="none"/>
+<path d="M158 48 L176 48" stroke="#c54b36" stroke-width=".7" fill="none"/>
+<path d="M158 60 L176 60" stroke="#1e2730" stroke-width=".7" fill="none"/>
+<text x="159" y="44" font-size="2.6" >+24 V</text>
+<text x="159" y="67" font-size="2.6" >0 V (-)</text>
+<path d="M276 48 L276 175" stroke="#c54b36" stroke-width=".7" fill="none"/>
+<path d="M282 60 L282 181" stroke="#1e2730" stroke-width=".7" fill="none"/>
+<path d="M266 48 L276 48" stroke="#c54b36" stroke-width=".7" fill="none"/>
+<path d="M266 60 L282 60" stroke="#1e2730" stroke-width=".7" fill="none"/>
+<rect x="311" y="79" width="94" height="26" rx="2" fill="#fff0cf" stroke="#334d5b" stroke-width=".4"/>
+<text x="314" y="86" font-size="3.2" >C_T  strip 760 mm</text>
+<text x="314" y="91" font-size="3.2" >7.60 W / 0.317 A</text>
+<text x="314" y="96" font-size="3.2" >+ to +   /   - to -</text>
+<path d="M276 86 L280 86 Q282 82 284 86 L311 86" stroke="#c54b36" stroke-width=".7" fill="none"/>
+<path d="M282 97 L311 97" stroke="#1e2730" stroke-width=".7" fill="none"/>
+<circle cx="276" cy="86" r="1.1" fill="#c54b36"/><circle cx="282" cy="97" r="1.1" fill="#1e2730"/>
+<rect x="311" y="114" width="94" height="26" rx="2" fill="#fff0cf" stroke="#334d5b" stroke-width=".4"/>
+<text x="314" y="121" font-size="3.2" >C_L  strip 410 mm</text>
+<text x="314" y="126" font-size="3.2" >4.10 W / 0.171 A</text>
+<text x="314" y="131" font-size="3.2" >+ to +   /   - to -</text>
+<path d="M276 121 L280 121 Q282 117 284 121 L311 121" stroke="#c54b36" stroke-width=".7" fill="none"/>
+<path d="M282 132 L311 132" stroke="#1e2730" stroke-width=".7" fill="none"/>
+<circle cx="276" cy="121" r="1.1" fill="#c54b36"/><circle cx="282" cy="132" r="1.1" fill="#1e2730"/>
+<rect x="311" y="149" width="94" height="26" rx="2" fill="#fff0cf" stroke="#334d5b" stroke-width=".4"/>
+<text x="314" y="156" font-size="3.2" >C_R  strip 410 mm</text>
+<text x="314" y="161" font-size="3.2" >4.10 W / 0.171 A</text>
+<text x="314" y="166" font-size="3.2" >+ to +   /   - to -</text>
+<path d="M276 156 L280 156 Q282 152 284 156 L311 156" stroke="#c54b36" stroke-width=".7" fill="none"/>
+<path d="M282 167 L311 167" stroke="#1e2730" stroke-width=".7" fill="none"/>
+<circle cx="276" cy="156" r="1.1" fill="#c54b36"/><circle cx="282" cy="167" r="1.1" fill="#1e2730"/>
+<text x="12" y="91" font-size="3.8" font-weight="bold">MODEL LOCATIONS / CABLE ALLOWANCES</text>
+<text x="12" y="101" font-size="3.2" >C_T: under TV ledge / vanity — profile 760 mm</text>
+<text x="12" y="106" font-size="2.8" >2-core route 1605.4 mm + 200 mm service allowance = 1805.4 mm</text>
+<text x="12" y="114" font-size="3.2" >C_L: left of mirror — profile 410 mm</text>
+<text x="12" y="119" font-size="2.8" >2-core route 1701.4 mm + 200 mm service allowance = 1901.4 mm</text>
+<text x="12" y="127" font-size="3.2" >C_R: right of mirror — profile 410 mm</text>
+<text x="12" y="132" font-size="2.8" >2-core route 2435.4 mm + 200 mm service allowance = 2635.4 mm</text>
+<text x="12" y="151" font-size="3.3" >Total strip 1.580 m x 10 W/m = 15.80 W (0.658 A at 24 V).</text>
+<text x="12" y="159" font-size="3" >With 25% design margin: 19.75 W minimum; 30 W is a provisional selection, not a purchased specification.</text>
+<text x="12" y="176" font-size="2.9" >1. Confirm strip voltage, actual W/m and cut interval. The driver output voltage MUST match the strip.</text>
+<text x="12" y="183" font-size="2.9" >2. Mount aluminium U profiles with end caps and diffuser. Confirm the actual extrusion fits the 16 x 10 mm allowance.</text>
+<text x="12" y="190" font-size="2.9" >3. Drill the modelled cable passages BEFORE assembly; fit matching grommets so plywood edges cannot cut cable insulation.</text>
+<text x="12" y="197" font-size="2.9" >4. Secure the two-core DC cable along the back of fixed panels. Keep away from hinges, runners, wheels and moving fronts.</text>
+<text x="12" y="204" font-size="2.9" >5. With power unplugged, connect driver DC to rated distribution / dimmer, then each strip on its OWN parallel + / - branch.</text>
+<text x="12" y="211" font-size="2.9" >6. Cut strip only at its marked copper pads. Use compatible connectors or insulated solder joints; leave a service loop.</text>
+<text x="12" y="218" font-size="2.9" >7. Select wire gauge / fuse / connectors for actual current, route length and voltage drop; no gauge or fuse is finalized here.</text>
+<text x="12" y="225" font-size="2.9" >8. Test polarity and every branch before fitting diffusers. Check driver temperature and ventilation against its datasheet.</text>
+<text x="12" y="232" font-size="2.9" >9. Place driver behind an accessible door. Do not seal it into plywood or cover it with bedding. Keep mains and DC separate.</text>
+<text x="12" y="239" font-size="2.9" >10. Use a certified plug-in supply at an existing outlet; any fixed mains outlet or wiring work is for a qualified electrician.</text>
+<text x="12" y="253" font-size="2.9" >If the purchased strips are 12 V: update the model assumption and use a 12 V constant-voltage driver; recheck current, cable and fuse sizing.</text>
+<text x="12" y="261" font-size="2.5" >Sources: Waveform Lighting, “How to Connect An LED Strip to a Power Supply”; “Connecting LED Strips in Series vs Parallel”.</text>
+<text x="12" y="268" font-size="2.5" >See LIGHTING_AND_WIRING.md for source links and all hardware assumptions. Orange CAD lines represent two-core DC cable sheaths.</text>
+</svg>

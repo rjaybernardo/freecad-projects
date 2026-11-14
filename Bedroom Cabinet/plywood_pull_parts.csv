@@ -1,32 +1,32 @@
-Project,Module,Part,Qty,Length_mm,Width_mm,Thickness_mm,Edge_Work
-Bed v6,Pull_Foot_Box_L,Pull_Foot_Box_L_L_Back,1,752.4,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v6,Pull_Foot_Box_L,Pull_Foot_Box_L_L_Lower,1,752.4,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v6,Pull_Foot_Box_R,Pull_Foot_Box_R_L_Back,1,752.4,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v6,Pull_Foot_Box_R,Pull_Foot_Box_R_L_Lower,1,752.4,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v6,Pull_Nightstand_Left,Pull_Nightstand_Left_L_Back,1,302.2,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v6,Pull_Nightstand_Left,Pull_Nightstand_Left_L_Lower,1,302.2,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v6,Pull_Nightstand_Left_C,Pull_Nightstand_Left_C_Back,1,302.2,80.0,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v6,Pull_Nightstand_Left_C,Pull_Nightstand_Left_C_Lower,1,302.2,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v6,Pull_Nightstand_Left_C,Pull_Nightstand_Left_C_Upper,1,302.2,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v6,Pull_Nightstand_Right,Pull_Nightstand_Right_L_Back,1,302.2,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v6,Pull_Nightstand_Right,Pull_Nightstand_Right_L_Lower,1,302.2,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v6,Pull_Nightstand_Right_C,Pull_Nightstand_Right_C_Back,1,302.2,80.0,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v6,Pull_Nightstand_Right_C,Pull_Nightstand_Right_C_Lower,1,302.2,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v6,Pull_Nightstand_Right_C,Pull_Nightstand_Right_C_Upper,1,302.2,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v6,Pull_Side_Box_1L,Pull_Side_Box_1L_Back,1,458.9,60,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v6,Pull_Side_Box_1L,Pull_Side_Box_1L_Lower,1,458.9,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v6,Pull_Side_Box_1R,Pull_Side_Box_1R_Back,1,458.9,60,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v6,Pull_Side_Box_1R,Pull_Side_Box_1R_Lower,1,458.9,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v6,Pull_Side_Box_2L,Pull_Side_Box_2L_Back,1,458.9,60,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v6,Pull_Side_Box_2L,Pull_Side_Box_2L_Lower,1,458.9,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v6,Pull_Side_Box_2R,Pull_Side_Box_2R_Back,1,458.9,60,19.6,HPL both faces; square edges; edge-band exposed edges
-Bed v6,Pull_Side_Box_2R,Pull_Side_Box_2R_Lower,1,458.9,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-TV/makeup v8,Drawer_Tower,Top,1,460.8,430.8,19.6,Tower_L plywood pull recess; see model
-TV/makeup v8,Pull_Tower_C_1,Pull_Tower_C_1_Back,1,460.8,80.0,19.6,HPL both faces; square edges; edge-band exposed edges
-TV/makeup v8,Pull_Tower_C_1,Pull_Tower_C_1_Lower,1,460.8,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-TV/makeup v8,Pull_Tower_C_1,Pull_Tower_C_1_Upper,1,460.8,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-TV/makeup v8,Pull_Tower_C_2,Pull_Tower_C_2_Back,1,460.8,80.0,19.6,HPL both faces; square edges; edge-band exposed edges
-TV/makeup v8,Pull_Tower_C_2,Pull_Tower_C_2_Lower,1,460.8,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-TV/makeup v8,Pull_Tower_C_2,Pull_Tower_C_2_Upper,1,460.8,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
-TV/makeup v8,Pull_Tower_L,Pull_Tower_L_Back,1,460.8,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
-TV/makeup v8,Pull_Tower_L,Pull_Tower_L_Lower,1,460.8,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Project,ID,Module,Part,Finished L,Finished W,Thickness,Blank L,Blank W,Note
+bed,B186,Pull_Nightstand_Left_L,Pull_Nightstand_Left_L_Back,302.2,60.0,19.6,302.2,60.0,HPL both faces; square edges; edge-band exposed edges
+bed,B187,Pull_Nightstand_Left_L,Pull_Nightstand_Left_L_Lower,302.2,22.4,19.6,302.2,21.4,HPL both faces; square edges; edge-band exposed edges
+bed,B188,Pull_Nightstand_Left_C,Pull_Nightstand_Left_C_Back,302.2,80.0,19.6,302.2,80.0,HPL both faces; square edges; edge-band exposed edges
+bed,B189,Pull_Nightstand_Left_C,Pull_Nightstand_Left_C_Lower,302.2,22.4,19.6,302.2,21.4,HPL both faces; square edges; edge-band exposed edges
+bed,B190,Pull_Nightstand_Left_C,Pull_Nightstand_Left_C_Upper,302.2,22.4,19.6,302.2,21.4,HPL both faces; square edges; edge-band exposed edges
+bed,B191,Pull_Nightstand_Right_L,Pull_Nightstand_Right_L_Back,302.2,60.0,19.6,302.2,60.0,HPL both faces; square edges; edge-band exposed edges
+bed,B192,Pull_Nightstand_Right_L,Pull_Nightstand_Right_L_Lower,302.2,22.4,19.6,302.2,21.4,HPL both faces; square edges; edge-band exposed edges
+bed,B193,Pull_Nightstand_Right_C,Pull_Nightstand_Right_C_Back,302.2,80.0,19.6,302.2,80.0,HPL both faces; square edges; edge-band exposed edges
+bed,B194,Pull_Nightstand_Right_C,Pull_Nightstand_Right_C_Lower,302.2,22.4,19.6,302.2,21.4,HPL both faces; square edges; edge-band exposed edges
+bed,B195,Pull_Nightstand_Right_C,Pull_Nightstand_Right_C_Upper,302.2,22.4,19.6,302.2,21.4,HPL both faces; square edges; edge-band exposed edges
+bed,B196,Pull_Side_Box_1L_L,Pull_Side_Box_1L_Back,459.7,60,19.6,459.7,60.0,HPL both faces; square edges; edge-band exposed edges
+bed,B197,Pull_Side_Box_1L_L,Pull_Side_Box_1L_Lower,459.7,22.4,19.6,459.7,21.4,HPL both faces; square edges; edge-band exposed edges
+bed,B198,Pull_Side_Box_2L_L,Pull_Side_Box_2L_Back,459.7,60,19.6,459.7,60.0,HPL both faces; square edges; edge-band exposed edges
+bed,B199,Pull_Side_Box_2L_L,Pull_Side_Box_2L_Lower,459.7,22.4,19.6,459.7,21.4,HPL both faces; square edges; edge-band exposed edges
+bed,B200,Pull_Foot_Box_L_L,Pull_Foot_Box_L_L_Back,752.4,60.0,19.6,752.4,60.0,HPL both faces; square edges; edge-band exposed edges
+bed,B201,Pull_Foot_Box_L_L,Pull_Foot_Box_L_L_Lower,752.4,22.4,19.6,752.4,21.4,HPL both faces; square edges; edge-band exposed edges
+bed,B202,Pull_Side_Box_1R_L,Pull_Side_Box_1R_Back,459.7,60,19.6,459.7,60.0,HPL both faces; square edges; edge-band exposed edges
+bed,B203,Pull_Side_Box_1R_L,Pull_Side_Box_1R_Lower,459.7,22.4,19.6,459.7,21.4,HPL both faces; square edges; edge-band exposed edges
+bed,B204,Pull_Side_Box_2R_L,Pull_Side_Box_2R_Back,459.7,60,19.6,459.7,60.0,HPL both faces; square edges; edge-band exposed edges
+bed,B205,Pull_Side_Box_2R_L,Pull_Side_Box_2R_Lower,459.7,22.4,19.6,459.7,21.4,HPL both faces; square edges; edge-band exposed edges
+bed,B206,Pull_Foot_Box_R_L,Pull_Foot_Box_R_L_Back,752.4,60.0,19.6,752.4,60.0,HPL both faces; square edges; edge-band exposed edges
+bed,B207,Pull_Foot_Box_R_L,Pull_Foot_Box_R_L_Lower,752.4,22.4,19.6,752.4,21.4,HPL both faces; square edges; edge-band exposed edges
+cabinet,C049,Drawer_Tower,Top,460.8,430.8,19.6,460.8,429.8,Tower_L plywood pull recess; see model
+cabinet,C090,Pull_Tower_L,Pull_Tower_L_Back,460.8,60.0,19.6,460.8,60.0,HPL both faces; square edges; edge-band exposed edges
+cabinet,C091,Pull_Tower_L,Pull_Tower_L_Lower,460.8,22.4,19.6,460.8,21.4,HPL both faces; square edges; edge-band exposed edges
+cabinet,C092,Pull_Tower_C_1,Pull_Tower_C_1_Back,460.8,80.0,19.6,460.8,80.0,HPL both faces; square edges; edge-band exposed edges
+cabinet,C093,Pull_Tower_C_1,Pull_Tower_C_1_Lower,460.8,22.4,19.6,460.8,21.4,HPL both faces; square edges; edge-band exposed edges
+cabinet,C094,Pull_Tower_C_1,Pull_Tower_C_1_Upper,460.8,22.4,19.6,460.8,21.4,HPL both faces; square edges; edge-band exposed edges
+cabinet,C095,Pull_Tower_C_2,Pull_Tower_C_2_Back,460.8,80.0,19.6,460.8,80.0,HPL both faces; square edges; edge-band exposed edges
+cabinet,C096,Pull_Tower_C_2,Pull_Tower_C_2_Lower,460.8,22.4,19.6,460.8,21.4,HPL both faces; square edges; edge-band exposed edges
+cabinet,C097,Pull_Tower_C_2,Pull_Tower_C_2_Upper,460.8,22.4,19.6,460.8,21.4,HPL both faces; square edges; edge-band exposed edges

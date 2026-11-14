@@ -1,0 +1,5755 @@
+{
+  "project": "cabinet",
+  "settings": {
+    "StockLength": 2440.0,
+    "StockWidth": 1220.0,
+    "Trim": 5.0,
+    "Kerf": 4.0,
+    "EdgeBand": 1.0,
+    "AllowRotation": 1
+  },
+  "panels": [
+    {
+      "id": "C001",
+      "module": "Wardrobe_Left_Hanging",
+      "part": "Plinth_Front",
+      "object": "Plinth_Front",
+      "finished_l": 520,
+      "finished_w": 80,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 520.0,
+      "blank_w": 80.0
+    },
+    {
+      "id": "C002",
+      "module": "Wardrobe_Left_Hanging",
+      "part": "Plinth_Back",
+      "object": "Plinth_Back",
+      "finished_l": 520,
+      "finished_w": 80,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 520.0,
+      "blank_w": 80.0
+    },
+    {
+      "id": "C003",
+      "module": "Wardrobe_Left_Hanging",
+      "part": "Side_L",
+      "object": "Side_L",
+      "finished_l": 1990,
+      "finished_w": 430.8,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 1990.0,
+      "blank_w": 429.8
+    },
+    {
+      "id": "C004",
+      "module": "Wardrobe_Left_Hanging",
+      "part": "Side_R",
+      "object": "Side_R",
+      "finished_l": 1990,
+      "finished_w": 405.8,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "Plain rectangular side; front set back 25 mm for square door grip",
+      "blank_l": 1990.0,
+      "blank_w": 404.8
+    },
+    {
+      "id": "C005",
+      "module": "Wardrobe_Left_Hanging",
+      "part": "Bottom",
+      "object": "Bottom",
+      "finished_l": 480.8,
+      "finished_w": 430.8,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 480.8,
+      "blank_w": 430.8
+    },
+    {
+      "id": "C006",
+      "module": "Wardrobe_Left_Hanging",
+      "part": "Top",
+      "object": "Top",
+      "finished_l": 480.8,
+      "finished_w": 430.8,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 480.8,
+      "blank_w": 429.8
+    },
+    {
+      "id": "C007",
+      "module": "Wardrobe_Left_Hanging",
+      "part": "Back",
+      "object": "Back",
+      "finished_l": 1990,
+      "finished_w": 520,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 1990.0,
+      "blank_w": 520.0
+    },
+    {
+      "id": "C008",
+      "module": "Wardrobe_Left_Hanging",
+      "part": "Shelf_Top",
+      "object": "Shelf_Top",
+      "finished_l": 480.8,
+      "finished_w": 410.8,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 480.8,
+      "blank_w": 409.8
+    },
+    {
+      "id": "C009",
+      "module": "Wardrobe_Left_Hanging",
+      "part": "Shelf_Top_2",
+      "object": "Shelf_Top_2",
+      "finished_l": 480.8,
+      "finished_w": 410.8,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 480.8,
+      "blank_w": 409.8
+    },
+    {
+      "id": "C010",
+      "module": "Wardrobe_Left_Hanging",
+      "part": "Drawer_1_Front",
+      "object": "Drawer_1_Front",
+      "finished_l": 476.8,
+      "finished_w": 145,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "note": "Square pull edge; edge-band exposed edges",
+      "blank_l": 474.8,
+      "blank_w": 143.0
+    },
+    {
+      "id": "C011",
+      "module": "Wardrobe_Left_Hanging",
+      "part": "Drawer_1_Side_L",
+      "object": "Drawer_1_Side_L",
+      "finished_l": 380.4,
+      "finished_w": 130,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "note": "",
+      "blank_l": 379.4,
+      "blank_w": 130.0
+    },
+    {
+      "id": "C012",
+      "module": "Wardrobe_Left_Hanging",
+      "part": "Drawer_1_Side_R",
+      "object": "Drawer_1_Side_R",
+      "finished_l": 380.4,
+      "finished_w": 130,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "note": "",
+      "blank_l": 379.4,
+      "blank_w": 130.0
+    },
+    {
+      "id": "C013",
+      "module": "Wardrobe_Left_Hanging",
+      "part": "Drawer_1_Back",
+      "object": "Drawer_1_Back",
+      "finished_l": 416.6,
+      "finished_w": 130,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 416.6,
+      "blank_w": 130.0
+    },
+    {
+      "id": "C014",
+      "module": "Wardrobe_Left_Hanging",
+      "part": "Drawer_1_Bottom",
+      "object": "Drawer_1_Bottom",
+      "finished_l": 416.6,
+      "finished_w": 360.8,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 416.6,
+      "blank_w": 360.8
+    },
+    {
+      "id": "C015",
+      "module": "Wardrobe_Left_Hanging",
+      "part": "Drawer_2_Front",
+      "object": "Drawer_2_Front",
+      "finished_l": 476.8,
+      "finished_w": 145,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "note": "Square pull edge; edge-band exposed edges",
+      "blank_l": 474.8,
+      "blank_w": 143.0
+    },
+    {
+      "id": "C016",
+      "module": "Wardrobe_Left_Hanging",
+      "part": "Drawer_2_Side_L",
+      "object": "Drawer_2_Side_L",
+      "finished_l": 380.4,
+      "finished_w": 130,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "note": "",
+      "blank_l": 379.4,
+      "blank_w": 130.0
+    },
+    {
+      "id": "C017",
+      "module": "Wardrobe_Left_Hanging",
+      "part": "Drawer_2_Side_R",
+      "object": "Drawer_2_Side_R",
+      "finished_l": 380.4,
+      "finished_w": 130,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "note": "",
+      "blank_l": 379.4,
+      "blank_w": 130.0
+    },
+    {
+      "id": "C018",
+      "module": "Wardrobe_Left_Hanging",
+      "part": "Drawer_2_Back",
+      "object": "Drawer_2_Back",
+      "finished_l": 416.6,
+      "finished_w": 130,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 416.6,
+      "blank_w": 130.0
+    },
+    {
+      "id": "C019",
+      "module": "Wardrobe_Left_Hanging",
+      "part": "Drawer_2_Bottom",
+      "object": "Drawer_2_Bottom",
+      "finished_l": 416.6,
+      "finished_w": 360.8,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 416.6,
+      "blank_w": 360.8
+    },
+    {
+      "id": "C020",
+      "module": "Wardrobe_Left_Hanging",
+      "part": "Shelf_Above_Drawers",
+      "object": "Shelf_Above_Drawers",
+      "finished_l": 480.8,
+      "finished_w": 410.8,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 480.8,
+      "blank_w": 409.8
+    },
+    {
+      "id": "C021",
+      "module": "Wardrobe_Left_Hanging",
+      "part": "Door",
+      "object": "Door",
+      "finished_l": 1962,
+      "finished_w": 507,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "note": "Square pull edge; edge-band exposed edges",
+      "blank_l": 1960.0,
+      "blank_w": 505.0
+    },
+    {
+      "id": "C022",
+      "module": "Tower_Right_Shelves",
+      "part": "Plinth_Front",
+      "object": "Plinth_Front001",
+      "finished_l": 456,
+      "finished_w": 80,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 456.0,
+      "blank_w": 80.0
+    },
+    {
+      "id": "C023",
+      "module": "Tower_Right_Shelves",
+      "part": "Plinth_Back",
+      "object": "Plinth_Back001",
+      "finished_l": 456,
+      "finished_w": 80,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 456.0,
+      "blank_w": 80.0
+    },
+    {
+      "id": "C024",
+      "module": "Tower_Right_Shelves",
+      "part": "Side_L",
+      "object": "Side_L001",
+      "finished_l": 1990,
+      "finished_w": 405.8,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "Plain rectangular side; front set back 25 mm for square door grip",
+      "blank_l": 1990.0,
+      "blank_w": 404.8
+    },
+    {
+      "id": "C025",
+      "module": "Tower_Right_Shelves",
+      "part": "Side_R",
+      "object": "Side_R001",
+      "finished_l": 1990,
+      "finished_w": 430.8,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 1990.0,
+      "blank_w": 429.8
+    },
+    {
+      "id": "C026",
+      "module": "Tower_Right_Shelves",
+      "part": "Bottom",
+      "object": "Bottom001",
+      "finished_l": 430.8,
+      "finished_w": 416.8,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 430.8,
+      "blank_w": 416.8
+    },
+    {
+      "id": "C027",
+      "module": "Tower_Right_Shelves",
+      "part": "Top",
+      "object": "Top001",
+      "finished_l": 430.8,
+      "finished_w": 416.8,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "note": "",
+      "blank_l": 429.8,
+      "blank_w": 416.8
+    },
+    {
+      "id": "C028",
+      "module": "Tower_Right_Shelves",
+      "part": "Back",
+      "object": "Back001",
+      "finished_l": 1990,
+      "finished_w": 456,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 1990.0,
+      "blank_w": 456.0
+    },
+    {
+      "id": "C029",
+      "module": "Tower_Right_Shelves",
+      "part": "Shelf_1",
+      "object": "Shelf_1",
+      "finished_l": 416.8,
+      "finished_w": 410.8,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 416.8,
+      "blank_w": 409.8
+    },
+    {
+      "id": "C030",
+      "module": "Tower_Right_Shelves",
+      "part": "Shelf_2",
+      "object": "Shelf_2",
+      "finished_l": 416.8,
+      "finished_w": 410.8,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 416.8,
+      "blank_w": 409.8
+    },
+    {
+      "id": "C031",
+      "module": "Tower_Right_Shelves",
+      "part": "Shelf_3",
+      "object": "Shelf_3",
+      "finished_l": 416.8,
+      "finished_w": 410.8,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 416.8,
+      "blank_w": 409.8
+    },
+    {
+      "id": "C032",
+      "module": "Tower_Right_Shelves",
+      "part": "Shelf_4",
+      "object": "Shelf_4",
+      "finished_l": 416.8,
+      "finished_w": 410.8,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 416.8,
+      "blank_w": 409.8
+    },
+    {
+      "id": "C033",
+      "module": "Tower_Right_Shelves",
+      "part": "Shelf_5",
+      "object": "Shelf_5",
+      "finished_l": 416.8,
+      "finished_w": 410.8,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 416.8,
+      "blank_w": 409.8
+    },
+    {
+      "id": "C034",
+      "module": "Tower_Right_Shelves",
+      "part": "Door",
+      "object": "Door001",
+      "finished_l": 1962,
+      "finished_w": 443,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "note": "Square pull edge; edge-band exposed edges",
+      "blank_l": 1960.0,
+      "blank_w": 441.0
+    },
+    {
+      "id": "C035",
+      "module": "Centre_TV_Makeup",
+      "part": "Back_Panel_L",
+      "object": "Back_Panel_L",
+      "finished_l": 2070,
+      "finished_w": 650.0,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 2070.0,
+      "blank_w": 650.0
+    },
+    {
+      "id": "C036",
+      "module": "Centre_TV_Makeup",
+      "part": "Back_Panel_R",
+      "object": "Back_Panel_R",
+      "finished_l": 2070,
+      "finished_w": 650.0,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 2070.0,
+      "blank_w": 650.0
+    },
+    {
+      "id": "C037",
+      "module": "Centre_TV_Makeup",
+      "part": "TV_Ledge",
+      "object": "TV_Ledge_CableDrilled",
+      "finished_l": 1300,
+      "finished_w": 450.4,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "; 9 mm DC cable passage / grommet allowance at modelled route: C_L,C_R,C_T; match actual grommet OD before drilling",
+      "blank_l": 1300.0,
+      "blank_w": 449.4
+    },
+    {
+      "id": "C038",
+      "module": "Centre_TV_Makeup",
+      "part": "Table_Top",
+      "object": "Table_Top",
+      "finished_l": 1300,
+      "finished_w": 450.4,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 1300.0,
+      "blank_w": 449.4
+    },
+    {
+      "id": "C039",
+      "module": "Centre_TV_Makeup",
+      "part": "Table_Drawer_Front",
+      "object": "Table_Drawer_Front",
+      "finished_l": 796,
+      "finished_w": 100,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "note": "Square pull edge; edge-band exposed edges",
+      "blank_l": 794.0,
+      "blank_w": 98.0
+    },
+    {
+      "id": "C040",
+      "module": "Centre_TV_Makeup",
+      "part": "Table_Drawer_Side_L",
+      "object": "Table_Drawer_Side_L",
+      "finished_l": 380.4,
+      "finished_w": 70,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 380.4,
+      "blank_w": 69.0
+    },
+    {
+      "id": "C041",
+      "module": "Centre_TV_Makeup",
+      "part": "Table_Drawer_Side_R",
+      "object": "Table_Drawer_Side_R",
+      "finished_l": 380.4,
+      "finished_w": 70,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 380.4,
+      "blank_w": 69.0
+    },
+    {
+      "id": "C042",
+      "module": "Centre_TV_Makeup",
+      "part": "Table_Drawer_Back",
+      "object": "Table_Drawer_Back",
+      "finished_l": 735.8,
+      "finished_w": 70,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 735.8,
+      "blank_w": 69.0
+    },
+    {
+      "id": "C043",
+      "module": "Centre_TV_Makeup",
+      "part": "Table_Drawer_Bottom",
+      "object": "Table_Drawer_Bottom",
+      "finished_l": 735.8,
+      "finished_w": 360.8,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 735.8,
+      "blank_w": 360.8
+    },
+    {
+      "id": "C044",
+      "module": "Drawer_Tower",
+      "part": "Plinth_Front",
+      "object": "Plinth_Front002",
+      "finished_l": 500,
+      "finished_w": 80,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 500.0,
+      "blank_w": 80.0
+    },
+    {
+      "id": "C045",
+      "module": "Drawer_Tower",
+      "part": "Plinth_Back",
+      "object": "Plinth_Back002",
+      "finished_l": 500,
+      "finished_w": 80,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 500.0,
+      "blank_w": 80.0
+    },
+    {
+      "id": "C046",
+      "module": "Drawer_Tower",
+      "part": "Side_L",
+      "object": "Side_L002",
+      "finished_l": 620.4,
+      "finished_w": 430.8,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 620.4,
+      "blank_w": 429.8
+    },
+    {
+      "id": "C047",
+      "module": "Drawer_Tower",
+      "part": "Side_R",
+      "object": "Side_R002",
+      "finished_l": 620.4,
+      "finished_w": 430.8,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 620.4,
+      "blank_w": 429.8
+    },
+    {
+      "id": "C048",
+      "module": "Drawer_Tower",
+      "part": "Bottom",
+      "object": "Bottom002",
+      "finished_l": 460.8,
+      "finished_w": 430.8,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 460.8,
+      "blank_w": 430.8
+    },
+    {
+      "id": "C049",
+      "module": "Drawer_Tower",
+      "part": "Top",
+      "object": "Top002_Recessed",
+      "finished_l": 460.8,
+      "finished_w": 430.8,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "Tower_L plywood pull recess; see model",
+      "blank_l": 460.8,
+      "blank_w": 429.8
+    },
+    {
+      "id": "C050",
+      "module": "Drawer_Tower",
+      "part": "Drawer_1_Front",
+      "object": "Drawer_1_Front001",
+      "finished_l": 497,
+      "finished_w": 178.8,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "note": "Square pull edge; edge-band exposed edges",
+      "blank_l": 495.0,
+      "blank_w": 176.8
+    },
+    {
+      "id": "C051",
+      "module": "Drawer_Tower",
+      "part": "Drawer_1_Side_L",
+      "object": "Drawer_1_Side_L001",
+      "finished_l": 380.4,
+      "finished_w": 122.7,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "note": "",
+      "blank_l": 379.4,
+      "blank_w": 122.7
+    },
+    {
+      "id": "C052",
+      "module": "Drawer_Tower",
+      "part": "Drawer_1_Side_R",
+      "object": "Drawer_1_Side_R001",
+      "finished_l": 380.4,
+      "finished_w": 122.7,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "note": "",
+      "blank_l": 379.4,
+      "blank_w": 122.7
+    },
+    {
+      "id": "C053",
+      "module": "Drawer_Tower",
+      "part": "Drawer_1_Back",
+      "object": "Drawer_1_Back001",
+      "finished_l": 396.6,
+      "finished_w": 122.7,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 396.6,
+      "blank_w": 122.7
+    },
+    {
+      "id": "C054",
+      "module": "Drawer_Tower",
+      "part": "Drawer_1_Bottom",
+      "object": "Drawer_1_Bottom001",
+      "finished_l": 396.6,
+      "finished_w": 360.8,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 396.6,
+      "blank_w": 360.8
+    },
+    {
+      "id": "C055",
+      "module": "Drawer_Tower",
+      "part": "Drawer_2_Front",
+      "object": "Drawer_2_Front001",
+      "finished_l": 497,
+      "finished_w": 178.8,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "note": "Square pull edge; edge-band exposed edges",
+      "blank_l": 495.0,
+      "blank_w": 176.8
+    },
+    {
+      "id": "C056",
+      "module": "Drawer_Tower",
+      "part": "Drawer_2_Side_L",
+      "object": "Drawer_2_Side_L001",
+      "finished_l": 380.4,
+      "finished_w": 122.8,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "note": "",
+      "blank_l": 379.4,
+      "blank_w": 122.8
+    },
+    {
+      "id": "C057",
+      "module": "Drawer_Tower",
+      "part": "Drawer_2_Side_R",
+      "object": "Drawer_2_Side_R001",
+      "finished_l": 380.4,
+      "finished_w": 122.8,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "note": "",
+      "blank_l": 379.4,
+      "blank_w": 122.8
+    },
+    {
+      "id": "C058",
+      "module": "Drawer_Tower",
+      "part": "Drawer_2_Back",
+      "object": "Drawer_2_Back001",
+      "finished_l": 396.6,
+      "finished_w": 122.8,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 396.6,
+      "blank_w": 122.8
+    },
+    {
+      "id": "C059",
+      "module": "Drawer_Tower",
+      "part": "Drawer_2_Bottom",
+      "object": "Drawer_2_Bottom001",
+      "finished_l": 396.6,
+      "finished_w": 360.8,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 396.6,
+      "blank_w": 360.8
+    },
+    {
+      "id": "C060",
+      "module": "Drawer_Tower",
+      "part": "Drawer_3_Front",
+      "object": "Drawer_3_Front",
+      "finished_l": 497,
+      "finished_w": 178.8,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "note": "Square pull edge; edge-band exposed edges",
+      "blank_l": 495.0,
+      "blank_w": 176.8
+    },
+    {
+      "id": "C061",
+      "module": "Drawer_Tower",
+      "part": "Drawer_3_Side_L",
+      "object": "Drawer_3_Side_L",
+      "finished_l": 380.4,
+      "finished_w": 115.3,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "note": "",
+      "blank_l": 379.4,
+      "blank_w": 115.3
+    },
+    {
+      "id": "C062",
+      "module": "Drawer_Tower",
+      "part": "Drawer_3_Side_R",
+      "object": "Drawer_3_Side_R",
+      "finished_l": 380.4,
+      "finished_w": 115.3,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "note": "",
+      "blank_l": 379.4,
+      "blank_w": 115.3
+    },
+    {
+      "id": "C063",
+      "module": "Drawer_Tower",
+      "part": "Drawer_3_Back",
+      "object": "Drawer_3_Back",
+      "finished_l": 396.6,
+      "finished_w": 115.3,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 396.6,
+      "blank_w": 115.3
+    },
+    {
+      "id": "C064",
+      "module": "Drawer_Tower",
+      "part": "Drawer_3_Bottom",
+      "object": "Drawer_3_Bottom",
+      "finished_l": 396.6,
+      "finished_w": 360.8,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 396.6,
+      "blank_w": 360.8
+    },
+    {
+      "id": "C065",
+      "module": "Centre_TV_Makeup",
+      "part": "Divider",
+      "object": "Divider",
+      "finished_l": 560.4,
+      "finished_w": 450.4,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 560.4,
+      "blank_w": 449.4
+    },
+    {
+      "id": "C066",
+      "module": "Centre_TV_Makeup",
+      "part": "Makeup_Shelf_1",
+      "object": "Makeup_Shelf_1",
+      "finished_l": 480.4,
+      "finished_w": 300,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 480.4,
+      "blank_w": 299.0
+    },
+    {
+      "id": "C067",
+      "module": "Centre_TV_Makeup",
+      "part": "Makeup_Shelf_2",
+      "object": "Makeup_Shelf_2",
+      "finished_l": 480.4,
+      "finished_w": 300,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 480.4,
+      "blank_w": 299.0
+    },
+    {
+      "id": "C068",
+      "module": "Top_Box_Left",
+      "part": "Side_L",
+      "object": "Side_L003",
+      "finished_l": 430.8,
+      "finished_w": 300,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "note": "",
+      "blank_l": 429.8,
+      "blank_w": 300.0
+    },
+    {
+      "id": "C069",
+      "module": "Top_Box_Left",
+      "part": "Side_R",
+      "object": "Side_R003_CableDrilled",
+      "finished_l": 430.8,
+      "finished_w": 300,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "note": "; 9 mm DC cable passage / grommet allowance at modelled route: C_L; match actual grommet OD before drilling",
+      "blank_l": 429.8,
+      "blank_w": 300.0
+    },
+    {
+      "id": "C070",
+      "module": "Top_Box_Left",
+      "part": "Bottom",
+      "object": "Bottom003",
+      "finished_l": 480.8,
+      "finished_w": 405.8,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "Plain front setback 25 mm for square door grip",
+      "blank_l": 480.8,
+      "blank_w": 405.8
+    },
+    {
+      "id": "C071",
+      "module": "Top_Box_Left",
+      "part": "Top",
+      "object": "Top003",
+      "finished_l": 480.8,
+      "finished_w": 430.8,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 480.8,
+      "blank_w": 429.8
+    },
+    {
+      "id": "C072",
+      "module": "Top_Box_Left",
+      "part": "Back",
+      "object": "Back002",
+      "finished_l": 520,
+      "finished_w": 300,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 520.0,
+      "blank_w": 300.0
+    },
+    {
+      "id": "C073",
+      "module": "Top_Box_Left",
+      "part": "Door_1",
+      "object": "Door_1",
+      "finished_l": 507.0,
+      "finished_w": 297,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "note": "Square pull edge; edge-band exposed edges",
+      "blank_l": 505.0,
+      "blank_w": 295.0
+    },
+    {
+      "id": "C074",
+      "module": "Top_Box_Centre",
+      "part": "Side_L",
+      "object": "Side_L004_CableDrilled",
+      "finished_l": 430.8,
+      "finished_w": 300,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "note": "; 9 mm DC cable passage / grommet allowance at modelled route: C_L; match actual grommet OD before drilling",
+      "blank_l": 429.8,
+      "blank_w": 300.0
+    },
+    {
+      "id": "C075",
+      "module": "Top_Box_Centre",
+      "part": "Side_R",
+      "object": "Side_R004",
+      "finished_l": 430.8,
+      "finished_w": 300,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "note": "",
+      "blank_l": 429.8,
+      "blank_w": 300.0
+    },
+    {
+      "id": "C076",
+      "module": "Top_Box_Centre",
+      "part": "Bottom",
+      "object": "Bottom004_CableDrilled",
+      "finished_l": 1260.8,
+      "finished_w": 405.8,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "Plain front setback 25 mm for square door grip; 9 mm DC cable passage / grommet allowance at modelled route: C_L,C_R,C_T; match actual grommet OD before drilling",
+      "blank_l": 1260.8,
+      "blank_w": 405.8
+    },
+    {
+      "id": "C077",
+      "module": "Top_Box_Centre",
+      "part": "Top",
+      "object": "Top004",
+      "finished_l": 1260.8,
+      "finished_w": 430.8,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 1260.8,
+      "blank_w": 429.8
+    },
+    {
+      "id": "C078",
+      "module": "Top_Box_Centre",
+      "part": "Back",
+      "object": "Back003",
+      "finished_l": 1300,
+      "finished_w": 300,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 1300.0,
+      "blank_w": 300.0
+    },
+    {
+      "id": "C079",
+      "module": "Top_Box_Centre",
+      "part": "Centre_Top_Divider_1",
+      "object": "Centre_Top_Divider_1_CableDrilled",
+      "finished_l": 430.8,
+      "finished_w": 260.8,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "note": "HPL both faces; edge-band front; full height between top and bottom; 9 mm DC cable passage / grommet allowance at modelled route: C_R; match actual grommet OD before drilling",
+      "blank_l": 429.8,
+      "blank_w": 260.8
+    },
+    {
+      "id": "C080",
+      "module": "Top_Box_Centre",
+      "part": "Door_1",
+      "object": "Door_001",
+      "finished_l": 647.0,
+      "finished_w": 297,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "note": "Square pull edge; edge-band exposed edges",
+      "blank_l": 645.0,
+      "blank_w": 295.0
+    },
+    {
+      "id": "C081",
+      "module": "Top_Box_Centre",
+      "part": "Door_2",
+      "object": "Door_2",
+      "finished_l": 647.0,
+      "finished_w": 297,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "note": "Square pull edge; edge-band exposed edges",
+      "blank_l": 645.0,
+      "blank_w": 295.0
+    },
+    {
+      "id": "C082",
+      "module": "Top_Box_Right",
+      "part": "Side_L",
+      "object": "Side_L005",
+      "finished_l": 430.8,
+      "finished_w": 300,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "note": "",
+      "blank_l": 429.8,
+      "blank_w": 300.0
+    },
+    {
+      "id": "C083",
+      "module": "Top_Box_Right",
+      "part": "Side_R",
+      "object": "Side_R005",
+      "finished_l": 430.8,
+      "finished_w": 300,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "note": "",
+      "blank_l": 429.8,
+      "blank_w": 300.0
+    },
+    {
+      "id": "C084",
+      "module": "Top_Box_Right",
+      "part": "Bottom",
+      "object": "Bottom005",
+      "finished_l": 416.8,
+      "finished_w": 405.8,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "Plain front setback 25 mm for square door grip",
+      "blank_l": 416.8,
+      "blank_w": 405.8
+    },
+    {
+      "id": "C085",
+      "module": "Top_Box_Right",
+      "part": "Top",
+      "object": "Top005",
+      "finished_l": 430.8,
+      "finished_w": 416.8,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "note": "",
+      "blank_l": 429.8,
+      "blank_w": 416.8
+    },
+    {
+      "id": "C086",
+      "module": "Top_Box_Right",
+      "part": "Back",
+      "object": "Back004",
+      "finished_l": 456,
+      "finished_w": 300,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 456.0,
+      "blank_w": 300.0
+    },
+    {
+      "id": "C087",
+      "module": "Top_Box_Right",
+      "part": "Door_1",
+      "object": "Door_002",
+      "finished_l": 443.0,
+      "finished_w": 297,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "note": "Square pull edge; edge-band exposed edges",
+      "blank_l": 441.0,
+      "blank_w": 295.0
+    },
+    {
+      "id": "C088",
+      "module": "Scribe_Strips",
+      "part": "Scribe_Right_Wall",
+      "object": "Scribe_Right_Wall",
+      "finished_l": 2380,
+      "finished_w": 10,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 2380.0,
+      "blank_w": 10.0
+    },
+    {
+      "id": "C089",
+      "module": "Scribe_Strips",
+      "part": "Scribe_Ceiling",
+      "object": "Scribe_Ceiling",
+      "finished_l": 2276,
+      "finished_w": 10,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "",
+      "blank_l": 2276.0,
+      "blank_w": 10.0
+    },
+    {
+      "id": "C090",
+      "module": "Pull_Tower_L",
+      "part": "Pull_Tower_L_Back",
+      "object": "Pull_Tower_L_Back",
+      "finished_l": 460.8,
+      "finished_w": 60.0,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "HPL both faces; square edges; edge-band exposed edges",
+      "blank_l": 460.8,
+      "blank_w": 60.0
+    },
+    {
+      "id": "C091",
+      "module": "Pull_Tower_L",
+      "part": "Pull_Tower_L_Lower",
+      "object": "Pull_Tower_L_Lower",
+      "finished_l": 460.8,
+      "finished_w": 22.4,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "HPL both faces; square edges; edge-band exposed edges",
+      "blank_l": 460.8,
+      "blank_w": 21.4
+    },
+    {
+      "id": "C092",
+      "module": "Pull_Tower_C_1",
+      "part": "Pull_Tower_C_1_Back",
+      "object": "Pull_Tower_C_1_Back",
+      "finished_l": 460.8,
+      "finished_w": 80.0,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "HPL both faces; square edges; edge-band exposed edges",
+      "blank_l": 460.8,
+      "blank_w": 80.0
+    },
+    {
+      "id": "C093",
+      "module": "Pull_Tower_C_1",
+      "part": "Pull_Tower_C_1_Lower",
+      "object": "Pull_Tower_C_1_Lower",
+      "finished_l": 460.8,
+      "finished_w": 22.4,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "HPL both faces; square edges; edge-band exposed edges",
+      "blank_l": 460.8,
+      "blank_w": 21.4
+    },
+    {
+      "id": "C094",
+      "module": "Pull_Tower_C_1",
+      "part": "Pull_Tower_C_1_Upper",
+      "object": "Pull_Tower_C_1_Upper",
+      "finished_l": 460.8,
+      "finished_w": 22.4,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "HPL both faces; square edges; edge-band exposed edges",
+      "blank_l": 460.8,
+      "blank_w": 21.4
+    },
+    {
+      "id": "C095",
+      "module": "Pull_Tower_C_2",
+      "part": "Pull_Tower_C_2_Back",
+      "object": "Pull_Tower_C_2_Back",
+      "finished_l": 460.8,
+      "finished_w": 80.0,
+      "thickness": 19.6,
+      "bands": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "HPL both faces; square edges; edge-band exposed edges",
+      "blank_l": 460.8,
+      "blank_w": 80.0
+    },
+    {
+      "id": "C096",
+      "module": "Pull_Tower_C_2",
+      "part": "Pull_Tower_C_2_Lower",
+      "object": "Pull_Tower_C_2_Lower",
+      "finished_l": 460.8,
+      "finished_w": 22.4,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "HPL both faces; square edges; edge-band exposed edges",
+      "blank_l": 460.8,
+      "blank_w": 21.4
+    },
+    {
+      "id": "C097",
+      "module": "Pull_Tower_C_2",
+      "part": "Pull_Tower_C_2_Upper",
+      "object": "Pull_Tower_C_2_Upper",
+      "finished_l": 460.8,
+      "finished_w": 22.4,
+      "thickness": 19.6,
+      "bands": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "note": "HPL both faces; square edges; edge-band exposed edges",
+      "blank_l": 460.8,
+      "blank_w": 21.4
+    }
+  ],
+  "sheets": [
+    {
+      "free": [
+        {
+          "x": 5.0,
+          "y": 1168.0,
+          "w": 1960.0,
+          "h": 47.0,
+          "node": "S1bc"
+        },
+        {
+          "x": 1969.0,
+          "y": 1143.8,
+          "w": 466.0,
+          "h": 71.2,
+          "node": "S1bbb"
+        },
+        {
+          "x": 2382.8,
+          "y": 659.0,
+          "w": 52.2,
+          "h": 480.8,
+          "node": "S1bbc"
+        },
+        {
+          "x": 2079.0,
+          "y": 438.8,
+          "w": 356.0,
+          "h": 216.2,
+          "node": "S1cb"
+        },
+        {
+          "x": 2383.0,
+          "y": 5.0,
+          "w": 52.0,
+          "h": 429.8,
+          "node": "S1cc"
+        }
+      ],
+      "panels": [
+        {
+          "id": "C036",
+          "x": 5.0,
+          "y": 5.0,
+          "l": 2070.0,
+          "w": 650.0,
+          "rotated": false
+        },
+        {
+          "id": "C021",
+          "x": 5.0,
+          "y": 659.0,
+          "l": 1960.0,
+          "w": 505.0,
+          "rotated": false
+        },
+        {
+          "id": "C020",
+          "x": 1969.0,
+          "y": 659.0,
+          "l": 409.8,
+          "w": 480.8,
+          "rotated": true
+        },
+        {
+          "id": "C069",
+          "x": 2079.0,
+          "y": 5.0,
+          "l": 300.0,
+          "w": 429.8,
+          "rotated": true
+        }
+      ],
+      "cuts": [
+        {
+          "parent": "S1",
+          "axis": "Y",
+          "at": 655.0,
+          "span": 2430.0,
+          "kerf": 4.0,
+          "panel": "C036",
+          "region": [
+            5.0,
+            5.0,
+            2430.0,
+            1210.0
+          ]
+        },
+        {
+          "parent": "S1a",
+          "axis": "X",
+          "at": 2075.0,
+          "span": 650.0,
+          "kerf": 4.0,
+          "panel": "C036",
+          "region": [
+            5.0,
+            5.0,
+            2430.0,
+            650.0
+          ]
+        },
+        {
+          "parent": "S1b",
+          "axis": "X",
+          "at": 1965.0,
+          "span": 556.0,
+          "kerf": 4.0,
+          "panel": "C021",
+          "region": [
+            5.0,
+            659.0,
+            2430.0,
+            556.0
+          ]
+        },
+        {
+          "parent": "S1ba",
+          "axis": "Y",
+          "at": 1164.0,
+          "span": 1960.0,
+          "kerf": 4.0,
+          "panel": "C021",
+          "region": [
+            5.0,
+            659.0,
+            1960.0,
+            556.0
+          ]
+        },
+        {
+          "parent": "S1bb",
+          "axis": "Y",
+          "at": 1139.8,
+          "span": 466.0,
+          "kerf": 4.0,
+          "panel": "C020",
+          "region": [
+            1969.0,
+            659.0,
+            466.0,
+            556.0
+          ]
+        },
+        {
+          "parent": "S1bba",
+          "axis": "X",
+          "at": 2378.8,
+          "span": 480.8,
+          "kerf": 4.0,
+          "panel": "C020",
+          "region": [
+            1969.0,
+            659.0,
+            466.0,
+            480.8
+          ]
+        },
+        {
+          "parent": "S1c",
+          "axis": "Y",
+          "at": 434.8,
+          "span": 356.0,
+          "kerf": 4.0,
+          "panel": "C069",
+          "region": [
+            2079.0,
+            5.0,
+            356.0,
+            650.0
+          ]
+        },
+        {
+          "parent": "S1ca",
+          "axis": "X",
+          "at": 2379.0,
+          "span": 429.8,
+          "kerf": 4.0,
+          "panel": "C069",
+          "region": [
+            2079.0,
+            5.0,
+            356.0,
+            429.8
+          ]
+        }
+      ]
+    },
+    {
+      "free": [
+        {
+          "x": 5.0,
+          "y": 1183.0,
+          "w": 1990.0,
+          "h": 32.0,
+          "node": "S2bc"
+        },
+        {
+          "x": 2079.0,
+          "y": 465.0,
+          "w": 356.0,
+          "h": 190.0,
+          "node": "S2cb"
+        },
+        {
+          "x": 2383.0,
+          "y": 5.0,
+          "w": 52.0,
+          "h": 456.0,
+          "node": "S2cc"
+        },
+        {
+          "x": 2383.4,
+          "y": 1143.8,
+          "w": 51.6,
+          "h": 71.2,
+          "node": "S2bbbb"
+        },
+        {
+          "x": 2434.2,
+          "y": 659.0,
+          "w": 0.8,
+          "h": 480.8,
+          "node": "S2bbcb"
+        },
+        {
+          "x": 2408.8,
+          "y": 1123.8,
+          "w": 21.4,
+          "h": 16.0,
+          "node": "S2bbcc"
+        }
+      ],
+      "panels": [
+        {
+          "id": "C035",
+          "x": 5.0,
+          "y": 5.0,
+          "l": 2070.0,
+          "w": 650.0,
+          "rotated": false
+        },
+        {
+          "id": "C007",
+          "x": 5.0,
+          "y": 659.0,
+          "l": 1990.0,
+          "w": 520.0,
+          "rotated": false
+        },
+        {
+          "id": "C070",
+          "x": 1999.0,
+          "y": 659.0,
+          "l": 405.8,
+          "w": 480.8,
+          "rotated": true
+        },
+        {
+          "id": "C086",
+          "x": 2079.0,
+          "y": 5.0,
+          "l": 300.0,
+          "w": 456.0,
+          "rotated": true
+        },
+        {
+          "id": "C041",
+          "x": 1999.0,
+          "y": 1143.8,
+          "l": 380.4,
+          "w": 69.0,
+          "rotated": false
+        },
+        {
+          "id": "C096",
+          "x": 2408.8,
+          "y": 659.0,
+          "l": 21.4,
+          "w": 460.8,
+          "rotated": true
+        }
+      ],
+      "cuts": [
+        {
+          "parent": "S2",
+          "axis": "Y",
+          "at": 655.0,
+          "span": 2430.0,
+          "kerf": 4.0,
+          "panel": "C035",
+          "region": [
+            5.0,
+            5.0,
+            2430.0,
+            1210.0
+          ]
+        },
+        {
+          "parent": "S2a",
+          "axis": "X",
+          "at": 2075.0,
+          "span": 650.0,
+          "kerf": 4.0,
+          "panel": "C035",
+          "region": [
+            5.0,
+            5.0,
+            2430.0,
+            650.0
+          ]
+        },
+        {
+          "parent": "S2b",
+          "axis": "X",
+          "at": 1995.0,
+          "span": 556.0,
+          "kerf": 4.0,
+          "panel": "C007",
+          "region": [
+            5.0,
+            659.0,
+            2430.0,
+            556.0
+          ]
+        },
+        {
+          "parent": "S2ba",
+          "axis": "Y",
+          "at": 1179.0,
+          "span": 1990.0,
+          "kerf": 4.0,
+          "panel": "C007",
+          "region": [
+            5.0,
+            659.0,
+            1990.0,
+            556.0
+          ]
+        },
+        {
+          "parent": "S2bb",
+          "axis": "Y",
+          "at": 1139.8,
+          "span": 436.0,
+          "kerf": 4.0,
+          "panel": "C070",
+          "region": [
+            1999.0,
+            659.0,
+            436.0,
+            556.0
+          ]
+        },
+        {
+          "parent": "S2bba",
+          "axis": "X",
+          "at": 2404.8,
+          "span": 480.8,
+          "kerf": 4.0,
+          "panel": "C070",
+          "region": [
+            1999.0,
+            659.0,
+            436.0,
+            480.8
+          ]
+        },
+        {
+          "parent": "S2c",
+          "axis": "Y",
+          "at": 461.0,
+          "span": 356.0,
+          "kerf": 4.0,
+          "panel": "C086",
+          "region": [
+            2079.0,
+            5.0,
+            356.0,
+            650.0
+          ]
+        },
+        {
+          "parent": "S2ca",
+          "axis": "X",
+          "at": 2379.0,
+          "span": 456.0,
+          "kerf": 4.0,
+          "panel": "C086",
+          "region": [
+            2079.0,
+            5.0,
+            356.0,
+            456.0
+          ]
+        },
+        {
+          "parent": "S2bbb",
+          "axis": "X",
+          "at": 2379.4,
+          "span": 71.2,
+          "kerf": 4.0,
+          "panel": "C041",
+          "region": [
+            1999.0,
+            1143.8,
+            436.0,
+            71.2
+          ]
+        },
+        {
+          "parent": "S2bbba",
+          "axis": "Y",
+          "at": 1212.8,
+          "span": 380.4,
+          "kerf": 4.0,
+          "panel": "C041",
+          "region": [
+            1999.0,
+            1143.8,
+            380.4,
+            71.2
+          ]
+        },
+        {
+          "parent": "S2bbc",
+          "axis": "X",
+          "at": 2430.2,
+          "span": 480.8,
+          "kerf": 4.0,
+          "panel": "C096",
+          "region": [
+            2408.8,
+            659.0,
+            26.2,
+            480.8
+          ]
+        },
+        {
+          "parent": "S2bbca",
+          "axis": "Y",
+          "at": 1119.8,
+          "span": 21.4,
+          "kerf": 4.0,
+          "panel": "C096",
+          "region": [
+            2408.8,
+            659.0,
+            21.4,
+            480.8
+          ]
+        }
+      ]
+    },
+    {
+      "free": [
+        {
+          "x": 2419.8,
+          "y": 5.0,
+          "w": 15.2,
+          "h": 429.8,
+          "node": "S3cb"
+        },
+        {
+          "x": 1999.0,
+          "y": 839.4,
+          "w": 360.8,
+          "h": 4.2,
+          "node": "S3bcc"
+        },
+        {
+          "x": 5.0,
+          "y": 1212.4,
+          "w": 416.6,
+          "h": 2.6,
+          "node": "S3bbc"
+        },
+        {
+          "x": 1409.0,
+          "y": 1151.6,
+          "w": 429.8,
+          "h": 63.4,
+          "node": "S3bbbbbc"
+        },
+        {
+          "x": 910.0,
+          "y": 1209.2,
+          "w": 495.0,
+          "h": 5.8,
+          "node": "S3bbbbcb"
+        },
+        {
+          "x": 2341.8,
+          "y": 847.6,
+          "w": 93.2,
+          "h": 176.8,
+          "node": "S3bbbbbbc"
+        },
+        {
+          "x": 1842.8,
+          "y": 1175.4,
+          "w": 592.2,
+          "h": 39.6,
+          "node": "S3bbbbbbbb"
+        },
+        {
+          "x": 2321.6,
+          "y": 1028.4,
+          "w": 113.4,
+          "h": 143.0,
+          "node": "S3bbbbbbbc"
+        },
+        {
+          "x": 425.6,
+          "y": 1214.6,
+          "w": 480.4,
+          "h": 0.4,
+          "node": "S3bbbcb"
+        },
+        {
+          "x": 890.4,
+          "y": 1150.6,
+          "w": 15.6,
+          "h": 60.0,
+          "node": "S3bbbcc"
+        },
+        {
+          "x": 2363.8,
+          "y": 823.2,
+          "w": 71.2,
+          "h": 20.4,
+          "node": "S3bcbb"
+        }
+      ],
+      "panels": [
+        {
+          "id": "C003",
+          "x": 5.0,
+          "y": 5.0,
+          "l": 1990.0,
+          "w": 429.8,
+          "rotated": false
+        },
+        {
+          "id": "C004",
+          "x": 5.0,
+          "y": 438.8,
+          "l": 1990.0,
+          "w": 404.8,
+          "rotated": false
+        },
+        {
+          "id": "C027",
+          "x": 1999.0,
+          "y": 5.0,
+          "l": 416.8,
+          "w": 429.8,
+          "rotated": true
+        },
+        {
+          "id": "C064",
+          "x": 1999.0,
+          "y": 438.8,
+          "l": 360.8,
+          "w": 396.6,
+          "rotated": true
+        },
+        {
+          "id": "C014",
+          "x": 5.0,
+          "y": 847.6,
+          "l": 416.6,
+          "w": 360.8,
+          "rotated": false
+        },
+        {
+          "id": "C067",
+          "x": 425.6,
+          "y": 847.6,
+          "l": 480.4,
+          "w": 299.0,
+          "rotated": false
+        },
+        {
+          "id": "C060",
+          "x": 910.0,
+          "y": 847.6,
+          "l": 495.0,
+          "w": 176.8,
+          "rotated": false
+        },
+        {
+          "id": "C082",
+          "x": 1409.0,
+          "y": 847.6,
+          "l": 429.8,
+          "w": 300.0,
+          "rotated": false
+        },
+        {
+          "id": "C050",
+          "x": 910.0,
+          "y": 1028.4,
+          "l": 495.0,
+          "w": 176.8,
+          "rotated": false
+        },
+        {
+          "id": "C055",
+          "x": 1842.8,
+          "y": 847.6,
+          "l": 495.0,
+          "w": 176.8,
+          "rotated": false
+        },
+        {
+          "id": "C010",
+          "x": 1842.8,
+          "y": 1028.4,
+          "l": 474.8,
+          "w": 143.0,
+          "rotated": false
+        },
+        {
+          "id": "C090",
+          "x": 425.6,
+          "y": 1150.6,
+          "l": 460.8,
+          "w": 60.0,
+          "rotated": false
+        },
+        {
+          "id": "C040",
+          "x": 2363.8,
+          "y": 438.8,
+          "l": 69.0,
+          "w": 380.4,
+          "rotated": true
+        }
+      ],
+      "cuts": [
+        {
+          "parent": "S3",
+          "axis": "Y",
+          "at": 434.8,
+          "span": 2430.0,
+          "kerf": 4.0,
+          "panel": "C003",
+          "region": [
+            5.0,
+            5.0,
+            2430.0,
+            1210.0
+          ]
+        },
+        {
+          "parent": "S3a",
+          "axis": "X",
+          "at": 1995.0,
+          "span": 429.8,
+          "kerf": 4.0,
+          "panel": "C003",
+          "region": [
+            5.0,
+            5.0,
+            2430.0,
+            429.8
+          ]
+        },
+        {
+          "parent": "S3b",
+          "axis": "Y",
+          "at": 843.6,
+          "span": 2430.0,
+          "kerf": 4.0,
+          "panel": "C004",
+          "region": [
+            5.0,
+            438.8,
+            2430.0,
+            776.2
+          ]
+        },
+        {
+          "parent": "S3ba",
+          "axis": "X",
+          "at": 1995.0,
+          "span": 404.8,
+          "kerf": 4.0,
+          "panel": "C004",
+          "region": [
+            5.0,
+            438.8,
+            2430.0,
+            404.8
+          ]
+        },
+        {
+          "parent": "S3c",
+          "axis": "X",
+          "at": 2415.8,
+          "span": 429.8,
+          "kerf": 4.0,
+          "panel": "C027",
+          "region": [
+            1999.0,
+            5.0,
+            436.0,
+            429.8
+          ]
+        },
+        {
+          "parent": "S3bc",
+          "axis": "X",
+          "at": 2359.8,
+          "span": 404.8,
+          "kerf": 4.0,
+          "panel": "C064",
+          "region": [
+            1999.0,
+            438.8,
+            436.0,
+            404.8
+          ]
+        },
+        {
+          "parent": "S3bca",
+          "axis": "Y",
+          "at": 835.4,
+          "span": 360.8,
+          "kerf": 4.0,
+          "panel": "C064",
+          "region": [
+            1999.0,
+            438.8,
+            360.8,
+            404.8
+          ]
+        },
+        {
+          "parent": "S3bb",
+          "axis": "X",
+          "at": 421.6,
+          "span": 367.4,
+          "kerf": 4.0,
+          "panel": "C014",
+          "region": [
+            5.0,
+            847.6,
+            2430.0,
+            367.4
+          ]
+        },
+        {
+          "parent": "S3bba",
+          "axis": "Y",
+          "at": 1208.4,
+          "span": 416.6,
+          "kerf": 4.0,
+          "panel": "C014",
+          "region": [
+            5.0,
+            847.6,
+            416.6,
+            367.4
+          ]
+        },
+        {
+          "parent": "S3bbb",
+          "axis": "X",
+          "at": 906.0,
+          "span": 367.4,
+          "kerf": 4.0,
+          "panel": "C067",
+          "region": [
+            425.6,
+            847.6,
+            2009.4,
+            367.4
+          ]
+        },
+        {
+          "parent": "S3bbba",
+          "axis": "Y",
+          "at": 1146.6,
+          "span": 480.4,
+          "kerf": 4.0,
+          "panel": "C067",
+          "region": [
+            425.6,
+            847.6,
+            480.4,
+            367.4
+          ]
+        },
+        {
+          "parent": "S3bbbb",
+          "axis": "X",
+          "at": 1405.0,
+          "span": 367.4,
+          "kerf": 4.0,
+          "panel": "C060",
+          "region": [
+            910.0,
+            847.6,
+            1525.0,
+            367.4
+          ]
+        },
+        {
+          "parent": "S3bbbba",
+          "axis": "Y",
+          "at": 1024.4,
+          "span": 495.0,
+          "kerf": 4.0,
+          "panel": "C060",
+          "region": [
+            910.0,
+            847.6,
+            495.0,
+            367.4
+          ]
+        },
+        {
+          "parent": "S3bbbbb",
+          "axis": "X",
+          "at": 1838.8,
+          "span": 367.4,
+          "kerf": 4.0,
+          "panel": "C082",
+          "region": [
+            1409.0,
+            847.6,
+            1026.0,
+            367.4
+          ]
+        },
+        {
+          "parent": "S3bbbbba",
+          "axis": "Y",
+          "at": 1147.6,
+          "span": 429.8,
+          "kerf": 4.0,
+          "panel": "C082",
+          "region": [
+            1409.0,
+            847.6,
+            429.8,
+            367.4
+          ]
+        },
+        {
+          "parent": "S3bbbbc",
+          "axis": "Y",
+          "at": 1205.2,
+          "span": 495.0,
+          "kerf": 4.0,
+          "panel": "C050",
+          "region": [
+            910.0,
+            1028.4,
+            495.0,
+            186.6
+          ]
+        },
+        {
+          "parent": "S3bbbbbb",
+          "axis": "Y",
+          "at": 1024.4,
+          "span": 592.2,
+          "kerf": 4.0,
+          "panel": "C055",
+          "region": [
+            1842.8,
+            847.6,
+            592.2,
+            367.4
+          ]
+        },
+        {
+          "parent": "S3bbbbbba",
+          "axis": "X",
+          "at": 2337.8,
+          "span": 176.8,
+          "kerf": 4.0,
+          "panel": "C055",
+          "region": [
+            1842.8,
+            847.6,
+            592.2,
+            176.8
+          ]
+        },
+        {
+          "parent": "S3bbbbbbb",
+          "axis": "Y",
+          "at": 1171.4,
+          "span": 592.2,
+          "kerf": 4.0,
+          "panel": "C010",
+          "region": [
+            1842.8,
+            1028.4,
+            592.2,
+            186.6
+          ]
+        },
+        {
+          "parent": "S3bbbbbbba",
+          "axis": "X",
+          "at": 2317.6,
+          "span": 143.0,
+          "kerf": 4.0,
+          "panel": "C010",
+          "region": [
+            1842.8,
+            1028.4,
+            592.2,
+            143.0
+          ]
+        },
+        {
+          "parent": "S3bbbc",
+          "axis": "Y",
+          "at": 1210.6,
+          "span": 480.4,
+          "kerf": 4.0,
+          "panel": "C090",
+          "region": [
+            425.6,
+            1150.6,
+            480.4,
+            64.4
+          ]
+        },
+        {
+          "parent": "S3bbbca",
+          "axis": "X",
+          "at": 886.4,
+          "span": 60.0,
+          "kerf": 4.0,
+          "panel": "C090",
+          "region": [
+            425.6,
+            1150.6,
+            480.4,
+            60.0
+          ]
+        },
+        {
+          "parent": "S3bcb",
+          "axis": "Y",
+          "at": 819.2,
+          "span": 71.2,
+          "kerf": 4.0,
+          "panel": "C040",
+          "region": [
+            2363.8,
+            438.8,
+            71.2,
+            404.8
+          ]
+        },
+        {
+          "parent": "S3bcba",
+          "axis": "X",
+          "at": 2432.8,
+          "span": 380.4,
+          "kerf": 4.0,
+          "panel": "C040",
+          "region": [
+            2363.8,
+            438.8,
+            71.2,
+            380.4
+          ]
+        }
+      ]
+    },
+    {
+      "free": [
+        {
+          "x": 1999.0,
+          "y": 834.6,
+          "w": 436.0,
+          "h": 35.2,
+          "node": "S4bcb"
+        },
+        {
+          "x": 2433.8,
+          "y": 413.8,
+          "w": 1.2,
+          "h": 416.8,
+          "node": "S4bcc"
+        },
+        {
+          "x": 1999.0,
+          "y": 309.0,
+          "w": 436.0,
+          "h": 100.8,
+          "node": "S4cb"
+        },
+        {
+          "x": 2432.8,
+          "y": 5.0,
+          "w": 2.2,
+          "h": 300.0,
+          "node": "S4cc"
+        },
+        {
+          "x": 744.8,
+          "y": 873.8,
+          "w": 1690.2,
+          "h": 69.0,
+          "node": "S4bbc"
+        },
+        {
+          "x": 5.0,
+          "y": 1200.1,
+          "w": 379.4,
+          "h": 14.9,
+          "node": "S4bbbcb"
+        },
+        {
+          "x": 388.4,
+          "y": 1207.6,
+          "w": 379.4,
+          "h": 7.4,
+          "node": "S4bbbbcb"
+        },
+        {
+          "x": 771.8,
+          "y": 1066.1,
+          "w": 379.4,
+          "h": 148.9,
+          "node": "S4bbbbbc"
+        },
+        {
+          "x": 1155.2,
+          "y": 1030.8,
+          "w": 1279.8,
+          "h": 184.2,
+          "node": "S4bbbbbbb"
+        },
+        {
+          "x": 1615.2,
+          "y": 946.8,
+          "w": 819.8,
+          "h": 80.0,
+          "node": "S4bbbbbbc"
+        }
+      ],
+      "panels": [
+        {
+          "id": "C024",
+          "x": 5.0,
+          "y": 5.0,
+          "l": 1990.0,
+          "w": 404.8,
+          "rotated": false
+        },
+        {
+          "id": "C028",
+          "x": 5.0,
+          "y": 413.8,
+          "l": 1990.0,
+          "w": 456.0,
+          "rotated": false
+        },
+        {
+          "id": "C026",
+          "x": 1999.0,
+          "y": 413.8,
+          "l": 430.8,
+          "w": 416.8,
+          "rotated": false
+        },
+        {
+          "id": "C083",
+          "x": 1999.0,
+          "y": 5.0,
+          "l": 429.8,
+          "w": 300.0,
+          "rotated": false
+        },
+        {
+          "id": "C042",
+          "x": 5.0,
+          "y": 873.8,
+          "l": 735.8,
+          "w": 69.0,
+          "rotated": false
+        },
+        {
+          "id": "C061",
+          "x": 5.0,
+          "y": 946.8,
+          "l": 379.4,
+          "w": 115.3,
+          "rotated": false
+        },
+        {
+          "id": "C017",
+          "x": 5.0,
+          "y": 1066.1,
+          "l": 379.4,
+          "w": 130.0,
+          "rotated": false
+        },
+        {
+          "id": "C011",
+          "x": 388.4,
+          "y": 946.8,
+          "l": 379.4,
+          "w": 130.0,
+          "rotated": false
+        },
+        {
+          "id": "C057",
+          "x": 388.4,
+          "y": 1080.8,
+          "l": 379.4,
+          "w": 122.8,
+          "rotated": false
+        },
+        {
+          "id": "C062",
+          "x": 771.8,
+          "y": 946.8,
+          "l": 379.4,
+          "w": 115.3,
+          "rotated": false
+        },
+        {
+          "id": "C023",
+          "x": 1155.2,
+          "y": 946.8,
+          "l": 456.0,
+          "w": 80.0,
+          "rotated": false
+        }
+      ],
+      "cuts": [
+        {
+          "parent": "S4",
+          "axis": "Y",
+          "at": 409.8,
+          "span": 2430.0,
+          "kerf": 4.0,
+          "panel": "C024",
+          "region": [
+            5.0,
+            5.0,
+            2430.0,
+            1210.0
+          ]
+        },
+        {
+          "parent": "S4a",
+          "axis": "X",
+          "at": 1995.0,
+          "span": 404.8,
+          "kerf": 4.0,
+          "panel": "C024",
+          "region": [
+            5.0,
+            5.0,
+            2430.0,
+            404.8
+          ]
+        },
+        {
+          "parent": "S4b",
+          "axis": "Y",
+          "at": 869.8,
+          "span": 2430.0,
+          "kerf": 4.0,
+          "panel": "C028",
+          "region": [
+            5.0,
+            413.8,
+            2430.0,
+            801.2
+          ]
+        },
+        {
+          "parent": "S4ba",
+          "axis": "X",
+          "at": 1995.0,
+          "span": 456.0,
+          "kerf": 4.0,
+          "panel": "C028",
+          "region": [
+            5.0,
+            413.8,
+            2430.0,
+            456.0
+          ]
+        },
+        {
+          "parent": "S4bc",
+          "axis": "Y",
+          "at": 830.6,
+          "span": 436.0,
+          "kerf": 4.0,
+          "panel": "C026",
+          "region": [
+            1999.0,
+            413.8,
+            436.0,
+            456.0
+          ]
+        },
+        {
+          "parent": "S4bca",
+          "axis": "X",
+          "at": 2429.8,
+          "span": 416.8,
+          "kerf": 4.0,
+          "panel": "C026",
+          "region": [
+            1999.0,
+            413.8,
+            436.0,
+            416.8
+          ]
+        },
+        {
+          "parent": "S4c",
+          "axis": "Y",
+          "at": 305.0,
+          "span": 436.0,
+          "kerf": 4.0,
+          "panel": "C083",
+          "region": [
+            1999.0,
+            5.0,
+            436.0,
+            404.8
+          ]
+        },
+        {
+          "parent": "S4ca",
+          "axis": "X",
+          "at": 2428.8,
+          "span": 300.0,
+          "kerf": 4.0,
+          "panel": "C083",
+          "region": [
+            1999.0,
+            5.0,
+            436.0,
+            300.0
+          ]
+        },
+        {
+          "parent": "S4bb",
+          "axis": "Y",
+          "at": 942.8,
+          "span": 2430.0,
+          "kerf": 4.0,
+          "panel": "C042",
+          "region": [
+            5.0,
+            873.8,
+            2430.0,
+            341.2
+          ]
+        },
+        {
+          "parent": "S4bba",
+          "axis": "X",
+          "at": 740.8,
+          "span": 69.0,
+          "kerf": 4.0,
+          "panel": "C042",
+          "region": [
+            5.0,
+            873.8,
+            2430.0,
+            69.0
+          ]
+        },
+        {
+          "parent": "S4bbb",
+          "axis": "X",
+          "at": 384.4,
+          "span": 268.2,
+          "kerf": 4.0,
+          "panel": "C061",
+          "region": [
+            5.0,
+            946.8,
+            2430.0,
+            268.2
+          ]
+        },
+        {
+          "parent": "S4bbba",
+          "axis": "Y",
+          "at": 1062.1,
+          "span": 379.4,
+          "kerf": 4.0,
+          "panel": "C061",
+          "region": [
+            5.0,
+            946.8,
+            379.4,
+            268.2
+          ]
+        },
+        {
+          "parent": "S4bbbc",
+          "axis": "Y",
+          "at": 1196.1,
+          "span": 379.4,
+          "kerf": 4.0,
+          "panel": "C017",
+          "region": [
+            5.0,
+            1066.1,
+            379.4,
+            148.9
+          ]
+        },
+        {
+          "parent": "S4bbbb",
+          "axis": "X",
+          "at": 767.8,
+          "span": 268.2,
+          "kerf": 4.0,
+          "panel": "C011",
+          "region": [
+            388.4,
+            946.8,
+            2046.6,
+            268.2
+          ]
+        },
+        {
+          "parent": "S4bbbba",
+          "axis": "Y",
+          "at": 1076.8,
+          "span": 379.4,
+          "kerf": 4.0,
+          "panel": "C011",
+          "region": [
+            388.4,
+            946.8,
+            379.4,
+            268.2
+          ]
+        },
+        {
+          "parent": "S4bbbbc",
+          "axis": "Y",
+          "at": 1203.6,
+          "span": 379.4,
+          "kerf": 4.0,
+          "panel": "C057",
+          "region": [
+            388.4,
+            1080.8,
+            379.4,
+            134.2
+          ]
+        },
+        {
+          "parent": "S4bbbbb",
+          "axis": "X",
+          "at": 1151.2,
+          "span": 268.2,
+          "kerf": 4.0,
+          "panel": "C062",
+          "region": [
+            771.8,
+            946.8,
+            1663.2,
+            268.2
+          ]
+        },
+        {
+          "parent": "S4bbbbba",
+          "axis": "Y",
+          "at": 1062.1,
+          "span": 379.4,
+          "kerf": 4.0,
+          "panel": "C062",
+          "region": [
+            771.8,
+            946.8,
+            379.4,
+            268.2
+          ]
+        },
+        {
+          "parent": "S4bbbbbb",
+          "axis": "Y",
+          "at": 1026.8,
+          "span": 1279.8,
+          "kerf": 4.0,
+          "panel": "C023",
+          "region": [
+            1155.2,
+            946.8,
+            1279.8,
+            268.2
+          ]
+        },
+        {
+          "parent": "S4bbbbbba",
+          "axis": "X",
+          "at": 1611.2,
+          "span": 80.0,
+          "kerf": 4.0,
+          "panel": "C023",
+          "region": [
+            1155.2,
+            946.8,
+            1279.8,
+            80.0
+          ]
+        }
+      ]
+    },
+    {
+      "free": [
+        {
+          "x": 1969.0,
+          "y": 438.8,
+          "w": 466.0,
+          "h": 7.2,
+          "node": "S5cb"
+        },
+        {
+          "x": 2433.8,
+          "y": 5.0,
+          "w": 1.2,
+          "h": 429.8,
+          "node": "S5cc"
+        },
+        {
+          "x": 2412.8,
+          "y": 450.0,
+          "w": 22.2,
+          "h": 429.8,
+          "node": "S5bcb"
+        },
+        {
+          "x": 1999.0,
+          "y": 870.8,
+          "w": 409.8,
+          "h": 9.0,
+          "node": "S5bcc"
+        },
+        {
+          "x": 5.0,
+          "y": 1187.8,
+          "w": 429.8,
+          "h": 27.2,
+          "node": "S5bbc"
+        },
+        {
+          "x": 917.6,
+          "y": 1119.8,
+          "w": 416.6,
+          "h": 95.2,
+          "node": "S5bbbbbc"
+        },
+        {
+          "x": 898.8,
+          "y": 1132.8,
+          "w": 14.8,
+          "h": 82.2,
+          "node": "S5bbbbcb"
+        },
+        {
+          "x": 1338.2,
+          "y": 1105.1,
+          "w": 396.6,
+          "h": 109.9,
+          "node": "S5bbbbbbc"
+        },
+        {
+          "x": 2139.4,
+          "y": 985.8,
+          "w": 295.6,
+          "h": 122.7,
+          "node": "S5bbbbbbbc"
+        },
+        {
+          "x": 2262.8,
+          "y": 1112.5,
+          "w": 172.2,
+          "h": 102.5,
+          "node": "S5bbbbbbbbb"
+        },
+        {
+          "x": 1738.8,
+          "y": 1196.5,
+          "w": 520.0,
+          "h": 18.5,
+          "node": "S5bbbbbbbbc"
+        },
+        {
+          "x": 1236.8,
+          "y": 967.8,
+          "w": 520.0,
+          "h": 14.0,
+          "node": "S5bbbcc"
+        },
+        {
+          "x": 2264.8,
+          "y": 883.8,
+          "w": 170.2,
+          "h": 98.0,
+          "node": "S5bbbcbb"
+        },
+        {
+          "x": 1760.8,
+          "y": 967.8,
+          "w": 500.0,
+          "h": 14.0,
+          "node": "S5bbbcbc"
+        }
+      ],
+      "panels": [
+        {
+          "id": "C034",
+          "x": 5.0,
+          "y": 5.0,
+          "l": 1960.0,
+          "w": 441.0,
+          "rotated": false
+        },
+        {
+          "id": "C025",
+          "x": 5.0,
+          "y": 450.0,
+          "l": 1990.0,
+          "w": 429.8,
+          "rotated": false
+        },
+        {
+          "id": "C049",
+          "x": 1969.0,
+          "y": 5.0,
+          "l": 460.8,
+          "w": 429.8,
+          "rotated": false
+        },
+        {
+          "id": "C033",
+          "x": 1999.0,
+          "y": 450.0,
+          "l": 409.8,
+          "w": 416.8,
+          "rotated": true
+        },
+        {
+          "id": "C075",
+          "x": 5.0,
+          "y": 883.8,
+          "l": 429.8,
+          "w": 300.0,
+          "rotated": false
+        },
+        {
+          "id": "C039",
+          "x": 438.8,
+          "y": 883.8,
+          "l": 794.0,
+          "w": 98.0,
+          "rotated": false
+        },
+        {
+          "id": "C015",
+          "x": 438.8,
+          "y": 985.8,
+          "l": 474.8,
+          "w": 143.0,
+          "rotated": false
+        },
+        {
+          "id": "C013",
+          "x": 917.6,
+          "y": 985.8,
+          "l": 416.6,
+          "w": 130.0,
+          "rotated": false
+        },
+        {
+          "id": "C022",
+          "x": 438.8,
+          "y": 1132.8,
+          "l": 456.0,
+          "w": 80.0,
+          "rotated": false
+        },
+        {
+          "id": "C063",
+          "x": 1338.2,
+          "y": 985.8,
+          "l": 396.6,
+          "w": 115.3,
+          "rotated": false
+        },
+        {
+          "id": "C053",
+          "x": 1738.8,
+          "y": 985.8,
+          "l": 396.6,
+          "w": 122.7,
+          "rotated": false
+        },
+        {
+          "id": "C001",
+          "x": 1738.8,
+          "y": 1112.5,
+          "l": 520.0,
+          "w": 80.0,
+          "rotated": false
+        },
+        {
+          "id": "C002",
+          "x": 1236.8,
+          "y": 883.8,
+          "l": 520.0,
+          "w": 80.0,
+          "rotated": false
+        },
+        {
+          "id": "C045",
+          "x": 1760.8,
+          "y": 883.8,
+          "l": 500.0,
+          "w": 80.0,
+          "rotated": false
+        }
+      ],
+      "cuts": [
+        {
+          "parent": "S5",
+          "axis": "Y",
+          "at": 446.0,
+          "span": 2430.0,
+          "kerf": 4.0,
+          "panel": "C034",
+          "region": [
+            5.0,
+            5.0,
+            2430.0,
+            1210.0
+          ]
+        },
+        {
+          "parent": "S5a",
+          "axis": "X",
+          "at": 1965.0,
+          "span": 441.0,
+          "kerf": 4.0,
+          "panel": "C034",
+          "region": [
+            5.0,
+            5.0,
+            2430.0,
+            441.0
+          ]
+        },
+        {
+          "parent": "S5b",
+          "axis": "Y",
+          "at": 879.8,
+          "span": 2430.0,
+          "kerf": 4.0,
+          "panel": "C025",
+          "region": [
+            5.0,
+            450.0,
+            2430.0,
+            765.0
+          ]
+        },
+        {
+          "parent": "S5ba",
+          "axis": "X",
+          "at": 1995.0,
+          "span": 429.8,
+          "kerf": 4.0,
+          "panel": "C025",
+          "region": [
+            5.0,
+            450.0,
+            2430.0,
+            429.8
+          ]
+        },
+        {
+          "parent": "S5c",
+          "axis": "Y",
+          "at": 434.8,
+          "span": 466.0,
+          "kerf": 4.0,
+          "panel": "C049",
+          "region": [
+            1969.0,
+            5.0,
+            466.0,
+            441.0
+          ]
+        },
+        {
+          "parent": "S5ca",
+          "axis": "X",
+          "at": 2429.8,
+          "span": 429.8,
+          "kerf": 4.0,
+          "panel": "C049",
+          "region": [
+            1969.0,
+            5.0,
+            466.0,
+            429.8
+          ]
+        },
+        {
+          "parent": "S5bc",
+          "axis": "X",
+          "at": 2408.8,
+          "span": 429.8,
+          "kerf": 4.0,
+          "panel": "C033",
+          "region": [
+            1999.0,
+            450.0,
+            436.0,
+            429.8
+          ]
+        },
+        {
+          "parent": "S5bca",
+          "axis": "Y",
+          "at": 866.8,
+          "span": 409.8,
+          "kerf": 4.0,
+          "panel": "C033",
+          "region": [
+            1999.0,
+            450.0,
+            409.8,
+            429.8
+          ]
+        },
+        {
+          "parent": "S5bb",
+          "axis": "X",
+          "at": 434.8,
+          "span": 331.2,
+          "kerf": 4.0,
+          "panel": "C075",
+          "region": [
+            5.0,
+            883.8,
+            2430.0,
+            331.2
+          ]
+        },
+        {
+          "parent": "S5bba",
+          "axis": "Y",
+          "at": 1183.8,
+          "span": 429.8,
+          "kerf": 4.0,
+          "panel": "C075",
+          "region": [
+            5.0,
+            883.8,
+            429.8,
+            331.2
+          ]
+        },
+        {
+          "parent": "S5bbb",
+          "axis": "Y",
+          "at": 981.8,
+          "span": 1996.2,
+          "kerf": 4.0,
+          "panel": "C039",
+          "region": [
+            438.8,
+            883.8,
+            1996.2,
+            331.2
+          ]
+        },
+        {
+          "parent": "S5bbba",
+          "axis": "X",
+          "at": 1232.8,
+          "span": 98.0,
+          "kerf": 4.0,
+          "panel": "C039",
+          "region": [
+            438.8,
+            883.8,
+            1996.2,
+            98.0
+          ]
+        },
+        {
+          "parent": "S5bbbb",
+          "axis": "X",
+          "at": 913.6,
+          "span": 229.2,
+          "kerf": 4.0,
+          "panel": "C015",
+          "region": [
+            438.8,
+            985.8,
+            1996.2,
+            229.2
+          ]
+        },
+        {
+          "parent": "S5bbbba",
+          "axis": "Y",
+          "at": 1128.8,
+          "span": 474.8,
+          "kerf": 4.0,
+          "panel": "C015",
+          "region": [
+            438.8,
+            985.8,
+            474.8,
+            229.2
+          ]
+        },
+        {
+          "parent": "S5bbbbb",
+          "axis": "X",
+          "at": 1334.2,
+          "span": 229.2,
+          "kerf": 4.0,
+          "panel": "C013",
+          "region": [
+            917.6,
+            985.8,
+            1517.4,
+            229.2
+          ]
+        },
+        {
+          "parent": "S5bbbbba",
+          "axis": "Y",
+          "at": 1115.8,
+          "span": 416.6,
+          "kerf": 4.0,
+          "panel": "C013",
+          "region": [
+            917.6,
+            985.8,
+            416.6,
+            229.2
+          ]
+        },
+        {
+          "parent": "S5bbbbc",
+          "axis": "X",
+          "at": 894.8,
+          "span": 82.2,
+          "kerf": 4.0,
+          "panel": "C022",
+          "region": [
+            438.8,
+            1132.8,
+            474.8,
+            82.2
+          ]
+        },
+        {
+          "parent": "S5bbbbca",
+          "axis": "Y",
+          "at": 1212.8,
+          "span": 456.0,
+          "kerf": 4.0,
+          "panel": "C022",
+          "region": [
+            438.8,
+            1132.8,
+            456.0,
+            82.2
+          ]
+        },
+        {
+          "parent": "S5bbbbbb",
+          "axis": "X",
+          "at": 1734.8,
+          "span": 229.2,
+          "kerf": 4.0,
+          "panel": "C063",
+          "region": [
+            1338.2,
+            985.8,
+            1096.8,
+            229.2
+          ]
+        },
+        {
+          "parent": "S5bbbbbba",
+          "axis": "Y",
+          "at": 1101.1,
+          "span": 396.6,
+          "kerf": 4.0,
+          "panel": "C063",
+          "region": [
+            1338.2,
+            985.8,
+            396.6,
+            229.2
+          ]
+        },
+        {
+          "parent": "S5bbbbbbb",
+          "axis": "Y",
+          "at": 1108.5,
+          "span": 696.2,
+          "kerf": 4.0,
+          "panel": "C053",
+          "region": [
+            1738.8,
+            985.8,
+            696.2,
+            229.2
+          ]
+        },
+        {
+          "parent": "S5bbbbbbba",
+          "axis": "X",
+          "at": 2135.4,
+          "span": 122.7,
+          "kerf": 4.0,
+          "panel": "C053",
+          "region": [
+            1738.8,
+            985.8,
+            696.2,
+            122.7
+          ]
+        },
+        {
+          "parent": "S5bbbbbbbb",
+          "axis": "X",
+          "at": 2258.8,
+          "span": 102.5,
+          "kerf": 4.0,
+          "panel": "C001",
+          "region": [
+            1738.8,
+            1112.5,
+            696.2,
+            102.5
+          ]
+        },
+        {
+          "parent": "S5bbbbbbbba",
+          "axis": "Y",
+          "at": 1192.5,
+          "span": 520.0,
+          "kerf": 4.0,
+          "panel": "C001",
+          "region": [
+            1738.8,
+            1112.5,
+            520.0,
+            102.5
+          ]
+        },
+        {
+          "parent": "S5bbbc",
+          "axis": "X",
+          "at": 1756.8,
+          "span": 98.0,
+          "kerf": 4.0,
+          "panel": "C002",
+          "region": [
+            1236.8,
+            883.8,
+            1198.2,
+            98.0
+          ]
+        },
+        {
+          "parent": "S5bbbca",
+          "axis": "Y",
+          "at": 963.8,
+          "span": 520.0,
+          "kerf": 4.0,
+          "panel": "C002",
+          "region": [
+            1236.8,
+            883.8,
+            520.0,
+            98.0
+          ]
+        },
+        {
+          "parent": "S5bbbcb",
+          "axis": "X",
+          "at": 2260.8,
+          "span": 98.0,
+          "kerf": 4.0,
+          "panel": "C045",
+          "region": [
+            1760.8,
+            883.8,
+            674.2,
+            98.0
+          ]
+        },
+        {
+          "parent": "S5bbbcba",
+          "axis": "Y",
+          "at": 963.8,
+          "span": 500.0,
+          "kerf": 4.0,
+          "panel": "C045",
+          "region": [
+            1760.8,
+            883.8,
+            500.0,
+            98.0
+          ]
+        }
+      ]
+    },
+    {
+      "free": [
+        {
+          "x": 1309.0,
+          "y": 438.8,
+          "w": 620.4,
+          "h": 15.6,
+          "node": "S6cc"
+        },
+        {
+          "x": 2418.2,
+          "y": 5.0,
+          "w": 16.8,
+          "h": 409.8,
+          "node": "S6cbc"
+        },
+        {
+          "x": 2391.8,
+          "y": 911.8,
+          "w": 43.2,
+          "h": 303.2,
+          "node": "S6bbbbb"
+        },
+        {
+          "x": 1742.8,
+          "y": 1210.8,
+          "w": 645.0,
+          "h": 4.2,
+          "node": "S6bbbbc"
+        },
+        {
+          "x": 1729.6,
+          "y": 1082.8,
+          "w": 9.2,
+          "h": 132.2,
+          "node": "S6bbcb"
+        },
+        {
+          "x": 2307.2,
+          "y": 841.8,
+          "w": 127.8,
+          "h": 66.0,
+          "node": "S6bbbcb"
+        },
+        {
+          "x": 2434.0,
+          "y": 458.4,
+          "w": 1.0,
+          "h": 379.4,
+          "node": "S6bbbcc"
+        },
+        {
+          "x": 1933.4,
+          "y": 444.2,
+          "w": 501.6,
+          "h": 10.2,
+          "node": "S6cbbb"
+        },
+        {
+          "x": 2398.2,
+          "y": 418.8,
+          "w": 36.8,
+          "h": 21.4,
+          "node": "S6cbbc"
+        }
+      ],
+      "panels": [
+        {
+          "id": "C038",
+          "x": 5.0,
+          "y": 5.0,
+          "l": 1300.0,
+          "w": 449.4,
+          "rotated": false
+        },
+        {
+          "id": "C037",
+          "x": 5.0,
+          "y": 458.4,
+          "l": 1300.0,
+          "w": 449.4,
+          "rotated": false
+        },
+        {
+          "id": "C078",
+          "x": 5.0,
+          "y": 911.8,
+          "l": 1300.0,
+          "w": 300.0,
+          "rotated": false
+        },
+        {
+          "id": "C047",
+          "x": 1309.0,
+          "y": 5.0,
+          "l": 620.4,
+          "w": 429.8,
+          "rotated": false
+        },
+        {
+          "id": "C009",
+          "x": 1933.4,
+          "y": 5.0,
+          "l": 480.8,
+          "w": 409.8,
+          "rotated": false
+        },
+        {
+          "id": "C046",
+          "x": 1309.0,
+          "y": 458.4,
+          "l": 429.8,
+          "w": 620.4,
+          "rotated": true
+        },
+        {
+          "id": "C065",
+          "x": 1742.8,
+          "y": 458.4,
+          "l": 560.4,
+          "w": 449.4,
+          "rotated": false
+        },
+        {
+          "id": "C081",
+          "x": 1742.8,
+          "y": 911.8,
+          "l": 645.0,
+          "w": 295.0,
+          "rotated": false
+        },
+        {
+          "id": "C018",
+          "x": 1309.0,
+          "y": 1082.8,
+          "l": 416.6,
+          "w": 130.0,
+          "rotated": false
+        },
+        {
+          "id": "C056",
+          "x": 2307.2,
+          "y": 458.4,
+          "l": 122.8,
+          "w": 379.4,
+          "rotated": true
+        },
+        {
+          "id": "C093",
+          "x": 1933.4,
+          "y": 418.8,
+          "l": 460.8,
+          "w": 21.4,
+          "rotated": false
+        }
+      ],
+      "cuts": [
+        {
+          "parent": "S6",
+          "axis": "Y",
+          "at": 454.4,
+          "span": 2430.0,
+          "kerf": 4.0,
+          "panel": "C038",
+          "region": [
+            5.0,
+            5.0,
+            2430.0,
+            1210.0
+          ]
+        },
+        {
+          "parent": "S6a",
+          "axis": "X",
+          "at": 1305.0,
+          "span": 449.4,
+          "kerf": 4.0,
+          "panel": "C038",
+          "region": [
+            5.0,
+            5.0,
+            2430.0,
+            449.4
+          ]
+        },
+        {
+          "parent": "S6b",
+          "axis": "X",
+          "at": 1305.0,
+          "span": 756.6,
+          "kerf": 4.0,
+          "panel": "C037",
+          "region": [
+            5.0,
+            458.4,
+            2430.0,
+            756.6
+          ]
+        },
+        {
+          "parent": "S6ba",
+          "axis": "Y",
+          "at": 907.8,
+          "span": 1300.0,
+          "kerf": 4.0,
+          "panel": "C037",
+          "region": [
+            5.0,
+            458.4,
+            1300.0,
+            756.6
+          ]
+        },
+        {
+          "parent": "S6bc",
+          "axis": "Y",
+          "at": 1211.8,
+          "span": 1300.0,
+          "kerf": 4.0,
+          "panel": "C078",
+          "region": [
+            5.0,
+            911.8,
+            1300.0,
+            303.2
+          ]
+        },
+        {
+          "parent": "S6c",
+          "axis": "X",
+          "at": 1929.4,
+          "span": 449.4,
+          "kerf": 4.0,
+          "panel": "C047",
+          "region": [
+            1309.0,
+            5.0,
+            1126.0,
+            449.4
+          ]
+        },
+        {
+          "parent": "S6ca",
+          "axis": "Y",
+          "at": 434.8,
+          "span": 620.4,
+          "kerf": 4.0,
+          "panel": "C047",
+          "region": [
+            1309.0,
+            5.0,
+            620.4,
+            449.4
+          ]
+        },
+        {
+          "parent": "S6cb",
+          "axis": "Y",
+          "at": 414.8,
+          "span": 501.6,
+          "kerf": 4.0,
+          "panel": "C009",
+          "region": [
+            1933.4,
+            5.0,
+            501.6,
+            449.4
+          ]
+        },
+        {
+          "parent": "S6cba",
+          "axis": "X",
+          "at": 2414.2,
+          "span": 409.8,
+          "kerf": 4.0,
+          "panel": "C009",
+          "region": [
+            1933.4,
+            5.0,
+            501.6,
+            409.8
+          ]
+        },
+        {
+          "parent": "S6bb",
+          "axis": "X",
+          "at": 1738.8,
+          "span": 756.6,
+          "kerf": 4.0,
+          "panel": "C046",
+          "region": [
+            1309.0,
+            458.4,
+            1126.0,
+            756.6
+          ]
+        },
+        {
+          "parent": "S6bba",
+          "axis": "Y",
+          "at": 1078.8,
+          "span": 429.8,
+          "kerf": 4.0,
+          "panel": "C046",
+          "region": [
+            1309.0,
+            458.4,
+            429.8,
+            756.6
+          ]
+        },
+        {
+          "parent": "S6bbb",
+          "axis": "Y",
+          "at": 907.8,
+          "span": 692.2,
+          "kerf": 4.0,
+          "panel": "C065",
+          "region": [
+            1742.8,
+            458.4,
+            692.2,
+            756.6
+          ]
+        },
+        {
+          "parent": "S6bbba",
+          "axis": "X",
+          "at": 2303.2,
+          "span": 449.4,
+          "kerf": 4.0,
+          "panel": "C065",
+          "region": [
+            1742.8,
+            458.4,
+            692.2,
+            449.4
+          ]
+        },
+        {
+          "parent": "S6bbbb",
+          "axis": "X",
+          "at": 2387.8,
+          "span": 303.2,
+          "kerf": 4.0,
+          "panel": "C081",
+          "region": [
+            1742.8,
+            911.8,
+            692.2,
+            303.2
+          ]
+        },
+        {
+          "parent": "S6bbbba",
+          "axis": "Y",
+          "at": 1206.8,
+          "span": 645.0,
+          "kerf": 4.0,
+          "panel": "C081",
+          "region": [
+            1742.8,
+            911.8,
+            645.0,
+            303.2
+          ]
+        },
+        {
+          "parent": "S6bbc",
+          "axis": "X",
+          "at": 1725.6,
+          "span": 132.2,
+          "kerf": 4.0,
+          "panel": "C018",
+          "region": [
+            1309.0,
+            1082.8,
+            429.8,
+            132.2
+          ]
+        },
+        {
+          "parent": "S6bbca",
+          "axis": "Y",
+          "at": 1212.8,
+          "span": 416.6,
+          "kerf": 4.0,
+          "panel": "C018",
+          "region": [
+            1309.0,
+            1082.8,
+            416.6,
+            132.2
+          ]
+        },
+        {
+          "parent": "S6bbbc",
+          "axis": "Y",
+          "at": 837.8,
+          "span": 127.8,
+          "kerf": 4.0,
+          "panel": "C056",
+          "region": [
+            2307.2,
+            458.4,
+            127.8,
+            449.4
+          ]
+        },
+        {
+          "parent": "S6bbbca",
+          "axis": "X",
+          "at": 2430.0,
+          "span": 379.4,
+          "kerf": 4.0,
+          "panel": "C056",
+          "region": [
+            2307.2,
+            458.4,
+            127.8,
+            379.4
+          ]
+        },
+        {
+          "parent": "S6cbb",
+          "axis": "Y",
+          "at": 440.2,
+          "span": 501.6,
+          "kerf": 4.0,
+          "panel": "C093",
+          "region": [
+            1933.4,
+            418.8,
+            501.6,
+            35.6
+          ]
+        },
+        {
+          "parent": "S6cbba",
+          "axis": "X",
+          "at": 2394.2,
+          "span": 21.4,
+          "kerf": 4.0,
+          "panel": "C093",
+          "region": [
+            1933.4,
+            418.8,
+            501.6,
+            21.4
+          ]
+        }
+      ]
+    },
+    {
+      "free": [
+        {
+          "x": 5.0,
+          "y": 1213.4,
+          "w": 735.8,
+          "h": 1.6,
+          "node": "S7bcc"
+        },
+        {
+          "x": 744.8,
+          "y": 1152.6,
+          "w": 521.0,
+          "h": 62.4,
+          "node": "S7bcbb"
+        },
+        {
+          "x": 1269.8,
+          "y": 1203.6,
+          "w": 429.8,
+          "h": 11.4,
+          "node": "S7bbcb"
+        },
+        {
+          "x": 2212.6,
+          "y": 849.6,
+          "w": 222.4,
+          "h": 365.4,
+          "node": "S7bbbbb"
+        },
+        {
+          "x": 1703.6,
+          "y": 1148.6,
+          "w": 505.0,
+          "h": 66.4,
+          "node": "S7bbbbc"
+        },
+        {
+          "x": 2363.8,
+          "y": 5.0,
+          "w": 71.2,
+          "h": 295.0,
+          "node": "S7cbc"
+        },
+        {
+          "x": 2322.4,
+          "y": 414.8,
+          "w": 112.6,
+          "h": 430.8,
+          "node": "S7bbbcb"
+        },
+        {
+          "x": 2188.4,
+          "y": 798.2,
+          "w": 130.0,
+          "h": 47.4,
+          "node": "S7bbbcc"
+        },
+        {
+          "x": 2422.8,
+          "y": 304.0,
+          "w": 12.2,
+          "h": 80.0,
+          "node": "S7cbbc"
+        },
+        {
+          "x": 1734.6,
+          "y": 304.0,
+          "w": 180.2,
+          "h": 106.8,
+          "node": "S7ccb"
+        },
+        {
+          "x": 2383.6,
+          "y": 388.0,
+          "w": 51.4,
+          "h": 22.8,
+          "node": "S7cbbbb"
+        }
+      ],
+      "panels": [
+        {
+          "id": "C076",
+          "x": 5.0,
+          "y": 5.0,
+          "l": 1260.8,
+          "w": 405.8,
+          "rotated": false
+        },
+        {
+          "id": "C077",
+          "x": 5.0,
+          "y": 414.8,
+          "l": 1260.8,
+          "w": 429.8,
+          "rotated": false
+        },
+        {
+          "id": "C043",
+          "x": 5.0,
+          "y": 848.6,
+          "l": 735.8,
+          "w": 360.8,
+          "rotated": false
+        },
+        {
+          "id": "C006",
+          "x": 1269.8,
+          "y": 414.8,
+          "l": 429.8,
+          "w": 480.8,
+          "rotated": true
+        },
+        {
+          "id": "C005",
+          "x": 1703.6,
+          "y": 414.8,
+          "l": 480.8,
+          "w": 430.8,
+          "rotated": false
+        },
+        {
+          "id": "C072",
+          "x": 744.8,
+          "y": 848.6,
+          "l": 520.0,
+          "w": 300.0,
+          "rotated": false
+        },
+        {
+          "id": "C068",
+          "x": 1269.8,
+          "y": 899.6,
+          "l": 429.8,
+          "w": 300.0,
+          "rotated": false
+        },
+        {
+          "id": "C073",
+          "x": 1703.6,
+          "y": 849.6,
+          "l": 505.0,
+          "w": 295.0,
+          "rotated": false
+        },
+        {
+          "id": "C080",
+          "x": 1269.8,
+          "y": 5.0,
+          "l": 645.0,
+          "w": 295.0,
+          "rotated": false
+        },
+        {
+          "id": "C087",
+          "x": 1918.8,
+          "y": 5.0,
+          "l": 441.0,
+          "w": 295.0,
+          "rotated": false
+        },
+        {
+          "id": "C016",
+          "x": 2188.4,
+          "y": 414.8,
+          "l": 130.0,
+          "w": 379.4,
+          "rotated": true
+        },
+        {
+          "id": "C044",
+          "x": 1918.8,
+          "y": 304.0,
+          "l": 500.0,
+          "w": 80.0,
+          "rotated": false
+        },
+        {
+          "id": "C092",
+          "x": 1269.8,
+          "y": 304.0,
+          "l": 460.8,
+          "w": 80.0,
+          "rotated": false
+        },
+        {
+          "id": "C097",
+          "x": 1269.8,
+          "y": 388.0,
+          "l": 460.8,
+          "w": 21.4,
+          "rotated": false
+        },
+        {
+          "id": "C094",
+          "x": 1918.8,
+          "y": 388.0,
+          "l": 460.8,
+          "w": 21.4,
+          "rotated": false
+        }
+      ],
+      "cuts": [
+        {
+          "parent": "S7",
+          "axis": "Y",
+          "at": 410.8,
+          "span": 2430.0,
+          "kerf": 4.0,
+          "panel": "C076",
+          "region": [
+            5.0,
+            5.0,
+            2430.0,
+            1210.0
+          ]
+        },
+        {
+          "parent": "S7a",
+          "axis": "X",
+          "at": 1265.8,
+          "span": 405.8,
+          "kerf": 4.0,
+          "panel": "C076",
+          "region": [
+            5.0,
+            5.0,
+            2430.0,
+            405.8
+          ]
+        },
+        {
+          "parent": "S7b",
+          "axis": "X",
+          "at": 1265.8,
+          "span": 800.2,
+          "kerf": 4.0,
+          "panel": "C077",
+          "region": [
+            5.0,
+            414.8,
+            2430.0,
+            800.2
+          ]
+        },
+        {
+          "parent": "S7ba",
+          "axis": "Y",
+          "at": 844.6,
+          "span": 1260.8,
+          "kerf": 4.0,
+          "panel": "C077",
+          "region": [
+            5.0,
+            414.8,
+            1260.8,
+            800.2
+          ]
+        },
+        {
+          "parent": "S7bc",
+          "axis": "X",
+          "at": 740.8,
+          "span": 366.4,
+          "kerf": 4.0,
+          "panel": "C043",
+          "region": [
+            5.0,
+            848.6,
+            1260.8,
+            366.4
+          ]
+        },
+        {
+          "parent": "S7bca",
+          "axis": "Y",
+          "at": 1209.4,
+          "span": 735.8,
+          "kerf": 4.0,
+          "panel": "C043",
+          "region": [
+            5.0,
+            848.6,
+            735.8,
+            366.4
+          ]
+        },
+        {
+          "parent": "S7bb",
+          "axis": "X",
+          "at": 1699.6,
+          "span": 800.2,
+          "kerf": 4.0,
+          "panel": "C006",
+          "region": [
+            1269.8,
+            414.8,
+            1165.2,
+            800.2
+          ]
+        },
+        {
+          "parent": "S7bba",
+          "axis": "Y",
+          "at": 895.6,
+          "span": 429.8,
+          "kerf": 4.0,
+          "panel": "C006",
+          "region": [
+            1269.8,
+            414.8,
+            429.8,
+            800.2
+          ]
+        },
+        {
+          "parent": "S7bbb",
+          "axis": "Y",
+          "at": 845.6,
+          "span": 731.4,
+          "kerf": 4.0,
+          "panel": "C005",
+          "region": [
+            1703.6,
+            414.8,
+            731.4,
+            800.2
+          ]
+        },
+        {
+          "parent": "S7bbba",
+          "axis": "X",
+          "at": 2184.4,
+          "span": 430.8,
+          "kerf": 4.0,
+          "panel": "C005",
+          "region": [
+            1703.6,
+            414.8,
+            731.4,
+            430.8
+          ]
+        },
+        {
+          "parent": "S7bcb",
+          "axis": "Y",
+          "at": 1148.6,
+          "span": 521.0,
+          "kerf": 4.0,
+          "panel": "C072",
+          "region": [
+            744.8,
+            848.6,
+            521.0,
+            366.4
+          ]
+        },
+        {
+          "parent": "S7bcba",
+          "axis": "X",
+          "at": 1264.8,
+          "span": 300.0,
+          "kerf": 4.0,
+          "panel": "C072",
+          "region": [
+            744.8,
+            848.6,
+            521.0,
+            300.0
+          ]
+        },
+        {
+          "parent": "S7bbc",
+          "axis": "Y",
+          "at": 1199.6,
+          "span": 429.8,
+          "kerf": 4.0,
+          "panel": "C068",
+          "region": [
+            1269.8,
+            899.6,
+            429.8,
+            315.4
+          ]
+        },
+        {
+          "parent": "S7bbbb",
+          "axis": "X",
+          "at": 2208.6,
+          "span": 365.4,
+          "kerf": 4.0,
+          "panel": "C073",
+          "region": [
+            1703.6,
+            849.6,
+            731.4,
+            365.4
+          ]
+        },
+        {
+          "parent": "S7bbbba",
+          "axis": "Y",
+          "at": 1144.6,
+          "span": 505.0,
+          "kerf": 4.0,
+          "panel": "C073",
+          "region": [
+            1703.6,
+            849.6,
+            505.0,
+            365.4
+          ]
+        },
+        {
+          "parent": "S7c",
+          "axis": "X",
+          "at": 1914.8,
+          "span": 405.8,
+          "kerf": 4.0,
+          "panel": "C080",
+          "region": [
+            1269.8,
+            5.0,
+            1165.2,
+            405.8
+          ]
+        },
+        {
+          "parent": "S7ca",
+          "axis": "Y",
+          "at": 300.0,
+          "span": 645.0,
+          "kerf": 4.0,
+          "panel": "C080",
+          "region": [
+            1269.8,
+            5.0,
+            645.0,
+            405.8
+          ]
+        },
+        {
+          "parent": "S7cb",
+          "axis": "Y",
+          "at": 300.0,
+          "span": 516.2,
+          "kerf": 4.0,
+          "panel": "C087",
+          "region": [
+            1918.8,
+            5.0,
+            516.2,
+            405.8
+          ]
+        },
+        {
+          "parent": "S7cba",
+          "axis": "X",
+          "at": 2359.8,
+          "span": 295.0,
+          "kerf": 4.0,
+          "panel": "C087",
+          "region": [
+            1918.8,
+            5.0,
+            516.2,
+            295.0
+          ]
+        },
+        {
+          "parent": "S7bbbc",
+          "axis": "X",
+          "at": 2318.4,
+          "span": 430.8,
+          "kerf": 4.0,
+          "panel": "C016",
+          "region": [
+            2188.4,
+            414.8,
+            246.6,
+            430.8
+          ]
+        },
+        {
+          "parent": "S7bbbca",
+          "axis": "Y",
+          "at": 794.2,
+          "span": 130.0,
+          "kerf": 4.0,
+          "panel": "C016",
+          "region": [
+            2188.4,
+            414.8,
+            130.0,
+            430.8
+          ]
+        },
+        {
+          "parent": "S7cbb",
+          "axis": "Y",
+          "at": 384.0,
+          "span": 516.2,
+          "kerf": 4.0,
+          "panel": "C044",
+          "region": [
+            1918.8,
+            304.0,
+            516.2,
+            106.8
+          ]
+        },
+        {
+          "parent": "S7cbba",
+          "axis": "X",
+          "at": 2418.8,
+          "span": 80.0,
+          "kerf": 4.0,
+          "panel": "C044",
+          "region": [
+            1918.8,
+            304.0,
+            516.2,
+            80.0
+          ]
+        },
+        {
+          "parent": "S7cc",
+          "axis": "X",
+          "at": 1730.6,
+          "span": 106.8,
+          "kerf": 4.0,
+          "panel": "C092",
+          "region": [
+            1269.8,
+            304.0,
+            645.0,
+            106.8
+          ]
+        },
+        {
+          "parent": "S7cca",
+          "axis": "Y",
+          "at": 384.0,
+          "span": 460.8,
+          "kerf": 4.0,
+          "panel": "C092",
+          "region": [
+            1269.8,
+            304.0,
+            460.8,
+            106.8
+          ]
+        },
+        {
+          "parent": "S7ccc",
+          "axis": "Y",
+          "at": 409.4,
+          "span": 460.8,
+          "kerf": 4.0,
+          "panel": "C097",
+          "region": [
+            1269.8,
+            388.0,
+            460.8,
+            22.8
+          ]
+        },
+        {
+          "parent": "S7cbbb",
+          "axis": "X",
+          "at": 2379.6,
+          "span": 22.8,
+          "kerf": 4.0,
+          "panel": "C094",
+          "region": [
+            1918.8,
+            388.0,
+            516.2,
+            22.8
+          ]
+        },
+        {
+          "parent": "S7cbbba",
+          "axis": "Y",
+          "at": 409.4,
+          "span": 460.8,
+          "kerf": 4.0,
+          "panel": "C094",
+          "region": [
+            1918.8,
+            388.0,
+            460.8,
+            22.8
+          ]
+        }
+      ]
+    },
+    {
+      "free": [
+        {
+          "x": 5.0,
+          "y": 1197.4,
+          "w": 416.8,
+          "h": 17.6,
+          "node": "S8cbb"
+        },
+        {
+          "x": 1240.2,
+          "y": 846.6,
+          "w": 9.2,
+          "h": 368.4,
+          "node": "S8bbcbb"
+        },
+        {
+          "x": 839.6,
+          "y": 1211.4,
+          "w": 396.6,
+          "h": 3.6,
+          "node": "S8bbcbc"
+        },
+        {
+          "x": 2088.8,
+          "y": 438.8,
+          "w": 346.2,
+          "h": 360.8,
+          "node": "S8bbbbbc"
+        },
+        {
+          "x": 1253.4,
+          "y": 1207.6,
+          "w": 430.8,
+          "h": 7.4,
+          "node": "S8bbbbcb"
+        },
+        {
+          "x": 2423.8,
+          "y": 5.0,
+          "w": 11.2,
+          "h": 429.8,
+          "node": "S8bbbcbb"
+        },
+        {
+          "x": 2172.6,
+          "y": 1187.0,
+          "w": 130.0,
+          "h": 28.0,
+          "node": "S8bbbbbbbc"
+        },
+        {
+          "x": 2306.6,
+          "y": 1187.0,
+          "w": 128.4,
+          "h": 28.0,
+          "node": "S8bbbbbbbbb"
+        },
+        {
+          "x": 2433.3,
+          "y": 803.6,
+          "w": 1.7,
+          "h": 379.4,
+          "node": "S8bbbbbbbbc"
+        },
+        {
+          "x": 2153.0,
+          "y": 1106.6,
+          "w": 15.6,
+          "h": 80.0,
+          "node": "S8bbbbbbcc"
+        },
+        {
+          "x": 809.2,
+          "y": 910.6,
+          "w": 26.4,
+          "h": 122.7,
+          "node": "S8bcbc"
+        },
+        {
+          "x": 425.8,
+          "y": 1164.1,
+          "w": 409.8,
+          "h": 50.9,
+          "node": "S8bcbbb"
+        },
+        {
+          "x": 826.4,
+          "y": 1037.3,
+          "w": 9.2,
+          "h": 122.8,
+          "node": "S8bcbbc"
+        },
+        {
+          "x": 2153.0,
+          "y": 1190.6,
+          "w": 15.6,
+          "h": 21.4,
+          "node": "S8bbbbbbcbc"
+        }
+      ],
+      "panels": [
+        {
+          "id": "C031",
+          "x": 5.0,
+          "y": 5.0,
+          "l": 416.8,
+          "w": 409.8,
+          "rotated": false
+        },
+        {
+          "id": "C030",
+          "x": 5.0,
+          "y": 418.8,
+          "l": 416.8,
+          "w": 409.8,
+          "rotated": false
+        },
+        {
+          "id": "C008",
+          "x": 425.8,
+          "y": 5.0,
+          "l": 409.8,
+          "w": 480.8,
+          "rotated": true
+        },
+        {
+          "id": "C029",
+          "x": 425.8,
+          "y": 489.8,
+          "l": 409.8,
+          "w": 416.8,
+          "rotated": true
+        },
+        {
+          "id": "C032",
+          "x": 839.6,
+          "y": 5.0,
+          "l": 409.8,
+          "w": 416.8,
+          "rotated": true
+        },
+        {
+          "id": "C071",
+          "x": 1253.4,
+          "y": 5.0,
+          "l": 480.8,
+          "w": 429.8,
+          "rotated": false
+        },
+        {
+          "id": "C085",
+          "x": 1738.2,
+          "y": 5.0,
+          "l": 416.8,
+          "w": 429.8,
+          "rotated": true
+        },
+        {
+          "id": "C084",
+          "x": 839.6,
+          "y": 425.8,
+          "l": 405.8,
+          "w": 416.8,
+          "rotated": true
+        },
+        {
+          "id": "C019",
+          "x": 5.0,
+          "y": 832.6,
+          "l": 416.6,
+          "w": 360.8,
+          "rotated": false
+        },
+        {
+          "id": "C048",
+          "x": 1253.4,
+          "y": 438.8,
+          "l": 430.8,
+          "w": 460.8,
+          "rotated": true
+        },
+        {
+          "id": "C059",
+          "x": 839.6,
+          "y": 846.6,
+          "l": 396.6,
+          "w": 360.8,
+          "rotated": false
+        },
+        {
+          "id": "C054",
+          "x": 1688.2,
+          "y": 438.8,
+          "l": 396.6,
+          "w": 360.8,
+          "rotated": false
+        },
+        {
+          "id": "C066",
+          "x": 1688.2,
+          "y": 803.6,
+          "l": 480.4,
+          "w": 299.0,
+          "rotated": false
+        },
+        {
+          "id": "C074",
+          "x": 1253.4,
+          "y": 903.6,
+          "l": 429.8,
+          "w": 300.0,
+          "rotated": false
+        },
+        {
+          "id": "C079",
+          "x": 2159.0,
+          "y": 5.0,
+          "l": 260.8,
+          "w": 429.8,
+          "rotated": true
+        },
+        {
+          "id": "C012",
+          "x": 2172.6,
+          "y": 803.6,
+          "l": 130.0,
+          "w": 379.4,
+          "rotated": true
+        },
+        {
+          "id": "C052",
+          "x": 2306.6,
+          "y": 803.6,
+          "l": 122.7,
+          "w": 379.4,
+          "rotated": true
+        },
+        {
+          "id": "C095",
+          "x": 1688.2,
+          "y": 1106.6,
+          "l": 460.8,
+          "w": 80.0,
+          "rotated": false
+        },
+        {
+          "id": "C051",
+          "x": 425.8,
+          "y": 910.6,
+          "l": 379.4,
+          "w": 122.7,
+          "rotated": false
+        },
+        {
+          "id": "C058",
+          "x": 425.8,
+          "y": 1037.3,
+          "l": 396.6,
+          "w": 122.8,
+          "rotated": false
+        },
+        {
+          "id": "C091",
+          "x": 1688.2,
+          "y": 1190.6,
+          "l": 460.8,
+          "w": 21.4,
+          "rotated": false
+        }
+      ],
+      "cuts": [
+        {
+          "parent": "S8",
+          "axis": "X",
+          "at": 421.8,
+          "span": 1210.0,
+          "kerf": 4.0,
+          "panel": "C031",
+          "region": [
+            5.0,
+            5.0,
+            2430.0,
+            1210.0
+          ]
+        },
+        {
+          "parent": "S8a",
+          "axis": "Y",
+          "at": 414.8,
+          "span": 416.8,
+          "kerf": 4.0,
+          "panel": "C031",
+          "region": [
+            5.0,
+            5.0,
+            416.8,
+            1210.0
+          ]
+        },
+        {
+          "parent": "S8c",
+          "axis": "Y",
+          "at": 828.6,
+          "span": 416.8,
+          "kerf": 4.0,
+          "panel": "C030",
+          "region": [
+            5.0,
+            418.8,
+            416.8,
+            796.2
+          ]
+        },
+        {
+          "parent": "S8b",
+          "axis": "X",
+          "at": 835.6,
+          "span": 1210.0,
+          "kerf": 4.0,
+          "panel": "C008",
+          "region": [
+            425.8,
+            5.0,
+            2009.2,
+            1210.0
+          ]
+        },
+        {
+          "parent": "S8ba",
+          "axis": "Y",
+          "at": 485.8,
+          "span": 409.8,
+          "kerf": 4.0,
+          "panel": "C008",
+          "region": [
+            425.8,
+            5.0,
+            409.8,
+            1210.0
+          ]
+        },
+        {
+          "parent": "S8bc",
+          "axis": "Y",
+          "at": 906.6,
+          "span": 409.8,
+          "kerf": 4.0,
+          "panel": "C029",
+          "region": [
+            425.8,
+            489.8,
+            409.8,
+            725.2
+          ]
+        },
+        {
+          "parent": "S8bb",
+          "axis": "X",
+          "at": 1249.4,
+          "span": 1210.0,
+          "kerf": 4.0,
+          "panel": "C032",
+          "region": [
+            839.6,
+            5.0,
+            1595.4,
+            1210.0
+          ]
+        },
+        {
+          "parent": "S8bba",
+          "axis": "Y",
+          "at": 421.8,
+          "span": 409.8,
+          "kerf": 4.0,
+          "panel": "C032",
+          "region": [
+            839.6,
+            5.0,
+            409.8,
+            1210.0
+          ]
+        },
+        {
+          "parent": "S8bbb",
+          "axis": "Y",
+          "at": 434.8,
+          "span": 1181.6,
+          "kerf": 4.0,
+          "panel": "C071",
+          "region": [
+            1253.4,
+            5.0,
+            1181.6,
+            1210.0
+          ]
+        },
+        {
+          "parent": "S8bbba",
+          "axis": "X",
+          "at": 1734.2,
+          "span": 429.8,
+          "kerf": 4.0,
+          "panel": "C071",
+          "region": [
+            1253.4,
+            5.0,
+            1181.6,
+            429.8
+          ]
+        },
+        {
+          "parent": "S8bbbc",
+          "axis": "X",
+          "at": 2155.0,
+          "span": 429.8,
+          "kerf": 4.0,
+          "panel": "C085",
+          "region": [
+            1738.2,
+            5.0,
+            696.8,
+            429.8
+          ]
+        },
+        {
+          "parent": "S8bbc",
+          "axis": "Y",
+          "at": 842.6,
+          "span": 409.8,
+          "kerf": 4.0,
+          "panel": "C084",
+          "region": [
+            839.6,
+            425.8,
+            409.8,
+            789.2
+          ]
+        },
+        {
+          "parent": "S8bbca",
+          "axis": "X",
+          "at": 1245.4,
+          "span": 416.8,
+          "kerf": 4.0,
+          "panel": "C084",
+          "region": [
+            839.6,
+            425.8,
+            409.8,
+            416.8
+          ]
+        },
+        {
+          "parent": "S8cb",
+          "axis": "Y",
+          "at": 1193.4,
+          "span": 416.8,
+          "kerf": 4.0,
+          "panel": "C019",
+          "region": [
+            5.0,
+            832.6,
+            416.8,
+            382.4
+          ]
+        },
+        {
+          "parent": "S8cba",
+          "axis": "X",
+          "at": 421.6,
+          "span": 360.8,
+          "kerf": 4.0,
+          "panel": "C019",
+          "region": [
+            5.0,
+            832.6,
+            416.8,
+            360.8
+          ]
+        },
+        {
+          "parent": "S8bbbb",
+          "axis": "X",
+          "at": 1684.2,
+          "span": 776.2,
+          "kerf": 4.0,
+          "panel": "C048",
+          "region": [
+            1253.4,
+            438.8,
+            1181.6,
+            776.2
+          ]
+        },
+        {
+          "parent": "S8bbbba",
+          "axis": "Y",
+          "at": 899.6,
+          "span": 430.8,
+          "kerf": 4.0,
+          "panel": "C048",
+          "region": [
+            1253.4,
+            438.8,
+            430.8,
+            776.2
+          ]
+        },
+        {
+          "parent": "S8bbcb",
+          "axis": "X",
+          "at": 1236.2,
+          "span": 368.4,
+          "kerf": 4.0,
+          "panel": "C059",
+          "region": [
+            839.6,
+            846.6,
+            409.8,
+            368.4
+          ]
+        },
+        {
+          "parent": "S8bbcba",
+          "axis": "Y",
+          "at": 1207.4,
+          "span": 396.6,
+          "kerf": 4.0,
+          "panel": "C059",
+          "region": [
+            839.6,
+            846.6,
+            396.6,
+            368.4
+          ]
+        },
+        {
+          "parent": "S8bbbbb",
+          "axis": "Y",
+          "at": 799.6,
+          "span": 746.8,
+          "kerf": 4.0,
+          "panel": "C054",
+          "region": [
+            1688.2,
+            438.8,
+            746.8,
+            776.2
+          ]
+        },
+        {
+          "parent": "S8bbbbba",
+          "axis": "X",
+          "at": 2084.8,
+          "span": 360.8,
+          "kerf": 4.0,
+          "panel": "C054",
+          "region": [
+            1688.2,
+            438.8,
+            746.8,
+            360.8
+          ]
+        },
+        {
+          "parent": "S8bbbbbb",
+          "axis": "X",
+          "at": 2168.6,
+          "span": 411.4,
+          "kerf": 4.0,
+          "panel": "C066",
+          "region": [
+            1688.2,
+            803.6,
+            746.8,
+            411.4
+          ]
+        },
+        {
+          "parent": "S8bbbbbba",
+          "axis": "Y",
+          "at": 1102.6,
+          "span": 480.4,
+          "kerf": 4.0,
+          "panel": "C066",
+          "region": [
+            1688.2,
+            803.6,
+            480.4,
+            411.4
+          ]
+        },
+        {
+          "parent": "S8bbbbc",
+          "axis": "Y",
+          "at": 1203.6,
+          "span": 430.8,
+          "kerf": 4.0,
+          "panel": "C074",
+          "region": [
+            1253.4,
+            903.6,
+            430.8,
+            311.4
+          ]
+        },
+        {
+          "parent": "S8bbbbca",
+          "axis": "X",
+          "at": 1683.2,
+          "span": 300.0,
+          "kerf": 4.0,
+          "panel": "C074",
+          "region": [
+            1253.4,
+            903.6,
+            430.8,
+            300.0
+          ]
+        },
+        {
+          "parent": "S8bbbcb",
+          "axis": "X",
+          "at": 2419.8,
+          "span": 429.8,
+          "kerf": 4.0,
+          "panel": "C079",
+          "region": [
+            2159.0,
+            5.0,
+            276.0,
+            429.8
+          ]
+        },
+        {
+          "parent": "S8bbbbbbb",
+          "axis": "X",
+          "at": 2302.6,
+          "span": 411.4,
+          "kerf": 4.0,
+          "panel": "C012",
+          "region": [
+            2172.6,
+            803.6,
+            262.4,
+            411.4
+          ]
+        },
+        {
+          "parent": "S8bbbbbbba",
+          "axis": "Y",
+          "at": 1183.0,
+          "span": 130.0,
+          "kerf": 4.0,
+          "panel": "C012",
+          "region": [
+            2172.6,
+            803.6,
+            130.0,
+            411.4
+          ]
+        },
+        {
+          "parent": "S8bbbbbbbb",
+          "axis": "Y",
+          "at": 1183.0,
+          "span": 128.4,
+          "kerf": 4.0,
+          "panel": "C052",
+          "region": [
+            2306.6,
+            803.6,
+            128.4,
+            411.4
+          ]
+        },
+        {
+          "parent": "S8bbbbbbbba",
+          "axis": "X",
+          "at": 2429.3,
+          "span": 379.4,
+          "kerf": 4.0,
+          "panel": "C052",
+          "region": [
+            2306.6,
+            803.6,
+            128.4,
+            379.4
+          ]
+        },
+        {
+          "parent": "S8bbbbbbc",
+          "axis": "Y",
+          "at": 1186.6,
+          "span": 480.4,
+          "kerf": 4.0,
+          "panel": "C095",
+          "region": [
+            1688.2,
+            1106.6,
+            480.4,
+            108.4
+          ]
+        },
+        {
+          "parent": "S8bbbbbbca",
+          "axis": "X",
+          "at": 2149.0,
+          "span": 80.0,
+          "kerf": 4.0,
+          "panel": "C095",
+          "region": [
+            1688.2,
+            1106.6,
+            480.4,
+            80.0
+          ]
+        },
+        {
+          "parent": "S8bcb",
+          "axis": "Y",
+          "at": 1033.3,
+          "span": 409.8,
+          "kerf": 4.0,
+          "panel": "C051",
+          "region": [
+            425.8,
+            910.6,
+            409.8,
+            304.4
+          ]
+        },
+        {
+          "parent": "S8bcba",
+          "axis": "X",
+          "at": 805.2,
+          "span": 122.7,
+          "kerf": 4.0,
+          "panel": "C051",
+          "region": [
+            425.8,
+            910.6,
+            409.8,
+            122.7
+          ]
+        },
+        {
+          "parent": "S8bcbb",
+          "axis": "Y",
+          "at": 1160.1,
+          "span": 409.8,
+          "kerf": 4.0,
+          "panel": "C058",
+          "region": [
+            425.8,
+            1037.3,
+            409.8,
+            177.7
+          ]
+        },
+        {
+          "parent": "S8bcbba",
+          "axis": "X",
+          "at": 822.4,
+          "span": 122.8,
+          "kerf": 4.0,
+          "panel": "C058",
+          "region": [
+            425.8,
+            1037.3,
+            409.8,
+            122.8
+          ]
+        },
+        {
+          "parent": "S8bbbbbbcb",
+          "axis": "Y",
+          "at": 1212.0,
+          "span": 480.4,
+          "kerf": 4.0,
+          "panel": "C091",
+          "region": [
+            1688.2,
+            1190.6,
+            480.4,
+            24.4
+          ]
+        },
+        {
+          "parent": "S8bbbbbbcba",
+          "axis": "X",
+          "at": 2149.0,
+          "span": 21.4,
+          "kerf": 4.0,
+          "panel": "C091",
+          "region": [
+            1688.2,
+            1190.6,
+            480.4,
+            21.4
+          ]
+        }
+      ]
+    },
+    {
+      "free": [
+        {
+          "x": 2285.0,
+          "y": 5.0,
+          "w": 150.0,
+          "h": 10.0,
+          "node": "S9c"
+        },
+        {
+          "x": 5.0,
+          "y": 33.0,
+          "w": 2430.0,
+          "h": 1182.0,
+          "node": "S9bb"
+        },
+        {
+          "x": 2389.0,
+          "y": 19.0,
+          "w": 46.0,
+          "h": 10.0,
+          "node": "S9bc"
+        }
+      ],
+      "panels": [
+        {
+          "id": "C089",
+          "x": 5.0,
+          "y": 5.0,
+          "l": 2276.0,
+          "w": 10.0,
+          "rotated": false
+        },
+        {
+          "id": "C088",
+          "x": 5.0,
+          "y": 19.0,
+          "l": 2380.0,
+          "w": 10.0,
+          "rotated": false
+        }
+      ],
+      "cuts": [
+        {
+          "parent": "S9",
+          "axis": "Y",
+          "at": 15.0,
+          "span": 2430.0,
+          "kerf": 4.0,
+          "panel": "C089",
+          "region": [
+            5.0,
+            5.0,
+            2430.0,
+            1210.0
+          ]
+        },
+        {
+          "parent": "S9a",
+          "axis": "X",
+          "at": 2281.0,
+          "span": 10.0,
+          "kerf": 4.0,
+          "panel": "C089",
+          "region": [
+            5.0,
+            5.0,
+            2430.0,
+            10.0
+          ]
+        },
+        {
+          "parent": "S9b",
+          "axis": "Y",
+          "at": 29.0,
+          "span": 2430.0,
+          "kerf": 4.0,
+          "panel": "C088",
+          "region": [
+            5.0,
+            19.0,
+            2430.0,
+            1196.0
+          ]
+        },
+        {
+          "parent": "S9ba",
+          "axis": "X",
+          "at": 2385.0,
+          "span": 10.0,
+          "kerf": 4.0,
+          "panel": "C088",
+          "region": [
+            5.0,
+            19.0,
+            2430.0,
+            10.0
+          ]
+        }
+      ]
+    }
+  ],
+  "sheet_count": 9,
+  "edge_band_net_m": 52.414,
+  "edge_band_with_trim_m": 57.656
+}

@@ -1,0 +1,98 @@
+ID,Module,Part,Qty,Finished L,Finished W,Thickness,Band L1,Band L2,Band W1,Band W2,Blank L,Blank W,Sheet,Note
+C001,Wardrobe_Left_Hanging,Plinth_Front,1,520,80,19.6,0,0,0,0,520.0,80.0,5,
+C002,Wardrobe_Left_Hanging,Plinth_Back,1,520,80,19.6,0,0,0,0,520.0,80.0,5,
+C003,Wardrobe_Left_Hanging,Side_L,1,1990,430.8,19.6,1,0,0,0,1990.0,429.8,3,
+C004,Wardrobe_Left_Hanging,Side_R,1,1990,405.8,19.6,1,0,0,0,1990.0,404.8,3,Plain rectangular side; front set back 25 mm for square door grip
+C005,Wardrobe_Left_Hanging,Bottom,1,480.8,430.8,19.6,0,0,0,0,480.8,430.8,7,
+C006,Wardrobe_Left_Hanging,Top,1,480.8,430.8,19.6,1,0,0,0,480.8,429.8,7,
+C007,Wardrobe_Left_Hanging,Back,1,1990,520,19.6,0,0,0,0,1990.0,520.0,2,
+C008,Wardrobe_Left_Hanging,Shelf_Top,1,480.8,410.8,19.6,1,0,0,0,480.8,409.8,8,
+C009,Wardrobe_Left_Hanging,Shelf_Top_2,1,480.8,410.8,19.6,1,0,0,0,480.8,409.8,6,
+C010,Wardrobe_Left_Hanging,Drawer_1_Front,1,476.8,145,19.6,1,1,1,1,474.8,143.0,3,Square pull edge; edge-band exposed edges
+C011,Wardrobe_Left_Hanging,Drawer_1_Side_L,1,380.4,130,19.6,0,0,1,0,379.4,130.0,4,
+C012,Wardrobe_Left_Hanging,Drawer_1_Side_R,1,380.4,130,19.6,0,0,1,0,379.4,130.0,8,
+C013,Wardrobe_Left_Hanging,Drawer_1_Back,1,416.6,130,19.6,0,0,0,0,416.6,130.0,5,
+C014,Wardrobe_Left_Hanging,Drawer_1_Bottom,1,416.6,360.8,19.6,0,0,0,0,416.6,360.8,3,
+C015,Wardrobe_Left_Hanging,Drawer_2_Front,1,476.8,145,19.6,1,1,1,1,474.8,143.0,5,Square pull edge; edge-band exposed edges
+C016,Wardrobe_Left_Hanging,Drawer_2_Side_L,1,380.4,130,19.6,0,0,1,0,379.4,130.0,7,
+C017,Wardrobe_Left_Hanging,Drawer_2_Side_R,1,380.4,130,19.6,0,0,1,0,379.4,130.0,4,
+C018,Wardrobe_Left_Hanging,Drawer_2_Back,1,416.6,130,19.6,0,0,0,0,416.6,130.0,6,
+C019,Wardrobe_Left_Hanging,Drawer_2_Bottom,1,416.6,360.8,19.6,0,0,0,0,416.6,360.8,8,
+C020,Wardrobe_Left_Hanging,Shelf_Above_Drawers,1,480.8,410.8,19.6,1,0,0,0,480.8,409.8,1,
+C021,Wardrobe_Left_Hanging,Door,1,1962,507,19.6,1,1,1,1,1960.0,505.0,1,Square pull edge; edge-band exposed edges
+C022,Tower_Right_Shelves,Plinth_Front,1,456,80,19.6,0,0,0,0,456.0,80.0,5,
+C023,Tower_Right_Shelves,Plinth_Back,1,456,80,19.6,0,0,0,0,456.0,80.0,4,
+C024,Tower_Right_Shelves,Side_L,1,1990,405.8,19.6,1,0,0,0,1990.0,404.8,4,Plain rectangular side; front set back 25 mm for square door grip
+C025,Tower_Right_Shelves,Side_R,1,1990,430.8,19.6,1,0,0,0,1990.0,429.8,5,
+C026,Tower_Right_Shelves,Bottom,1,430.8,416.8,19.6,0,0,0,0,430.8,416.8,4,
+C027,Tower_Right_Shelves,Top,1,430.8,416.8,19.6,0,0,1,0,429.8,416.8,3,
+C028,Tower_Right_Shelves,Back,1,1990,456,19.6,0,0,0,0,1990.0,456.0,4,
+C029,Tower_Right_Shelves,Shelf_1,1,416.8,410.8,19.6,1,0,0,0,416.8,409.8,8,
+C030,Tower_Right_Shelves,Shelf_2,1,416.8,410.8,19.6,1,0,0,0,416.8,409.8,8,
+C031,Tower_Right_Shelves,Shelf_3,1,416.8,410.8,19.6,1,0,0,0,416.8,409.8,8,
+C032,Tower_Right_Shelves,Shelf_4,1,416.8,410.8,19.6,1,0,0,0,416.8,409.8,8,
+C033,Tower_Right_Shelves,Shelf_5,1,416.8,410.8,19.6,1,0,0,0,416.8,409.8,5,
+C034,Tower_Right_Shelves,Door,1,1962,443,19.6,1,1,1,1,1960.0,441.0,5,Square pull edge; edge-band exposed edges
+C035,Centre_TV_Makeup,Back_Panel_L,1,2070,650.0,19.6,0,0,0,0,2070.0,650.0,2,
+C036,Centre_TV_Makeup,Back_Panel_R,1,2070,650.0,19.6,0,0,0,0,2070.0,650.0,1,
+C037,Centre_TV_Makeup,TV_Ledge,1,1300,450.4,19.6,1,0,0,0,1300.0,449.4,6,"; 9 mm DC cable passage / grommet allowance at modelled route: C_L,C_R,C_T; match actual grommet OD before drilling"
+C038,Centre_TV_Makeup,Table_Top,1,1300,450.4,19.6,1,0,0,0,1300.0,449.4,6,
+C039,Centre_TV_Makeup,Table_Drawer_Front,1,796,100,19.6,1,1,1,1,794.0,98.0,5,Square pull edge; edge-band exposed edges
+C040,Centre_TV_Makeup,Table_Drawer_Side_L,1,380.4,70,19.6,1,0,0,0,380.4,69.0,3,
+C041,Centre_TV_Makeup,Table_Drawer_Side_R,1,380.4,70,19.6,1,0,0,0,380.4,69.0,2,
+C042,Centre_TV_Makeup,Table_Drawer_Back,1,735.8,70,19.6,1,0,0,0,735.8,69.0,4,
+C043,Centre_TV_Makeup,Table_Drawer_Bottom,1,735.8,360.8,19.6,0,0,0,0,735.8,360.8,7,
+C044,Drawer_Tower,Plinth_Front,1,500,80,19.6,0,0,0,0,500.0,80.0,7,
+C045,Drawer_Tower,Plinth_Back,1,500,80,19.6,0,0,0,0,500.0,80.0,5,
+C046,Drawer_Tower,Side_L,1,620.4,430.8,19.6,1,0,0,0,620.4,429.8,6,
+C047,Drawer_Tower,Side_R,1,620.4,430.8,19.6,1,0,0,0,620.4,429.8,6,
+C048,Drawer_Tower,Bottom,1,460.8,430.8,19.6,0,0,0,0,460.8,430.8,8,
+C049,Drawer_Tower,Top,1,460.8,430.8,19.6,1,0,0,0,460.8,429.8,5,Tower_L plywood pull recess; see model
+C050,Drawer_Tower,Drawer_1_Front,1,497,178.8,19.6,1,1,1,1,495.0,176.8,3,Square pull edge; edge-band exposed edges
+C051,Drawer_Tower,Drawer_1_Side_L,1,380.4,122.7,19.6,0,0,1,0,379.4,122.7,8,
+C052,Drawer_Tower,Drawer_1_Side_R,1,380.4,122.7,19.6,0,0,1,0,379.4,122.7,8,
+C053,Drawer_Tower,Drawer_1_Back,1,396.6,122.7,19.6,0,0,0,0,396.6,122.7,5,
+C054,Drawer_Tower,Drawer_1_Bottom,1,396.6,360.8,19.6,0,0,0,0,396.6,360.8,8,
+C055,Drawer_Tower,Drawer_2_Front,1,497,178.8,19.6,1,1,1,1,495.0,176.8,3,Square pull edge; edge-band exposed edges
+C056,Drawer_Tower,Drawer_2_Side_L,1,380.4,122.8,19.6,0,0,1,0,379.4,122.8,6,
+C057,Drawer_Tower,Drawer_2_Side_R,1,380.4,122.8,19.6,0,0,1,0,379.4,122.8,4,
+C058,Drawer_Tower,Drawer_2_Back,1,396.6,122.8,19.6,0,0,0,0,396.6,122.8,8,
+C059,Drawer_Tower,Drawer_2_Bottom,1,396.6,360.8,19.6,0,0,0,0,396.6,360.8,8,
+C060,Drawer_Tower,Drawer_3_Front,1,497,178.8,19.6,1,1,1,1,495.0,176.8,3,Square pull edge; edge-band exposed edges
+C061,Drawer_Tower,Drawer_3_Side_L,1,380.4,115.3,19.6,0,0,1,0,379.4,115.3,4,
+C062,Drawer_Tower,Drawer_3_Side_R,1,380.4,115.3,19.6,0,0,1,0,379.4,115.3,4,
+C063,Drawer_Tower,Drawer_3_Back,1,396.6,115.3,19.6,0,0,0,0,396.6,115.3,5,
+C064,Drawer_Tower,Drawer_3_Bottom,1,396.6,360.8,19.6,0,0,0,0,396.6,360.8,3,
+C065,Centre_TV_Makeup,Divider,1,560.4,450.4,19.6,1,0,0,0,560.4,449.4,6,
+C066,Centre_TV_Makeup,Makeup_Shelf_1,1,480.4,300,19.6,1,0,0,0,480.4,299.0,8,
+C067,Centre_TV_Makeup,Makeup_Shelf_2,1,480.4,300,19.6,1,0,0,0,480.4,299.0,3,
+C068,Top_Box_Left,Side_L,1,430.8,300,19.6,0,0,1,0,429.8,300.0,7,
+C069,Top_Box_Left,Side_R,1,430.8,300,19.6,0,0,1,0,429.8,300.0,1,; 9 mm DC cable passage / grommet allowance at modelled route: C_L; match actual grommet OD before drilling
+C070,Top_Box_Left,Bottom,1,480.8,405.8,19.6,0,0,0,0,480.8,405.8,2,Plain front setback 25 mm for square door grip
+C071,Top_Box_Left,Top,1,480.8,430.8,19.6,1,0,0,0,480.8,429.8,8,
+C072,Top_Box_Left,Back,1,520,300,19.6,0,0,0,0,520.0,300.0,7,
+C073,Top_Box_Left,Door_1,1,507.0,297,19.6,1,1,1,1,505.0,295.0,7,Square pull edge; edge-band exposed edges
+C074,Top_Box_Centre,Side_L,1,430.8,300,19.6,0,0,1,0,429.8,300.0,8,; 9 mm DC cable passage / grommet allowance at modelled route: C_L; match actual grommet OD before drilling
+C075,Top_Box_Centre,Side_R,1,430.8,300,19.6,0,0,1,0,429.8,300.0,5,
+C076,Top_Box_Centre,Bottom,1,1260.8,405.8,19.6,0,0,0,0,1260.8,405.8,7,"Plain front setback 25 mm for square door grip; 9 mm DC cable passage / grommet allowance at modelled route: C_L,C_R,C_T; match actual grommet OD before drilling"
+C077,Top_Box_Centre,Top,1,1260.8,430.8,19.6,1,0,0,0,1260.8,429.8,7,
+C078,Top_Box_Centre,Back,1,1300,300,19.6,0,0,0,0,1300.0,300.0,6,
+C079,Top_Box_Centre,Centre_Top_Divider_1,1,430.8,260.8,19.6,0,0,1,0,429.8,260.8,8,HPL both faces; edge-band front; full height between top and bottom; 9 mm DC cable passage / grommet allowance at modelled route: C_R; match actual grommet OD before drilling
+C080,Top_Box_Centre,Door_1,1,647.0,297,19.6,1,1,1,1,645.0,295.0,7,Square pull edge; edge-band exposed edges
+C081,Top_Box_Centre,Door_2,1,647.0,297,19.6,1,1,1,1,645.0,295.0,6,Square pull edge; edge-band exposed edges
+C082,Top_Box_Right,Side_L,1,430.8,300,19.6,0,0,1,0,429.8,300.0,3,
+C083,Top_Box_Right,Side_R,1,430.8,300,19.6,0,0,1,0,429.8,300.0,4,
+C084,Top_Box_Right,Bottom,1,416.8,405.8,19.6,0,0,0,0,416.8,405.8,8,Plain front setback 25 mm for square door grip
+C085,Top_Box_Right,Top,1,430.8,416.8,19.6,0,0,1,0,429.8,416.8,8,
+C086,Top_Box_Right,Back,1,456,300,19.6,0,0,0,0,456.0,300.0,2,
+C087,Top_Box_Right,Door_1,1,443.0,297,19.6,1,1,1,1,441.0,295.0,7,Square pull edge; edge-band exposed edges
+C088,Scribe_Strips,Scribe_Right_Wall,1,2380,10,19.6,0,0,0,0,2380.0,10.0,9,
+C089,Scribe_Strips,Scribe_Ceiling,1,2276,10,19.6,0,0,0,0,2276.0,10.0,9,
+C090,Pull_Tower_L,Pull_Tower_L_Back,1,460.8,60.0,19.6,0,0,0,0,460.8,60.0,3,HPL both faces; square edges; edge-band exposed edges
+C091,Pull_Tower_L,Pull_Tower_L_Lower,1,460.8,22.4,19.6,1,0,0,0,460.8,21.4,8,HPL both faces; square edges; edge-band exposed edges
+C092,Pull_Tower_C_1,Pull_Tower_C_1_Back,1,460.8,80.0,19.6,0,0,0,0,460.8,80.0,7,HPL both faces; square edges; edge-band exposed edges
+C093,Pull_Tower_C_1,Pull_Tower_C_1_Lower,1,460.8,22.4,19.6,1,0,0,0,460.8,21.4,6,HPL both faces; square edges; edge-band exposed edges
+C094,Pull_Tower_C_1,Pull_Tower_C_1_Upper,1,460.8,22.4,19.6,1,0,0,0,460.8,21.4,7,HPL both faces; square edges; edge-band exposed edges
+C095,Pull_Tower_C_2,Pull_Tower_C_2_Back,1,460.8,80.0,19.6,0,0,0,0,460.8,80.0,8,HPL both faces; square edges; edge-band exposed edges
+C096,Pull_Tower_C_2,Pull_Tower_C_2_Lower,1,460.8,22.4,19.6,1,0,0,0,460.8,21.4,2,HPL both faces; square edges; edge-band exposed edges
+C097,Pull_Tower_C_2,Pull_Tower_C_2_Upper,1,460.8,22.4,19.6,1,0,0,0,460.8,21.4,7,HPL both faces; square edges; edge-band exposed edges

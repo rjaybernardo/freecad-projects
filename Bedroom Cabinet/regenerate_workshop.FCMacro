@@ -1,0 +1,29 @@
+"""Repack cutting pages after editing native CuttingSettings / CutSchedule band flags.
+Does not resize 3D furniture. Save the document after inspecting the new layouts.
+"""
+from pathlib import Path
+import sys
+import FreeCAD as App
+PROJECT=Path('/home/rjaybernardo/Documents/FreeCAD/Bedroom Cabinet')
+sys.path.insert(0,str(PROJECT))
+from workshop_documents import generate
+import json
+
+doc=App.ActiveDocument
+if doc is None or doc.getObject('CuttingSettings') is None:
+    raise RuntimeError('Open the bed v7 or cabinet v9 model first')
+project='bed' if doc.Name.startswith('Bed_Wall') else 'cabinet'
+data=json.loads((PROJECT/'workshop'/project/'layout.json').read_text())
+settings={k:float(doc.CuttingSettings.get('B'+str(4+i))) for i,k in enumerate(data['settings'])}
+for i,p in enumerate(data['panels'],4):
+    p['bands']=[int(float(doc.CutSchedule.get(c+str(i)))) for c in ['H','I','J','K']]
+    assert all(v in [0,1] for v in p['bands']), 'Band flags must be 0 or 1'
+page_names=[o.Name for o in doc.Workshop_Documents.Group if o.TypeId=='TechDraw::DrawPage' and o.Name.startswith('Cutting_')]
+for name in page_names:
+    page=doc.getObject(name)
+    if page:
+        template=page.Template.Name
+        doc.removeObject(page.Name)
+        if doc.getObject(template):doc.removeObject(template)
+generate(doc,data['panels'],project,str(PROJECT),settings)
+App.Console.PrintMessage('Cutting pages regenerated. Inspect layouts, then save. Re-export PDFs with export_workshop.FCMacro.\n')

@@ -1,0 +1,28 @@
+"""Export standalone PDFs and preview PNGs from generated SVG pages.
+Re-run after regenerate_workshop.FCMacro to refresh the printable pack.
+"""
+from pathlib import Path
+from PySide import QtCore, QtGui, QtSvg
+PROJECT=Path('/home/rjaybernardo/Documents/FreeCAD/Bedroom Cabinet')
+
+
+def export_set(files,pdf):
+    writer=QtGui.QPdfWriter(str(pdf))
+    writer.setResolution(120)
+    writer.setPageSize(QtGui.QPageSize(QtGui.QPageSize.A3))
+    writer.setPageOrientation(QtGui.QPageLayout.Landscape)
+    writer.setPageMargins(QtCore.QMarginsF(0,0,0,0))
+    painter=QtGui.QPainter(writer)
+    for i,path in enumerate(files):
+        if i:writer.newPage()
+        renderer=QtSvg.QSvgRenderer(str(path));renderer.render(painter,QtCore.QRectF(0,0,writer.width(),writer.height()))
+        if i==0 or path.stem in ['LED_Wiring','Assembly_01','Assembly_04']:
+            img=QtGui.QImage(1680,1188,QtGui.QImage.Format_ARGB32);img.fill(QtCore.Qt.white)
+            ip=QtGui.QPainter(img);renderer.render(ip);ip.end();img.save(str(path.with_suffix('.png')))
+    painter.end()
+
+for project in ['bed','cabinet']:
+    folder=PROJECT/'workshop'/project
+    export_set(sorted(folder.glob('Sheet_*.svg')),folder/'Cutting_Layouts.pdf')
+    export_set(sorted(folder.glob('Assembly_*.svg'))+[folder/'LED_Wiring.svg'],folder/'Assembly_Manual.pdf')
+    export_set([folder/'LED_Wiring.svg'],folder/'LED_Wiring.pdf')

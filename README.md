@@ -1,119 +1,116 @@
-# FreeCAD projects
+# FreeCAD projects — current bedroom designs
 
-## Latest approved design — bed v6 and makeup cabinet v8
+Latest design update: **2026-11-15 — 1-inch wheel drawers, aluminium LED profiles and wiring, native cutting layouts, illustrated module manuals**.
 
-Updated screenshots are embedded here after every major design change, and in the session notes.
+Bed frame and surrounding cabinets — full design:
 
-Bed frame with cabinets — full design:
+![Bed frame and surrounding cabinets — full design](Bedroom%20Cabinet/screenshots/bedframe_v7_perspective.png)
 
-![Latest approved bed frame and cabinets v6](Bedroom%20Cabinet/screenshots/bedframe_v6_perspective.png)
+TV / makeup / wardrobe cabinet — full design:
 
-TV/makeup cabinet — full design:
+![TV / makeup / wardrobe cabinet — full design](Bedroom%20Cabinet/screenshots/cabinet_v9_perspective.png)
 
-![Latest approved TV and makeup cabinet v8](Bedroom%20Cabinet/screenshots/cabinet_v8_perspective.png)
+Bed lighting — profiles, cable routes and driver (panels transparent):
 
-Bed cabinet drawer detail — solid sides and concealed L/C ends:
+![Bed lighting — profiles, cable routes and driver (panels transparent)](Bedroom%20Cabinet/screenshots/bedframe_v7_lighting.png)
 
-![Latest approved bed v6 drawer detail](Bedroom%20Cabinet/screenshots/bedframe_v6_drawer_pulls.png)
+Makeup lighting — profiles, cable routes and driver (panels transparent):
 
-Makeup cabinet drawer detail — solid sides and concealed L/C ends:
+![Makeup lighting — profiles, cable routes and driver (panels transparent)](Bedroom%20Cabinet/screenshots/cabinet_v9_lighting.png)
 
-![Latest approved makeup cabinet v8 drawer detail](Bedroom%20Cabinet/screenshots/cabinet_v8_drawer_pulls.png)
+Under-bed drawer — four 1-inch wheels, viewed from below:
 
----
+![Under-bed drawer — four 1-inch wheels, viewed from below](Bedroom%20Cabinet/screenshots/bedframe_v7_wheels.png)
 
-Two separate FreeCAD furniture designs, reviewed on CachyOS with FreeCAD 1.1.4.
-Latest major design update: **2026-11-15 — solid channel ends; drawer-only L/C pulls**.
+Bed drawers open — wheel travel and room clearances:
 
-| Project | Current model | Cut list |
-| --- | --- | --- |
-| Bed frame with side and overhead cabinets | [Bed v6](Bedroom%20Cabinet/Bed_Wall_Unit_v6.FCStd) | [Bed cut list](Bedroom%20Cabinet/cut_list_bed_v6.csv) |
-| Cabinet with makeup table and TV | [Cabinet v8](Bedroom%20Cabinet/Bedroom_Cabinet_Modern_v8.FCStd) | [Cabinet cut list](Bedroom%20Cabinet/cut_list_v8.csv) |
+![Bed drawers open — wheel travel and room clearances](Bedroom%20Cabinet/screenshots/bedframe_v7_drawers_open.png)
 
-## Bed frame with cabinets — v6
+## Current files
 
-The drawer grips are built from laminated plywood: **L under the top and C between
-stacked drawers**. The channels stop between the existing solid sides, so their ends
-are concealed without extra cover panels. Door-only cabinets have no L/C cutouts.
-All fronts retain square, edge-banded edges.
+| Project | FreeCAD model with cutting and assembly pages | Cutting PDF | Illustrated assembly PDF |
+| --- | --- | --- | --- |
+| Bed with surrounding cabinets | [Bed v7](Bedroom%20Cabinet/Bed_Wall_Unit_v7.FCStd) | [12 stock sheets](Bedroom%20Cabinet/workshop/bed/Cutting_Layouts.pdf) | [12-page manual](Bedroom%20Cabinet/workshop/bed/Assembly_Manual.pdf) |
+| TV / makeup / wardrobe cabinet | [Cabinet v9](Bedroom%20Cabinet/Bedroom_Cabinet_Modern_v9.FCStd) | [9 stock sheets](Bedroom%20Cabinet/workshop/cabinet/Cutting_Layouts.pdf) | [9-page manual](Bedroom%20Cabinet/workshop/cabinet/Assembly_Manual.pdf) |
 
-The four-door overhead cabinet now has **three full-height dividers**, one
-compartment behind each door, and four separate shelf panels. Shelf widths are
-368.9 / 378.7 / 378.7 / 368.9 mm, replacing the former 1554 mm span.
-The outside dimensions and existing door sizes are preserved.
+Inside each model, expand **Workshop Documents** and open **Sheet 01** (`Cutting_01`), **CutSchedule**, **SawCuts**, **SheetSummary**, **Offcuts** or **Materials**. Expand **Assembly Manual** for numbered module pages and **LED Wiring**. Panel IDs B001… / C001… match the 3D parts, cutting diagrams and module illustrations.
 
-### Overhead cabinet detail — doors hidden
+[Cutting and building guide](Bedroom%20Cabinet/WORKSHOP_GUIDE.md) · [LED locations and wiring](Bedroom%20Cabinet/LIGHTING_AND_WIRING.md) · [Bed wiring PDF](Bedroom%20Cabinet/workshop/bed/LED_Wiring.pdf) · [Cabinet wiring PDF](Bedroom%20Cabinet/workshop/cabinet/LED_Wiring.pdf).
 
-![Bed v6 overhead cabinet with three dividers](Bedroom%20Cabinet/screenshots/bedframe_v6_top_detail.png)
+## Strip lighting and aluminium profiles
 
-### Front view
+Both models now contain separate aluminium U-profile, LED strip and diffuser parts, accessible driver/distribution spaces, two-core DC cable routes, and cable passages through fixed plywood panels. Bed lighting: both niches and under the bridge. Makeup lighting: both sides of the mirror and under the TV ledge. The previous bed puck placeholders are replaced by strip lighting.
 
-![Bed v6 front view](Bedroom%20Cabinet/screenshots/bedframe_v6_front.png)
+Wiring: existing outlet → certified plug-in constant-voltage driver → rated DC fuse/distribution and compatible dimmer → separate **parallel** positive/negative branches. The diagram shows polarity, branch labels, loads and cable allowances. Driver access is through the left upper bed cabinet and left top box of the makeup cabinet. Aluminium LED profiles are separate from the **plywood L/C drawer grips**.
 
-### Cabinet interiors — doors and mattress hidden
+**Lighting hardware is provisional:** 24 V, 10 W/m strip; 16 × 10 mm profile envelope; one 30 W driver per project. Actual strip voltage, W/m, cut interval, ventilation, grommets, conductor/fuse ratings and the outlet location must be confirmed. Any new fixed mains work needs a qualified electrician. See the [wiring guide and manufacturer sources](Bedroom%20Cabinet/LIGHTING_AND_WIRING.md).
 
-![Bed v6 cabinet interiors](Bedroom%20Cabinet/screenshots/bedframe_v6_interior.png)
+Bed LED wiring diagram:
 
-[Build script](Bedroom%20Cabinet/build_bed_v6.py) · [Three-sheet drawing](Bedroom%20Cabinet/Bed_Wall_Unit_v6_Drawing.FCStd)
-· [Drawing script](Bedroom%20Cabinet/build_bed_drawing_v6.py) · [Hardware list](Bedroom%20Cabinet/hardware_bed_v6.csv)
+![Bed LED wiring diagram](Bedroom%20Cabinet/workshop/bed/LED_Wiring.png)
 
-## Cabinet with makeup table and TV — v8
+Makeup cabinet LED wiring diagram:
 
-The drawer tower has a plywood **L recess at the top and C recesses between drawers**.
-The channels stop at the inside faces of the existing side panels; their ends do
-not cut through the visible sides. L/C channels are restricted to drawer units.
-Door-only units have plain panels and simple setbacks for finger access.
+![Makeup cabinet LED wiring diagram](Bedroom%20Cabinet/workshop/cabinet/LED_Wiring.png)
 
-A **centre divider** now separates the two-door top box above the TV. Each side
-top box already has its own compartment. Outside dimensions and door sizes are
-preserved, including the 720 mm makeup table and 1650 mm hanging rail.
+## What to build first
 
-### Top cabinet detail — doors hidden
+Bed: **head lift-up boxes → four side drawer bays → two foot bays → six wheeled drawers → joined bed platform → nightstands → upper cabinets → headboard → bridge → final fit and lighting**.
 
-![Cabinet v8 top boxes with centre divider](Bedroom%20Cabinet/screenshots/cabinet_v8_top_detail.png)
+TV/makeup cabinet: **hanging wardrobe → shelf tower → drawer-tower case and grips → centre back/table/shelves → drawer boxes → top boxes with divider → mirror, lights and doors**.
 
-### Front view
+Each manual page shows the actual model parts with matching panel IDs and assembly actions. Supplier-specific fastener/hinge drilling and wall fixings remain dependent on the selected hardware and wall. The pack does not claim a furniture load rating.
 
-![Cabinet v8 front view](Bedroom%20Cabinet/screenshots/cabinet_v8_front.png)
+Bed module manual — build the two head boxes first:
 
-### Cabinet interiors — doors hidden
+![Bed module manual — build the two head boxes first](Bedroom%20Cabinet/workshop/bed/Assembly_01.png)
 
-![Cabinet v8 cabinet interiors](Bedroom%20Cabinet/screenshots/cabinet_v8_interior.png)
+Makeup cabinet module manual — wardrobe case first:
 
-[Build script](Bedroom%20Cabinet/build_cabinet_v8.py) · [Plywood pull parts and routing](Bedroom%20Cabinet/plywood_pull_parts.csv)
+![Makeup cabinet module manual — wardrobe case first](Bedroom%20Cabinet/workshop/cabinet/Assembly_01.png)
 
-## Current design review and next revision
+## CutList Optimizer-style layouts inside FreeCAD
 
-[Detailed design audit](Bedroom%20Cabinet/DESIGN_REVIEW.md) · [Screenshot gallery](Bedroom%20Cabinet/screenshots/README.md)
+The bed has **207 plywood panels on 12 sheets**; the TV/makeup cabinet has **97 panels on 9 sheets**, nested separately. Pages include panel IDs/dimensions, band marks, stock outline, utilization, kerf, trim and offcuts. The native spreadsheets include the guillotine cut sequence and individual panel schedule. The achieved layout is a 24-trial heuristic, not a guarantee of the minimum possible sheet count.
 
-The L recess is 42 mm deep × 60 mm high, following the reference. The C recess
-is 42 mm deep × 80 mm high, with 40.8 mm clear between 19.6 mm returns. Drawer
-boxes were resized to clear the fixed channels. Wardrobe internal drawers return to their original width and 400 mm runners;
-the extra mounting partition from the previous revision is removed.
-The single makeup drawer keeps its accessible lower square pull edge.
+Assumptions: **2440 × 1220 mm stock; 5 mm edge trim; 4 mm kerf; 1 mm edge band; 18 mm core + 0.8 mm laminate each face = 19.6 mm finished**. Measure the actual material. Finished and blank dimensions are separate; blank sizes deduct only the flagged banded edges. Rotation is allowed for plain laminate; set `AllowRotation = 0` for directional grain and regenerate.
 
-[Cabinet hardware list](Bedroom%20Cabinet/hardware_cabinet_v8.csv) · [Plywood pull construction](Bedroom%20Cabinet/PLYWOOD_PULLS.md)
+[Bed panel schedule](Bedroom%20Cabinet/workshop/bed/CutSchedule.csv) · [Cabinet panel schedule](Bedroom%20Cabinet/workshop/cabinet/CutSchedule.csv). Edit native **CuttingSettings** and **CutSchedule** band flags, then run [regenerate_workshop.FCMacro](Bedroom%20Cabinet/regenerate_workshop.FCMacro); save and [refresh PDF exports](Bedroom%20Cabinet/export_workshop.FCMacro). Pages do not repack automatically on a cell edit.
 
-Both saved revisions pass geometry and sampled drawer-travel checks. Earlier models remain available for
-comparison. The following requests are recorded for the next revision:
+Bed stock sheet example:
 
-- Use 3/4-inch plywood laminated on both faces, with edge banding. Reconcile
-  older raw-panel thicknesses and verify the actual stock dimensions.
-- Replace runners on the six under-bed drawers with 1-inch-diameter wheels.
-  The rolling surface, wheel type, and total mounting height still need confirmation;
-  the screenshots above still show the drawer design before this conversion.
-- Add the required strip-light profiles, cable routes, and accessible driver space
-  after confirming the lighting locations.
-- Correct oversized headboard panels, composite
-  plinth entries and edge-band allowances before final fabrication.
-- Produce CutList Optimizer-style sheet diagrams with labelled parts, cutting
-  dimensions, kerf, trim, edge banding, material utilization, and offcuts.
+![Bed stock sheet example](Bedroom%20Cabinet/workshop/bed/Sheet_01.png)
 
-Current cut CSVs are reference lists; final optimized cutting layouts are pending
-the remaining design corrections. The combined bedroom layout's empty links also
-remain to be repaired.
+Makeup cabinet stock sheet example:
 
-**After every major design change, update both the session notes and this GitHub
-README with fresh screenshots of each affected design.**
+![Makeup cabinet stock sheet example](Bedroom%20Cabinet/workshop/cabinet/Sheet_01.png)
+
+Cutting layout open inside FreeCAD:
+
+![Cutting layout open inside FreeCAD](Bedroom%20Cabinet/screenshots/freecad_native_cut_layout.png)
+
+## Bed wheel conversion and retained approved details
+
+The six under-bed drawers have **four fixed-direction 25.4 mm wheels each (24 total)**, plywood mounting pads, short lateral guides and removable retention straps in the hardware schedule. They run on the room floor, with no raised full bay floor obstructing them. Side travel remains 337 mm and foot travel 450 mm. **Total caster mounting height is assumed 35 mm; it is not the wheel diameter.** Measure the purchased caster, floor and load capacity before cutting wheel-dependent parts. Nightstand runners remain 350 mm; the six TV/makeup/wardrobe runner pairs remain 400 mm.
+
+The headboard backing and upholstery substrate are split into sheet-sized halves; nightstand plinths are actual four-strip rings. All furniture plywood uses the same two-face-laminated thickness assumption. Adjacent head lift-up lids have a 3 mm gap. Foot clearance is now 518.4 mm (68.4 mm with a foot drawer fully open); that remaining gap is not walking space.
+
+Plywood L under the top and C between drawers remains, with concealed ends between solid outside sides. No extra cover plywood, door-only drawer notches or 45-degree bevels. The overhead dividers remain. The table stays 720 mm high; drawer underside 598.4 mm still does not admit the chair's 630 mm armrests.
+
+Bed plywood L/C pulls — concealed ends:
+
+![Bed plywood L/C pulls — concealed ends](Bedroom%20Cabinet/screenshots/bedframe_v7_drawer_pulls.png)
+
+Makeup plywood L/C pulls — concealed ends:
+
+![Makeup plywood L/C pulls — concealed ends](Bedroom%20Cabinet/screenshots/cabinet_v9_drawer_pulls.png)
+
+[Three-sheet bed drawing](Bedroom%20Cabinet/Bed_Wall_Unit_v7_Drawing.FCStd) · [Bed hardware](Bedroom%20Cabinet/hardware_bed_v7.csv) · [Cabinet hardware](Bedroom%20Cabinet/hardware_cabinet_v9.csv) · [Design review](Bedroom%20Cabinet/DESIGN_REVIEW.md) · [Full screenshot gallery](Bedroom%20Cabinet/screenshots/README.md) · [Plywood pull details](Bedroom%20Cabinet/PLYWOOD_PULLS.md).
+
+Validation: valid saved solids; closed furniture and sampled drawer-travel checks; 24 floor-tangent wheels; LED/furniture clearances; panel completeness, stock bounds and kerf separation; embedded native SVG pages; PDF page counts. Earlier bed v6/cabinet v8 files remain unchanged. These checks do not validate unselected hardware or structural/thermal performance. The old combined `Bedroom_Layout.FCStd` still has broken links; use the two current standalone models.
+
+Rebuild using [build_workshop.FCMacro](Bedroom%20Cabinet/build_workshop.FCMacro); sources: [bed](Bedroom%20Cabinet/build_bed_v7.py), [cabinet](Bedroom%20Cabinet/build_cabinet_v9.py), [cutting layouts](Bedroom%20Cabinet/workshop_documents.py), [assembly pages](Bedroom%20Cabinet/assembly_manual.py), [lighting](Bedroom%20Cabinet/cabinet_lighting.py), [wheel drawers](Bedroom%20Cabinet/bed_wheel_drawers.py).
+
+**After every major design change: refresh screenshots at the start of both READMEs and the authoritative session, then publish the README, images and models to GitHub.**
 
 [Bedroom furniture project](Bedroom%20Cabinet/README.md) · [Kitchen cabinet project](Kitchen%20Cabinet/)

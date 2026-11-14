@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420mm" height="297mm" viewBox="0 0 420 297">
+<rect width="420" height="297" fill="white"/>
+<style>text {font-family:DejaVu Sans,sans-serif;fill:#203446} .small{font-size:2.5px} .body{font-size:3.1px}</style>
+<text x="12" y="15" font-size="6" font-weight="bold">CUTTING LAYOUT 04 / 12</text>
+<text x="12" y="23" font-size="3.2">2440 x 1220 | 19.6 finished plywood, HPL both faces | kerf 4 | trim 5 each edge</text>
+<text x="12" y="290" class="small">BEDROOM WORKSHOP | mm | verify stock and purchased hardware before cutting | revision 2026-11-15</text>
+<rect x="12" y="39" width="307.44" height="153.72" fill="#eeeeee" stroke="#203446" stroke-width=".4"/>
+<rect x="12.63" y="39.63" width="216.342" height="100.3716" fill="#dce9ef" stroke="#465667" stroke-width=".18"/>
+<text x="13.63" y="44.63" font-size="3.5" >B075</text>
+<text x="13.63" y="48.63" font-size="2.5" >1717 x 796.6</text>
+<rect x="12.63" y="140.50560000000002" width="195.804" height="38.480399999999996" fill="#e6dfed" stroke="#465667" stroke-width=".18"/>
+<text x="13.63" y="145.50560000000002" font-size="3.5" >B060</text>
+<text x="13.63" y="149.50560000000002" font-size="2.5" >1554 x 305.4</text>
+<rect x="208.938" y="140.50560000000002" width="99.6156" height="34.9524" fill="#e5edd9" stroke="#465667" stroke-width=".18"/>
+<text x="209.938" y="145.50560000000002" font-size="3.5" >B084</text>
+<text x="209.938" y="149.50560000000002" font-size="2.5" >790.6 x 277.4</text>
+<path d="M208.938 140.50560000000002 L208.938 175.45800000000003" stroke="#cf6a21" stroke-width=".65"/>
+<rect x="229.476" y="39.63" width="34.9524" height="99.6156" fill="#f3e4cb" stroke="#465667" stroke-width=".18"/>
+<text x="230.476" y="44.63" font-size="3.5" >B153</text>
+<text x="230.476" y="48.63" font-size="2.5" >277.4 x 790.6</text>
+<path d="M229.476 39.63 L264.4284 39.63" stroke="#cf6a21" stroke-width=".65"/>
+<rect x="264.93240000000003" y="39.63" width="34.9524" height="99.6156" fill="#d6e9e4" stroke="#465667" stroke-width=".18"/>
+<text x="265.93240000000003" y="44.63" font-size="3.5" >B154</text>
+<text x="265.93240000000003" y="48.63" font-size="2.5" >277.4 x 790.6</text>
+<path d="M264.93240000000003 39.63 L299.88480000000004 39.63" stroke="#cf6a21" stroke-width=".65"/>
+<text x="12" y="205" font-size="3.5" >5 panels | blank area 2.500 m2 | sheet use 84.0% | 10 guillotine cuts</text>
+<text x="12" y="213" font-size="3" >Orange = banded edge. Dimensions = laminated blank BEFORE edge band. Grey = kerf, trim or offcut.</text>
+<text x="12" y="220" font-size="2.8" >L1/L2 are the two edges parallel to finished Length; W1/W2 parallel to Width. Orange thickness is symbolic.</text>
+<text x="12" y="227" font-size="2.8" >Grain: rotation allowed by default for plain laminate. Set AllowRotation = 0 for directional laminate and regenerate.</text>
+<text x="12" y="234" font-size="2.8" >Follow SawCuts.csv / native SawCuts sheet for the cutting sequence; label each piece immediately.</text>
+<text x="12" y="241" font-size="2.8" >Trim all four edges first. Origin is the stock lower-left corner; X along 2440, Y along 1220.</text>
+<text x="12" y="248" font-size="2.8" >Drill cable passages, rout internal grip recesses, and cut scribe strips to fit AFTER the rectangular blanks are cut.</text>
+<text x="12" y="255" font-size="2.8" >Heuristic nesting of each project separately; sheet count is the achieved layout, not a guaranteed minimum.</text>
+<text x="330" y="36" font-size="3.5" font-weight="bold">PART / BLANK L x W</text>
+<text x="330" y="43.0" font-size="2.6" >B075  1717 x 796.6</text>
+<text x="330" y="47.9" font-size="2.6" >B060  1554 x 305.4</text>
+<text x="330" y="52.8" font-size="2.6" >B084  790.6 x 277.4</text>
+<text x="330" y="57.7" font-size="2.6" >B153  790.6 x 277.4</text>
+<text x="330" y="62.6" font-size="2.6" >B154  790.6 x 277.4</text>
+</svg>

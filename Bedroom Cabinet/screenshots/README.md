@@ -1,72 +1,65 @@
-# Bedroom project screenshots
+# Current screenshots — bed v7 and cabinet v9
 
-These are two separate projects, captured from the saved FreeCAD models.
-The furniture geometry is unchanged in these images. Reference walls
-are hidden so the furniture is visible.
+Captured from disposable copies of the saved FreeCAD models; source models are not saved during capture.
 
-## Bed frame with surrounding cabinets — v6
+Bed frame and surrounding cabinets — full design:
 
-### Plywood L/C drawer grips — drawers open
+![Bed frame and surrounding cabinets — full design](bedframe_v7_perspective.png)
 
-![Bed v6 plywood pull channels](bedframe_v6_drawer_pulls.png)
+TV / makeup / wardrobe cabinet — full design:
 
-L under the top, C between stacked drawers; square-edged fronts. Existing sides close the ends; no extra cover panels or door-cabinet notches.
+![TV / makeup / wardrobe cabinet — full design](cabinet_v9_perspective.png)
 
+Bed lighting — profiles, cable routes and driver (panels transparent):
 
-Source: `../Bed_Wall_Unit_v6.FCStd`. Three full-height overhead dividers
-create four compartments, each with its own shelf panel.
+![Bed lighting — profiles, cable routes and driver (panels transparent)](bedframe_v7_lighting.png)
 
-### Overhead cabinet detail — doors hidden
+Makeup lighting — profiles, cable routes and driver (panels transparent):
 
-![Bed overhead cabinet with three vertical dividers](bedframe_v6_top_detail.png)
+![Makeup lighting — profiles, cable routes and driver (panels transparent)](cabinet_v9_lighting.png)
 
-### Angled view
+Under-bed drawer — four 1-inch wheels, viewed from below:
 
-![Bed frame, side cabinets, and overhead cabinet](bedframe_v6_perspective.png)
+![Under-bed drawer — four 1-inch wheels, viewed from below](bedframe_v7_wheels.png)
 
-### Front view
+Bed drawers open — wheel travel and room clearances:
 
-![Bed frame and cabinets from the front](bedframe_v6_front.png)
+![Bed drawers open — wheel travel and room clearances](bedframe_v7_drawers_open.png)
 
-### Cabinet interiors
+Bed plywood L/C pulls — concealed ends:
 
-Doors and mattress are hidden in this view. Storage-box lids remain in place.
+![Bed plywood L/C pulls — concealed ends](bedframe_v7_drawer_pulls.png)
 
-![Bed frame with cabinet doors and mattress hidden](bedframe_v6_interior.png)
+Makeup plywood L/C pulls — concealed ends:
 
-## Cabinet with makeup table and TV — v8
+![Makeup plywood L/C pulls — concealed ends](cabinet_v9_drawer_pulls.png)
 
-### Plywood L/C drawer grips — drawers open
+Bed front:
 
-![TV and makeup cabinet v8 plywood pull channels](cabinet_v8_drawer_pulls.png)
+![Bed front](bedframe_v7_front.png)
 
+Bed interior:
 
-Source: `../Bedroom_Cabinet_Modern_v8.FCStd`. A centre divider splits
-the two-door top box into two compartments. The single-door side top boxes
-each already have their own compartment.
+![Bed interior](bedframe_v7_interior.png)
 
-### Top cabinet detail — doors hidden
+Bed overhead dividers:
 
-![TV cabinet top boxes with a new centre divider](cabinet_v8_top_detail.png)
+![Bed overhead dividers](bedframe_v7_top_detail.png)
 
-### Angled view
+Cabinet front:
 
-![Wardrobe cabinet with makeup table and TV](cabinet_v8_perspective.png)
+![Cabinet front](cabinet_v9_front.png)
 
-### Front view
+Cabinet interior:
 
-![Makeup table and TV cabinet from the front](cabinet_v8_front.png)
+![Cabinet interior](cabinet_v9_interior.png)
 
-### Cabinet interiors
+Cabinet top-box divider:
 
-Cabinet doors are hidden to show the shelves, hanging rail, and top boxes.
+![Cabinet top-box divider](cabinet_v9_top_detail.png)
 
-![TV and makeup cabinet with doors hidden](cabinet_v8_interior.png)
+Native cutting page in FreeCAD:
 
-## Recapture
+![Native cutting page in FreeCAD](freecad_native_cut_layout.png)
 
-Run `../capture_screenshots.FCMacro` in FreeCAD to recreate the ten current PNGs.
-Images are 1800 × 1400 pixels. The macro creates temporary view documents;
-it does not save changes to the source models.
-
-Earlier revisions remain for comparison, including the bed v5 / cabinet v7 images with exposed notch ends.
+Run `../capture_workshop.FCMacro` in FreeCAD to refresh the 14 model views. Older screenshot versions are historical.

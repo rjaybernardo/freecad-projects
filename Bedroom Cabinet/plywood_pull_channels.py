@@ -62,6 +62,8 @@ class PlywoodPullChannels:
         axis = next(i for i, d in enumerate(dims) if abs(d - self.t) < 1e-6)
         dims.pop(axis)
         length, width = sorted(dims, reverse=True)
+        obj.addProperty('App::PropertyInteger', 'CutListRow', 'Fabrication')
+        obj.CutListRow = len(self.cut_list)
         self.cut_list.append((group.Label, name, round(length, 1), round(width, 1),
                               round(self.t, 1), 'HPL both faces; square edges; edge-band exposed edges'))
         return obj

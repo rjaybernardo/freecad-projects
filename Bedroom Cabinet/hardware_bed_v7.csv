@@ -1,0 +1,18 @@
+Item,Qty,Note
+"Lid stay / gas lift support, pair",2,head-row lift-up boxes (behind the nightstands)
+Piano hinge or 2x heavy butt hinges per lid,2,"head-row lid, head edge"
+"Fixed-direction caster / roller, 1 inch (25.4 mm) wheel",24,4 per under-bed drawer; provisional overall height 35 mm; verify purchased hardware and load rating
+Adjustable removable drawer retention strap,6,set side travel to 337 mm and foot travel to 450 mm; detach for drawer removal
+Caster plate fixing set,24,match actual caster mounting plate; do not use screws longer than the mounting pad permits
+"Soft-close drawer runners 350 mm, pair",4,nightstand drawers
+Cabinet connector bolts (joining screws),32,join the storage boxes into one platform
+Non-slip mattress mat,1,stops the mattress sliding on the laminated tops
+"Full-overlay concealed hinges 110 deg, soft-close",10,tower doors x3 each; bridge outer doors 1 and 4 x2 each
+"Half-overlay concealed hinges 110 deg, soft-close",4,"bridge middle doors 2 and 3 x2 each, mounted on opposite faces of the centre divider"
+"LED strip, provisional 24 V / 10 W per metre",1,see bed_lighting.json for three parallel branches; cut only at marked strip pads
+"Aluminium LED profile with diffuser, provisional 16 x 10 mm",3,"cut lengths in bed_lighting.json; surface-mounted, not plywood grip rails"
+Constant-voltage driver + fused DC distribution and dimmer,1,provisional 24 V / 30 W; verify actual strip load and driver datasheet; accessible upper-left cabinet
+Double power socket,2,inside each open niche (phone charging)
+Upholstery foam 30.4 mm HD + fabric + covered buttons,1,"panel 1587 x 1450 mm, buttons on a 180 mm diamond grid"
+Felt pads 3 mm,16,plinths
+Wall fixings / anti-tip brackets,6,"towers x2 each, bridge x2"

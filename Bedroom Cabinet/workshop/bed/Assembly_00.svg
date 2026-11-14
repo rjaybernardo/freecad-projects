@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420mm" height="297mm" viewBox="0 0 420 297">
+<rect width="420" height="297" fill="white"/>
+<style>text {font-family:DejaVu Sans,sans-serif;fill:#203446} .small{font-size:2.5px} .body{font-size:3.1px}</style>
+<text x="12" y="15" font-size="6" font-weight="bold">BEFORE YOU CUT — workshop assembly pack</text>
+<text x="12" y="23" font-size="3.2">BED | reference modules and matching panel IDs | hardware dimensions still provisional</text>
+<text x="12" y="290" class="small">BEDROOM WORKSHOP | mm | verify stock and purchased hardware before cutting | revision 2026-11-15</text>
+<text x="12" y="42" font-size="5" font-weight="bold">1. Confirm the physical stock and hardware</text>
+<text x="12" y="54" font-size="3.6" >Stock assumption: 18 mm plywood core + 0.8 mm laminate on EACH face = 19.6 mm finished thickness.</text>
+<text x="12" y="62" font-size="3.6" >The 3/4-inch description is nominal. Measure the delivered laminated sheets before releasing these sizes.</text>
+<text x="12" y="70" font-size="3.6" >Sheet 2440 x 1220 mm; trim 5 mm each edge; saw kerf 4 mm; finished edge band assumed 1 mm.</text>
+<text x="12" y="78" font-size="3.6" >Plain laminate permits rotation. For directional grain, change AllowRotation to 0 and regenerate.</text>
+<text x="12" y="86" font-size="3.6" >Bed only: 25.4 mm WHEEL diameter is confirmed; 35 mm TOTAL caster mounting height is an assumption.</text>
+<text x="12" y="94" font-size="3.6" >Measure wheel height, plate, fasteners and load rating before cutting the wheel-dependent drawer parts.</text>
+<text x="12" y="102" font-size="3.6" >LEDs: 24 V / 10 W per metre, 16 x 10 mm profile and 30 W driver per project are design assumptions.</text>
+<text x="12" y="110" font-size="3.6" >Choose actual hinge / runner / caster / wall-fixing hardware before drilling supplier-specific holes.</text>
+<text x="12" y="132" font-size="5" font-weight="bold">2. Cut, label, band and machine</text>
+<text x="12" y="144" font-size="3.6" >Open Workshop Documents &gt; Cutting 01 etc. in FreeCAD; follow native SawCuts and label every panel Bxxx / Cxxx.</text>
+<text x="12" y="152" font-size="3.6" >CutSchedule lists one physical panel per ID. FINISHED sizes include edge band; BLANK sizes already deduct it.</text>
+<text x="12" y="160" font-size="3.6" >Apply band only to the flagged edges. Match the exposed edge against the model before trimming it flush.</text>
+<text x="12" y="168" font-size="3.6" >Drill modelled cable passages and rout internal plywood grip recesses after cutting the rectangular blanks.</text>
+<text x="12" y="176" font-size="3.6" >Outside case sides stay solid at the grip ends. No extra cover panels and no 45-degree bevels.</text>
+<text x="12" y="184" font-size="3.6" >Dry-fit modules before final fastening. Laminated mating faces need appropriate mechanical joinery; plain wood glue</text>
+<text x="12" y="192" font-size="3.6" >on laminate is not a substitute for fixings. Predrill and countersink to suit the chosen screws / connectors.</text>
+<text x="12" y="213" font-size="5" font-weight="bold">3. Build small modules first; install heavy units last</text>
+<text x="12" y="225" font-size="3.6" >The next pages show the actual FreeCAD parts separated for identification; images are not drilling templates.</text>
+<text x="12" y="233" font-size="3.6" >Use a flat assembly surface and clamps. Compare the two diagonals before fastening each rectangular case.</text>
+<text x="12" y="241" font-size="3.6" >Repeat or mirror the illustrated module using its own IDs from CutSchedule; do not substitute the pictured IDs.</text>
+<text x="12" y="249" font-size="3.6" >Fixings, lifting support, wall anchoring and load capacity require the actual site and hardware details.</text>
+<text x="12" y="257" font-size="3.6" >Keep driver and connectors accessible. The last page shows the low-voltage parallel wiring and test order.</text>
+</svg>
