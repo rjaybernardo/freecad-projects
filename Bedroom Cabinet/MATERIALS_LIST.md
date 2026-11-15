@@ -1,6 +1,6 @@
 # Materials and hardware — both bedroom projects
 
-Checked against bed v7 / TV-makeup cabinet v9 schedules and saved sheet layouts, 2026-11-15. These are planned quantities, not confirmation of purchased products. Geometry has not changed.
+Checked against bed v7 / TV-makeup cabinet v9 schedules and saved sheet layouts, 2026-11-15. These are planned quantities, not confirmation of purchased products. Geometry has not changed. **User confirmed all plywood is already laminated on both faces; no face-laminating contact cement or additional face laminate is required.**
 
 | Item | Bed and cabinets | TV / makeup cabinet | Combined planned quantity |
 | --- | ---: | ---: | ---: |
@@ -17,7 +17,7 @@ Checked against bed v7 / TV-makeup cabinet v9 schedules and saved sheet layouts,
 | LED strip, provisional 24 V / 10 W per metre | 2.0784 m | 1.5800 m | **3.6584 m nominal**; one 5 m roll if both use the same strip specification/colour |
 | Constant-voltage LED driver, provisional 24 V / 30 W | 1 | 1 | **2**; actual specifications still require confirmation |
 | DC dimmer/distribution arrangement | 1 | 1 | **2 sets**, with rated connections/protection |
-| Contact cement | Pending lamination/edge method | Pending lamination/edge method | **No face-laminating cement needed for factory-laminated boards. DIY quantity needs the actual product coverage.** |
+| Contact cement for face lamination | 0 L | 0 L | **0 L — user confirmed all plywood is already laminated** |
 
 Slide quantities are **pairs**: 10 pairs = 20 individual side rails. The six under-bed drawers have wheels and **no metal drawer slides**.
 
@@ -62,20 +62,11 @@ Bed sheet 2 has a verified **2430 x 209.8 mm offcut**. Both strips fit this offc
 
 [Shared-offcut placement record](shared_scribe_offcut.csv). Coordinates use the same stock coordinates as the existing placement schedule. The remaining full-width offcut is 2430 x 181.8 mm after ripping both 10 mm strips and two 4 mm kerfs; crosscut each strip to its required length.
 
-## Contact cement — quantity not yet fixed
+## Contact cement — laminated plywood confirmed
 
-There are two different cases:
+The user confirmed that **all plywood is already laminated on both faces**. Purchase **0 litres of contact cement for face lamination**, and no extra face-laminate sheets. The earlier DIY-lamination estimates are not part of this purchase list.
 
-1. **Buy plywood already laminated on both sides:** **0 L for face lamination**. Edge adhesive still depends on the banding product/method. This does not mean all cabinet assembly adhesives or upholstery adhesive are zero.
-2. **Laminate bare plywood yourself:** compute from the selected adhesive's technical sheet and whether you laminate whole sheets or individual cut blanks. Do not count only the plywood face: contact adhesive also coats the back of the laminate. [Rugby Original's manufacturer instructions](https://diy.bostik.com/sites/default/files/2024-06/Bostik-DIY-Philippines-Rugby-Original-Technical-Data-Sheet.pdf) require both mating surfaces to be coated and note the effect of porosity; the linked sheet does not supply an area-per-litre rate to justify an exact purchase quantity.
-
-For the current 21-sheet option:
-
-- Laminating BOTH faces of all full sheets: **125.0256 m2 bonded laminate area / 250.0512 m2 coated surfaces**, before extra coats and handling loss.
-- Laminating only the current rectangular blanks: **103.3305 m2 bonded area / 206.6610 m2 coated surfaces**, before laminate trimming allowance, extra coats and handling loss. Saw-cutting boards before applying laminate changes the workshop cutting process; the current blank schedule describes the finished two-face-laminated blanks.
-- If the product states coverage in **single-coated surface m2/L**, divide coated-surface area by that rate. If it states **finished bonded area m2/L**, divide bonded area by that rate instead. Add the chosen product/process allowance afterward; do not double-count both mating surfaces.
-
-Contact-cement brand, package volume, validated spread rate and lamination method are needed for a defensible litre/tin count. Edge-band adhesive is calculated separately. No speculative gallon quantity has been added to this purchase list.
+Edge-band adhesive is a separate item: pre-glued/hot-melt banding does not need brush-applied contact cement. Unglued banding needs an adhesive compatible with the selected PVC/ABS/veneer and application method. Its type and quantity remain unconfirmed; the 0 L figure applies to face lamination, not all assembly or upholstery adhesives.
 
 ## Other scheduled items
 

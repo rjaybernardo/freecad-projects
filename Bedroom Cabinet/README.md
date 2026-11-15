@@ -38,7 +38,36 @@ Inside each model, expand **Workshop Documents** and open **Sheet 01** (`Cutting
 [Cutting and building guide](WORKSHOP_GUIDE.md) · [LED locations and wiring](LIGHTING_AND_WIRING.md) · [Bed wiring PDF](workshop/bed/LED_Wiring.pdf) · [Cabinet wiring PDF](workshop/cabinet/LED_Wiring.pdf).
 
 
-[Combined materials and hinge breakdown](MATERIALS_LIST.md) · [Shopping CSV](materials_purchase_summary.csv). Current schedules: **30 soft-close hinges (14 full / 16 half overlay), 10 slide pairs, 24 one-inch wheels, 160 m rounded edge-band order, and 6 LED-profile pieces cut from two 2 m bars with covers**. Plywood is 21 sheets in separate layouts, or 20 only with the matching-finish shared-offcut option. Contact-cement litres await lamination method and actual product coverage.
+## Materials and hardware — confirmed laminated plywood
+
+**All plywood is already laminated on both faces. Contact cement for face lamination: 0 litres.**
+
+| Item | Bed and cabinets | TV / makeup cabinet | Combined planned quantity |
+| --- | ---: | ---: | ---: |
+| 110-degree soft-close concealed hinge, full overlay / straight arm | 10 | 4 | **14 pieces** |
+| 110-degree soft-close concealed hinge, half overlay / half-cranked arm | 4 | 12 | **16 pieces** |
+| Matching hinge mounting plate | 14 | 16 | **30 pieces** |
+| Soft-close side-mount drawer slide, 350 mm | 4 pairs | 0 | **4 pairs** |
+| Side-mount drawer slide, 400 mm | 0 | 6 pairs | **6 pairs**; soft-close option can be chosen at purchase |
+| Fixed-direction wheel / roller, 1-inch / 25.4 mm diameter | 24 | 0 | **24 pieces**, four per under-bed drawer |
+| 3/4-inch plywood, laminated on both faces, 2440 x 1220 mm | 12 sheets | 9 sheets | **21 sheets in current separate layouts** |
+| Edge band, assumed 1 mm thick, width covering finished 19.6 mm board | 95.868 m including trim allowance | 57.656 m including trim allowance | **153.524 m; round purchase to 160 m** |
+| Aluminium LED profile WITH diffuser cover, provisional 16 x 10 mm envelope | 3 cut pieces / 2.0784 m | 3 cut pieces / 1.5800 m | **6 pieces / 3.6584 m installed; two 2 m bars with two matching 2 m covers suffice** |
+| Profile end caps, matched to extrusion | 6 | 6 | **12**, including cable-entry types as appropriate |
+| LED strip, provisional 24 V / 10 W per metre | 2.0784 m | 1.5800 m | **3.6584 m nominal**; one 5 m roll if both use the same strip specification/colour |
+| Constant-voltage LED driver, provisional 24 V / 30 W | 1 | 1 | **2**; actual specifications still require confirmation |
+| DC dimmer/distribution arrangement | 1 | 1 | **2 sets**, with rated connections/protection |
+| Contact cement for face lamination | 0 L | 0 L | **0 L — user confirmed all plywood is already laminated** |
+
+The hinge schedule totals **30 soft-close hinges: 14 full overlay and 16 half overlay**, plus matching plates. The slide schedule totals **10 pairs**; under-bed drawers use wheels instead of slides. The 160 m rounded edge-band purchase is 100 m for the bed and 60 m for the TV/makeup cabinet, including the existing trim allowance.
+
+Plywood stays **21 sheets** for the separate layouts. **20 sheets is possible only if thickness and both laminate finishes match**, using the bed-sheet-2 offcut for cabinet scribe strips C088/C089. The separate FreeCAD/PDF layouts still show 12 + 9 sheets.
+
+**Edge-band adhesive remains separate and unconfirmed.** Its product and quantity depend on the banding material/backing and application method. The zero-contact-cement quantity applies to face lamination.
+
+The two head lift-up lids additionally need **2 piano hinges or 4 suitable heavy butt hinges**, plus **2 pairs of lid supports**.
+
+[Detailed materials list](MATERIALS_LIST.md) · [Shopping CSV](materials_purchase_summary.csv) · [Shared scribe offcut](shared_scribe_offcut.csv).
 
 ## Strip lighting and aluminium profiles
 
