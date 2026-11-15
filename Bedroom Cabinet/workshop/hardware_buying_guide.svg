@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="1040" viewBox="0 0 1280 1040">
+<rect width="1280" height="1040" fill="#f4f6f5"/><style>text{font-family:DejaVu Sans,sans-serif;fill:#213b49}.h{font-size:30px;font-weight:bold}.t{font-size:22px;font-weight:bold}.b{font-size:19px}.n{font-size:17px}</style>
+<text x="35" y="48" class="h">SHOPEE HARDWARE GUIDE — BED + MAKEUP CABINETS</text>
+<text x="35" y="81" class="b">Scheduled quantities • fit checks below must be resolved before ordering</text>
+<rect x="30" y="106" width="400" height="325" rx="12" fill="white"/>
+<text x="50" y="145" class="t">C1 — FULL OVERLAY</text>
+<rect x="105" y="175" width="32" height="103" rx="0" fill="#9ba7ac"/>
+<rect x="105" y="282" width="220" height="26" rx="0" fill="#d9b57c"/>
+<text x="175" y="215" class="n">SIDE</text>
+<text x="173" y="302" class="n">DOOR</text>
+<text x="50" y="357" class="t">14 pieces scheduled</text>
+<text x="50" y="390" class="n">Straight arm • covers side edge</text>
+<rect x="450" y="106" width="400" height="325" rx="12" fill="white"/>
+<text x="470" y="145" class="t">C2 — HALF OVERLAY</text>
+<rect x="525" y="175" width="32" height="103" rx="0" fill="#9ba7ac"/>
+<rect x="541" y="282" width="220" height="26" rx="0" fill="#d9b57c"/>
+<text x="595" y="215" class="n">SIDE</text>
+<text x="609" y="302" class="n">DOOR</text>
+<text x="470" y="357" class="t">16 pieces; 4 on HOLD</text>
+<text x="470" y="390" class="n">Half-cranked arm • partial coverage</text>
+<rect x="870" y="106" width="400" height="325" rx="12" fill="white"/>
+<text x="890" y="145" class="t">C3 — INSET</text>
+<rect x="945" y="175" width="32" height="138" rx="0" fill="#9ba7ac"/>
+<rect x="981" y="282" width="220" height="26" rx="0" fill="#d9b57c"/>
+<text x="1015" y="215" class="n">SIDE</text>
+<text x="1049" y="302" class="n">DOOR</text>
+<text x="890" y="357" class="t">0 pieces scheduled</text>
+<text x="890" y="390" class="n">Cranked arm • door inside opening</text>
+<text x="35" y="463" class="b">HINGE VARIANT: hydraulic / soft-close • 35 mm cup target • matching plate</text>
+<text x="35" y="491" class="n">Target 110° for ordinary doors; supplier must support the actual 19.6 mm door.</text>
+<rect x="30" y="512" width="1220" height="94" rx="12" fill="#fff0d7"/>
+<text x="48" y="544" class="t">HOLD: 4 wardrobe hinges — internal drawers must clear the open door.</text>
+<text x="48" y="574" class="b">C2 alone does not confirm clearance. Check opening / protrusion / wall-side swing.</text>
+<rect x="30" y="624" width="595" height="214" rx="12" fill="white"/>
+<rect x="645" y="624" width="605" height="214" rx="12" fill="white"/>
+<text x="50" y="661" class="t">SOFT-CLOSE DRAWER SLIDES</text>
+<text x="50" y="692" class="b">Side mount • ball bearing • full extension</text>
+<text x="50" y="724" class="b">4 pairs × 350 mm: nightstands</text>
+<text x="50" y="752" class="b">4 pairs × 400 mm: makeup + drawer tower</text>
+<text x="50" y="780" class="b" style="fill:#985b15">2 wardrobe pairs: HOLD; 350 mm target</text>
+<text x="50" y="811" class="n">CAD side gap 12.5 mm; verify selected runner.</text>
+<text x="665" y="661" class="t">LED PROFILE + MILKY COVER</text>
+<path d="M680 735v62h180v-62h-14v48H694v-48z" fill="#9ba7ac"/>
+<rect x="680" y="725" width="180" height="10" rx="0" fill="#d8edf0"/>
+<rect x="714" y="777" width="112" height="6" rx="0" fill="#f4ca60"/>
+<text x="707" y="713" class="b">16 mm</text>
+<text x="876" y="771" class="b">10 mm</text>
+<text x="981" y="721" class="b">Current CAD</text>
+<text x="981" y="751" class="t">16 × 10 mm</text>
+<text x="981" y="784" class="n">10 mm LED strip</text>
+<text x="665" y="820" class="n">Imperial size labels are not fit confirmation.</text>
+<rect x="30" y="857" width="1220" height="144" rx="12" fill="#e6eeec"/>
+<text x="50" y="891" class="t">PROFILE ORDER: two 2 m bars + matching covers; 6 cut pieces / 3.6584 m</text>
+<text x="50" y="924" class="b">½ inch = 12.7 mm     ¾ inch = 19.05 mm     1 inch = 25.4 mm</text>
+<text x="50" y="954" class="b">Check OUTSIDE width / height and clear INSIDE width on the listing drawing.</text>
+<text x="50" y="982" class="n">Buying links and product-fit notes: MATERIALS_LIST.md • no items ordered</text>
+</svg>

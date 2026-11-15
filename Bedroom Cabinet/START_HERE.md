@@ -16,6 +16,18 @@ The bed starts with the **two head lift-up boxes**. The TV/makeup cabinet starts
 | --- | --- |
 | [![Head lift-up box assembly](workshop/bed/Assembly_01.png)](workshop/bed/Assembly_Manual.pdf) | [![Wardrobe case assembly](workshop/cabinet/Assembly_01.png)](workshop/cabinet/Assembly_Manual.pdf) |
 
+**FreeCAD update — every drawer is grouped inside its cabinet module.**
+
+| Bed: isolate one drawer | Makeup cabinet: isolate one drawer |
+| --- | --- |
+| ![Bed drawer group in FreeCAD](screenshots/freecad_bed_module_tree.png) | ![Makeup drawer group in FreeCAD](screenshots/freecad_cabinet_module_tree.png) |
+
+Select a module or drawer → **Macro → Macros… → Bedroom_Isolate_Module → Execute** → **SHOW ONLY SELECTED**. Use **RESTORE PREVIOUS VIEW** to return. [Picture instructions](WORKSHOP_GUIDE.md#work-on-one-module-or-drawer).
+
+**Shopping source: Shopee Philippines.** Hardware fit is still being checked; **4 wardrobe hinges and 2 wardrobe slide pairs are on hold**.
+
+[![C1 C2 C3 hinges, soft-close slides and LED profile sizes](workshop/hardware_buying_guide.png)](MATERIALS_LIST.md#shopee-buying-guide)
+
 **Backboard update — ONE plywood panel; upholstery deferred.**
 
 [![One plywood backboard on narrow timber supports](workshop/bed/Assembly_08.png)](workshop/bed/Assembly_Manual.pdf#page=9)
@@ -49,7 +61,7 @@ The links above are enough to start. Extra files are grouped below; open a group
 </details>
 
 <details>
-<summary>Individual diagrams and module pictures (71 files)</summary>
+<summary>Individual diagrams and module pictures (73 files)</summary>
 
 - [workshop/bed/Assembly_00.png](workshop/bed/Assembly_00.png)
 - [workshop/bed/Assembly_00.svg](workshop/bed/Assembly_00.svg)
@@ -120,6 +132,8 @@ The links above are enough to start. Extra files are grouped below; open a group
 - [workshop/cabinet/Sheet_07.svg](workshop/cabinet/Sheet_07.svg)
 - [workshop/cabinet/Sheet_08.svg](workshop/cabinet/Sheet_08.svg)
 - [workshop/cabinet/Sheet_09.svg](workshop/cabinet/Sheet_09.svg)
+- [workshop/hardware_buying_guide.png](workshop/hardware_buying_guide.png)
+- [workshop/hardware_buying_guide.svg](workshop/hardware_buying_guide.svg)
 - [workshop/materials_overview.png](workshop/materials_overview.png)
 - [workshop/materials_overview.svg](workshop/materials_overview.svg)
 
@@ -176,8 +190,10 @@ The links above are enough to start. Extra files are grouped below; open a group
 </details>
 
 <details>
-<summary>Technical scripts — rebuild / export only (19 files)</summary>
+<summary>Technical scripts and the module isolation tool (21 files)</summary>
 
+- [Isolate_Module.FCMacro](Isolate_Module.FCMacro)
+- [cabinet_modules.py](cabinet_modules.py)
 - [assembly_manual.py](assembly_manual.py)
 - [bed_wheel_drawers.py](bed_wheel_drawers.py)
 - [bedroom_spreadsheets.py](bedroom_spreadsheets.py)
@@ -197,6 +213,16 @@ The links above are enough to start. Extra files are grouped below; open a group
 - [regenerate_workshop.FCMacro](regenerate_workshop.FCMacro)
 - [validate_workshop.py](validate_workshop.py)
 - [workshop_documents.py](workshop_documents.py)
+
+</details>
+
+<details>
+<summary>Models and sources before drawer grouping (history)</summary>
+
+- [Bed_Wall_Unit_v8.FCStd](workshop/history/before_module_grouping/Bed_Wall_Unit_v8.FCStd)
+- [Bedroom_Cabinet_Modern_v9.FCStd](workshop/history/before_module_grouping/Bedroom_Cabinet_Modern_v9.FCStd)
+- [build_bed_v8.py](workshop/history/before_module_grouping/build_bed_v8.py)
+- [build_cabinet_v9.py](workshop/history/before_module_grouping/build_cabinet_v9.py)
 
 </details>
 

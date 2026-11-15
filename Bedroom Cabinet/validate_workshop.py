@@ -46,7 +46,7 @@ def validate():
             wheels=[o for o in furniture if o.Name.startswith('Wheel_')];assert len(wheels)==24
             assert all(abs(o.Shape.BoundBox.ZMin)<1e-5 for o in wheels)
             assert all(not o.Name.startswith('Bottom') for g in d.Storage_Bed.Group if not g.Name.startswith('Head_Box') for o in g.Group)
-            lids=[next(o for o in g.Group if o.Name.startswith('Lid')) for g in d.Storage_Bed.Group if g.Name.startswith('Head_Box')]
+            lids=[next(o for o in g.OutListRecursive if o.Name.startswith('Lid')) for g in d.Storage_Bed.Group if g.Name.startswith('Head_Box')]
             lids.sort(key=lambda o:o.Shape.BoundBox.XMin);assert abs(lids[1].Shape.BoundBox.XMin-lids[0].Shape.BoundBox.XMax-3)<1e-5
         if project=='bed':
             head=list(d.Headboard.OutListRecursive)

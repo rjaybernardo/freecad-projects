@@ -240,7 +240,7 @@ def build(doc,project,output):
         svg.append('</svg>');path=out/f'Assembly_{no:02d}.svg';path.write_text('\n'.join(svg));native_page(doc,group,path,f'Assembly_{no:02d}')
     spreadsheet(doc,group,'BuildOrder',['Step','Module','FreeCAD group','Panel IDs'],order,'Build from small cases to joined assemblies. Cutting sheets use the same B/C panel IDs. Representative mirrored modules show one side; use each module-specific ID set.')
     lighting=json.loads(Path(output,project+'_lighting.json').read_text());wiring_page(doc,group,out,lighting)
-    for name,label in [('Workshop_Documents','Workshop Documents'),('Assembly_Manual','Assembly Manual'),('LED_Lighting','LED Lighting'),('Cut_List_Materials','Hardware')]:
+    for name,label in [('Workshop_Documents','Workshop Documents'),('Assembly_Manual','Assembly Manual'),('LED_Lighting','LED Lighting'),('Cut_List_Materials','Hardware schedules')]:
         obj=doc.getObject(name)
         if obj:obj.Label=label
     for obj in doc.Reference_Room.OutListRecursive:

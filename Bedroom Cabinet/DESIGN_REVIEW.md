@@ -7,6 +7,16 @@
 - One-inch wheels, concealed-end plywood drawer grips, overhead dividers and LED routes are retained. Hardware dimensions and wall fixing details still require actual products/site.
 - Saved solids, closed and sampled moving clearances, one-layer backboard, stock placement and native pages are checked by validate_workshop.py. No structural load rating is claimed.
 
+## Hardware fit review — pending selected Shopee products
+
+- All 16 drawers are now nested in their cabinet modules, with a reversible isolation macro. Geometry and current cut data are unchanged by grouping.
+- **Two wardrobe drawer runners:** 381.2 mm is available behind the body-front datum; a 400 mm runner overhangs the back by 18.8 mm. Proposed nominal length 350 mm requires product confirmation and matching drawer-box/cut-list revision.
+- **Four wardrobe hinges:** the scheduled C2 / half-overlay type does not establish clearance for internal drawers. Verify open-door protrusion and the wall-side swing; do not assume any wide-angle hinge is zero-protrusion in half-overlay use.
+- **All 10 slide drawers:** CAD side gap is 12.5 mm. Select a matching product or revise the drawer boxes if the chosen slides require 12.7 mm per side.
+- **LED profiles:** CAD envelope remains 16 × 10 mm; purchase only after the actual Shopee section/cover and strip width are checked. Nominal 1/2 / 3/4 / 1 inch labels are insufficient.
+
+See the [visual Shopee hardware guide](MATERIALS_LIST.md#shopee-buying-guide). Existing collision checks cover the represented solids and drawer translations; they do not include unselected hinge mechanisms or runner envelopes.
+
 ---
 
 # Historical audit — before the wheel / lighting / cutting revision

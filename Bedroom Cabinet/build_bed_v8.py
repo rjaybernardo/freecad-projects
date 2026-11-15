@@ -470,6 +470,8 @@ App.closeDocument(baseline.Name)
 App.setActiveDocument(doc.Name)
 from workshop_documents import add as add_workshop
 workshop = add_workshop(doc, cut_list, 'bed', OUT_DIR)
+from cabinet_modules import organize
+organize(doc)
 doc.save()
 
 area = sum(l * w for _, _, l, w, _, _ in cut_list) / 1e6

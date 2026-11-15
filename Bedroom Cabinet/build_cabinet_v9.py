@@ -345,6 +345,8 @@ for obsolete in ['CutList', 'Materials']:
     if doc.getObject(obsolete): doc.removeObject(obsolete)
 from workshop_documents import add as add_workshop
 workshop = add_workshop(doc, cut_list, 'cabinet', OUT_DIR)
+from cabinet_modules import organize
+organize(doc)
 doc.save()
 
 area = sum(l * w for _, _, l, w, _, _ in cut_list) / 1e6

@@ -2,6 +2,23 @@
 
 Current models: **Bed_Wall_Unit_v8.FCStd** and **Bedroom_Cabinet_Modern_v9.FCStd**. Their native FreeCAD pages contain the cutting layouts, illustrated module build order and LED wiring diagram. PDFs and CSVs are in `workshop/bed/` and `workshop/cabinet/`.
 
+## Work on one module or drawer
+
+The saved models use **cabinet module → drawers → individual drawer → panels**. Bed: 14 modules / 10 drawers; TV/makeup: 7 modules / 6 drawers. A normal drawer group contains its five plywood panels. Each under-bed drawer also contains its four wheel assemblies; its fixed bay and grip channel remain with the cabinet case.
+
+| Bed tree | TV / makeup tree |
+| --- | --- |
+| ![Bed drawer selected and isolated](screenshots/freecad_bed_module_tree.png) | ![Makeup drawer selected and isolated](screenshots/freecad_cabinet_module_tree.png) |
+
+1. Open the 3D model tab and select the cabinet or drawer folder in the tree.
+2. Open **Macro → Macros…**, select **Bedroom_Isolate_Module**, then **Execute**. It is installed in this computer's FreeCAD macro directory. The source is [Isolate_Module.FCMacro](Isolate_Module.FCMacro); its project path must be adjusted if this project is moved to another computer.
+3. Click **SHOW ONLY SELECTED**. Select a different folder and click again to switch.
+4. Click **RESTORE PREVIOUS VIEW**, or close the tool, to restore the previous visibility and camera. Restore before saving if you want the complete cabinet visible next time.
+
+![Isolation controls](screenshots/isolate_controls.png)
+
+These are organizational groups; they do not impose assembly constraints or certify that every section is independently removable. The TV/makeup centre shares its back and table structure. Grouping does not change panel dimensions, part IDs, cutting layouts, hardware quantities or furniture placements.
+
 ## Open the cut layouts inside FreeCAD
 
 1. Open the relevant model.
@@ -38,7 +55,7 @@ Each **Assembly Manual** page contains an actual FreeCAD module image, matching 
 
 **TV/makeup cabinet:** hanging wardrobe case → right shelving tower → drawer-tower case and plywood grips → centre back/table/shelves → six drawer boxes → three top cases, including the centre divider → mirror, lights, doors and site-fit scribes.
 
-Use the preparation page before cutting. The bed's four side drawers retain 337 mm travel and two foot drawers retain 450 mm travel, limited by removable retention straps. Four fixed-direction **25.4 mm wheels per drawer (24 total)** run on the room floor. The six bays have no raised full floors in the wheel path; short plywood guides control lateral movement. **Total caster mounting height is provisionally 35 mm**, distinct from the wheel diameter. Verify the actual hardware, floor and load rating before cutting wheel-dependent parts. Nightstand runners remain 350 mm; the six TV/makeup/wardrobe drawer runner pairs remain 400 mm.
+Use the preparation page before cutting. The bed's four side drawers retain 337 mm travel and two foot drawers retain 450 mm travel, limited by removable retention straps. Four fixed-direction **25.4 mm wheels per drawer (24 total)** run on the room floor. The six bays have no raised full floors in the wheel path; short plywood guides control lateral movement. **Total caster mounting height is provisionally 35 mm**, distinct from the wheel diameter. Verify the actual hardware, floor and load rating before cutting wheel-dependent parts. The native schedule still lists 350 mm nightstand runners and six 400 mm cabinet pairs. The new hardware fit review puts the two wardrobe pairs on hold: a 400 mm runner would exceed their available rear clearance. See the [Shopee buying guide](MATERIALS_LIST.md#shopee-buying-guide) before buying or cutting drawer boxes.
 
 The head lift-up lids now have 3 mm gaps between neighbouring finished lids. Square fronts, retained overhead dividers and concealed-end plywood L/C drawer grips remain. Door-only units have plain panels and front setbacks, not drawer-style notches or bevels.
 

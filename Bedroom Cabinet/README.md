@@ -12,6 +12,18 @@ Click your project's picture or **BUILDING MANUAL** below. The first module is o
 | [3. LED WIRING DIAGRAM](workshop/bed/LED_Wiring.pdf) | [3. LED WIRING DIAGRAM](workshop/cabinet/LED_Wiring.pdf) |
 | [4. OPEN FREECAD MODEL v8](Bed_Wall_Unit_v8.FCStd) | [4. OPEN FREECAD MODEL v9](Bedroom_Cabinet_Modern_v9.FCStd) |
 
+**FreeCAD update — every drawer is grouped inside its cabinet module.**
+
+| Bed: isolate one drawer | Makeup cabinet: isolate one drawer |
+| --- | --- |
+| ![Bed drawer group in FreeCAD](screenshots/freecad_bed_module_tree.png) | ![Makeup drawer group in FreeCAD](screenshots/freecad_cabinet_module_tree.png) |
+
+Select a module or drawer → **Macro → Macros… → Bedroom_Isolate_Module → Execute** → **SHOW ONLY SELECTED**. Use **RESTORE PREVIOUS VIEW** to return. [Picture instructions](WORKSHOP_GUIDE.md#work-on-one-module-or-drawer).
+
+**Shopping source: Shopee Philippines.** Hardware fit is still being checked; **4 wardrobe hinges and 2 wardrobe slide pairs are on hold**.
+
+[![C1 C2 C3 hinges, soft-close slides and LED profile sizes](workshop/hardware_buying_guide.png)](MATERIALS_LIST.md#shopee-buying-guide)
+
 **Backboard update — ONE plywood panel; upholstery deferred.**
 
 [![One plywood backboard on narrow timber supports](workshop/bed/Assembly_08.png)](workshop/bed/Assembly_Manual.pdf#page=9)

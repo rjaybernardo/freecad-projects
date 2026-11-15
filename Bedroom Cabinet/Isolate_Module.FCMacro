@@ -1,0 +1,5 @@
+"""Select a cabinet, drawer or panel in the tree; isolate it or restore the view."""
+import sys
+sys.path.insert(0,'/home/rjaybernardo/Documents/FreeCAD/Bedroom Cabinet')
+from cabinet_modules import launch_isolation_tool
+launch_isolation_tool()

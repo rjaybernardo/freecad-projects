@@ -77,6 +77,11 @@ def scene(filename, name):
             if prop in src.PropertiesList:
                 dst.addProperty('App::PropertyBool' if prop=='MovingDrawer' else 'App::PropertyString',prop,'Screenshot')
                 setattr(dst,prop,getattr(src,prop))
+        dst.addProperty('App::PropertyPlacement','CapturedPlacement','Screenshot');dst.CapturedPlacement=dst.Placement
+        moving=next((g for g in src.InListRecursive if 'OpenDirection' in g.PropertiesList),None)
+        if moving:
+            dst.addProperty('App::PropertyVector','DrawerDirection','Screenshot');dst.DrawerDirection=moving.OpenDirection
+            dst.addProperty('App::PropertyLength','DrawerTravel','Screenshot');dst.DrawerTravel=moving.OpenTravel
         dst.addProperty('App::PropertyString', 'SourceGroup', 'Screenshot')
         dst.SourceGroup = ','.join(o.Name for o in src.InListRecursive
                                    if o.TypeId == 'App::DocumentObjectGroup')
@@ -140,10 +145,8 @@ def run():
         capture(bed, 'bedframe_v8_wheels.png', (0.7, 1, -0.55))
         for o in bed.Objects:
             o.ViewObject.Visibility = not o.Name.startswith('Door') and o.Name != 'Mattress_5x6'
-            if 'MovingDrawer' in o.PropertiesList and o.MovingDrawer:
-                groups=o.SourceGroup.split(',')
-                side=next((g for g in groups if g.startswith('Side_Box_')),None)
-                o.Placement.Base += App.Vector((-337 if side.endswith('L') else 337),0,0) if side else App.Vector(0,450,0)
+            o.Placement=o.CapturedPlacement
+            if 'DrawerDirection' in o.PropertiesList:o.Placement.Base += o.DrawerDirection*o.DrawerTravel.Value
         capture(bed, 'bedframe_v8_drawers_open.png', (0.8, 1, 0.9))
         for target, filename, eye in [(bed,'bedframe_v8_lighting.png',(0.4,1,0.4)),(cab,'cabinet_v9_lighting.png',(0.4,-1,0.4))]:
             for o in target.Objects:

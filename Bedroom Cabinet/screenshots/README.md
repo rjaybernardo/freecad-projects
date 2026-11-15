@@ -4,6 +4,16 @@
 
 ![One-layer backboard](../workshop/bed/Assembly_08.png)
 
+All drawers now have nested groups inside their cabinet modules. These views show actual FreeCAD drawer isolation:
+
+| Bed nightstand drawer | Makeup cabinet drawer |
+| --- | --- |
+| ![Bed module tree and isolated drawer](freecad_bed_module_tree.png) | ![Cabinet module tree and isolated drawer](freecad_cabinet_module_tree.png) |
+
+![Isolation tool](isolate_controls.png)
+
+[Bed drawer alone](bedframe_v8_isolated_drawer.png) · [Makeup cabinet drawer alone](cabinet_v9_isolated_drawer.png)
+
 Captured from disposable copies of the saved FreeCAD models; source models are not saved during capture.
 
 Bed frame and surrounding cabinets — full design:
