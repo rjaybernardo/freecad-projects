@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="784" viewBox="0 0 1200 784">
+<rect width="1200" height="784" rx="20" fill="#f4f6f5"/>
+<style>text{font-family:DejaVu Sans,sans-serif;fill:#183e3a}.qty{font-size:45px;font-weight:bold}.label{font-size:18px;font-weight:bold}.note{font-size:15px}.icon{stroke:#27796e;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}</style>
+<text x="36" y="47" font-size="26" font-weight="bold">MATERIALS AT A GLANCE — BOTH PROJECTS</text>
+<rect x="30" y="75" width="360" height="238" rx="16" fill="white" stroke="#d1e0db"/>
+<g class="icon" transform="translate(55,95)">
+<circle cx="25" cy="25" r="22"/><circle cx="25" cy="25" r="10"/><path d="M47 17h30l17 17h28v16H90L73 33H47"/><circle cx="108" cy="42" r="3"/>
+</g>
+<text x="54" y="207" class="qty">30</text><text x="54" y="247" class="label">SOFT-CLOSE HINGES</text><text x="54" y="282" class="note">14 full overlay + 16 half overlay</text>
+<rect x="420" y="75" width="360" height="238" rx="16" fill="white" stroke="#d1e0db"/>
+<g class="icon" transform="translate(445,95)">
+<path d="M3 10h120v17H3z M3 43h120v17H3z M20 18h90 M20 51h90"/><circle cx="13" cy="18" r="2"/><circle cx="13" cy="51" r="2"/>
+</g>
+<text x="444" y="207" class="qty">10 pairs</text><text x="444" y="247" class="label">DRAWER SLIDES</text><text x="444" y="282" class="note">4 x 350 mm + 6 x 400 mm</text>
+<rect x="810" y="75" width="360" height="238" rx="16" fill="white" stroke="#d1e0db"/>
+<g class="icon" transform="translate(835,95)">
+<path d="M13 3h70v10H13z M28 14v17 M69 14v17"/><circle cx="48" cy="44" r="24"/><circle cx="48" cy="44" r="5"/>
+</g>
+<text x="834" y="207" class="qty">24</text><text x="834" y="247" class="label">ONE-INCH WHEELS</text><text x="834" y="282" class="note">4 wheels per under-bed drawer</text>
+<rect x="30" y="338" width="360" height="238" rx="16" fill="white" stroke="#d1e0db"/>
+<g class="icon" transform="translate(55,358)">
+<ellipse cx="40" cy="32" rx="34" ry="26"/><ellipse cx="40" cy="32" rx="15" ry="11"/><path d="M6 32v19c0 34 68 34 68 0V32 M74 51h52v19H48"/>
+</g>
+<text x="54" y="470" class="qty">160 m</text><text x="54" y="510" class="label">EDGE BAND</text><text x="54" y="545" class="note">100 m bed + 60 m cabinet</text>
+<rect x="420" y="338" width="360" height="238" rx="16" fill="white" stroke="#d1e0db"/>
+<g class="icon" transform="translate(445,358)">
+<path d="M6 14l75-10 46 20-75 13z M6 25v10l46 23 75-15V31 M6 45v10l46 23 75-15V51"/>
+</g>
+<text x="444" y="470" class="qty">21 sheets</text><text x="444" y="510" class="label">LAMINATED PLYWOOD</text><text x="444" y="545" class="note">12 bed + 9 cabinet; see offcut option*</text>
+<rect x="810" y="338" width="360" height="238" rx="16" fill="white" stroke="#d1e0db"/>
+<g class="icon" transform="translate(835,358)">
+<path d="M5 5v44h113V5 M18 5v30h87V5 M0 60h124"/><path d="M30 24h63"/><path d="M34 65v9 M60 65v9 M86 65v9"/>
+</g>
+<text x="834" y="470" class="qty">2 x 2 m</text><text x="834" y="510" class="label">LED PROFILE + COVERS</text><text x="834" y="545" class="note">6 cut pieces / 3.6584 m installed</text>
+<rect x="30" y="616" width="1140" height="90" rx="14" fill="#d8eee5"/>
+<text x="54" y="650" font-size="22" font-weight="bold">ALREADY LAMINATED PLYWOOD = 0 L FACE-LAMINATING CONTACT CEMENT</text>
+<text x="54" y="681" font-size="17">Edge-band adhesive is a separate item; choose it to match your banding method.</text>
+<text x="34" y="738" class="note">*20 sheets only when thickness / both finishes match and the checked scribe offcut is reused.</text>
+<text x="34" y="765" class="note">Before cutting: measure actual board thickness and caster height; confirm the LED kit.</text>
+</svg>
