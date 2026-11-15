@@ -106,18 +106,18 @@ def run():
         for o in doors:
             o.ViewObject.Visibility = True
 
-        bed = scene('Bed_Wall_Unit_v7.FCStd', 'Bedframe_Screenshots')
+        bed = scene('Bed_Wall_Unit_v8.FCStd', 'Bedframe_Screenshots')
         bed.getObject('Mattress_5x6').ViewObject.Visibility = True
-        capture(bed, 'bedframe_v7_front.png', (0, 1, 0))
-        capture(bed, 'bedframe_v7_perspective.png', (0.65, 1, 0.65))
+        capture(bed, 'bedframe_v8_front.png', (0, 1, 0))
+        capture(bed, 'bedframe_v8_perspective.png', (0.65, 1, 0.65))
         for o in bed.Objects:
             if o.Name.startswith('Door') and hasattr(o, 'Shape'):
                 o.ViewObject.Visibility = False
         bed.getObject('Mattress_5x6').ViewObject.Visibility = False
-        capture(bed, 'bedframe_v7_interior.png', (0.65, 1, 0.85))
+        capture(bed, 'bedframe_v8_interior.png', (0.65, 1, 0.85))
         for o in bed.Objects:
             o.ViewObject.Visibility = 'Bridge' in o.SourceGroup.split(',') and not o.Name.startswith('Door')
-        capture(bed, 'bedframe_v7_top_detail.png', (0.3, 1, 0.25))
+        capture(bed, 'bedframe_v8_top_detail.png', (0.3, 1, 0.25))
         for o in cab.Objects:
             o.ViewObject.Visibility = any(g.startswith('Top_Box_') for g in o.SourceGroup.split(',')) and not o.Name.startswith('Door')
         capture(cab, 'cabinet_v9_top_detail.png', (0.2, -1, 0.3))
@@ -134,22 +134,26 @@ def run():
             match = re.match(r'Drawer_([12])_', o.Name)
             if o.ViewObject.Visibility and match:
                 o.Placement.Base.y += 120 + int(match.group(1)) * 40
-        capture(bed, 'bedframe_v7_drawer_pulls.png', (0.7, 1, 0.65))
+        capture(bed, 'bedframe_v8_drawer_pulls.png', (0.7, 1, 0.65))
         for o in bed.Objects:
             o.ViewObject.Visibility = 'Drawer_Assembly_Side_Box_1L' in o.SourceGroup.split(',')
-        capture(bed, 'bedframe_v7_wheels.png', (0.7, 1, -0.55))
+        capture(bed, 'bedframe_v8_wheels.png', (0.7, 1, -0.55))
         for o in bed.Objects:
             o.ViewObject.Visibility = not o.Name.startswith('Door') and o.Name != 'Mattress_5x6'
             if 'MovingDrawer' in o.PropertiesList and o.MovingDrawer:
                 groups=o.SourceGroup.split(',')
                 side=next((g for g in groups if g.startswith('Side_Box_')),None)
                 o.Placement.Base += App.Vector((-337 if side.endswith('L') else 337),0,0) if side else App.Vector(0,450,0)
-        capture(bed, 'bedframe_v7_drawers_open.png', (0.8, 1, 0.9))
-        for target, filename, eye in [(bed,'bedframe_v7_lighting.png',(0.4,1,0.4)),(cab,'cabinet_v9_lighting.png',(0.4,-1,0.4))]:
+        capture(bed, 'bedframe_v8_drawers_open.png', (0.8, 1, 0.9))
+        for target, filename, eye in [(bed,'bedframe_v8_lighting.png',(0.4,1,0.4)),(cab,'cabinet_v9_lighting.png',(0.4,-1,0.4))]:
             for o in target.Objects:
                 o.ViewObject.Visibility = o.Name.startswith('LED_') or (('Upper_Left' in o.SourceGroup or 'Upper_Right' in o.SourceGroup or 'Bridge' in o.SourceGroup or 'Top_Box' in o.SourceGroup or 'Centre_TV_Makeup' in o.SourceGroup) and 'PartID' in o.PropertiesList and not o.Name.startswith(('Door','Drawer','Table_Drawer')))
                 if not o.Name.startswith('LED_'):o.ViewObject.Transparency=80
             capture(target,filename,eye)
+        for o in bed.Objects:
+            o.ViewObject.Visibility = 'Headboard' in o.SourceGroup.split(',')
+            o.ViewObject.Transparency = 0
+        capture(bed, 'bedframe_v8_backboard.png', (0.6,1,0.3))
         with LOG.open('a') as f:
             f.write('DONE\n')
     except Exception:

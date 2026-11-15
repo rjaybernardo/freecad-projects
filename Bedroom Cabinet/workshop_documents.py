@@ -78,8 +78,14 @@ def panel_rows(doc, rows, project):
     objects={o.CutListRow:o for o in doc.Objects if 'CutListRow' in o.PropertiesList}
     assert set(objects)==set(range(len(rows))),('Unmapped fabrication rows',set(range(len(rows)))-set(objects))
     data=[];prefix='B' if project=='bed' else 'C'
+    assigned={o.PartID for o in objects.values() if 'PartID' in o.PropertiesList and o.PartID}
+    next_id=max([int(value[1:]) for value in assigned if value.startswith(prefix)]+[0])+1
     for i,row in enumerate(rows):
-        o=objects[i];identifier=f'{prefix}{i+1:03d}'
+        o=objects[i]
+        if 'PartID' in o.PropertiesList and o.PartID:
+            identifier=o.PartID
+        else:
+            identifier=f'{prefix}{next_id:03d}';next_id+=1
         if 'PartID' not in o.PropertiesList:o.addProperty('App::PropertyString','PartID','Fabrication')
         o.PartID=identifier
         o.Label=identifier+' '+o.Label
@@ -195,6 +201,7 @@ def sheet_svg(path,si,sheet,panels,settings,total):
 def generate(doc,panels,project,output,settings=None):
     settings=dict(DEFAULTS if settings is None else settings)
     out=Path(output)/'workshop'/project;out.mkdir(parents=True,exist_ok=True)
+    for stale in out.glob('Sheet_[0-9][0-9].svg'): stale.unlink()
     g=doc.getObject('Workshop_Documents') or doc.addObject('App::DocumentObjectGroup','Workshop_Documents')
     sheets=nest(panels,settings)
     spreadsheet(doc,g,'CuttingSettings',['Setting','Value','Meaning'],[

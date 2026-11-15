@@ -16,7 +16,7 @@ def export_set(files,pdf):
     for i,path in enumerate(files):
         if i:writer.newPage()
         renderer=QtSvg.QSvgRenderer(str(path));renderer.render(painter,QtCore.QRectF(0,0,writer.width(),writer.height()))
-        if i==0 or path.stem in ['LED_Wiring','Assembly_01','Assembly_04']:
+        if i==0 or path.stem in ['LED_Wiring','Assembly_01','Assembly_04','Assembly_08']:
             img=QtGui.QImage(1680,1188,QtGui.QImage.Format_ARGB32);img.fill(QtCore.Qt.white)
             ip=QtGui.QPainter(img);renderer.render(ip);ip.end();img.save(str(path.with_suffix('.png')))
     painter.end()

@@ -1,9 +1,9 @@
 {
   "bed": {
-    "valid_solids": 328,
-    "plywood_panels": 207,
+    "valid_solids": 327,
+    "plywood_panels": 204,
     "square_fronts": 16,
-    "sheets": 12,
+    "sheets": 11,
     "manual_pages": 12,
     "closed_collisions": 0,
     "sampled_drawer_motion_collisions": 0,
@@ -23,6 +23,14 @@
     "panel_layout_bounds_and_kerf": "passed",
     "embedded_svg_pages": "valid"
   },
-  "editable_layout_check": "Passed in disposable document: 2 mm edge band and one changed band flag regenerated matching blank sizes and native pages",
-  "saw_sequence_check": "Reconstructed every cut into the final panel and offcut rectangles for both projects"
+  "revision_checks": {
+    "previous_v7_and_cabinet_v9_files": "unchanged SHA-256",
+    "other_furniture_and_part_labels": "unchanged",
+    "backboard": "one 1587.2 x 1200 x 19.6 mm plywood face; 3 solid timber battens",
+    "saw_cut_sequence": "reconstructed all panels and offcuts",
+    "pdf_pages": {
+      "bed_cutting": 11,
+      "bed_manual": 12
+    }
+  }
 }

@@ -1,10 +1,14 @@
-# Current screenshots — bed v7 and cabinet v9
+# Current screenshots — bed v8 and cabinet v9
+
+**Bed v8: ONE plywood backboard panel; foam and extra substrate removed.**
+
+![One-layer backboard](../workshop/bed/Assembly_08.png)
 
 Captured from disposable copies of the saved FreeCAD models; source models are not saved during capture.
 
 Bed frame and surrounding cabinets — full design:
 
-![Bed frame and surrounding cabinets — full design](bedframe_v7_perspective.png)
+![Bed frame and surrounding cabinets — full design](bedframe_v8_perspective.png)
 
 TV / makeup / wardrobe cabinet — full design:
 
@@ -12,7 +16,7 @@ TV / makeup / wardrobe cabinet — full design:
 
 Bed lighting — profiles, cable routes and driver (panels transparent):
 
-![Bed lighting — profiles, cable routes and driver (panels transparent)](bedframe_v7_lighting.png)
+![Bed lighting — profiles, cable routes and driver (panels transparent)](bedframe_v8_lighting.png)
 
 Makeup lighting — profiles, cable routes and driver (panels transparent):
 
@@ -20,15 +24,15 @@ Makeup lighting — profiles, cable routes and driver (panels transparent):
 
 Under-bed drawer — four 1-inch wheels, viewed from below:
 
-![Under-bed drawer — four 1-inch wheels, viewed from below](bedframe_v7_wheels.png)
+![Under-bed drawer — four 1-inch wheels, viewed from below](bedframe_v8_wheels.png)
 
 Bed drawers open — wheel travel and room clearances:
 
-![Bed drawers open — wheel travel and room clearances](bedframe_v7_drawers_open.png)
+![Bed drawers open — wheel travel and room clearances](bedframe_v8_drawers_open.png)
 
 Bed plywood L/C pulls — concealed ends:
 
-![Bed plywood L/C pulls — concealed ends](bedframe_v7_drawer_pulls.png)
+![Bed plywood L/C pulls — concealed ends](bedframe_v8_drawer_pulls.png)
 
 Makeup plywood L/C pulls — concealed ends:
 
@@ -36,15 +40,15 @@ Makeup plywood L/C pulls — concealed ends:
 
 Bed front:
 
-![Bed front](bedframe_v7_front.png)
+![Bed front](bedframe_v8_front.png)
 
 Bed interior:
 
-![Bed interior](bedframe_v7_interior.png)
+![Bed interior](bedframe_v8_interior.png)
 
 Bed overhead dividers:
 
-![Bed overhead dividers](bedframe_v7_top_detail.png)
+![Bed overhead dividers](bedframe_v8_top_detail.png)
 
 Cabinet front:
 

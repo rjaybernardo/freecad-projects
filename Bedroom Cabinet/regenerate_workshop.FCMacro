@@ -11,7 +11,7 @@ import json
 
 doc=App.ActiveDocument
 if doc is None or doc.getObject('CuttingSettings') is None:
-    raise RuntimeError('Open the bed v7 or cabinet v9 model first')
+    raise RuntimeError('Open the bed v8 or cabinet v9 model first')
 project='bed' if doc.Name.startswith('Bed_Wall') else 'cabinet'
 data=json.loads((PROJECT/'workshop'/project/'layout.json').read_text())
 settings={k:float(doc.CuttingSettings.get('B'+str(4+i))) for i,k in enumerate(data['settings'])}

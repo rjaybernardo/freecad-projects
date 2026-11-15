@@ -3,6 +3,7 @@ from pathlib import Path
 import base64
 import html
 import json
+import copy
 import FreeCAD as App
 import FreeCADGui as Gui
 from pivy import coin
@@ -156,7 +157,19 @@ def wrap(line,limit=65):
 
 def build(doc,project,output):
     out=Path(output)/'workshop'/project;data=json.loads((out/'layout.json').read_text());panels={p['id']:p for p in data['panels']}
-    plans=BED if project=='bed' else CAB
+    for pattern in ['Assembly_[0-9][0-9].svg','Module_[0-9][0-9].png']:
+        for stale in out.glob(pattern):stale.unlink()
+    plans=copy.deepcopy(BED if project=='bed' else CAB)
+    if project=='bed' and 'IncludeBackboard' in doc.getObject(doc.Name).PropertiesList:
+        if doc.getObject(doc.Name).IncludeBackboard:
+            plans[7]=('Plain backboard — ONE plywood layer','Headboard','all',True,[
+                'Cut ONE laminated plywood panel 1587.2 x 1200 mm. It fits a single 4 x 8 sheet.',
+                'Use THREE narrow solid-timber battens 1507.2 x 50 x 40 mm, fixed to suitable wall anchors.',
+                'Fix the ONE laminated panel to the three battens; do not add another plywood layer.',
+                'No extra full-sheet plywood backing, foam, fabric or buttons. Upholstery can be added later.'])
+        else:
+            plans.pop(7)
+    revision='BED v8' if doc.Name.startswith('Bed_Wall_Unit_v8') else ('BED v7' if project=='bed' else 'TV / MAKEUP CABINET v9')
     group=doc.getObject('Assembly_Manual') or doc.addObject('App::DocumentObjectGroup','Assembly_Manual')
     cover=svg_start('BEFORE YOU CUT — workshop assembly pack',f'{project.upper()} | reference modules and matching panel IDs | hardware dimensions still provisional')
     text(cover,12,42,'1. Confirm the physical stock and hardware',5,font_weight='bold')
@@ -194,7 +207,7 @@ def build(doc,project,output):
         png=out/f'Module_{no:02d}.png';objects,labels=render_module(doc,group_name,mode,explode,png,project)
         identifiers=sorted(o.PartID for o in objects if 'PartID' in o.PropertiesList)
         order.append([no,title,group_name,', '.join(identifiers)])
-        svg=svg_start(f'{no:02d}  {title}',f'{"BED v7" if project=="bed" else "TV / MAKEUP CABINET v9"} | build order | '+('exploded reference module; mirror/repeat as stated below' if explode else 'assembly / installation view'))
+        svg=svg_start(f'{no:02d}  {title}',f'{revision} | build order | '+('exploded reference module; mirror/repeat as stated below' if explode else 'assembly / installation view'))
         encoded=base64.b64encode(png.read_bytes()).decode()
         svg.append(f'<image x="10" y="32" width="264" height="205.33" xlink:href="data:image/png;base64,{encoded}"/>')
         if explode:
@@ -202,6 +215,16 @@ def build(doc,project,output):
                 px,py=10+x*264/1800,32+y*205.33/1400
                 svg.append(f'<rect x="{px-5}" y="{py-2.5}" width="12" height="4" rx=".5" fill="white" stroke="#405665" stroke-width=".15"/>')
                 text(svg,px-4.5,py+.5,identifier,2.8)
+        if project=='bed' and no==8 and doc.Name.startswith('Bed_Wall_Unit_v8'):
+            text(svg,282,87,'SIDE VIEW: ONE PLYWOOD LAYER',3.2,font_weight='bold')
+            svg.append('<path d="M288 103 V188" stroke="#85918c" stroke-width="2"/>')
+            svg.append('<rect x="288" y="132" width="35" height="20" fill="#ccb99a" stroke="#746a58" stroke-width=".5"/>')
+            svg.append('<rect x="323" y="105" width="13.72" height="78" fill="#d8d1c3" stroke="#4e5d55" stroke-width=".5"/>')
+            text(svg,282,99,'WALL',2.8)
+            text(svg,340,125,'19.6 mm',3.2)
+            text(svg,340,131,'plywood',3.2)
+            text(svg,282,198,'Timber support: 50 mm deep x 40 mm high',2.8)
+            text(svg,282,205,'B073 = one continuous plywood face',3)
         text(svg,282,36,'PARTS IN THIS VIEW',3.5,font_weight='bold')
         if len(identifiers)<=42:
             for i,identifier in enumerate(identifiers):

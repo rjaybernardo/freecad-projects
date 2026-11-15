@@ -1,16 +1,11 @@
-# Current design review — bed v7 / cabinet v9 — 2026-11-15
+# Current design review — bed v8 / cabinet v9
 
-The wheel conversion, stock reconciliation, split headboard, real plinth strips, per-edge cutting allowances, native layouts and illustrated manuals are now implemented as a **provisional hardware-dependent planning revision**. See [workshop guide](WORKSHOP_GUIDE.md) and [LED wiring](LIGHTING_AND_WIRING.md).
-
-- 24 fixed-direction one-inch wheels on six floor-running drawers; open bay floors, lateral guides, mounting pads and retention-strap schedule. Actual 35 mm mounting-height assumption and wheel load rating must be verified.
-- 207 / 97 individual panels; 12 / 9 stock sheets in achieved separate-project layouts, with kerf, trim, edge-band deductions, labels and saw-cut sequence. These are planning layouts, not a final fabrication release.
-- Aluminium LED profiles, strips, diffusers, accessible driver spaces and cable routes in both saved models. Provisional 24 V / 10 W/m and 30 W drivers; actual electrical/thermal specifications still pending.
-- Headboard backing/substrate split into halves and nightstand plinths decomposed into strips. Two-face-laminated thickness used throughout. Adjacent lift-up lids have 3 mm gaps.
-- Saved geometry and panel/LED clearances checked; sampled drawer translations pass. Stock-layout validation checks every panel once, bounds and kerf separation. Native pages are embedded and PDFs checked.
-- Square plywood L/C drawer grips, solid outside ends, plain door cabinets and overhead dividers retained. Nightstand and makeup-cabinet runner hardware is unchanged.
-- Still unresolved: delivered stock/edge-band measurements and grain, purchased caster/hinge/runner/fixing details, actual floor and wall conditions, structural load capacity, selected LED kit/thermal ventilation/wire ratings, and the old combined room file's empty links. Opening a foot drawer leaves only 68.4 mm to the opposite cabinet, not walking space.
-
-The previous audit below is retained as history; its “pending” statements refer to bed v6 / cabinet v8, not the current implementation.
+- Headboard simplified to ONE laminated plywood panel, 1587.2 x 1200 x 19.6 mm. Three narrow solid-timber battens support it; no extra plywood substrate, foam, fabric or tufting.
+- Bed position, drawer geometry and room clearances are unchanged. Backboard fixings are independent of overhead cabinet support.
+- 204 bed plywood panels / 11 stock sheets; 97 cabinet panels / 9 sheets. Combined 20 sheets, or 19 only with the matching-finish shared-scribe offcut.
+- Current edge-band allowance is 101.999 m bed + 57.656 m cabinet. Buy 102 + 58 m by the metre; round separately if purchasing fixed-length rolls.
+- One-inch wheels, concealed-end plywood drawer grips, overhead dividers and LED routes are retained. Hardware dimensions and wall fixing details still require actual products/site.
+- Saved solids, closed and sampled moving clearances, one-layer backboard, stock placement and native pages are checked by validate_workshop.py. No structural load rating is claimed.
 
 ---
 

@@ -17,7 +17,7 @@ def volume(a,b):
 
 def validate():
     report={}
-    for filename,project in [('Bed_Wall_Unit_v7.FCStd','bed'),('Bedroom_Cabinet_Modern_v9.FCStd','cabinet')]:
+    for filename,project in [('Bed_Wall_Unit_v8.FCStd','bed'),('Bedroom_Cabinet_Modern_v9.FCStd','cabinet')]:
         d=App.openDocument(str(P/filename));refs=set(d.Reference_Room.OutListRecursive)
         objects=[o for o in d.Objects if o.isDerivedFrom('Part::Feature') and o not in refs]
         assert all(not o.Shape.isNull() and o.Shape.isValid() for o in objects)
@@ -48,6 +48,14 @@ def validate():
             assert all(not o.Name.startswith('Bottom') for g in d.Storage_Bed.Group if not g.Name.startswith('Head_Box') for o in g.Group)
             lids=[next(o for o in g.Group if o.Name.startswith('Lid')) for g in d.Storage_Bed.Group if g.Name.startswith('Head_Box')]
             lids.sort(key=lambda o:o.Shape.BoundBox.XMin);assert abs(lids[1].Shape.BoundBox.XMin-lids[0].Shape.BoundBox.XMax-3)<1e-5
+        if project=='bed':
+            head=list(d.Headboard.OutListRecursive)
+            panel=[o for o in head if 'CutListRow' in o.PropertiesList]
+            assert len(panel)==1 and panel[0].Name=='Plain_Backboard'
+            b=panel[0].Shape.BoundBox
+            assert abs(b.XLength-1587.2)<.001 and abs(b.YLength-19.6)<.001 and abs(b.ZLength-1200)<.001
+            assert len([o for o in head if o.Name.startswith('Timber_Backboard_Batten')])==3
+            assert not any(o.Name.startswith(('Upholstered_Panel_Base','Upholstery_Foam')) for o in objects)
         data=json.loads((P/'workshop'/project/'layout.json').read_text());settings=data['settings'];panels={p['id']:p for p in data['panels']}
         assert len(wood)==len(panels) and set(panels)=={o.PartID for o in wood}
         used=[]

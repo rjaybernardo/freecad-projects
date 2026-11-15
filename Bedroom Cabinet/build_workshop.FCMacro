@@ -1,4 +1,4 @@
-"""Build bed v7 and cabinet v9, then capture their separate screenshot sets.
+"""Build bed v8 and cabinet v9, then capture their separate screenshot sets.
 
 Older model files and build scripts remain available for comparison.
 """
@@ -17,14 +17,14 @@ def build_revisions():
     log.parent.mkdir(exist_ok=True)
     log.write_text('Building wheeled drawers, LED channels/wiring, native cutting pages and module manuals.\n')
     try:
-        for script in ('build_bed_v7.py', 'build_cabinet_v9.py'):
+        for script in ('build_bed_v8.py', 'build_cabinet_v9.py'):
             result = runpy.run_path(str(PROJECT / script))
             doc = result['doc']
             with log.open('a') as f:
                 f.write(f'{script}: {doc.FileName}\n')
             App.closeDocument(doc.Name)
         from assembly_manual import build
-        for filename,project in [('Bed_Wall_Unit_v7.FCStd','bed'),('Bedroom_Cabinet_Modern_v9.FCStd','cabinet')]:
+        for filename,project in [('Bed_Wall_Unit_v8.FCStd','bed'),('Bedroom_Cabinet_Modern_v9.FCStd','cabinet')]:
             d=App.openDocument(str(PROJECT/filename));build(d,project,str(PROJECT));App.closeDocument(d.Name)
         runpy.run_path(str(PROJECT/'export_workshop.FCMacro'))
         with log.open('a') as f:
@@ -32,7 +32,7 @@ def build_revisions():
         macro = PROJECT / 'capture_workshop.FCMacro'
         exec(compile(macro.read_text(), str(macro), 'exec'), globals())
     except Exception:
-        for name in ("Bed_Wall_Unit_v7", "Bedroom_Cabinet_Modern_v9"):
+        for name in ("Bed_Wall_Unit_v8", "Bedroom_Cabinet_Modern_v9"):
             if name in App.listDocuments():
                 App.closeDocument(name)
         with log.open('a') as f:

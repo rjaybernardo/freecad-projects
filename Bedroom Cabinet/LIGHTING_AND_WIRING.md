@@ -1,4 +1,4 @@
-# Cabinet LED lighting — bed v7 / TV and makeup cabinet v9
+# Cabinet LED lighting — bed v8 / TV and makeup cabinet v9
 
 Both saved models now contain real aluminium U-channel envelopes, separate LED strip and diffuser parts, accessible driver/distribution envelopes, orange two-core DC cable routes, and passages through intersecting plywood panels. The aluminium light profiles are separate from the **plywood L/C drawer grips**.
 
@@ -31,7 +31,7 @@ The previous bed-only 12 V strip/puck placeholders are replaced by these strip b
 
 ## Open inside FreeCAD
 
-- Open `Bed_Wall_Unit_v7.FCStd` or `Bedroom_Cabinet_Modern_v9.FCStd`.
+- Open `Bed_Wall_Unit_v8.FCStd` or `Bedroom_Cabinet_Modern_v9.FCStd`.
 - Expand **LED Lighting** to inspect profiles, strip, diffuser, driver and cable routes.
 - Expand **Assembly Manual** → **LED Wiring** to open the drawing; **LightingSchedule** lists branches and cable lengths.
 - [Bed wiring PDF](workshop/bed/LED_Wiring.pdf) · [Cabinet wiring PDF](workshop/cabinet/LED_Wiring.pdf).

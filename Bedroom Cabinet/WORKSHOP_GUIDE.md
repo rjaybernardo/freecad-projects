@@ -1,6 +1,6 @@
 # Cutting layouts and module assembly pack
 
-Current models: **Bed_Wall_Unit_v7.FCStd** and **Bedroom_Cabinet_Modern_v9.FCStd**. Their native FreeCAD pages contain the cutting layouts, illustrated module build order and LED wiring diagram. PDFs and CSVs are in `workshop/bed/` and `workshop/cabinet/`.
+Current models: **Bed_Wall_Unit_v8.FCStd** and **Bedroom_Cabinet_Modern_v9.FCStd**. Their native FreeCAD pages contain the cutting layouts, illustrated module build order and LED wiring diagram. PDFs and CSVs are in `workshop/bed/` and `workshop/cabinet/`.
 
 ## Open the cut layouts inside FreeCAD
 
@@ -14,10 +14,10 @@ The layouts provide the requested CutList Optimizer-style stock diagrams, labels
 
 | Project | Individual plywood panels | Stock sheets in this layout | Net edge band | Band with 10% trim allowance |
 | --- | ---: | ---: | ---: | ---: |
-| Bed and surrounding cabinets | 207 | 12 | 87.152 m | 95.868 m |
+| Bed and surrounding cabinets | 204 | 11 | 92.727 m | 101.999 m |
 | TV / makeup / wardrobe cabinet | 97 | 9 | 52.414 m | 57.656 m |
 
-The headboard backing and upholstery substrate are split into two halves each so they fit the stock. The nightstand plinths are four-strip rings, not solid blocks. All recorded furniture plywood now uses the same two-face-laminated stock assumption.
+The backboard is one 1587.2 x 1200 x 19.6 mm plywood panel on three narrow 1507.2 x 50 x 40 mm solid-timber battens. Extra plywood, foam and fabric are removed; upholstery is deferred. The nightstand plinths are four-strip rings, not solid blocks. All recorded furniture plywood now uses the same two-face-laminated stock assumption.
 
 ## Cutting assumptions and editing
 
@@ -34,7 +34,7 @@ The headboard backing and upholstery substrate are split into two halves each so
 
 Each **Assembly Manual** page contains an actual FreeCAD module image, matching part IDs, a panel table and numbered actions. Repeat the illustrated reference module using the other module's IDs; the image alone is not a drilling template.
 
-**Bed:** two head lift-up boxes → four side drawer bay frames → two foot bay frames → six wheeled drawer assemblies → bolt the eight storage modules together → two nightstands → two upper side cabinets → split headboard → four-compartment bridge → wall anchoring, doors, lighting and mattress.
+**Bed:** two head lift-up boxes → four side drawer bay frames → two foot bay frames → six wheeled drawer assemblies → bolt the eight storage modules together → two nightstands → two upper side cabinets → plain one-panel backboard → four-compartment bridge → wall anchoring, doors, lighting and mattress.
 
 **TV/makeup cabinet:** hanging wardrobe case → right shelving tower → drawer-tower case and plywood grips → centre back/table/shelves → six drawer boxes → three top cases, including the centre divider → mirror, lights, doors and site-fit scribes.
 
@@ -46,4 +46,4 @@ This is a dimensioned planning and assembly pack. Supplier-specific hinge cups, 
 
 [Bed assembly PDF](workshop/bed/Assembly_Manual.pdf) · [Cabinet assembly PDF](workshop/cabinet/Assembly_Manual.pdf) · [Bed cutting PDF](workshop/bed/Cutting_Layouts.pdf) · [Cabinet cutting PDF](workshop/cabinet/Cutting_Layouts.pdf) · [LED locations and wiring](LIGHTING_AND_WIRING.md).
 
-Build both complete packs with `build_workshop.FCMacro` in FreeCAD. The source builders preserve earlier revision files. The separate three-sheet `Bed_Wall_Unit_v7_Drawing.FCStd` is a general arrangement companion; the stock-sheet cutting pages and illustrated manuals are inside each main model.
+Build both complete packs with `build_workshop.FCMacro` in FreeCAD. The source builders preserve earlier revision files. The separate three-sheet `Bed_Wall_Unit_v8_Drawing.FCStd` is a general arrangement companion; the stock-sheet cutting pages and illustrated manuals are inside each main model.

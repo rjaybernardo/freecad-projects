@@ -1,29 +1,64 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420mm" height="297mm" viewBox="0 0 420 297">
 <rect width="420" height="297" fill="white"/>
 <style>text {font-family:DejaVu Sans,sans-serif;fill:#203446} .small{font-size:2.5px} .body{font-size:3.1px}</style>
-<text x="12" y="15" font-size="6" font-weight="bold">CUTTING LAYOUT 04 / 12</text>
+<text x="12" y="15" font-size="6" font-weight="bold">CUTTING LAYOUT 04 / 11</text>
 <text x="12" y="23" font-size="3.2">2440 x 1220 | 19.6 finished plywood, HPL both faces | kerf 4 | trim 5 each edge</text>
 <text x="12" y="290" class="small">BEDROOM WORKSHOP | mm | verify stock and purchased hardware before cutting | revision 2026-11-15</text>
 <rect x="12" y="39" width="307.44" height="153.72" fill="#eeeeee" stroke="#203446" stroke-width=".4"/>
-<rect x="12.63" y="39.63" width="216.342" height="100.3716" fill="#dce9ef" stroke="#465667" stroke-width=".18"/>
-<text x="13.63" y="44.63" font-size="3.5" >B075</text>
-<text x="13.63" y="48.63" font-size="2.5" >1717 x 796.6</text>
-<rect x="12.63" y="140.50560000000002" width="195.804" height="38.480399999999996" fill="#e6dfed" stroke="#465667" stroke-width=".18"/>
-<text x="13.63" y="145.50560000000002" font-size="3.5" >B060</text>
-<text x="13.63" y="149.50560000000002" font-size="2.5" >1554 x 305.4</text>
-<rect x="208.938" y="140.50560000000002" width="99.6156" height="34.9524" fill="#e5edd9" stroke="#465667" stroke-width=".18"/>
-<text x="209.938" y="145.50560000000002" font-size="3.5" >B084</text>
-<text x="209.938" y="149.50560000000002" font-size="2.5" >790.6 x 277.4</text>
-<path d="M208.938 140.50560000000002 L208.938 175.45800000000003" stroke="#cf6a21" stroke-width=".65"/>
-<rect x="229.476" y="39.63" width="34.9524" height="99.6156" fill="#f3e4cb" stroke="#465667" stroke-width=".18"/>
-<text x="230.476" y="44.63" font-size="3.5" >B153</text>
-<text x="230.476" y="48.63" font-size="2.5" >277.4 x 790.6</text>
-<path d="M229.476 39.63 L264.4284 39.63" stroke="#cf6a21" stroke-width=".65"/>
-<rect x="264.93240000000003" y="39.63" width="34.9524" height="99.6156" fill="#d6e9e4" stroke="#465667" stroke-width=".18"/>
-<text x="265.93240000000003" y="44.63" font-size="3.5" >B154</text>
-<text x="265.93240000000003" y="48.63" font-size="2.5" >277.4 x 790.6</text>
-<path d="M264.93240000000003 39.63 L299.88480000000004 39.63" stroke="#cf6a21" stroke-width=".65"/>
-<text x="12" y="205" font-size="3.5" >5 panels | blank area 2.500 m2 | sheet use 84.0% | 10 guillotine cuts</text>
+<rect x="12.63" y="39.63" width="235.62" height="41.5044" fill="#dce9ef" stroke="#465667" stroke-width=".18"/>
+<text x="13.63" y="44.63" font-size="3.5" >B022</text>
+<text x="13.63" y="48.63" font-size="2.5" >1870 x 329.4</text>
+<path d="M12.63 39.63 L248.25 39.63" stroke="#cf6a21" stroke-width=".65"/>
+<rect x="12.63" y="81.63839999999999" width="235.62" height="41.5044" fill="#e6dfed" stroke="#465667" stroke-width=".18"/>
+<text x="13.63" y="86.63839999999999" font-size="3.5" >B049</text>
+<text x="13.63" y="90.63839999999999" font-size="2.5" >1870 x 329.4</text>
+<path d="M12.63 81.63839999999999 L248.25 81.63839999999999" stroke="#cf6a21" stroke-width=".65"/>
+<rect x="12.63" y="123.6468" width="235.62" height="41.5044" fill="#e5edd9" stroke="#465667" stroke-width=".18"/>
+<text x="13.63" y="128.64679999999998" font-size="3.5" >B050</text>
+<text x="13.63" y="132.64679999999998" font-size="2.5" >1870 x 329.4</text>
+<path d="M12.63 123.6468 L248.25 123.6468" stroke="#cf6a21" stroke-width=".65"/>
+<rect x="248.754" y="81.63839999999999" width="62.748" height="99.48960000000001" fill="#f3e4cb" stroke="#465667" stroke-width=".18"/>
+<text x="249.754" y="86.63839999999999" font-size="3.5" >B173</text>
+<text x="249.754" y="90.63839999999999" font-size="2.5" >498 x 789.6</text>
+<path d="M248.754 81.63839999999999 L311.502 81.63839999999999" stroke="#cf6a21" stroke-width=".65"/>
+<path d="M248.754 181.128 L311.502 181.128" stroke="#cf6a21" stroke-width=".65"/>
+<path d="M248.754 81.63839999999999 L248.754 181.128" stroke="#cf6a21" stroke-width=".65"/>
+<path d="M311.502 81.63839999999999 L311.502 181.128" stroke="#cf6a21" stroke-width=".65"/>
+<rect x="248.754" y="39.63" width="62.874" height="34.9524" fill="#d6e9e4" stroke="#465667" stroke-width=".18"/>
+<text x="249.754" y="44.63" font-size="3.5" >B115</text>
+<text x="249.754" y="48.63" font-size="2.5" >499 x 277.4</text>
+<path d="M248.754 39.63 L248.754 74.5824" stroke="#cf6a21" stroke-width=".65"/>
+<rect x="12.63" y="165.6552" width="56.7" height="20.512800000000002" fill="#f0dce1" stroke="#465667" stroke-width=".18"/>
+<text x="13.63" y="170.6552" font-size="3.5" >B159</text>
+<text x="13.63" y="174.6552" font-size="2.5" >450 x 162.8</text>
+<path d="M12.63 165.6552 L69.33 165.6552" stroke="#cf6a21" stroke-width=".65"/>
+<rect x="69.834" y="165.6552" width="56.7" height="20.512800000000002" fill="#e4e6f0" stroke="#465667" stroke-width=".18"/>
+<text x="70.834" y="170.6552" font-size="3.5" >B160</text>
+<text x="70.834" y="174.6552" font-size="2.5" >450 x 162.8</text>
+<path d="M69.834 165.6552 L126.534 165.6552" stroke="#cf6a21" stroke-width=".65"/>
+<rect x="127.038" y="165.6552" width="56.7" height="20.512800000000002" fill="#eee9d3" stroke="#465667" stroke-width=".18"/>
+<text x="128.038" y="170.6552" font-size="3.5" >B175</text>
+<text x="128.038" y="174.6552" font-size="2.5" >450 x 162.8</text>
+<path d="M127.038 165.6552 L183.738 165.6552" stroke="#cf6a21" stroke-width=".65"/>
+<rect x="184.242" y="165.6552" width="56.7" height="20.512800000000002" fill="#dce9ef" stroke="#465667" stroke-width=".18"/>
+<text x="185.242" y="170.6552" font-size="3.5" >B176</text>
+<text x="185.242" y="174.6552" font-size="2.5" >450 x 162.8</text>
+<path d="M184.242 165.6552 L240.942 165.6552" stroke="#cf6a21" stroke-width=".65"/>
+<rect x="312.00600000000003" y="81.63839999999999" width="6.3" height="94.80239999999999" fill="#e6dfed" stroke="#465667" stroke-width=".18"/>
+<text transform="translate(315.156,82.63839999999999) rotate(90)" font-size="1.9">B172</text>
+<rect x="248.754" y="181.632" width="57.9222" height="7.5600000000000005" fill="#e5edd9" stroke="#465667" stroke-width=".18"/>
+<text x="249.754" y="185.412" font-size="2.646" >B198</text>
+<rect x="241.446" y="165.6552" width="3.7800000000000002" height="25.2" fill="#f3e4cb" stroke="#465667" stroke-width=".18"/>
+<text transform="translate(243.33599999999998,166.6552) rotate(90)" font-size="1.9">B110</text>
+<rect x="312.132" y="39.63" width="3.7800000000000002" height="25.2" fill="#d6e9e4" stroke="#465667" stroke-width=".18"/>
+<text transform="translate(314.022,40.63) rotate(90)" font-size="1.9">B180</text>
+<rect x="312.132" y="65.334" width="5.67" height="7.5600000000000005" fill="#f0dce1" stroke="#465667" stroke-width=".18"/>
+<text transform="translate(314.967,66.334) rotate(90)" font-size="1.9">B111</text>
+<rect x="312.132" y="73.398" width="5.67" height="7.5600000000000005" fill="#e4e6f0" stroke="#465667" stroke-width=".18"/>
+<text transform="translate(314.967,74.398) rotate(90)" font-size="1.9">B112</text>
+<rect x="307.18019999999996" y="181.632" width="5.67" height="7.5600000000000005" fill="#eee9d3" stroke="#465667" stroke-width=".18"/>
+<text transform="translate(310.01519999999994,182.632) rotate(90)" font-size="1.9">B114</text>
+<text x="12" y="205" font-size="3.5" >16 panels | blank area 2.758 m2 | sheet use 92.6% | 31 guillotine cuts</text>
 <text x="12" y="213" font-size="3" >Orange = banded edge. Dimensions = laminated blank BEFORE edge band. Grey = kerf, trim or offcut.</text>
 <text x="12" y="220" font-size="2.8" >L1/L2 are the two edges parallel to finished Length; W1/W2 parallel to Width. Orange thickness is symbolic.</text>
 <text x="12" y="227" font-size="2.8" >Grain: rotation allowed by default for plain laminate. Set AllowRotation = 0 for directional laminate and regenerate.</text>
@@ -32,9 +67,20 @@
 <text x="12" y="248" font-size="2.8" >Drill cable passages, rout internal grip recesses, and cut scribe strips to fit AFTER the rectangular blanks are cut.</text>
 <text x="12" y="255" font-size="2.8" >Heuristic nesting of each project separately; sheet count is the achieved layout, not a guaranteed minimum.</text>
 <text x="330" y="36" font-size="3.5" font-weight="bold">PART / BLANK L x W</text>
-<text x="330" y="43.0" font-size="2.6" >B075  1717 x 796.6</text>
-<text x="330" y="47.9" font-size="2.6" >B060  1554 x 305.4</text>
-<text x="330" y="52.8" font-size="2.6" >B084  790.6 x 277.4</text>
-<text x="330" y="57.7" font-size="2.6" >B153  790.6 x 277.4</text>
-<text x="330" y="62.6" font-size="2.6" >B154  790.6 x 277.4</text>
+<text x="330" y="43.0" font-size="2.6" >B022  1870 x 329.4</text>
+<text x="330" y="47.9" font-size="2.6" >B049  1870 x 329.4</text>
+<text x="330" y="52.8" font-size="2.6" >B050  1870 x 329.4</text>
+<text x="330" y="57.7" font-size="2.6" >B173  789.6 x 498</text>
+<text x="330" y="62.6" font-size="2.6" >B115  499 x 277.4</text>
+<text x="330" y="67.5" font-size="2.6" >B159  450 x 162.8</text>
+<text x="330" y="72.4" font-size="2.6" >B160  450 x 162.8</text>
+<text x="330" y="77.30000000000001" font-size="2.6" >B175  450 x 162.8</text>
+<text x="330" y="82.2" font-size="2.6" >B176  450 x 162.8</text>
+<text x="330" y="87.1" font-size="2.6" >B172  752.4 x 50</text>
+<text x="330" y="92.0" font-size="2.6" >B198  459.7 x 60</text>
+<text x="330" y="96.9" font-size="2.6" >B110  200 x 30</text>
+<text x="330" y="101.80000000000001" font-size="2.6" >B180  200 x 30</text>
+<text x="330" y="106.7" font-size="2.6" >B111  60 x 45</text>
+<text x="330" y="111.60000000000001" font-size="2.6" >B112  60 x 45</text>
+<text x="330" y="116.5" font-size="2.6" >B114  60 x 45</text>
 </svg>
