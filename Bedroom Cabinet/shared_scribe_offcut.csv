@@ -1,0 +1,3 @@
+Condition,Source project,Source sheet,Panel ID,X mm,Y mm,Blank L mm,Blank W mm,Kerf mm
+Same thickness and laminate finish on both faces,bed,2,C088,5.0,1005.2,2380.0,10.0,4
+Same thickness and laminate finish on both faces,bed,2,C089,5.0,1019.2,2276.0,10.0,4

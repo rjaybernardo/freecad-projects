@@ -37,6 +37,9 @@ Inside each model, expand **Workshop Documents** and open **Sheet 01** (`Cutting
 
 [Cutting and building guide](WORKSHOP_GUIDE.md) · [LED locations and wiring](LIGHTING_AND_WIRING.md) · [Bed wiring PDF](workshop/bed/LED_Wiring.pdf) · [Cabinet wiring PDF](workshop/cabinet/LED_Wiring.pdf).
 
+
+[Combined materials and hinge breakdown](MATERIALS_LIST.md) · [Shopping CSV](materials_purchase_summary.csv). Current schedules: **30 soft-close hinges (14 full / 16 half overlay), 10 slide pairs, 24 one-inch wheels, 160 m rounded edge-band order, and 6 LED-profile pieces cut from two 2 m bars with covers**. Plywood is 21 sheets in separate layouts, or 20 only with the matching-finish shared-offcut option. Contact-cement litres await lamination method and actual product coverage.
+
 ## Strip lighting and aluminium profiles
 
 Both models now contain separate aluminium U-profile, LED strip and diffuser parts, accessible driver/distribution spaces, two-core DC cable routes, and cable passages through fixed plywood panels. Bed lighting: both niches and under the bridge. Makeup lighting: both sides of the mirror and under the TV ledge. The previous bed puck placeholders are replaced by strip lighting.
