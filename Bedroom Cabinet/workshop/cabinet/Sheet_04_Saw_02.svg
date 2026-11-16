@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="297mm" height="210mm" viewBox="0 0 297 210">
+<rect width="297" height="210" fill="white"/>
+<style>text {font-family:DejaVu Sans,sans-serif;fill:#172a38}</style>
+<text x="10" y="16" font-size="6.2" font-weight="bold">CABINET | SHEET 04 | SAW STEPS 2 / 2</text>
+<text x="10" y="25" font-size="4.3" >Trim 5 mm each edge first. Kerf = 4 mm; consumes positive X / Y after coordinate.</text>
+<text x="10" y="201" font-size="4.3" >A4 landscape | 12 pt tables | Follow steps in order | 2026-11-17</text>
+<text x="10" y="34" font-size="4.3" >Coordinates from original stock origin. X along stock length; Y along stock width. All in mm.</text>
+<rect x="10" y="39" width="277" height="10" fill="#dce8ef"/>
+<text x="11.5" y="45.7" font-size="4.3" font-weight="bold">Step</text>
+<text x="26.5" y="45.7" font-size="4.3" font-weight="bold">Axis</text>
+<text x="41.5" y="45.7" font-size="4.3" font-weight="bold">Coordinate</text>
+<text x="76.5" y="45.7" font-size="4.3" font-weight="bold">Cut span</text>
+<text x="111.5" y="45.7" font-size="4.3" font-weight="bold">Target</text>
+<text x="136.5" y="45.7" font-size="4.3" font-weight="bold">Parent region: X / Y / length / width</text>
+<rect x="10" y="49.0" width="277" height="8.5" fill="#f1f5f7"/>
+<text x="11.5" y="54.7" font-size="4.3" >17</text>
+<text x="26.5" y="54.7" font-size="4.3" >X</text>
+<text x="41.5" y="54.7" font-size="4.3" >1151.2</text>
+<text x="76.5" y="54.7" font-size="4.3" >268.2</text>
+<text x="111.5" y="54.7" font-size="4.3" >C062</text>
+<text x="136.5" y="54.7" font-size="4.3" >771.8 / 946.8 / 1663.2 / 268.2</text>
+<rect x="10" y="57.5" width="277" height="8.5" fill="white"/>
+<text x="11.5" y="63.2" font-size="4.3" >18</text>
+<text x="26.5" y="63.2" font-size="4.3" >Y</text>
+<text x="41.5" y="63.2" font-size="4.3" >1062.1</text>
+<text x="76.5" y="63.2" font-size="4.3" >379.4</text>
+<text x="111.5" y="63.2" font-size="4.3" >C062</text>
+<text x="136.5" y="63.2" font-size="4.3" >771.8 / 946.8 / 379.4 / 268.2</text>
+<rect x="10" y="66.0" width="277" height="8.5" fill="#f1f5f7"/>
+<text x="11.5" y="71.7" font-size="4.3" >19</text>
+<text x="26.5" y="71.7" font-size="4.3" >Y</text>
+<text x="41.5" y="71.7" font-size="4.3" >1026.8</text>
+<text x="76.5" y="71.7" font-size="4.3" >1279.8</text>
+<text x="111.5" y="71.7" font-size="4.3" >C023</text>
+<text x="136.5" y="71.7" font-size="4.3" >1155.2 / 946.8 / 1279.8 / 268.2</text>
+<rect x="10" y="74.5" width="277" height="8.5" fill="white"/>
+<text x="11.5" y="80.2" font-size="4.3" >20</text>
+<text x="26.5" y="80.2" font-size="4.3" >X</text>
+<text x="41.5" y="80.2" font-size="4.3" >1611.2</text>
+<text x="76.5" y="80.2" font-size="4.3" >80</text>
+<text x="111.5" y="80.2" font-size="4.3" >C023</text>
+<text x="136.5" y="80.2" font-size="4.3" >1155.2 / 946.8 / 1279.8 / 80</text>
+<text x="10" y="193" font-size="4.3" >Label each panel with its target ID immediately. See SawCuts.csv for parent-region names.</text>
+</svg>

@@ -23,6 +23,9 @@ def export_set(files,pdf):
 
 for project in ['bed','cabinet']:
     folder=PROJECT/'workshop'/project
-    export_set(sorted(folder.glob('Sheet_*.svg')),folder/'Cutting_Layouts.pdf')
+    import sys
+    if str(PROJECT) not in sys.path:sys.path.insert(0,str(PROJECT))
+    from readable_cutlists import export_pdf
+    export_pdf(sorted(folder.glob('Sheet_*.svg')),folder/'Cutting_Layouts.pdf', ['Sheet_01','Sheet_01_Parts_01','Sheet_10','Sheet_10_Parts_01'])
     export_set(sorted(folder.glob('Assembly_*.svg'))+[folder/'LED_Wiring.svg'],folder/'Assembly_Manual.pdf')
     export_set([folder/'LED_Wiring.svg'],folder/'LED_Wiring.pdf')

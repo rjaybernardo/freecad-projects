@@ -1,6 +1,6 @@
 # Plywood drawer pulls — concealed ends
 
-Current models: **Bed_Wall_Unit_v8.FCStd** and **Bedroom_Cabinet_Modern_v9.FCStd**.
+Current models: **Bed_Wall_Unit_v9.FCStd** and **Bedroom_Cabinet_Modern_v9.FCStd**.
 
 The user rejected exposed notch ends and drawer-style notches on cabinets that
 contain only doors. This revision keeps the existing outside side/end panels
@@ -23,7 +23,7 @@ plywood returns. Return width is 22.4 mm before final edge-band deductions.
 - Fixed tops can have internal recess operations, but the outside sides stay intact.
 - All fronts stay square-edged, with no angled pull cuts or aluminium grip rails.
 
-![Bed drawer channels ending between solid sides](screenshots/bedframe_v8_drawer_pulls.png)
+![Grip reference from v8 — unchanged channels in v9](screenshots/bedframe_v8_drawer_pulls.png)
 
 ![Makeup drawer channels ending between solid sides](screenshots/cabinet_v9_drawer_pulls.png)
 

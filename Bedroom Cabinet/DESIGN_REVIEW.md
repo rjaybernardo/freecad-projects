@@ -1,11 +1,11 @@
-# Current design review — bed v8 / cabinet v9
+# Current design review — bed v9 / cabinet v9
 
 - Headboard simplified to ONE laminated plywood panel, 1587.2 x 1200 x 19.6 mm. Three narrow solid-timber battens support it; no extra plywood substrate, foam, fabric or tufting.
-- Bed position, drawer geometry and room clearances are unchanged. Backboard fixings are independent of overhead cabinet support.
-- 204 bed plywood panels / 11 stock sheets; 97 cabinet panels / 9 sheets. Combined 20 sheets, or 19 only with the matching-finish shared-scribe offcut.
+- Bed position, drawer fronts, travel and room clearances are unchanged. In v9 the wheel plates mount directly beneath the drawer bottoms; 24 plywood pads are removed. Bottoms and fixed guides lower 19.6 mm; sides/backs grow 19.6 mm taller. Backboard fixings are independent of overhead cabinet support.
+- 180 bed plywood panels / 11 stock sheets; 97 cabinet panels / 9 sheets. Combined 20 sheets, or 19 only with the matching-finish shared-scribe offcut.
 - Current edge-band allowance is 101.999 m bed + 57.656 m cabinet. Buy 102 + 58 m by the metre; round separately if purchasing fixed-length rolls.
 - One-inch wheels, concealed-end plywood drawer grips, overhead dividers and LED routes are retained. Hardware dimensions and wall fixing details still require actual products/site.
-- Saved solids, closed and sampled moving clearances, one-layer backboard, stock placement and native pages are checked by validate_workshop.py. No structural load rating is claimed.
+- Saved solids, closed and sampled moving clearances, one-layer backboard, stock placement and native pages are checked by validate_workshop_v9.py. No structural load rating is claimed.
 
 ## Hardware fit review — pending selected Shopee products
 

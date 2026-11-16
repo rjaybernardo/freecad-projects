@@ -1,16 +1,36 @@
 # FreeCAD bedroom projects — start here
 
+**Updated 2026-11-17 — bed v9: wheels mount directly under the drawer bottoms.** All 24 plywood wheel pads are removed. The six drawer bottoms are 19.6 mm lower, with taller sides/backs; fronts and travel stay in place. Wheel diameter is 25.4 mm; the assumed 35 mm overall mounting height and actual fixings still need checking.
+
+| Current bed v9 — full design | TV / makeup / wardrobe v9 — current design |
+| --- | --- |
+| ![Bed v9 full design](Bedroom%20Cabinet/screenshots/bedframe_v9_perspective.png) | ![Cabinet v9 full design](Bedroom%20Cabinet/screenshots/cabinet_v9_perspective.png) |
+
+| Direct wheel plate mounting — cropped underside detail | Bed v9 drawers open — interior and travel |
+| --- | --- |
+| ![Wheel plate directly beneath drawer bottom](Bedroom%20Cabinet/screenshots/bedframe_v9_wheel_mount_detail.png) | ![Bed v9 drawers open](Bedroom%20Cabinet/screenshots/bedframe_v9_drawers_open.png) |
+
+**Readable cut lists:** A4 landscape, 12-point tables, separate numbered maps, complete parts tables and saw steps. Print at **100% / actual size**. The layout includes **4 mm kerf** and **5 mm trim per sheet edge**.
+
+[Bed cutting PDF](Bedroom%20Cabinet/workshop/bed/Cutting_Layouts.pdf) · [Cabinet cutting PDF](Bedroom%20Cabinet/workshop/cabinet/Cutting_Layouts.pdf) · [Bed v9 model](Bedroom%20Cabinet/Bed_Wall_Unit_v9.FCStd) · [Bed v9 drawings](Bedroom%20Cabinet/Bed_Wall_Unit_v9_Drawing.FCStd)
+
+| Bed — larger parts table | Cabinet — larger parts table |
+| --- | --- |
+| [![Bed readable parts table](Bedroom%20Cabinet/workshop/bed/Sheet_01_Parts_01.png)](Bedroom%20Cabinet/workshop/bed/Cutting_Layouts.pdf) | [![Cabinet readable parts table](Bedroom%20Cabinet/workshop/cabinet/Sheet_01_Parts_01.png)](Bedroom%20Cabinet/workshop/cabinet/Cutting_Layouts.pdf) |
+
+For the same readable pages inside FreeCAD, open [bed cutting pages](Bedroom%20Cabinet/workshop/bed/Readable_Cutting.FCStd) or [cabinet cutting pages](Bedroom%20Cabinet/workshop/cabinet/Readable_Cutting.FCStd). The bed v9 main model also contains the new cutting pages. [Earlier bed v8 pack — history](Bedroom%20Cabinet/workshop/history/bed_v8_before_direct_mount/README.md).
+
 **[OPEN THE FILE INDEX — all relevant files](Bedroom%20Cabinet/START_HERE.md)**
 
 Click your project's picture or **BUILDING MANUAL** below. The first module is on page 2, after the preparation page.
 
 | Bed frame + surrounding cabinets | TV + makeup + wardrobe cabinet |
 | --- | --- |
-| [![Bed — click to open building manual](Bedroom%20Cabinet/screenshots/bedframe_v8_perspective.png)](Bedroom%20Cabinet/workshop/bed/Assembly_Manual.pdf) | [![Cabinet — click to open building manual](Bedroom%20Cabinet/screenshots/cabinet_v9_perspective.png)](Bedroom%20Cabinet/workshop/cabinet/Assembly_Manual.pdf) |
+| [![Bed — click to open building manual](Bedroom%20Cabinet/screenshots/bedframe_v9_perspective.png)](Bedroom%20Cabinet/workshop/bed/Assembly_Manual.pdf) | [![Cabinet — click to open building manual](Bedroom%20Cabinet/screenshots/cabinet_v9_perspective.png)](Bedroom%20Cabinet/workshop/cabinet/Assembly_Manual.pdf) |
 | **[1. BUILDING MANUAL — START HERE](Bedroom%20Cabinet/workshop/bed/Assembly_Manual.pdf)** | **[1. BUILDING MANUAL — START HERE](Bedroom%20Cabinet/workshop/cabinet/Assembly_Manual.pdf)** |
 | [2. CUTTING SHEETS](Bedroom%20Cabinet/workshop/bed/Cutting_Layouts.pdf) | [2. CUTTING SHEETS](Bedroom%20Cabinet/workshop/cabinet/Cutting_Layouts.pdf) |
 | [3. LED WIRING DIAGRAM](Bedroom%20Cabinet/workshop/bed/LED_Wiring.pdf) | [3. LED WIRING DIAGRAM](Bedroom%20Cabinet/workshop/cabinet/LED_Wiring.pdf) |
-| [4. OPEN FREECAD MODEL v8](Bedroom%20Cabinet/Bed_Wall_Unit_v8.FCStd) | [4. OPEN FREECAD MODEL v9](Bedroom%20Cabinet/Bedroom_Cabinet_Modern_v9.FCStd) |
+| [4. OPEN FREECAD MODEL v9](Bedroom%20Cabinet/Bed_Wall_Unit_v9.FCStd) | [4. OPEN FREECAD MODEL v9](Bedroom%20Cabinet/Bedroom_Cabinet_Modern_v9.FCStd) |
 
 **FreeCAD update — every drawer is grouped inside its cabinet module.**
 
@@ -33,13 +53,13 @@ Select a module or drawer → **Macro → Macros… → Bedroom_Isolate_Module �
 [Detailed shopping list](Bedroom%20Cabinet/MATERIALS_LIST.md) · [Shopping spreadsheet / CSV](Bedroom%20Cabinet/materials_purchase_summary.csv)
 
 <details>
-<summary>More current cabinet views — lights, wheels and interiors</summary>
+<summary>Lighting references — unchanged arrangement from the previous revision</summary>
 
 ![Bed lighting and routes](Bedroom%20Cabinet/screenshots/bedframe_v8_lighting.png)
 
 ![Makeup cabinet lighting and routes](Bedroom%20Cabinet/screenshots/cabinet_v9_lighting.png)
 
-![One-inch wheels under the bed drawer](Bedroom%20Cabinet/screenshots/bedframe_v8_wheels.png)
+![One-inch wheels under the bed drawer](Bedroom%20Cabinet/screenshots/bedframe_v9_wheels.png)
 
 [All current cabinet screenshots](Bedroom%20Cabinet/screenshots/README.md)
 

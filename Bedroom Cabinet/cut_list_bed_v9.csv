@@ -1,0 +1,181 @@
+Module,Part,Qty,Length_mm,Width_mm,Thickness_mm,Edge_Work
+Nightstand_Left,Plinth_Side_L,1,400,57,19.6,HPL both faces; plinth ring member
+Nightstand_Left,Plinth_Side_R,1,400,57,19.6,HPL both faces; plinth ring member
+Nightstand_Left,Plinth_Rear,1,262.2,57,19.6,HPL both faces; plinth ring member
+Nightstand_Left,Plinth_Front,1,262.2,57,19.6,HPL both faces; plinth ring member
+Nightstand_Left,Back,1,440,341.4,19.6,
+Nightstand_Left,Side_L,1,440,430.4,19.6,HPL both faces
+Nightstand_Left,Side_R,1,440,430.4,19.6,HPL both faces
+Nightstand_Left,Bottom,1,430.4,302.2,19.6,HPL both faces
+Nightstand_Left,Top,1,430.4,302.2,19.6,HPL both faces
+Nightstand_Left,Drawer_1_Front,1,299.2,172.4,19.6,HPL both faces; Square pull edge; edge-band exposed edges
+Nightstand_Left,Drawer_1_Side_L,1,350,130.9,19.6,
+Nightstand_Left,Drawer_1_Side_R,1,350,130.9,19.6,
+Nightstand_Left,Drawer_1_Back,1,238.0,130.9,19.6,
+Nightstand_Left,Drawer_1_Bottom,1,330.4,238.0,19.6,
+Nightstand_Left,Drawer_2_Front,1,299.2,172.4,19.6,HPL both faces; Square pull edge; edge-band exposed edges
+Nightstand_Left,Drawer_2_Side_L,1,350,108.9,19.6,
+Nightstand_Left,Drawer_2_Side_R,1,350,108.9,19.6,
+Nightstand_Left,Drawer_2_Back,1,238.0,108.9,19.6,
+Nightstand_Left,Drawer_2_Bottom,1,330.4,238.0,19.6,
+Upper_Left,Back,1,1870,341.4,19.6,
+Upper_Left,Side_L,1,1870,330.4,19.6,HPL both faces
+Upper_Left,Side_R,1,1870,330.4,19.6,HPL both faces; 9 mm DC cable passage / grommet allowance at modelled route: B_R; match actual grommet OD before drilling
+Upper_Left,Bottom,1,330.4,302.2,19.6,HPL both faces
+Upper_Left,Top,1,330.4,302.2,19.6,HPL both faces
+Upper_Left,Shelf_Open_Niche,1,320.4,302.2,19.6,"HPL both faces, edge-band front"
+Upper_Left,Shelf_Lit_Niche,1,305.4,302.2,19.6,"HPL both faces, edge-band front; LED groove underside; 9 mm DC cable passage / grommet allowance at modelled route: B_L; match actual grommet OD before drilling"
+Upper_Left,Shelf_Behind_Door_1,1,320.4,302.2,19.6,"HPL both faces, edge-band front; 9 mm DC cable passage / grommet allowance at modelled route: B_L; match actual grommet OD before drilling"
+Upper_Left,Door,1,1287,338.4,19.6,HPL both faces; Square pull edge; edge-band exposed edges
+Nightstand_Right,Plinth_Side_L,1,400,57,19.6,HPL both faces; plinth ring member
+Nightstand_Right,Plinth_Side_R,1,400,57,19.6,HPL both faces; plinth ring member
+Nightstand_Right,Plinth_Rear,1,262.2,57,19.6,HPL both faces; plinth ring member
+Nightstand_Right,Plinth_Front,1,262.2,57,19.6,HPL both faces; plinth ring member
+Nightstand_Right,Back,1,440,341.4,19.6,
+Nightstand_Right,Side_L,1,440,430.4,19.6,HPL both faces
+Nightstand_Right,Side_R,1,440,430.4,19.6,HPL both faces
+Nightstand_Right,Bottom,1,430.4,302.2,19.6,HPL both faces
+Nightstand_Right,Top,1,430.4,302.2,19.6,HPL both faces
+Nightstand_Right,Drawer_1_Front,1,299.2,172.4,19.6,HPL both faces; Square pull edge; edge-band exposed edges
+Nightstand_Right,Drawer_1_Side_L,1,350,130.9,19.6,
+Nightstand_Right,Drawer_1_Side_R,1,350,130.9,19.6,
+Nightstand_Right,Drawer_1_Back,1,238.0,130.9,19.6,
+Nightstand_Right,Drawer_1_Bottom,1,330.4,238.0,19.6,
+Nightstand_Right,Drawer_2_Front,1,299.2,172.4,19.6,HPL both faces; Square pull edge; edge-band exposed edges
+Nightstand_Right,Drawer_2_Side_L,1,350,108.9,19.6,
+Nightstand_Right,Drawer_2_Side_R,1,350,108.9,19.6,
+Nightstand_Right,Drawer_2_Back,1,238.0,108.9,19.6,
+Nightstand_Right,Drawer_2_Bottom,1,330.4,238.0,19.6,
+Upper_Right,Back,1,1870,341.4,19.6,
+Upper_Right,Side_L,1,1870,330.4,19.6,HPL both faces; 9 mm DC cable passage / grommet allowance at modelled route: B_R; match actual grommet OD before drilling
+Upper_Right,Side_R,1,1870,330.4,19.6,HPL both faces
+Upper_Right,Bottom,1,330.4,302.2,19.6,HPL both faces
+Upper_Right,Top,1,330.4,302.2,19.6,HPL both faces
+Upper_Right,Shelf_Open_Niche,1,320.4,302.2,19.6,"HPL both faces, edge-band front"
+Upper_Right,Shelf_Lit_Niche,1,305.4,302.2,19.6,"HPL both faces, edge-band front; LED groove underside; 9 mm DC cable passage / grommet allowance at modelled route: B_R; match actual grommet OD before drilling"
+Upper_Right,Shelf_Behind_Door_1,1,320.4,302.2,19.6,"HPL both faces, edge-band front; 9 mm DC cable passage / grommet allowance at modelled route: B_R; match actual grommet OD before drilling"
+Upper_Right,Door,1,1287,338.4,19.6,HPL both faces; Square pull edge; edge-band exposed edges
+Bridge,Back,1,1593.2,650,19.6,
+Bridge,Side_L,1,650,330.4,19.6,HPL both faces; 9 mm DC cable passage / grommet allowance at modelled route: B_R; match actual grommet OD before drilling
+Bridge,Side_R,1,650,330.4,19.6,HPL both faces; 9 mm DC cable passage / grommet allowance at modelled route: B_R; match actual grommet OD before drilling
+Bridge,Bottom,1,1554.0,305.4,19.6,HPL both faces; plain front setback 25 mm for square door grip; 9 mm DC cable passage / grommet allowance at modelled route: B_H; match actual grommet OD before drilling
+Bridge,Top,1,1554.0,330.4,19.6,HPL both faces
+Bridge,Bridge_Divider_1,1,610.8,330.4,19.6,HPL both faces; edge-band front; full height between top and bottom; 9 mm DC cable passage / grommet allowance at modelled route: B_R; match actual grommet OD before drilling
+Bridge,Bridge_Divider_2,1,610.8,330.4,19.6,HPL both faces; edge-band front; full height between top and bottom; 9 mm DC cable passage / grommet allowance at modelled route: B_R; match actual grommet OD before drilling
+Bridge,Bridge_Divider_3,1,610.8,330.4,19.6,HPL both faces; edge-band front; full height between top and bottom; 9 mm DC cable passage / grommet allowance at modelled route: B_R; match actual grommet OD before drilling
+Bridge,Bridge_Shelf_1,1,368.9,320.4,19.6,"HPL both faces, edge-band front; fits between vertical dividers; 9 mm DC cable passage / grommet allowance at modelled route: B_H; match actual grommet OD before drilling"
+Bridge,Door_1,1,647,395.3,19.6,HPL both faces; Square pull edge; edge-band exposed edges
+Bridge,Bridge_Shelf_2,1,378.7,320.4,19.6,"HPL both faces, edge-band front; fits between vertical dividers"
+Bridge,Door_2,1,647,395.3,19.6,HPL both faces; Square pull edge; edge-band exposed edges
+Bridge,Bridge_Shelf_3,1,378.7,320.4,19.6,"HPL both faces, edge-band front; fits between vertical dividers"
+Bridge,Door_3,1,647,395.3,19.6,HPL both faces; Square pull edge; edge-band exposed edges
+Bridge,Bridge_Shelf_4,1,368.9,320.4,19.6,"HPL both faces, edge-band front; fits between vertical dividers"
+Bridge,Door_4,1,647,395.3,19.6,HPL both faces; Square pull edge; edge-band exposed edges
+Headboard,Plain_Backboard,1,1587.2,1200,19.6,"HPL both faces; ONE plywood panel, ONE layer; edge-band 4 sides; no upholstery"
+Head_Box_L,Side_L,1,390.4,277.4,19.6,HPL both faces
+Head_Box_L,Side_R,1,390.4,277.4,19.6,HPL both faces
+Head_Box_L,Head,1,752.4,277.4,19.6,HPL both faces
+Head_Box_L,Foot,1,752.4,277.4,19.6,HPL both faces
+Head_Box_L,Bottom,1,752.4,351.2,19.6,HPL both faces; lift-up bay bottom
+Head_Box_L,Lid,1,788.6,387.4,19.6,"HPL both faces, edge-band 4 sides; hinged at head"
+Side_Box_1L,Head,1,791.6,277.4,19.6,HPL both faces
+Side_Box_1L,Foot,1,791.6,277.4,19.6,HPL both faces
+Side_Box_1L,Inner_Side,1,459.7,277.4,19.6,HPL both faces
+Side_Box_1L,Rear_Base_Brace,1,459.7,272.4,19.6,HPL both faces; keep wheel lane open to the room floor
+Side_Box_1L,Top,1,791.6,498.9,19.6,"HPL both faces, edge-band 4 sides"
+Drawer_Assembly_Side_Box_1L,Drawer_Front,1,456.7,214.4,19.6,HPL both faces; square pull edge; edge-band exposed edges; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Drawer_Assembly_Side_Box_1L,Drawer_Side_A,1,450.0,183.4,19.6,HPL both faces; band exposed top edge; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Drawer_Assembly_Side_Box_1L,Drawer_Side_B,1,450.0,183.4,19.6,HPL both faces; band exposed top edge; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Drawer_Assembly_Side_Box_1L,Drawer_Back,1,375.3,183.4,19.6,HPL both faces; band exposed top edge; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Drawer_Assembly_Side_Box_1L,Drawer_Bottom,1,430.4,375.3,19.6,HPL both faces; floor-running drawer base; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Side_Box_1L,Guide_Side_Box_1L_A,1,200.0,30,19.6,Plywood lateral guide; 3 mm clearance to drawer; do not fasten to moving drawer
+Side_Box_1L,Guide_Side_Box_1L_B,1,200.0,30,19.6,Plywood lateral guide; 3 mm clearance to drawer; do not fasten to moving drawer
+Side_Box_2L,Head,1,791.6,277.4,19.6,HPL both faces
+Side_Box_2L,Foot,1,791.6,277.4,19.6,HPL both faces
+Side_Box_2L,Inner_Side,1,459.7,277.4,19.6,HPL both faces
+Side_Box_2L,Rear_Base_Brace,1,459.7,272.4,19.6,HPL both faces; keep wheel lane open to the room floor
+Side_Box_2L,Top,1,791.6,498.9,19.6,"HPL both faces, edge-band 4 sides"
+Drawer_Assembly_Side_Box_2L,Drawer_Front,1,456.7,214.4,19.6,HPL both faces; square pull edge; edge-band exposed edges; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Drawer_Assembly_Side_Box_2L,Drawer_Side_A,1,450.0,183.4,19.6,HPL both faces; band exposed top edge; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Drawer_Assembly_Side_Box_2L,Drawer_Side_B,1,450.0,183.4,19.6,HPL both faces; band exposed top edge; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Drawer_Assembly_Side_Box_2L,Drawer_Back,1,375.3,183.4,19.6,HPL both faces; band exposed top edge; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Drawer_Assembly_Side_Box_2L,Drawer_Bottom,1,430.4,375.3,19.6,HPL both faces; floor-running drawer base; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Side_Box_2L,Guide_Side_Box_2L_A,1,200.0,30,19.6,Plywood lateral guide; 3 mm clearance to drawer; do not fasten to moving drawer
+Side_Box_2L,Guide_Side_Box_2L_B,1,200.0,30,19.6,Plywood lateral guide; 3 mm clearance to drawer; do not fasten to moving drawer
+Foot_Box_L,Side_L,1,500,277.4,19.6,HPL both faces
+Foot_Box_L,Side_R,1,500,277.4,19.6,HPL both faces
+Foot_Box_L,Head,1,752.4,277.4,19.6,HPL both faces
+Foot_Box_L,Rear_Base_Brace,1,752.4,50,19.6,HPL both faces; rear brace clear of closed-position rear wheels
+Foot_Box_L,Top,1,791.6,500,19.6,"HPL both faces, edge-band 4 sides"
+Drawer_Assembly_Foot_Box_L,Drawer_Front,1,749.4,214.4,19.6,HPL both faces; square pull edge; edge-band exposed edges; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Drawer_Assembly_Foot_Box_L,Drawer_Side_A,1,450.0,183.4,19.6,HPL both faces; band exposed top edge; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Drawer_Assembly_Foot_Box_L,Drawer_Side_B,1,450.0,183.4,19.6,HPL both faces; band exposed top edge; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Drawer_Assembly_Foot_Box_L,Drawer_Back,1,668.0,183.4,19.6,HPL both faces; band exposed top edge; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Drawer_Assembly_Foot_Box_L,Drawer_Bottom,1,668.0,430.4,19.6,HPL both faces; floor-running drawer base; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Foot_Box_L,Guide_Foot_Box_L_A,1,200.0,30,19.6,Plywood lateral guide; 3 mm clearance to drawer; do not fasten to moving drawer
+Foot_Box_L,Guide_Foot_Box_L_B,1,200.0,30,19.6,Plywood lateral guide; 3 mm clearance to drawer; do not fasten to moving drawer
+Head_Box_R,Side_L,1,390.4,277.4,19.6,HPL both faces
+Head_Box_R,Side_R,1,390.4,277.4,19.6,HPL both faces
+Head_Box_R,Head,1,752.4,277.4,19.6,HPL both faces
+Head_Box_R,Foot,1,752.4,277.4,19.6,HPL both faces
+Head_Box_R,Bottom,1,752.4,351.2,19.6,HPL both faces; lift-up bay bottom
+Head_Box_R,Lid,1,788.6,387.4,19.6,"HPL both faces, edge-band 4 sides; hinged at head"
+Side_Box_1R,Head,1,791.6,277.4,19.6,HPL both faces
+Side_Box_1R,Foot,1,791.6,277.4,19.6,HPL both faces
+Side_Box_1R,Inner_Side,1,459.7,277.4,19.6,HPL both faces
+Side_Box_1R,Rear_Base_Brace,1,459.7,272.4,19.6,HPL both faces; keep wheel lane open to the room floor
+Side_Box_1R,Top,1,791.6,498.9,19.6,"HPL both faces, edge-band 4 sides"
+Drawer_Assembly_Side_Box_1R,Drawer_Front,1,456.7,214.4,19.6,HPL both faces; square pull edge; edge-band exposed edges; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Drawer_Assembly_Side_Box_1R,Drawer_Side_A,1,450.0,183.4,19.6,HPL both faces; band exposed top edge; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Drawer_Assembly_Side_Box_1R,Drawer_Side_B,1,450.0,183.4,19.6,HPL both faces; band exposed top edge; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Drawer_Assembly_Side_Box_1R,Drawer_Back,1,375.3,183.4,19.6,HPL both faces; band exposed top edge; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Drawer_Assembly_Side_Box_1R,Drawer_Bottom,1,430.4,375.3,19.6,HPL both faces; floor-running drawer base; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Side_Box_1R,Guide_Side_Box_1R_A,1,200.0,30,19.6,Plywood lateral guide; 3 mm clearance to drawer; do not fasten to moving drawer
+Side_Box_1R,Guide_Side_Box_1R_B,1,200.0,30,19.6,Plywood lateral guide; 3 mm clearance to drawer; do not fasten to moving drawer
+Side_Box_2R,Head,1,791.6,277.4,19.6,HPL both faces
+Side_Box_2R,Foot,1,791.6,277.4,19.6,HPL both faces
+Side_Box_2R,Inner_Side,1,459.7,277.4,19.6,HPL both faces
+Side_Box_2R,Rear_Base_Brace,1,459.7,272.4,19.6,HPL both faces; keep wheel lane open to the room floor
+Side_Box_2R,Top,1,791.6,498.9,19.6,"HPL both faces, edge-band 4 sides"
+Drawer_Assembly_Side_Box_2R,Drawer_Front,1,456.7,214.4,19.6,HPL both faces; square pull edge; edge-band exposed edges; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Drawer_Assembly_Side_Box_2R,Drawer_Side_A,1,450.0,183.4,19.6,HPL both faces; band exposed top edge; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Drawer_Assembly_Side_Box_2R,Drawer_Side_B,1,450.0,183.4,19.6,HPL both faces; band exposed top edge; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Drawer_Assembly_Side_Box_2R,Drawer_Back,1,375.3,183.4,19.6,HPL both faces; band exposed top edge; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Drawer_Assembly_Side_Box_2R,Drawer_Bottom,1,430.4,375.3,19.6,HPL both faces; floor-running drawer base; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Side_Box_2R,Guide_Side_Box_2R_A,1,200.0,30,19.6,Plywood lateral guide; 3 mm clearance to drawer; do not fasten to moving drawer
+Side_Box_2R,Guide_Side_Box_2R_B,1,200.0,30,19.6,Plywood lateral guide; 3 mm clearance to drawer; do not fasten to moving drawer
+Foot_Box_R,Side_L,1,500,277.4,19.6,HPL both faces
+Foot_Box_R,Side_R,1,500,277.4,19.6,HPL both faces
+Foot_Box_R,Head,1,752.4,277.4,19.6,HPL both faces
+Foot_Box_R,Rear_Base_Brace,1,752.4,50,19.6,HPL both faces; rear brace clear of closed-position rear wheels
+Foot_Box_R,Top,1,791.6,500,19.6,"HPL both faces, edge-band 4 sides"
+Drawer_Assembly_Foot_Box_R,Drawer_Front,1,749.4,214.4,19.6,HPL both faces; square pull edge; edge-band exposed edges; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Drawer_Assembly_Foot_Box_R,Drawer_Side_A,1,450.0,183.4,19.6,HPL both faces; band exposed top edge; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Drawer_Assembly_Foot_Box_R,Drawer_Side_B,1,450.0,183.4,19.6,HPL both faces; band exposed top edge; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Drawer_Assembly_Foot_Box_R,Drawer_Back,1,668.0,183.4,19.6,HPL both faces; band exposed top edge; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Drawer_Assembly_Foot_Box_R,Drawer_Bottom,1,668.0,430.4,19.6,HPL both faces; floor-running drawer base; direct wheel mounts beneath 19.6 mm bottom; verify installed caster height and fixings
+Foot_Box_R,Guide_Foot_Box_R_A,1,200.0,30,19.6,Plywood lateral guide; 3 mm clearance to drawer; do not fasten to moving drawer
+Foot_Box_R,Guide_Foot_Box_R_B,1,200.0,30,19.6,Plywood lateral guide; 3 mm clearance to drawer; do not fasten to moving drawer
+Scribe_Strips,Scribe_Ceiling,1,2276,10,19.6,cut to fit on site
+Pull_Nightstand_Left_L,Pull_Nightstand_Left_L_Back,1,302.2,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Nightstand_Left_L,Pull_Nightstand_Left_L_Lower,1,302.2,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Nightstand_Left_C,Pull_Nightstand_Left_C_Back,1,302.2,80.0,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Nightstand_Left_C,Pull_Nightstand_Left_C_Lower,1,302.2,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Nightstand_Left_C,Pull_Nightstand_Left_C_Upper,1,302.2,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Nightstand_Right_L,Pull_Nightstand_Right_L_Back,1,302.2,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Nightstand_Right_L,Pull_Nightstand_Right_L_Lower,1,302.2,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Nightstand_Right_C,Pull_Nightstand_Right_C_Back,1,302.2,80.0,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Nightstand_Right_C,Pull_Nightstand_Right_C_Lower,1,302.2,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Nightstand_Right_C,Pull_Nightstand_Right_C_Upper,1,302.2,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Side_Box_1L_L,Pull_Side_Box_1L_Back,1,459.7,60,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Side_Box_1L_L,Pull_Side_Box_1L_Lower,1,459.7,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Side_Box_2L_L,Pull_Side_Box_2L_Back,1,459.7,60,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Side_Box_2L_L,Pull_Side_Box_2L_Lower,1,459.7,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Foot_Box_L_L,Pull_Foot_Box_L_L_Back,1,752.4,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Foot_Box_L_L,Pull_Foot_Box_L_L_Lower,1,752.4,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Side_Box_1R_L,Pull_Side_Box_1R_Back,1,459.7,60,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Side_Box_1R_L,Pull_Side_Box_1R_Lower,1,459.7,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Side_Box_2R_L,Pull_Side_Box_2R_Back,1,459.7,60,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Side_Box_2R_L,Pull_Side_Box_2R_Lower,1,459.7,22.4,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Foot_Box_R_L,Pull_Foot_Box_R_L_Back,1,752.4,60.0,19.6,HPL both faces; square edges; edge-band exposed edges
+Pull_Foot_Box_R_L,Pull_Foot_Box_R_L_Lower,1,752.4,22.4,19.6,HPL both faces; square edges; edge-band exposed edges

@@ -33,8 +33,8 @@ def _wheel_sets(doc,drawer):
             p=part.Shape.BoundBox.Center
             closest=min(wheels,key=lambda w:(w.Shape.BoundBox.Center.x-p.x)**2+(w.Shape.BoundBox.Center.y-p.y)**2)
             if closest==wheel:nearest.append(part)
-        assert len(nearest)==4,(drawer.Name,wheel.Name,len(nearest))
-        group=_group(doc,drawer,drawer.Name+'_Wheel_'+str(i),f'Wheel set {i} — pad + fixed wheel','Wheel assembly')
+        assert len(nearest) in (3,4),(drawer.Name,wheel.Name,len(nearest))
+        group=_group(doc,drawer,drawer.Name+'_Wheel_'+str(i),f'Wheel set {i} — fixed wheel','Wheel assembly')
         _move(drawer,group,[wheel]+nearest)
 
 

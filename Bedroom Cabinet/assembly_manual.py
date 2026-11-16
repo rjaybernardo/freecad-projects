@@ -169,7 +169,10 @@ def build(doc,project,output):
                 'No extra full-sheet plywood backing, foam, fabric or buttons. Upholstery can be added later.'])
         else:
             plans.pop(7)
-    revision='BED v8' if doc.Name.startswith('Bed_Wall_Unit_v8') else ('BED v7' if project=='bed' else 'TV / MAKEUP CABINET v9')
+    if project=='bed' and doc.Name.startswith('Bed_Wall_Unit_v9'):
+        plans[3][4][2]='Fix four fixed-direction 25.4 mm wheel plates DIRECTLY beneath Bottom; no plywood pads.'
+        plans[3][4][3]='Bottom underside is 35 mm above floor (assumed bracket height). Check fixings for 19.6 mm ply.'
+    revision='BED v9' if doc.Name.startswith('Bed_Wall_Unit_v9') else 'BED v8' if doc.Name.startswith('Bed_Wall_Unit_v8') else ('BED v7' if project=='bed' else 'TV / MAKEUP CABINET v9')
     group=doc.getObject('Assembly_Manual') or doc.addObject('App::DocumentObjectGroup','Assembly_Manual')
     cover=svg_start('BEFORE YOU CUT — workshop assembly pack',f'{project.upper()} | reference modules and matching panel IDs | hardware dimensions still provisional')
     text(cover,12,42,'1. Confirm the physical stock and hardware',5,font_weight='bold')
@@ -215,7 +218,7 @@ def build(doc,project,output):
                 px,py=10+x*264/1800,32+y*205.33/1400
                 svg.append(f'<rect x="{px-5}" y="{py-2.5}" width="12" height="4" rx=".5" fill="white" stroke="#405665" stroke-width=".15"/>')
                 text(svg,px-4.5,py+.5,identifier,2.8)
-        if project=='bed' and no==8 and doc.Name.startswith('Bed_Wall_Unit_v8'):
+        if project=='bed' and no==8 and doc.Name.startswith(('Bed_Wall_Unit_v8','Bed_Wall_Unit_v9')):
             text(svg,282,87,'SIDE VIEW: ONE PLYWOOD LAYER',3.2,font_weight='bold')
             svg.append('<path d="M288 103 V188" stroke="#85918c" stroke-width="2"/>')
             svg.append('<rect x="288" y="132" width="35" height="20" fill="#ccb99a" stroke="#746a58" stroke-width=".5"/>')

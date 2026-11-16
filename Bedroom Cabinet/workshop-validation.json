@@ -1,7 +1,7 @@
 {
   "bed": {
-    "valid_solids": 327,
-    "plywood_panels": 204,
+    "valid_solids": 303,
+    "plywood_panels": 180,
     "square_fronts": 16,
     "sheets": 11,
     "manual_pages": 12,
@@ -22,53 +22,5 @@
     "led_wood_collisions": 0,
     "panel_layout_bounds_and_kerf": "passed",
     "embedded_svg_pages": "valid"
-  },
-  "revision_checks": {
-    "previous_v7_and_cabinet_v9_files": "unchanged SHA-256",
-    "other_furniture_and_part_labels": "unchanged",
-    "backboard": "one 1587.2 x 1200 x 19.6 mm plywood face; 3 solid timber battens",
-    "saw_cut_sequence": "reconstructed all panels and offcuts",
-    "pdf_pages": {
-      "bed_cutting": 11,
-      "bed_manual": 12
-    }
-  },
-  "module_grouping": {
-    "Bed_Wall_Unit_v8": {
-      "modules": 14,
-      "drawers": 10,
-      "drawer_isolation_parts": 5,
-      "isolate_module_and_restore": "passed",
-      "wheel_drawer_isolation_parts": 25
-    },
-    "Bedroom_Cabinet_Modern_v9": {
-      "modules": 7,
-      "drawers": 6,
-      "drawer_isolation_parts": 5,
-      "isolate_module_and_restore": "passed"
-    },
-    "installed_macro": "/home/rjaybernardo/.local/share/FreeCAD/v1-1/Macro/Bedroom_Isolate_Module.FCMacro"
-  },
-  "module_geometry_comparison": {
-    "Bed_Wall_Unit_v8.FCStd": {
-      "part_count": 334,
-      "geometry_placement_part_ids": "identical to archived pre-grouping model"
-    },
-    "Bedroom_Cabinet_Modern_v9.FCStd": {
-      "part_count": 128,
-      "geometry_placement_part_ids": "identical to archived pre-grouping model"
-    }
-  },
-  "hardware_fit_status": {
-    "purchase_source": "Shopee Philippines",
-    "wardrobe_hinges_on_hold": 4,
-    "wardrobe_slide_pairs_on_hold": 2,
-    "wardrobe_runner_space_mm": 381.2,
-    "cad_runner_side_gap_mm": 12.5,
-    "profile_envelope_mm": [
-      16,
-      10
-    ],
-    "supplier_hardware_geometry_included_in_collision_audit": false
   }
 }

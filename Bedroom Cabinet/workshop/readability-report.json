@@ -1,0 +1,20 @@
+{
+  "bed": {
+    "pages": 60,
+    "sheets": 11,
+    "panels": 180,
+    "minimum_font_mm": 4.3,
+    "source": "layout.json (unchanged)",
+    "native_document": "Readable_Cutting.FCStd",
+    "wheel_pad_status": "removed; wheels mount directly under drawer bottoms"
+  },
+  "cabinet": {
+    "pages": 38,
+    "sheets": 9,
+    "panels": 97,
+    "minimum_font_mm": 4.3,
+    "source": "layout.json (unchanged)",
+    "native_document": "Readable_Cutting.FCStd",
+    "wheel_pad_status": "not applicable"
+  }
+}

@@ -1,3 +1,29 @@
+# Current screenshots — bed v9 and cabinet v9
+
+**Updated 2026-11-17 — bed v9: wheels mount directly under the drawer bottoms.** All 24 plywood wheel pads are removed. The six drawer bottoms are 19.6 mm lower, with taller sides/backs; fronts and travel stay in place. Wheel diameter is 25.4 mm; the assumed 35 mm overall mounting height and actual fixings still need checking.
+
+| Current bed v9 — full design | TV / makeup / wardrobe v9 — current design |
+| --- | --- |
+| ![Bed v9 full design](bedframe_v9_perspective.png) | ![Cabinet v9 full design](cabinet_v9_perspective.png) |
+
+| Direct wheel plate mounting — cropped underside detail | Bed v9 drawers open — interior and travel |
+| --- | --- |
+| ![Wheel plate directly beneath drawer bottom](bedframe_v9_wheel_mount_detail.png) | ![Bed v9 drawers open](bedframe_v9_drawers_open.png) |
+
+**Readable cut lists:** A4 landscape, 12-point tables, separate numbered maps, complete parts tables and saw steps. Print at **100% / actual size**. The layout includes **4 mm kerf** and **5 mm trim per sheet edge**.
+
+[Bed cutting PDF](../workshop/bed/Cutting_Layouts.pdf) · [Cabinet cutting PDF](../workshop/cabinet/Cutting_Layouts.pdf) · [Bed v9 model](../Bed_Wall_Unit_v9.FCStd) · [Bed v9 drawings](../Bed_Wall_Unit_v9_Drawing.FCStd)
+
+| Bed — larger parts table | Cabinet — larger parts table |
+| --- | --- |
+| [![Bed readable parts table](../workshop/bed/Sheet_01_Parts_01.png)](../workshop/bed/Cutting_Layouts.pdf) | [![Cabinet readable parts table](../workshop/cabinet/Sheet_01_Parts_01.png)](../workshop/cabinet/Cutting_Layouts.pdf) |
+
+For the same readable pages inside FreeCAD, open [bed cutting pages](../workshop/bed/Readable_Cutting.FCStd) or [cabinet cutting pages](../workshop/cabinet/Readable_Cutting.FCStd). The bed v9 main model also contains the new cutting pages. [Earlier bed v8 pack — history](../workshop/history/bed_v8_before_direct_mount/README.md).
+
+
+<details>
+<summary>History — bed v8 and earlier screenshot set (wheel pads superseded)</summary>
+
 # Current screenshots — bed v8 and cabinet v9
 
 **Bed v8: ONE plywood backboard panel; foam and extra substrate removed.**
@@ -77,3 +103,5 @@ Native cutting page in FreeCAD:
 ![Native cutting page in FreeCAD](freecad_native_cut_layout.png)
 
 Run `../capture_workshop.FCMacro` in FreeCAD to refresh the 14 model views. Older screenshot versions are historical.
+
+</details>

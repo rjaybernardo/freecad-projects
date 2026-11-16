@@ -1,0 +1,59 @@
+"""Render the v9 manual, export PDFs, then capture disposable saved-model copies."""
+from pathlib import Path
+import runpy
+import shutil
+import sys
+import tempfile
+import traceback
+import struct
+import zipfile
+import xml.etree.ElementTree as ET
+import FreeCAD as App
+import FreeCADGui as Gui
+from PySide import QtCore
+
+PROJECT = Path('/home/rjaybernardo/Documents/FreeCAD/Bedroom Cabinet')
+sys.path.insert(0,str(PROJECT))
+LOG = PROJECT/'workshop/bed/v9-finish.log'
+
+
+def restore_colours(doc):
+    # A headless save cannot retain the GUI material providers. Read the saved v8
+    # per-object material colours without opening or changing that model.
+    with zipfile.ZipFile(PROJECT/'Bed_Wall_Unit_v8.FCStd') as archive:
+        gui = ET.fromstring(archive.read('GuiDocument.xml'))
+        for provider in gui.findall('./ViewProviderData/ViewProvider'):
+            obj = doc.getObject(provider.get('name'))
+            material = provider.find('./Properties/Property[@name="ShapeAppearance"]/MaterialList')
+            if obj is None or not obj.isDerivedFrom('Part::Feature') or material is None:
+                continue
+            data = archive.read(material.get('file'))
+            rgba = struct.unpack('<I',data[8:12])[0]
+            obj.ViewObject.ShapeColor = tuple(((rgba>>shift)&255)/255 for shift in (24,16,8))
+
+
+def run():
+    try:
+        LOG.write_text('Updating bed v9 illustrated manual and PDFs.\n')
+        Gui.getMainWindow().resize(1500,1100)
+        from assembly_manual import build
+        with tempfile.TemporaryDirectory(prefix='bed-v9-manual-') as temp:
+            copy = Path(temp)/'Bed_Wall_Unit_v9.FCStd'
+            shutil.copy2(PROJECT/copy.name,copy)
+            doc = App.openDocument(str(copy))
+            restore_colours(doc)
+            build(doc,'bed',str(PROJECT))
+            doc.saveAs(str(PROJECT/copy.name))
+            App.closeDocument(doc.Name)
+        import readable_cutlists
+        readable_cutlists.main()
+        runpy.run_path(str(PROJECT/'export_workshop.FCMacro'))
+        LOG.write_text(LOG.read_text()+'MANUAL AND PDFS DONE\n')
+        runpy.run_path(str(PROJECT/'capture_bed_v9.FCMacro'))
+    except Exception:
+        LOG.write_text(LOG.read_text()+traceback.format_exc())
+        for name in list(App.listDocuments()):App.closeDocument(name)
+        Gui.getMainWindow().close()
+
+
+QtCore.QTimer.singleShot(1200,run)

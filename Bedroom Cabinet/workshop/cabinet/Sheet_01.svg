@@ -1,39 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420mm" height="297mm" viewBox="0 0 420 297">
-<rect width="420" height="297" fill="white"/>
-<style>text {font-family:DejaVu Sans,sans-serif;fill:#203446} .small{font-size:2.5px} .body{font-size:3.1px}</style>
-<text x="12" y="15" font-size="6" font-weight="bold">CUTTING LAYOUT 01 / 9</text>
-<text x="12" y="23" font-size="3.2">2440 x 1220 | 19.6 finished plywood, HPL both faces | kerf 4 | trim 5 each edge</text>
-<text x="12" y="290" class="small">BEDROOM WORKSHOP | mm | verify stock and purchased hardware before cutting | revision 2026-11-15</text>
-<rect x="12" y="39" width="307.44" height="153.72" fill="#eeeeee" stroke="#203446" stroke-width=".4"/>
-<rect x="12.63" y="39.63" width="260.82" height="81.9" fill="#dce9ef" stroke="#465667" stroke-width=".18"/>
-<text x="13.63" y="44.63" font-size="3.5" >C036</text>
-<text x="13.63" y="48.63" font-size="2.5" >2070 x 650</text>
-<rect x="12.63" y="122.034" width="246.96" height="63.63" fill="#e6dfed" stroke="#465667" stroke-width=".18"/>
-<text x="13.63" y="127.034" font-size="3.5" >C021</text>
-<text x="13.63" y="131.034" font-size="2.5" >1960 x 505</text>
-<path d="M12.63 122.034 L259.59000000000003 122.034" stroke="#cf6a21" stroke-width=".65"/>
-<path d="M12.63 185.66400000000002 L259.59000000000003 185.66400000000002" stroke="#cf6a21" stroke-width=".65"/>
-<path d="M12.63 122.034 L12.63 185.66400000000002" stroke="#cf6a21" stroke-width=".65"/>
-<path d="M259.59000000000003 122.034 L259.59000000000003 185.66400000000002" stroke="#cf6a21" stroke-width=".65"/>
-<rect x="260.094" y="122.034" width="51.6348" height="60.5808" fill="#e5edd9" stroke="#465667" stroke-width=".18"/>
-<text x="261.094" y="127.034" font-size="3.5" >C020</text>
-<text x="261.094" y="131.034" font-size="2.5" >409.8 x 480.8</text>
-<path d="M260.094 122.034 L260.094 182.6148" stroke="#cf6a21" stroke-width=".65"/>
-<rect x="273.954" y="39.63" width="37.8" height="54.1548" fill="#f3e4cb" stroke="#465667" stroke-width=".18"/>
-<text x="274.954" y="44.63" font-size="3.5" >C069</text>
-<text x="274.954" y="48.63" font-size="2.5" >300 x 429.8</text>
-<path d="M273.954 39.63 L311.754 39.63" stroke="#cf6a21" stroke-width=".65"/>
-<text x="12" y="205" font-size="3.5" >4 panels | blank area 2.661 m2 | sheet use 89.4% | 8 guillotine cuts</text>
-<text x="12" y="213" font-size="3" >Orange = banded edge. Dimensions = laminated blank BEFORE edge band. Grey = kerf, trim or offcut.</text>
-<text x="12" y="220" font-size="2.8" >L1/L2 are the two edges parallel to finished Length; W1/W2 parallel to Width. Orange thickness is symbolic.</text>
-<text x="12" y="227" font-size="2.8" >Grain: rotation allowed by default for plain laminate. Set AllowRotation = 0 for directional laminate and regenerate.</text>
-<text x="12" y="234" font-size="2.8" >Follow SawCuts.csv / native SawCuts sheet for the cutting sequence; label each piece immediately.</text>
-<text x="12" y="241" font-size="2.8" >Trim all four edges first. Origin is the stock lower-left corner; X along 2440, Y along 1220.</text>
-<text x="12" y="248" font-size="2.8" >Drill cable passages, rout internal grip recesses, and cut scribe strips to fit AFTER the rectangular blanks are cut.</text>
-<text x="12" y="255" font-size="2.8" >Heuristic nesting of each project separately; sheet count is the achieved layout, not a guaranteed minimum.</text>
-<text x="330" y="36" font-size="3.5" font-weight="bold">PART / BLANK L x W</text>
-<text x="330" y="43.0" font-size="2.6" >C036  2070 x 650</text>
-<text x="330" y="47.9" font-size="2.6" >C021  1960 x 505</text>
-<text x="330" y="52.8" font-size="2.6" >C020  480.8 x 409.8</text>
-<text x="330" y="57.7" font-size="2.6" >C069  429.8 x 300</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="297mm" height="210mm" viewBox="0 0 297 210">
+<rect width="297" height="210" fill="white"/>
+<style>text {font-family:DejaVu Sans,sans-serif;fill:#172a38}</style>
+<text x="10" y="16" font-size="6.2" font-weight="bold">CABINET | SHEET 01 / 09 | CUTTING MAP</text>
+<text x="10" y="25" font-size="4.3" >Stock 2440 x 1220 mm | kerf 4 mm | trim 5 mm each edge</text>
+<text x="10" y="201" font-size="4.3" >A4 landscape | Print at 100% / actual size | Revision 2026-11-17</text>
+<text x="10" y="34" font-size="4.3" >Numbers match the following parts table. Orange = edge band. Use table dimensions.</text>
+<rect x="10" y="44" width="276.0" height="138.0" fill="#e7e7e7" stroke="#172a38" stroke-width=".4"/>
+<rect x="10.565573770491802" y="44.5655737704918" width="234.14754098360655" height="73.52459016393442" fill="#e4eff5" stroke="#52606b" stroke-width=".16"/>
+<text x="127.639" y="82.8279" font-size="4.3" text-anchor="middle" font-weight="bold">1</text>
+<rect x="10.565573770491802" y="118.54262295081966" width="221.70491803278688" height="57.12295081967213" fill="#eee6f5" stroke="#52606b" stroke-width=".16"/>
+<path d="M10.565573770491802 118.54262295081966 L232.27049180327867 118.54262295081966" stroke="#b8590e" stroke-width=".55"/>
+<path d="M10.565573770491802 175.6655737704918 L232.27049180327867 175.6655737704918" stroke="#b8590e" stroke-width=".55"/>
+<path d="M10.565573770491802 118.54262295081966 L10.565573770491802 175.6655737704918" stroke="#b8590e" stroke-width=".55"/>
+<path d="M232.27049180327867 118.54262295081966 L232.27049180327867 175.6655737704918" stroke="#b8590e" stroke-width=".55"/>
+<text x="121.418" y="148.604" font-size="4.3" text-anchor="middle" font-weight="bold">2</text>
+<rect x="232.72295081967212" y="118.54262295081966" width="46.3544262295082" height="54.3855737704918" fill="#e8f0dd" stroke="#52606b" stroke-width=".16"/>
+<path d="M232.72295081967212 118.54262295081966 L232.72295081967212 172.92819672131145" stroke="#b8590e" stroke-width=".55"/>
+<text x="255.9" y="147.235" font-size="4.3" text-anchor="middle" font-weight="bold">3</text>
+<rect x="245.1655737704918" y="44.5655737704918" width="33.9344262295082" height="48.61672131147541" fill="#f7ead4" stroke="#52606b" stroke-width=".16"/>
+<path d="M245.1655737704918 44.5655737704918 L279.09999999999997 44.5655737704918" stroke="#b8590e" stroke-width=".55"/>
+<text x="262.133" y="70.3739" font-size="4.3" text-anchor="middle" font-weight="bold">4</text>
 </svg>

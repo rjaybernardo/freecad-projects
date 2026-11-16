@@ -1,6 +1,6 @@
 # Cutting layouts and module assembly pack
 
-Current models: **Bed_Wall_Unit_v8.FCStd** and **Bedroom_Cabinet_Modern_v9.FCStd**. Their native FreeCAD pages contain the cutting layouts, illustrated module build order and LED wiring diagram. PDFs and CSVs are in `workshop/bed/` and `workshop/cabinet/`.
+Current models: **Bed_Wall_Unit_v9.FCStd** and **Bedroom_Cabinet_Modern_v9.FCStd**. Their native FreeCAD pages contain the cutting layouts, illustrated module build order and LED wiring diagram. PDFs and CSVs are in `workshop/bed/` and `workshop/cabinet/`.
 
 ## Work on one module or drawer
 
@@ -21,8 +21,13 @@ These are organizational groups; they do not impose assembly constraints or cert
 
 ## Open the cut layouts inside FreeCAD
 
+**Readable A4 edition (2026-11-17):** Open `workshop/bed/Readable_Cutting.FCStd` or `workshop/cabinet/Readable_Cutting.FCStd`. Each sheet has a numbered cutting map, parts pages (11 rows per page) and saw-step pages (16 steps per page). All body text is at least 12.2 pt at actual-size A4 landscape. Part numbers on each map match the following table; IDs remain Bxxx/Cxxx. Every part is listed, including crowded sheets. Both `Cutting_Layouts.pdf` files use these readable pages. Original A3 exports are retained in `workshop/history/before_readability_2026-11-17/`.
+
+**Bed v9 direct wheel mounting:** Four wheel plates attach directly under each 19.6 mm drawer bottom. There are no plywood wheel pads. Bottom undersides move from 54.6 mm to 35 mm above the floor; the 18 sides/backs grow 19.6 mm taller, and the short fixed guides move down 19.6 mm. Drawer fronts, rolling direction and travel remain as before. The 35 mm bracket height is provisional. Check the actual plate and fixings before cutting drawer parts or drilling. v8 and its pack remain available as history.
+
+
 1. Open the relevant model.
-2. Expand **Workshop Documents**, then double-click **Sheet 01** (internal object `Cutting_01`). Continue through the numbered stock sheets.
+2. In the readable companion, expand **Workshop Documents** and open the numbered map, parts and saw pages for each sheet. The bed v9 main model also contains these pages.
 3. Open **CutSchedule** for every panel's ID, module, quantity, finished dimensions, band flags, blank dimensions and assigned sheet. Each row is one physical panel.
 4. **SawCuts** gives the guillotine cutting sequence, stock coordinates, cut span and parent rectangle bounds. Trim the stock first, keep the X/Y origin marked and follow each sheet's steps in order. Dimensions are not inferred from the screen scale.
 5. **SheetSummary** shows actual achieved sheet count/use, offcut area, trim and kerf/sliver area; **Offcuts** records rectangular remainders. **Materials** shows the corresponding sheet and edge-band quantities; **Hardware** retains the hardware schedule.
@@ -31,7 +36,7 @@ The layouts provide the requested CutList Optimizer-style stock diagrams, labels
 
 | Project | Individual plywood panels | Stock sheets in this layout | Net edge band | Band with 10% trim allowance |
 | --- | ---: | ---: | ---: | ---: |
-| Bed and surrounding cabinets | 204 | 11 | 92.727 m | 101.999 m |
+| Bed and surrounding cabinets | 180 | 11 | 92.727 m | 101.999 m |
 | TV / makeup / wardrobe cabinet | 97 | 9 | 52.414 m | 57.656 m |
 
 The backboard is one 1587.2 x 1200 x 19.6 mm plywood panel on three narrow 1507.2 x 50 x 40 mm solid-timber battens. Extra plywood, foam and fabric are removed; upholstery is deferred. The nightstand plinths are four-strip rings, not solid blocks. All recorded furniture plywood now uses the same two-face-laminated stock assumption.
@@ -63,4 +68,4 @@ This is a dimensioned planning and assembly pack. Supplier-specific hinge cups, 
 
 [Bed assembly PDF](workshop/bed/Assembly_Manual.pdf) · [Cabinet assembly PDF](workshop/cabinet/Assembly_Manual.pdf) · [Bed cutting PDF](workshop/bed/Cutting_Layouts.pdf) · [Cabinet cutting PDF](workshop/cabinet/Cutting_Layouts.pdf) · [LED locations and wiring](LIGHTING_AND_WIRING.md).
 
-Build both complete packs with `build_workshop.FCMacro` in FreeCAD. The source builders preserve earlier revision files. The separate three-sheet `Bed_Wall_Unit_v8_Drawing.FCStd` is a general arrangement companion; the stock-sheet cutting pages and illustrated manuals are inside each main model.
+Create bed v9 from the saved v8 with `build_bed_v9.py` in `freecadcmd`, then run `finish_bed_v9.FCMacro` in an isolated FreeCAD GUI to retain colours, rebuild the bed manual and export/capture the revision. `build_bed_drawing_v9.py` creates the companion shop drawings in `freecadcmd`. `readable_cutlists.main()` can reformat saved nesting data without rebuilding furniture. The previous full-build macros remain available for earlier revisions. The source builders preserve earlier revision files. The separate three-sheet `Bed_Wall_Unit_v9_Drawing.FCStd` is a general arrangement companion; the stock-sheet cutting pages and illustrated manuals are inside each main model.

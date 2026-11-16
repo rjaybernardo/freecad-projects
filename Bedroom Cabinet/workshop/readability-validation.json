@@ -1,0 +1,16 @@
+{
+  "bed": {
+    "pages": 60,
+    "parts_listed_once": 180,
+    "minimum_body_pt": 12.2,
+    "page_and_cell_text_bounds": "passed",
+    "paper": "A4 landscape"
+  },
+  "cabinet": {
+    "pages": 38,
+    "parts_listed_once": 97,
+    "minimum_body_pt": 12.2,
+    "page_and_cell_text_bounds": "passed",
+    "paper": "A4 landscape"
+  }
+}

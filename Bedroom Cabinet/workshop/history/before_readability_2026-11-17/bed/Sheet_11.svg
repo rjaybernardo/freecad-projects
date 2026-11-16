@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420mm" height="297mm" viewBox="0 0 420 297">
+<rect width="420" height="297" fill="white"/>
+<style>text {font-family:DejaVu Sans,sans-serif;fill:#203446} .small{font-size:2.5px} .body{font-size:3.1px}</style>
+<text x="12" y="15" font-size="6" font-weight="bold">CUTTING LAYOUT 11 / 11</text>
+<text x="12" y="23" font-size="3.2">2440 x 1220 | 19.6 finished plywood, HPL both faces | kerf 4 | trim 5 each edge</text>
+<text x="12" y="290" class="small">BEDROOM WORKSHOP | mm | verify stock and purchased hardware before cutting | revision 2026-11-15</text>
+<rect x="12" y="39" width="307.44" height="153.72" fill="#eeeeee" stroke="#203446" stroke-width=".4"/>
+<rect x="12.63" y="39.63" width="286.776" height="1.26" fill="#dce9ef" stroke="#465667" stroke-width=".18"/>
+<text x="13.63" y="41.230000000000004" font-size="1.8" >B185</text>
+<rect x="12.63" y="41.394" width="2.6963999999999997" height="94.80239999999999" fill="#e6dfed" stroke="#465667" stroke-width=".18"/>
+<text transform="translate(13.978200000000001,42.394) rotate(90)" font-size="1.9">B207</text>
+<path d="M12.63 41.394 L12.63 136.19639999999998" stroke="#cf6a21" stroke-width=".65"/>
+<rect x="12.63" y="136.7004" width="2.6963999999999997" height="38.0772" fill="#e5edd9" stroke="#465667" stroke-width=".18"/>
+<text transform="translate(13.978200000000001,137.7004) rotate(90)" font-size="1.9">B187</text>
+<path d="M12.63 136.7004 L12.63 174.7776" stroke="#cf6a21" stroke-width=".65"/>
+<text x="12" y="205" font-size="3.5" >3 panels | blank area 0.045 m2 | sheet use 1.5% | 5 guillotine cuts</text>
+<text x="12" y="213" font-size="3" >Orange = banded edge. Dimensions = laminated blank BEFORE edge band. Grey = kerf, trim or offcut.</text>
+<text x="12" y="220" font-size="2.8" >L1/L2 are the two edges parallel to finished Length; W1/W2 parallel to Width. Orange thickness is symbolic.</text>
+<text x="12" y="227" font-size="2.8" >Grain: rotation allowed by default for plain laminate. Set AllowRotation = 0 for directional laminate and regenerate.</text>
+<text x="12" y="234" font-size="2.8" >Follow SawCuts.csv / native SawCuts sheet for the cutting sequence; label each piece immediately.</text>
+<text x="12" y="241" font-size="2.8" >Trim all four edges first. Origin is the stock lower-left corner; X along 2440, Y along 1220.</text>
+<text x="12" y="248" font-size="2.8" >Drill cable passages, rout internal grip recesses, and cut scribe strips to fit AFTER the rectangular blanks are cut.</text>
+<text x="12" y="255" font-size="2.8" >Heuristic nesting of each project separately; sheet count is the achieved layout, not a guaranteed minimum.</text>
+<text x="330" y="36" font-size="3.5" font-weight="bold">PART / BLANK L x W</text>
+<text x="330" y="43.0" font-size="2.6" >B185  2276 x 10</text>
+<text x="330" y="47.9" font-size="2.6" >B207  752.4 x 21.4</text>
+<text x="330" y="52.8" font-size="2.6" >B187  302.2 x 21.4</text>
+</svg>

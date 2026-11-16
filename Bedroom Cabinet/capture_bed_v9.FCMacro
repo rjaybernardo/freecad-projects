@@ -1,0 +1,137 @@
+"""Export views of the saved cabinet and bed, without saving model changes.
+
+Run with FreeCAD's Macro menu. Images go in screenshots/ beside this macro.
+Each project is captured separately.
+"""
+from pathlib import Path
+import traceback
+import shutil
+import tempfile
+import FreeCAD as App
+import FreeCADGui as Gui
+from PySide import QtCore
+from pivy import coin
+
+PROJECT = Path('/home/rjaybernardo/Documents/FreeCAD/Bedroom Cabinet')
+OUTPUT = PROJECT / 'screenshots'
+LOG = OUTPUT / 'bed-v9-capture.log'
+opened = []
+temporary = tempfile.TemporaryDirectory(prefix='freecad-screenshot-')
+
+
+def camera(view, doc, eye):
+    z = App.Vector(*eye)
+    z.normalize()
+    x = App.Vector(0, 0, 1).cross(z)
+    x.normalize()
+    y = z.cross(x)
+    y.normalize()
+    bounds = App.BoundBox()
+    for o in doc.Objects:
+        if o.isDerivedFrom('Part::Feature') and o.ViewObject.Visibility:
+            bounds.add(o.Shape.BoundBox)
+    corners = [App.Vector(a, b, c) for a in (bounds.XMin, bounds.XMax)
+               for b in (bounds.YMin, bounds.YMax) for c in (bounds.ZMin, bounds.ZMax)]
+    width = max(v.dot(x) for v in corners) - min(v.dot(x) for v in corners)
+    height = max(v.dot(y) for v in corners) - min(v.dot(y) for v in corners)
+    distance = bounds.DiagonalLength * 3
+    position = bounds.Center + z * distance
+    node = view.getCameraNode()
+    node.orientation.setValue(coin.SbRotation(*App.Rotation(x, y, z, 'ZXY').Q))
+    node.position.setValue(position.x, position.y, position.z)
+    node.focalDistance.setValue(distance)
+    node.nearDistance.setValue(1)
+    node.farDistance.setValue(distance * 3)
+    node.height.setValue(max(height, width / (1800 / 1400)) * 1.15)
+
+
+def capture(doc, filename, eye):
+    App.setActiveDocument(doc.Name)
+    view = Gui.activeDocument().activeView()
+    view.setCameraType('Orthographic')
+    camera(view, doc, eye)
+    Gui.updateGui()
+    with LOG.open('a') as f:
+        f.write(view.getCamera() + '\n')
+    view.saveImage(str(OUTPUT / filename), 1800, 1400, 'White')
+    with LOG.open('a') as f:
+        f.write(filename + '\n')
+
+
+def scene(filename, name):
+    # Open disposable copies so GUI recovery or Save All cannot alter originals.
+    copy = Path(temporary.name) / filename
+    shutil.copyfile(PROJECT / filename, copy)
+    source = App.openDocument(str(copy))
+    opened.append(source.Name)
+    target = App.newDocument(name)
+    opened.append(target.Name)
+    excluded = {o.Name for o in source.getObject('Reference_Room').OutListRecursive}
+    excluded.discard('Mattress_5x6')
+    for src in source.Objects:
+        if not src.isDerivedFrom('Part::Feature') or src.Name in excluded:
+            continue
+        dst = target.addObject('Part::Feature', src.Name)
+        dst.Shape = src.Shape.copy()
+        for prop in ['PartID','MovingDrawer']:
+            if prop in src.PropertiesList:
+                dst.addProperty('App::PropertyBool' if prop=='MovingDrawer' else 'App::PropertyString',prop,'Screenshot')
+                setattr(dst,prop,getattr(src,prop))
+        dst.addProperty('App::PropertyPlacement','CapturedPlacement','Screenshot');dst.CapturedPlacement=dst.Placement
+        moving=next((g for g in src.InListRecursive if 'OpenDirection' in g.PropertiesList),None)
+        if moving:
+            dst.addProperty('App::PropertyVector','DrawerDirection','Screenshot');dst.DrawerDirection=moving.OpenDirection
+            dst.addProperty('App::PropertyLength','DrawerTravel','Screenshot');dst.DrawerTravel=moving.OpenTravel
+        dst.addProperty('App::PropertyString', 'SourceGroup', 'Screenshot')
+        dst.SourceGroup = ','.join(o.Name for o in src.InListRecursive
+                                   if o.TypeId == 'App::DocumentObjectGroup')
+        dst.ViewObject.ShapeColor = src.ViewObject.ShapeColor
+        dst.ViewObject.LineColor = (0.25, 0.25, 0.25)
+        dst.ViewObject.DisplayMode = 'Flat Lines'
+    Gui.activeDocument()
+    target.recompute()
+    return target
+
+
+def run():
+    try:
+        OUTPUT.mkdir(exist_ok=True)
+        LOG.write_text('Bed v9 direct-wheel captures from disposable copies.\n')
+        Gui.getMainWindow().resize(1500,1100)
+        App.ParamGet('User parameter:BaseApp/Preferences/View').SetBool('UseVBO',False)
+        bed=scene('Bed_Wall_Unit_v9.FCStd','Bedframe_v9_Screenshots')
+        bed.getObject('Mattress_5x6').ViewObject.Visibility=True
+        capture(bed,'bedframe_v9_perspective.png',(.65,1,.65))
+        capture(bed,'bedframe_v9_front.png',(0,1,0))
+        for o in bed.Objects:
+            if o.Name.startswith('Door') or o.Name=='Mattress_5x6':o.ViewObject.Visibility=False
+        capture(bed,'bedframe_v9_interior.png',(.65,1,.85))
+        for o in bed.Objects:
+            if 'DrawerDirection' in o.PropertiesList:o.Placement.Base+=o.DrawerDirection*o.DrawerTravel.Value
+        capture(bed,'bedframe_v9_drawers_open.png',(.8,1,.9))
+        for o in bed.Objects:
+            o.Placement=o.CapturedPlacement
+            o.ViewObject.Visibility='Drawer_Assembly_Side_Box_1L' in o.SourceGroup.split(',')
+        capture(bed,'bedframe_v9_wheels.png',(.7,1,-.55))
+        import Part
+        detail=App.newDocument('Direct_Wheel_Mount_Detail');opened.append(detail.Name)
+        wheel=bed.getObject('Wheel_Side_Box_1L_1')
+        b=wheel.Shape.BoundBox
+        clip=Part.makeBox(120,120,80,App.Vector(b.Center.x-60,b.Center.y-60,0))
+        for src in bed.Objects:
+            if src.isDerivedFrom('Part::Feature') and src.ViewObject.Visibility:
+                shape=src.Shape.common(clip)
+                if shape.isNull() or shape.Volume<.001:continue
+                dst=detail.addObject('Part::Feature',src.Name);dst.Shape=shape
+                dst.ViewObject.ShapeColor=src.ViewObject.ShapeColor;dst.ViewObject.DisplayMode='Flat Lines'
+        detail.recompute()
+        capture(detail,'bedframe_v9_wheel_mount_detail.png',(.65,1,-.65))
+        LOG.write_text(LOG.read_text()+'DONE\n')
+    except Exception:
+        LOG.write_text(LOG.read_text()+traceback.format_exc())
+    finally:
+        for name in reversed(opened):App.closeDocument(name)
+        temporary.cleanup()
+        if App.ConfigGet('UserParameter').startswith('/tmp/freecad-capture-'):Gui.getMainWindow().close()
+
+QtCore.QTimer.singleShot(1200,run)

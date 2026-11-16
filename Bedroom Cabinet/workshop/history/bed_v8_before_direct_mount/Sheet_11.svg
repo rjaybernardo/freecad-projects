@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="297mm" height="210mm" viewBox="0 0 297 210">
+<rect width="297" height="210" fill="white"/>
+<style>text {font-family:DejaVu Sans,sans-serif;fill:#172a38}</style>
+<text x="10" y="16" font-size="6.2" font-weight="bold">BED | SHEET 11 / 11 | CUTTING MAP</text>
+<text x="10" y="25" font-size="4.3" >Stock 2440 x 1220 mm | kerf 4 mm | trim 5 mm each edge</text>
+<text x="10" y="201" font-size="4.3" >A4 landscape | Print at 100% / actual size | Revision 2026-11-17</text>
+<text x="10" y="34" font-size="4.3" >Numbers match the following parts table. Orange = edge band. Use table dimensions.</text>
+<rect x="10" y="44" width="276.0" height="138.0" fill="#e7e7e7" stroke="#172a38" stroke-width=".4"/>
+<rect x="10.565573770491802" y="44.5655737704918" width="257.4491803278688" height="1.1311475409836065" fill="#e4eff5" stroke="#52606b" stroke-width=".16"/>
+<rect x="10.565573770491802" y="46.149180327868855" width="2.4206557377049176" height="85.10754098360655" fill="#eee6f5" stroke="#52606b" stroke-width=".16"/>
+<path d="M10.565573770491802 46.149180327868855 L10.565573770491802 131.25672131147542" stroke="#b8590e" stroke-width=".55"/>
+<rect x="10.565573770491802" y="131.70918032786886" width="2.4206557377049176" height="34.18327868852459" fill="#e8f0dd" stroke="#52606b" stroke-width=".16"/>
+<path d="M10.565573770491802 131.70918032786886 L10.565573770491802 165.89245901639345" stroke="#b8590e" stroke-width=".55"/>
+<path d="M139.2901639344262 45.131147540983605 L56.0 188" fill="none" stroke="#52606b" stroke-width=".25"/>
+<rect x="52.0" y="184" width="8" height="7" rx="1" fill="white" stroke="#52606b" stroke-width=".25"/>
+<text x="56" y="189.5" font-size="4.3" text-anchor="middle" font-weight="bold">1</text>
+<path d="M11.775901639344262 88.70295081967214 L148.0 188" fill="none" stroke="#52606b" stroke-width=".25"/>
+<rect x="144.0" y="184" width="8" height="7" rx="1" fill="white" stroke="#52606b" stroke-width=".25"/>
+<text x="148" y="189.5" font-size="4.3" text-anchor="middle" font-weight="bold">2</text>
+<path d="M11.775901639344262 148.80081967213115 L240.0 188" fill="none" stroke="#52606b" stroke-width=".25"/>
+<rect x="236.0" y="184" width="8" height="7" rx="1" fill="white" stroke="#52606b" stroke-width=".25"/>
+<text x="240" y="189.5" font-size="4.3" text-anchor="middle" font-weight="bold">3</text>
+</svg>

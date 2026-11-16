@@ -1,14 +1,34 @@
 # START HERE — bedroom project file index
 
+**Updated 2026-11-17 — bed v9: wheels mount directly under the drawer bottoms.** All 24 plywood wheel pads are removed. The six drawer bottoms are 19.6 mm lower, with taller sides/backs; fronts and travel stay in place. Wheel diameter is 25.4 mm; the assumed 35 mm overall mounting height and actual fixings still need checking.
+
+| Current bed v9 — full design | TV / makeup / wardrobe v9 — current design |
+| --- | --- |
+| ![Bed v9 full design](screenshots/bedframe_v9_perspective.png) | ![Cabinet v9 full design](screenshots/cabinet_v9_perspective.png) |
+
+| Direct wheel plate mounting — cropped underside detail | Bed v9 drawers open — interior and travel |
+| --- | --- |
+| ![Wheel plate directly beneath drawer bottom](screenshots/bedframe_v9_wheel_mount_detail.png) | ![Bed v9 drawers open](screenshots/bedframe_v9_drawers_open.png) |
+
+**Readable cut lists:** A4 landscape, 12-point tables, separate numbered maps, complete parts tables and saw steps. Print at **100% / actual size**. The layout includes **4 mm kerf** and **5 mm trim per sheet edge**.
+
+[Bed cutting PDF](workshop/bed/Cutting_Layouts.pdf) · [Cabinet cutting PDF](workshop/cabinet/Cutting_Layouts.pdf) · [Bed v9 model](Bed_Wall_Unit_v9.FCStd) · [Bed v9 drawings](Bed_Wall_Unit_v9_Drawing.FCStd)
+
+| Bed — larger parts table | Cabinet — larger parts table |
+| --- | --- |
+| [![Bed readable parts table](workshop/bed/Sheet_01_Parts_01.png)](workshop/bed/Cutting_Layouts.pdf) | [![Cabinet readable parts table](workshop/cabinet/Sheet_01_Parts_01.png)](workshop/cabinet/Cutting_Layouts.pdf) |
+
+For the same readable pages inside FreeCAD, open [bed cutting pages](workshop/bed/Readable_Cutting.FCStd) or [cabinet cutting pages](workshop/cabinet/Readable_Cutting.FCStd). The bed v9 main model also contains the new cutting pages. [Earlier bed v8 pack — history](workshop/history/bed_v8_before_direct_mount/README.md).
+
 **Choose one project. Click its picture to open the illustrated building manual.**
 
 | Bed frame + surrounding cabinets | TV + makeup + wardrobe cabinet |
 | --- | --- |
-| [![Bed — click to open building manual](screenshots/bedframe_v8_perspective.png)](workshop/bed/Assembly_Manual.pdf) | [![Cabinet — click to open building manual](screenshots/cabinet_v9_perspective.png)](workshop/cabinet/Assembly_Manual.pdf) |
+| [![Bed — click to open building manual](screenshots/bedframe_v9_perspective.png)](workshop/bed/Assembly_Manual.pdf) | [![Cabinet — click to open building manual](screenshots/cabinet_v9_perspective.png)](workshop/cabinet/Assembly_Manual.pdf) |
 | **[1. BUILDING MANUAL — START HERE](workshop/bed/Assembly_Manual.pdf)** | **[1. BUILDING MANUAL — START HERE](workshop/cabinet/Assembly_Manual.pdf)** |
 | [2. CUTTING SHEETS](workshop/bed/Cutting_Layouts.pdf) | [2. CUTTING SHEETS](workshop/cabinet/Cutting_Layouts.pdf) |
 | [3. LED WIRING DIAGRAM](workshop/bed/LED_Wiring.pdf) | [3. LED WIRING DIAGRAM](workshop/cabinet/LED_Wiring.pdf) |
-| [4. OPEN FREECAD MODEL v8](Bed_Wall_Unit_v8.FCStd) | [4. OPEN FREECAD MODEL v9](Bedroom_Cabinet_Modern_v9.FCStd) |
+| [4. OPEN FREECAD MODEL v9](Bed_Wall_Unit_v9.FCStd) | [4. OPEN FREECAD MODEL v9](Bedroom_Cabinet_Modern_v9.FCStd) |
 
 The bed starts with the **two head lift-up boxes**. The TV/makeup cabinet starts with the **wardrobe case**. Both manuals have a preparation page first; the first module is on page 2.
 
@@ -45,8 +65,8 @@ The links above are enough to start. Extra files are grouped below; open a group
 <details>
 <summary>Current models, PDFs and shopping list (12 files)</summary>
 
-- [Bed_Wall_Unit_v8.FCStd](Bed_Wall_Unit_v8.FCStd)
-- [Bed_Wall_Unit_v8_Drawing.FCStd](Bed_Wall_Unit_v8_Drawing.FCStd)
+- [Bed_Wall_Unit_v9.FCStd](Bed_Wall_Unit_v9.FCStd)
+- [Bed_Wall_Unit_v9_Drawing.FCStd](Bed_Wall_Unit_v9_Drawing.FCStd)
 - [Bedroom_Cabinet_Modern_v9.FCStd](Bedroom_Cabinet_Modern_v9.FCStd)
 - [MATERIALS_LIST.md](MATERIALS_LIST.md)
 - [materials_purchase_summary.csv](materials_purchase_summary.csv)
@@ -184,13 +204,21 @@ The links above are enough to start. Extra files are grouped below; open a group
 - [workshop/cabinet/SheetSummary.csv](workshop/cabinet/SheetSummary.csv)
 - [workshop/cabinet/layout.json](workshop/cabinet/layout.json)
 
-- [cut_list_bed_v8.csv](cut_list_bed_v8.csv)
-- [hardware_bed_v8.csv](hardware_bed_v8.csv)
+- [Current cut_list_bed_v9.csv](cut_list_bed_v9.csv)
+- [Current hardware_bed_v9.csv](hardware_bed_v9.csv)
+- [Historical cut_list_bed_v8.csv](cut_list_bed_v8.csv)
+- [Historical hardware_bed_v8.csv](hardware_bed_v8.csv)
 
 </details>
 
 <details>
-<summary>Technical scripts and the module isolation tool (21 files)</summary>
+<summary>Technical scripts and the module isolation tool</summary>
+
+- [Current bed revision builder](build_bed_v9.py)
+- [Current drawing builder](build_bed_drawing_v9.py)
+- [Finish manual and screenshots](finish_bed_v9.FCMacro)
+- [Readable cut-list formatter](readable_cutlists.py)
+- [Current geometry validator](validate_workshop_v9.py)
 
 - [Isolate_Module.FCMacro](Isolate_Module.FCMacro)
 - [cabinet_modules.py](cabinet_modules.py)
@@ -219,7 +247,7 @@ The links above are enough to start. Extra files are grouped below; open a group
 <details>
 <summary>Models and sources before drawer grouping (history)</summary>
 
-- [Bed_Wall_Unit_v8.FCStd](workshop/history/before_module_grouping/Bed_Wall_Unit_v8.FCStd)
+- [Bed_Wall_Unit_v9.FCStd](workshop/history/before_module_grouping/Bed_Wall_Unit_v9.FCStd)
 - [Bedroom_Cabinet_Modern_v9.FCStd](workshop/history/before_module_grouping/Bedroom_Cabinet_Modern_v9.FCStd)
 - [build_bed_v8.py](workshop/history/before_module_grouping/build_bed_v8.py)
 - [build_cabinet_v9.py](workshop/history/before_module_grouping/build_cabinet_v9.py)
@@ -304,7 +332,11 @@ The links above are enough to start. Extra files are grouped below; open a group
 </details>
 
 <details>
-<summary>Screenshot files (53 files)</summary>
+<summary>Screenshot files — v9 current; v8 and earlier are history</summary>
+
+- [Current full bed](screenshots/bedframe_v9_perspective.png)
+- [Current drawer interior](screenshots/bedframe_v9_drawers_open.png)
+- [Current wheel mount detail](screenshots/bedframe_v9_wheel_mount_detail.png)
 
 - [screenshots/README.md](screenshots/README.md)
 - [screenshots/bedframe_v4_front.png](screenshots/bedframe_v4_front.png)
@@ -335,7 +367,7 @@ The links above are enough to start. Extra files are grouped below; open a group
 - [screenshots/bedframe_v8_front.png](screenshots/bedframe_v8_front.png)
 - [screenshots/bedframe_v8_interior.png](screenshots/bedframe_v8_interior.png)
 - [screenshots/bedframe_v8_lighting.png](screenshots/bedframe_v8_lighting.png)
-- [screenshots/bedframe_v8_perspective.png](screenshots/bedframe_v8_perspective.png)
+- [screenshots/bedframe_v9_perspective.png](screenshots/bedframe_v9_perspective.png)
 - [screenshots/bedframe_v8_top_detail.png](screenshots/bedframe_v8_top_detail.png)
 - [screenshots/bedframe_v8_wheels.png](screenshots/bedframe_v8_wheels.png)
 - [screenshots/cabinet_v6_front.png](screenshots/cabinet_v6_front.png)

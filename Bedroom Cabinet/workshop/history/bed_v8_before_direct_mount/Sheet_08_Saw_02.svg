@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="297mm" height="210mm" viewBox="0 0 297 210">
+<rect width="297" height="210" fill="white"/>
+<style>text {font-family:DejaVu Sans,sans-serif;fill:#172a38}</style>
+<text x="10" y="16" font-size="6.2" font-weight="bold">BED | SHEET 08 | SAW STEPS 2 / 3</text>
+<text x="10" y="25" font-size="4.3" >Trim 5 mm each edge first. Kerf = 4 mm; consumes positive X / Y after coordinate.</text>
+<text x="10" y="201" font-size="4.3" >A4 landscape | 12 pt tables | Follow steps in order | 2026-11-17</text>
+<text x="10" y="34" font-size="4.3" >Coordinates from original stock origin. X along stock length; Y along stock width. All in mm.</text>
+<rect x="10" y="39" width="277" height="10" fill="#dce8ef"/>
+<text x="11.5" y="45.7" font-size="4.3" font-weight="bold">Step</text>
+<text x="26.5" y="45.7" font-size="4.3" font-weight="bold">Axis</text>
+<text x="41.5" y="45.7" font-size="4.3" font-weight="bold">Coordinate</text>
+<text x="76.5" y="45.7" font-size="4.3" font-weight="bold">Cut span</text>
+<text x="111.5" y="45.7" font-size="4.3" font-weight="bold">Target</text>
+<text x="136.5" y="45.7" font-size="4.3" font-weight="bold">Parent region: X / Y / length / width</text>
+<rect x="10" y="49.0" width="277" height="8.5" fill="#f1f5f7"/>
+<text x="11.5" y="54.7" font-size="4.3" >17</text>
+<text x="26.5" y="54.7" font-size="4.3" >Y</text>
+<text x="41.5" y="54.7" font-size="4.3" >1211.8</text>
+<text x="76.5" y="54.7" font-size="4.3" >429.4</text>
+<text x="111.5" y="54.7" font-size="4.3" >B034</text>
+<text x="136.5" y="54.7" font-size="4.3" >1861.6 / 771.8 / 429.4 / 443.2</text>
+<rect x="10" y="57.5" width="277" height="8.5" fill="white"/>
+<text x="11.5" y="63.2" font-size="4.3" >18</text>
+<text x="26.5" y="63.2" font-size="4.3" >X</text>
+<text x="41.5" y="63.2" font-size="4.3" >1803.5</text>
+<text x="76.5" y="63.2" font-size="4.3" >432.6</text>
+<text x="111.5" y="63.2" font-size="4.3" >B092</text>
+<text x="136.5" y="63.2" font-size="4.3" >1428.2 / 782.4 / 429.4 / 432.6</text>
+<rect x="10" y="66.0" width="277" height="8.5" fill="#f1f5f7"/>
+<text x="11.5" y="71.7" font-size="4.3" >19</text>
+<text x="26.5" y="71.7" font-size="4.3" >Y</text>
+<text x="41.5" y="71.7" font-size="4.3" >1212.8</text>
+<text x="76.5" y="71.7" font-size="4.3" >375.3</text>
+<text x="111.5" y="71.7" font-size="4.3" >B092</text>
+<text x="136.5" y="71.7" font-size="4.3" >1428.2 / 782.4 / 375.3 / 432.6</text>
+<rect x="10" y="74.5" width="277" height="8.5" fill="white"/>
+<text x="11.5" y="80.2" font-size="4.3" >20</text>
+<text x="26.5" y="80.2" font-size="4.3" >Y</text>
+<text x="41.5" y="80.2" font-size="4.3" >1118.8</text>
+<text x="76.5" y="80.2" font-size="4.3" >329.4</text>
+<text x="111.5" y="80.2" font-size="4.3" >B116</text>
+<text x="136.5" y="80.2" font-size="4.3" >761.4 / 619.8 / 329.4 / 595.2</text>
+<rect x="10" y="83.0" width="277" height="8.5" fill="#f1f5f7"/>
+<text x="11.5" y="88.7" font-size="4.3" >21</text>
+<text x="26.5" y="88.7" font-size="4.3" >X</text>
+<text x="41.5" y="88.7" font-size="4.3" >1038.8</text>
+<text x="76.5" y="88.7" font-size="4.3" >499</text>
+<text x="111.5" y="88.7" font-size="4.3" >B116</text>
+<text x="136.5" y="88.7" font-size="4.3" >761.4 / 619.8 / 329.4 / 499</text>
+<rect x="10" y="91.5" width="277" height="8.5" fill="white"/>
+<text x="11.5" y="97.2" font-size="4.3" >22</text>
+<text x="26.5" y="97.2" font-size="4.3" >Y</text>
+<text x="41.5" y="97.2" font-size="4.3" >1118.8</text>
+<text x="76.5" y="97.2" font-size="4.3" >329.4</text>
+<text x="111.5" y="97.2" font-size="4.3" >B169</text>
+<text x="136.5" y="97.2" font-size="4.3" >1094.8 / 619.8 / 329.4 / 595.2</text>
+<rect x="10" y="100.0" width="277" height="8.5" fill="#f1f5f7"/>
+<text x="11.5" y="105.7" font-size="4.3" >23</text>
+<text x="26.5" y="105.7" font-size="4.3" >X</text>
+<text x="41.5" y="105.7" font-size="4.3" >1372.2</text>
+<text x="76.5" y="105.7" font-size="4.3" >499</text>
+<text x="111.5" y="105.7" font-size="4.3" >B169</text>
+<text x="136.5" y="105.7" font-size="4.3" >1094.8 / 619.8 / 329.4 / 499</text>
+<rect x="10" y="108.5" width="277" height="8.5" fill="white"/>
+<text x="11.5" y="114.2" font-size="4.3" >24</text>
+<text x="26.5" y="114.2" font-size="4.3" >X</text>
+<text x="41.5" y="114.2" font-size="4.3" >2421.7</text>
+<text x="76.5" y="114.2" font-size="4.3" >329.4</text>
+<text x="111.5" y="114.2" font-size="4.3" >B067</text>
+<text x="136.5" y="114.2" font-size="4.3" >2043 / 5 / 392 / 329.4</text>
+<rect x="10" y="117.0" width="277" height="8.5" fill="#f1f5f7"/>
+<text x="11.5" y="122.7" font-size="4.3" >25</text>
+<text x="26.5" y="122.7" font-size="4.3" >Y</text>
+<text x="41.5" y="122.7" font-size="4.3" >324.4</text>
+<text x="76.5" y="122.7" font-size="4.3" >378.7</text>
+<text x="111.5" y="122.7" font-size="4.3" >B067</text>
+<text x="136.5" y="122.7" font-size="4.3" >2043 / 5 / 378.7 / 329.4</text>
+<rect x="10" y="125.5" width="277" height="8.5" fill="white"/>
+<text x="11.5" y="131.2" font-size="4.3" >26</text>
+<text x="26.5" y="131.2" font-size="4.3" >Y</text>
+<text x="41.5" y="131.2" font-size="4.3" >1120.8</text>
+<text x="76.5" y="131.2" font-size="4.3" >140</text>
+<text x="111.5" y="131.2" font-size="4.3" >B012</text>
+<text x="136.5" y="131.2" font-size="4.3" >2295 / 771.8 / 140 / 443.2</text>
+<rect x="10" y="134.0" width="277" height="8.5" fill="#f1f5f7"/>
+<text x="11.5" y="139.7" font-size="4.3" >27</text>
+<text x="26.5" y="139.7" font-size="4.3" >X</text>
+<text x="41.5" y="139.7" font-size="4.3" >2425.9</text>
+<text x="76.5" y="139.7" font-size="4.3" >349</text>
+<text x="111.5" y="139.7" font-size="4.3" >B012</text>
+<text x="136.5" y="139.7" font-size="4.3" >2295 / 771.8 / 140 / 349</text>
+<rect x="10" y="142.5" width="277" height="8.5" fill="white"/>
+<text x="11.5" y="148.2" font-size="4.3" >28</text>
+<text x="26.5" y="148.2" font-size="4.3" >Y</text>
+<text x="41.5" y="148.2" font-size="4.3" >1190.6</text>
+<text x="76.5" y="148.2" font-size="4.3" >752.4</text>
+<text x="111.5" y="148.2" font-size="4.3" >B200</text>
+<text x="136.5" y="148.2" font-size="4.3" >5 / 1130.6 / 752.4 / 84.4</text>
+<rect x="10" y="151.0" width="277" height="8.5" fill="#f1f5f7"/>
+<text x="11.5" y="156.7" font-size="4.3" >29</text>
+<text x="26.5" y="156.7" font-size="4.3" >Y</text>
+<text x="41.5" y="156.7" font-size="4.3" >687.4</text>
+<text x="76.5" y="156.7" font-size="4.3" >129.4</text>
+<text x="111.5" y="156.7" font-size="4.3" >B045</text>
+<text x="136.5" y="156.7" font-size="4.3" >2305.6 / 338.4 / 129.4 / 429.4</text>
+<rect x="10" y="159.5" width="277" height="8.5" fill="white"/>
+<text x="11.5" y="165.2" font-size="4.3" >30</text>
+<text x="26.5" y="165.2" font-size="4.3" >X</text>
+<text x="41.5" y="165.2" font-size="4.3" >2414.5</text>
+<text x="76.5" y="165.2" font-size="4.3" >349</text>
+<text x="111.5" y="165.2" font-size="4.3" >B045</text>
+<text x="136.5" y="165.2" font-size="4.3" >2305.6 / 338.4 / 129.4 / 349</text>
+<rect x="10" y="168.0" width="277" height="8.5" fill="#f1f5f7"/>
+<text x="11.5" y="173.7" font-size="4.3" >31</text>
+<text x="26.5" y="173.7" font-size="4.3" >X</text>
+<text x="41.5" y="173.7" font-size="4.3" >1063.6</text>
+<text x="76.5" y="173.7" font-size="4.3" >92.2</text>
+<text x="111.5" y="173.7" font-size="4.3" >B188</text>
+<text x="136.5" y="173.7" font-size="4.3" >761.4 / 1122.8 / 329.4 / 92.2</text>
+<rect x="10" y="176.5" width="277" height="8.5" fill="white"/>
+<text x="11.5" y="182.2" font-size="4.3" >32</text>
+<text x="26.5" y="182.2" font-size="4.3" >Y</text>
+<text x="41.5" y="182.2" font-size="4.3" >1202.8</text>
+<text x="76.5" y="182.2" font-size="4.3" >302.2</text>
+<text x="111.5" y="182.2" font-size="4.3" >B188</text>
+<text x="136.5" y="182.2" font-size="4.3" >761.4 / 1122.8 / 302.2 / 92.2</text>
+<text x="10" y="193" font-size="4.3" >Label each panel with its target ID immediately. See SawCuts.csv for parent-region names.</text>
+</svg>

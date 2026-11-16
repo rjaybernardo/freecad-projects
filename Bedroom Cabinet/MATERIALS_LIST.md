@@ -1,6 +1,6 @@
 # Materials and hardware — both bedroom projects
 
-Checked against bed v8 / TV-makeup cabinet v9 schedules and saved sheet layouts, 2026-11-15. These are planned quantities, not confirmation of purchased products. Plain-backboard revision: one plywood face, three narrow timber battens; no foam/fabric or extra plywood substrate. **User confirmed all plywood is already laminated on both faces; no face-laminating contact cement or additional face laminate is required.**
+Checked against bed v9 / TV-makeup cabinet v9 schedules and saved sheet layouts, 2026-11-17. These are planned quantities, not confirmation of purchased products. Plain-backboard revision: one plywood face, three narrow timber battens; no foam/fabric or extra plywood substrate. **User confirmed all plywood is already laminated on both faces; no face-laminating contact cement or additional face laminate is required.**
 
 | Item | Bed and cabinets | TV / makeup cabinet | Combined planned quantity |
 | --- | ---: | ---: | ---: |
@@ -19,6 +19,8 @@ Checked against bed v8 / TV-makeup cabinet v9 schedules and saved sheet layouts,
 | DC dimmer/distribution arrangement | 1 | 1 | **2 sets**, with rated connections/protection |
 | Solid-timber backboard battens, 1507.2 x 50 x 40 mm | 3 | 0 | **3 pieces; not plywood** |
 | Contact cement for face lamination | 0 L | 0 L | **0 L — user confirmed all plywood is already laminated** |
+
+**Direct wheel mounting, bed v9:** 24 wheel plates attach directly beneath the six 19.6 mm drawer bottoms. **Zero plywood wheel pads** are required. The assumed floor-to-mounting-surface height remains 35 mm. Select the fixing type and engagement for the actual bracket and drawer-bottom load; check fastener projection before drilling.
 
 Slide quantities are **pairs**: 10 pairs = 20 individual side rails. The six under-bed drawers have wheels and **no metal drawer slides**.
 
@@ -93,7 +95,7 @@ Current separate layouts: **11 bed + 9 cabinet = 20 sheets**, down from 21. The 
 
 Cabinet sheet 9 contains only C088 (2380 x 10 mm) and C089 (2276 x 10 mm). Bed sheet 11 has a checked **2404.6 x 1196.0 mm offcut**; both strips fit with 4 mm kerf. Reuse it only if thickness AND laminate finishes match. Then cabinet sheet 9 can be omitted and the combined purchase becomes **19 sheets**. Existing independent PDFs still show 11 + 9 sheets.
 
-[Shared-offcut placement record](shared_scribe_offcut.csv). Coordinates now refer to the v8 bed layout. Earlier bed-sheet-2 coordinates are superseded.
+[Shared-offcut placement record](shared_scribe_offcut.csv). Coordinates now refer to the v9 bed layout. Earlier bed-sheet-2 coordinates are superseded.
 
 ## Contact cement — laminated plywood confirmed
 

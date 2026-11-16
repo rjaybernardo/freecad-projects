@@ -165,43 +165,14 @@ def nest(panels,settings):
 
 
 def sheet_svg(path,si,sheet,panels,settings,total):
-    lookup={p['id']:p for p in panels};s=svg_start(f'CUTTING LAYOUT {si:02d} / {total}',
-       f'{settings["StockLength"]:g} x {settings["StockWidth"]:g} | 19.6 finished plywood, HPL both faces | kerf {settings["Kerf"]:g} | trim {settings["Trim"]:g} each edge')
-    ox,oy,scale=12,39,0.126
-    s.append(f'<rect x="{ox}" y="{oy}" width="{settings["StockLength"]*scale}" height="{settings["StockWidth"]*scale}" fill="#eeeeee" stroke="#203446" stroke-width=".4"/>')
-    for n,p in enumerate(sheet['panels']):
-        x,y=ox+p['x']*scale,oy+p['y']*scale;w,h=p['l']*scale,p['w']*scale;panel=lookup[p['id']]
-        s.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="{PALETTE[n%len(PALETTE)]}" stroke="#465667" stroke-width=".18"/>')
-        if h>6 and w>12:
-            text(s,x+1,y+min(h/2,5),p['id'],min(3.5,h*.35))
-            if h>12 and w>30:text(s,x+1,y+9,f'{p["l"]:g} x {p["w"]:g}',2.5)
-        elif w>12:text(s,x+1,y+max(h/2,1.6),p['id'],1.8)
-        else:
-            s.append(f'<text transform="translate({x+w/2},{y+1}) rotate(90)" font-size="1.9">{p["id"]}</text>')
-        bands=panel['bands']
-        if p['rotated']:bands=[bands[2],bands[3],bands[0],bands[1]]
-        for enabled,line in zip(bands,[(x,y,x+w,y),(x,y+h,x+w,y+h),(x,y,x,y+h),(x+w,y,x+w,y+h)]):
-            if enabled:s.append(f'<path d="M{line[0]} {line[1]} L{line[2]} {line[3]}" stroke="#cf6a21" stroke-width=".65"/>')
-    area=sum(p['l']*p['w'] for p in sheet['panels']);stock=settings['StockLength']*settings['StockWidth']
-    text(s,12,205,f'{len(sheet["panels"])} panels | blank area {area/1e6:.3f} m2 | sheet use {100*area/stock:.1f}% | {len(sheet["cuts"])} guillotine cuts',3.5)
-    text(s,12,213,'Orange = banded edge. Dimensions = laminated blank BEFORE edge band. Grey = kerf, trim or offcut.',3)
-    text(s,12,220,'L1/L2 are the two edges parallel to finished Length; W1/W2 parallel to Width. Orange thickness is symbolic.',2.8)
-    text(s,12,227,'Grain: rotation allowed by default for plain laminate. Set AllowRotation = 0 for directional laminate and regenerate.',2.8)
-    text(s,12,234,'Follow SawCuts.csv / native SawCuts sheet for the cutting sequence; label each piece immediately.',2.8)
-    text(s,12,241,'Trim all four edges first. Origin is the stock lower-left corner; X along 2440, Y along 1220.',2.8)
-    text(s,12,248,'Drill cable passages, rout internal grip recesses, and cut scribe strips to fit AFTER the rectangular blanks are cut.',2.8)
-    text(s,12,255,'Heuristic nesting of each project separately; sheet count is the achieved layout, not a guaranteed minimum.',2.8)
-    text(s,330,36,'PART / BLANK L x W',3.5,font_weight='bold')
-    for n,p in enumerate(sheet['panels'][:46]):
-        source=lookup[p['id']];text(s,330,43+n*4.9,f'{p["id"]}  {source["blank_l"]:g} x {source["blank_w"]:g}',2.6)
-    if len(sheet['panels'])>46:text(s,330,275,'More IDs: see CutSchedule',2.5)
-    s.append('</svg>');path.write_text('\n'.join(s))
+    from readable_cutlists import overview
+    return overview(path,si,sheet,panels,settings,total)
 
 
 def generate(doc,panels,project,output,settings=None):
     settings=dict(DEFAULTS if settings is None else settings)
     out=Path(output)/'workshop'/project;out.mkdir(parents=True,exist_ok=True)
-    for stale in out.glob('Sheet_[0-9][0-9].svg'): stale.unlink()
+    for stale in out.glob('Sheet_*.svg'): stale.unlink()
     g=doc.getObject('Workshop_Documents') or doc.addObject('App::DocumentObjectGroup','Workshop_Documents')
     sheets=nest(panels,settings)
     spreadsheet(doc,g,'CuttingSettings',['Setting','Value','Meaning'],[
@@ -218,7 +189,9 @@ def generate(doc,panels,project,output,settings=None):
         kerf_area=stock-trimmed-area-offcut
         assert kerf_area>=-.01
         summaries.append([si,len(s['panels']),round(area/1e6,4),round(100*area/stock,2),round(waste/1e6,4),len(s['cuts']),round(offcut/1e6,4),round(trimmed/1e6,4),round(kerf_area/1e6,4)])
-        path=out/f'Sheet_{si:02d}.svg';sheet_svg(path,si,s,panels,settings,len(sheets));native_page(doc,g,path,f'Cutting_{si:02d}')
+        from readable_cutlists import sheet_pack
+        for path in sheet_pack(out,si,s,panels,settings,len(sheets),project):
+            native_page(doc,g,path,'Cutting_'+path.stem.removeprefix('Sheet_'))
     hdr=['ID','Module','Part','Qty','Finished L','Finished W','Thickness','Band L1','Band L2','Band W1','Band W2','Blank L','Blank W','Sheet','Note']
     rows=[[p['id'],p['module'],p['part'],1,p['finished_l'],p['finished_w'],p['thickness'],*p['bands'],p['blank_l'],p['blank_w'],mapping[p['id']],p['note']] for p in panels]
     spreadsheet(doc,g,'CutSchedule',hdr,rows,'FINISHED sizes include edge band. Blank L = finished L - band thickness*(W1+W2); Blank W = finished W - band thickness*(L1+L2). Each ID is one physical panel.')
