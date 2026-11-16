@@ -1,0 +1,14 @@
+{
+  "bed": {
+    "modules": 14,
+    "final_installation_stages": 1,
+    "panels_assigned_once": 180,
+    "geometry_rebuilt": false
+  },
+  "cabinet": {
+    "modules": 7,
+    "final_installation_stages": 1,
+    "panels_assigned_once": 97,
+    "geometry_rebuilt": false
+  }
+}

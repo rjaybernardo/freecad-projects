@@ -1,0 +1,302 @@
+[
+  {
+    "number": 1,
+    "module": "Head_Box_L",
+    "label": "Left head lift-up box",
+    "ids": [
+      "B077",
+      "B078",
+      "B079",
+      "B080",
+      "B081",
+      "B082"
+    ],
+    "pdf": "01_Head_Box_L.pdf"
+  },
+  {
+    "number": 2,
+    "module": "Head_Box_R",
+    "label": "Right head lift-up box",
+    "ids": [
+      "B131",
+      "B132",
+      "B133",
+      "B134",
+      "B135",
+      "B136"
+    ],
+    "pdf": "02_Head_Box_R.pdf"
+  },
+  {
+    "number": 3,
+    "module": "Side_Box_1L",
+    "label": "Left side drawer bay 1",
+    "ids": [
+      "B083",
+      "B084",
+      "B085",
+      "B086",
+      "B087",
+      "B088",
+      "B089",
+      "B090",
+      "B091",
+      "B092",
+      "B093",
+      "B094",
+      "B196",
+      "B197"
+    ],
+    "pdf": "03_Side_Box_1L.pdf"
+  },
+  {
+    "number": 4,
+    "module": "Side_Box_1R",
+    "label": "Right side drawer bay 1",
+    "ids": [
+      "B137",
+      "B138",
+      "B139",
+      "B140",
+      "B141",
+      "B142",
+      "B143",
+      "B144",
+      "B145",
+      "B146",
+      "B147",
+      "B148",
+      "B202",
+      "B203"
+    ],
+    "pdf": "04_Side_Box_1R.pdf"
+  },
+  {
+    "number": 5,
+    "module": "Side_Box_2L",
+    "label": "Left side drawer bay 2",
+    "ids": [
+      "B099",
+      "B100",
+      "B101",
+      "B102",
+      "B103",
+      "B104",
+      "B105",
+      "B106",
+      "B107",
+      "B108",
+      "B109",
+      "B110",
+      "B198",
+      "B199"
+    ],
+    "pdf": "05_Side_Box_2L.pdf"
+  },
+  {
+    "number": 6,
+    "module": "Side_Box_2R",
+    "label": "Right side drawer bay 2",
+    "ids": [
+      "B153",
+      "B154",
+      "B155",
+      "B156",
+      "B157",
+      "B158",
+      "B159",
+      "B160",
+      "B161",
+      "B162",
+      "B163",
+      "B164",
+      "B204",
+      "B205"
+    ],
+    "pdf": "06_Side_Box_2R.pdf"
+  },
+  {
+    "number": 7,
+    "module": "Foot_Box_L",
+    "label": "Left foot drawer bay",
+    "ids": [
+      "B115",
+      "B116",
+      "B117",
+      "B118",
+      "B119",
+      "B120",
+      "B121",
+      "B122",
+      "B123",
+      "B124",
+      "B125",
+      "B126",
+      "B200",
+      "B201"
+    ],
+    "pdf": "07_Foot_Box_L.pdf"
+  },
+  {
+    "number": 8,
+    "module": "Foot_Box_R",
+    "label": "Right foot drawer bay",
+    "ids": [
+      "B169",
+      "B170",
+      "B171",
+      "B172",
+      "B173",
+      "B174",
+      "B175",
+      "B176",
+      "B177",
+      "B178",
+      "B179",
+      "B180",
+      "B206",
+      "B207"
+    ],
+    "pdf": "08_Foot_Box_R.pdf"
+  },
+  {
+    "number": 9,
+    "module": "Nightstand_Left",
+    "label": "Left nightstand",
+    "ids": [
+      "B001",
+      "B002",
+      "B003",
+      "B004",
+      "B005",
+      "B006",
+      "B007",
+      "B008",
+      "B009",
+      "B010",
+      "B011",
+      "B012",
+      "B013",
+      "B014",
+      "B015",
+      "B016",
+      "B017",
+      "B018",
+      "B019",
+      "B186",
+      "B187",
+      "B188",
+      "B189",
+      "B190"
+    ],
+    "pdf": "09_Nightstand_Left.pdf"
+  },
+  {
+    "number": 10,
+    "module": "Nightstand_Right",
+    "label": "Right nightstand",
+    "ids": [
+      "B029",
+      "B030",
+      "B031",
+      "B032",
+      "B033",
+      "B034",
+      "B035",
+      "B036",
+      "B037",
+      "B038",
+      "B039",
+      "B040",
+      "B041",
+      "B042",
+      "B043",
+      "B044",
+      "B045",
+      "B046",
+      "B047",
+      "B191",
+      "B192",
+      "B193",
+      "B194",
+      "B195"
+    ],
+    "pdf": "10_Nightstand_Right.pdf"
+  },
+  {
+    "number": 11,
+    "module": "Upper_Left",
+    "label": "Left upper cabinet",
+    "ids": [
+      "B020",
+      "B021",
+      "B022",
+      "B023",
+      "B024",
+      "B025",
+      "B026",
+      "B027",
+      "B028"
+    ],
+    "pdf": "11_Upper_Left.pdf"
+  },
+  {
+    "number": 12,
+    "module": "Upper_Right",
+    "label": "Right upper cabinet",
+    "ids": [
+      "B048",
+      "B049",
+      "B050",
+      "B051",
+      "B052",
+      "B053",
+      "B054",
+      "B055",
+      "B056"
+    ],
+    "pdf": "12_Upper_Right.pdf"
+  },
+  {
+    "number": 13,
+    "module": "Headboard",
+    "label": "Plain backboard",
+    "ids": [
+      "B073"
+    ],
+    "pdf": "13_Headboard.pdf"
+  },
+  {
+    "number": 14,
+    "module": "Bridge",
+    "label": "Overhead bridge cabinet",
+    "ids": [
+      "B057",
+      "B058",
+      "B059",
+      "B060",
+      "B061",
+      "B062",
+      "B063",
+      "B064",
+      "B065",
+      "B066",
+      "B067",
+      "B068",
+      "B069",
+      "B070",
+      "B071",
+      "B072"
+    ],
+    "pdf": "14_Bridge.pdf"
+  },
+  {
+    "number": 15,
+    "module": "Scribe_Strips",
+    "label": "Scribe_Strips",
+    "ids": [
+      "B185"
+    ],
+    "pdf": "15_Scribe_Strips.pdf"
+  }
+]

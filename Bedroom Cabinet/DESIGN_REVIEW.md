@@ -1,5 +1,19 @@
 # Current design review — bed v9 / cabinet v9
 
+**Build one complete module, then move to the next.**
+
+[Bed — module-by-module assembly PDF](workshop/bed/Module_by_Module.pdf) · [Cabinet — module-by-module assembly PDF](workshop/cabinet/Module_by_Module.pdf)
+
+[Bed: individual module checklist](workshop/bed/modules/README.md) · [Cabinet: individual module checklist](workshop/cabinet/modules/README.md)
+
+| Example: completed side drawer bay | Same bay — exploded construction |
+| --- | --- |
+| ![Completed side drawer module](workshop/bed/modules/03_Side_Box_1L_Assembled.png) | ![Exploded side drawer module](workshop/bed/modules/03_Side_Box_1L_Exploded.png) |
+
+Each module pack includes assembled / exploded / interior views, its own whole-mm parts targets and banding diagrams, build steps and a completion checklist. **Bed: 14 modules + final installation. Cabinet: 7 module groups + final installation.** Build that module's own drawers before moving on, subject to actual hardware fit. The TV centre and drawer tower share structure. Every plywood part appears once across the module packs; final site-fit scribes are assigned to installation.
+
+Sheet nesting remains a separate cutting-batch plan: gather labelled parts from their stock sheets into each module kit. Rounded targets still require dry-fit; connector / wall-fixing patterns and hardware fit are not finalized by these guides.
+
 - Headboard simplified to ONE laminated plywood panel, 1587.2 x 1200 x 19.6 mm. Three narrow solid-timber battens support it; no extra plywood substrate, foam, fabric or tufting.
 - Bed position, drawer fronts, travel and room clearances are unchanged. In v9 the wheel plates mount directly beneath the drawer bottoms; 24 plywood pads are removed. Bottoms and fixed guides lower 19.6 mm; sides/backs grow 19.6 mm taller. Backboard fixings are independent of overhead cabinet support.
 - 180 bed plywood panels / 11 stock sheets; 97 cabinet panels / 9 sheets. Combined 20 sheets, or 19 only with the matching-finish shared-scribe offcut.

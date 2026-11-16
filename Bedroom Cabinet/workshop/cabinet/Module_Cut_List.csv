@@ -1,0 +1,98 @@
+ID,Module,Part,Qty,Target length mm,Target width mm,Band instruction,Band L1,Band L2,Band W1,Band W2,Build step,Build module,Module guide
+C001,Wardrobe_Left_Hanging,Plinth_Front,1,520,80,NONE,0,0,0,0,1,Wardrobe_Left_Hanging,modules/01_Wardrobe_Left_Hanging.pdf
+C002,Wardrobe_Left_Hanging,Plinth_Back,1,520,80,NONE,0,0,0,0,1,Wardrobe_Left_Hanging,modules/01_Wardrobe_Left_Hanging.pdf
+C003,Wardrobe_Left_Hanging,Side_L,1,1990,430,1 long + 0 short,1,0,0,0,1,Wardrobe_Left_Hanging,modules/01_Wardrobe_Left_Hanging.pdf
+C004,Wardrobe_Left_Hanging,Side_R,1,1990,405,1 long + 0 short,1,0,0,0,1,Wardrobe_Left_Hanging,modules/01_Wardrobe_Left_Hanging.pdf
+C005,Wardrobe_Left_Hanging,Bottom,1,481,431,NONE,0,0,0,0,1,Wardrobe_Left_Hanging,modules/01_Wardrobe_Left_Hanging.pdf
+C006,Wardrobe_Left_Hanging,Top,1,481,430,1 long + 0 short,1,0,0,0,1,Wardrobe_Left_Hanging,modules/01_Wardrobe_Left_Hanging.pdf
+C007,Wardrobe_Left_Hanging,Back,1,1990,520,NONE,0,0,0,0,1,Wardrobe_Left_Hanging,modules/01_Wardrobe_Left_Hanging.pdf
+C008,Wardrobe_Left_Hanging,Shelf_Top,1,481,410,1 long + 0 short,1,0,0,0,1,Wardrobe_Left_Hanging,modules/01_Wardrobe_Left_Hanging.pdf
+C009,Wardrobe_Left_Hanging,Shelf_Top_2,1,481,410,1 long + 0 short,1,0,0,0,1,Wardrobe_Left_Hanging,modules/01_Wardrobe_Left_Hanging.pdf
+C010,Wardrobe_Left_Hanging,Drawer_1_Front,1,475,143,ALL FOUR,1,1,1,1,1,Wardrobe_Left_Hanging,modules/01_Wardrobe_Left_Hanging.pdf
+C011,Wardrobe_Left_Hanging,Drawer_1_Side_L,1,379,130,0 long + 1 short,0,0,1,0,1,Wardrobe_Left_Hanging,modules/01_Wardrobe_Left_Hanging.pdf
+C012,Wardrobe_Left_Hanging,Drawer_1_Side_R,1,379,130,0 long + 1 short,0,0,1,0,1,Wardrobe_Left_Hanging,modules/01_Wardrobe_Left_Hanging.pdf
+C013,Wardrobe_Left_Hanging,Drawer_1_Back,1,417,130,NONE,0,0,0,0,1,Wardrobe_Left_Hanging,modules/01_Wardrobe_Left_Hanging.pdf
+C014,Wardrobe_Left_Hanging,Drawer_1_Bottom,1,417,361,NONE,0,0,0,0,1,Wardrobe_Left_Hanging,modules/01_Wardrobe_Left_Hanging.pdf
+C015,Wardrobe_Left_Hanging,Drawer_2_Front,1,475,143,ALL FOUR,1,1,1,1,1,Wardrobe_Left_Hanging,modules/01_Wardrobe_Left_Hanging.pdf
+C016,Wardrobe_Left_Hanging,Drawer_2_Side_L,1,379,130,0 long + 1 short,0,0,1,0,1,Wardrobe_Left_Hanging,modules/01_Wardrobe_Left_Hanging.pdf
+C017,Wardrobe_Left_Hanging,Drawer_2_Side_R,1,379,130,0 long + 1 short,0,0,1,0,1,Wardrobe_Left_Hanging,modules/01_Wardrobe_Left_Hanging.pdf
+C018,Wardrobe_Left_Hanging,Drawer_2_Back,1,417,130,NONE,0,0,0,0,1,Wardrobe_Left_Hanging,modules/01_Wardrobe_Left_Hanging.pdf
+C019,Wardrobe_Left_Hanging,Drawer_2_Bottom,1,417,361,NONE,0,0,0,0,1,Wardrobe_Left_Hanging,modules/01_Wardrobe_Left_Hanging.pdf
+C020,Wardrobe_Left_Hanging,Shelf_Above_Drawers,1,481,410,1 long + 0 short,1,0,0,0,1,Wardrobe_Left_Hanging,modules/01_Wardrobe_Left_Hanging.pdf
+C021,Wardrobe_Left_Hanging,Door,1,1960,505,ALL FOUR,1,1,1,1,1,Wardrobe_Left_Hanging,modules/01_Wardrobe_Left_Hanging.pdf
+C022,Tower_Right_Shelves,Plinth_Front,1,456,80,NONE,0,0,0,0,2,Tower_Right_Shelves,modules/02_Tower_Right_Shelves.pdf
+C023,Tower_Right_Shelves,Plinth_Back,1,456,80,NONE,0,0,0,0,2,Tower_Right_Shelves,modules/02_Tower_Right_Shelves.pdf
+C024,Tower_Right_Shelves,Side_L,1,1990,405,1 long + 0 short,1,0,0,0,2,Tower_Right_Shelves,modules/02_Tower_Right_Shelves.pdf
+C025,Tower_Right_Shelves,Side_R,1,1990,430,1 long + 0 short,1,0,0,0,2,Tower_Right_Shelves,modules/02_Tower_Right_Shelves.pdf
+C026,Tower_Right_Shelves,Bottom,1,431,417,NONE,0,0,0,0,2,Tower_Right_Shelves,modules/02_Tower_Right_Shelves.pdf
+C027,Tower_Right_Shelves,Top,1,430,417,0 long + 1 short,0,0,1,0,2,Tower_Right_Shelves,modules/02_Tower_Right_Shelves.pdf
+C028,Tower_Right_Shelves,Back,1,1990,456,NONE,0,0,0,0,2,Tower_Right_Shelves,modules/02_Tower_Right_Shelves.pdf
+C029,Tower_Right_Shelves,Shelf_1,1,417,410,1 long + 0 short,1,0,0,0,2,Tower_Right_Shelves,modules/02_Tower_Right_Shelves.pdf
+C030,Tower_Right_Shelves,Shelf_2,1,417,410,1 long + 0 short,1,0,0,0,2,Tower_Right_Shelves,modules/02_Tower_Right_Shelves.pdf
+C031,Tower_Right_Shelves,Shelf_3,1,417,410,1 long + 0 short,1,0,0,0,2,Tower_Right_Shelves,modules/02_Tower_Right_Shelves.pdf
+C032,Tower_Right_Shelves,Shelf_4,1,417,410,1 long + 0 short,1,0,0,0,2,Tower_Right_Shelves,modules/02_Tower_Right_Shelves.pdf
+C033,Tower_Right_Shelves,Shelf_5,1,417,410,1 long + 0 short,1,0,0,0,2,Tower_Right_Shelves,modules/02_Tower_Right_Shelves.pdf
+C034,Tower_Right_Shelves,Door,1,1960,441,ALL FOUR,1,1,1,1,2,Tower_Right_Shelves,modules/02_Tower_Right_Shelves.pdf
+C044,Drawer_Tower,Plinth_Front,1,500,80,NONE,0,0,0,0,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C045,Drawer_Tower,Plinth_Back,1,500,80,NONE,0,0,0,0,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C046,Drawer_Tower,Side_L,1,620,430,1 long + 0 short,1,0,0,0,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C047,Drawer_Tower,Side_R,1,620,430,1 long + 0 short,1,0,0,0,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C048,Drawer_Tower,Bottom,1,461,431,NONE,0,0,0,0,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C049,Drawer_Tower,Top,1,461,430,1 long + 0 short,1,0,0,0,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C050,Drawer_Tower,Drawer_1_Front,1,495,177,ALL FOUR,1,1,1,1,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C051,Drawer_Tower,Drawer_1_Side_L,1,379,123,0 long + 1 short,0,0,1,0,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C052,Drawer_Tower,Drawer_1_Side_R,1,379,123,0 long + 1 short,0,0,1,0,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C053,Drawer_Tower,Drawer_1_Back,1,397,123,NONE,0,0,0,0,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C054,Drawer_Tower,Drawer_1_Bottom,1,397,361,NONE,0,0,0,0,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C055,Drawer_Tower,Drawer_2_Front,1,495,177,ALL FOUR,1,1,1,1,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C056,Drawer_Tower,Drawer_2_Side_L,1,379,123,0 long + 1 short,0,0,1,0,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C057,Drawer_Tower,Drawer_2_Side_R,1,379,123,0 long + 1 short,0,0,1,0,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C058,Drawer_Tower,Drawer_2_Back,1,397,123,NONE,0,0,0,0,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C059,Drawer_Tower,Drawer_2_Bottom,1,397,361,NONE,0,0,0,0,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C060,Drawer_Tower,Drawer_3_Front,1,495,177,ALL FOUR,1,1,1,1,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C061,Drawer_Tower,Drawer_3_Side_L,1,379,115,0 long + 1 short,0,0,1,0,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C062,Drawer_Tower,Drawer_3_Side_R,1,379,115,0 long + 1 short,0,0,1,0,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C063,Drawer_Tower,Drawer_3_Back,1,397,115,NONE,0,0,0,0,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C064,Drawer_Tower,Drawer_3_Bottom,1,397,361,NONE,0,0,0,0,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C090,Pull_Tower_L,Pull_Tower_L_Back,1,461,60,NONE,0,0,0,0,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C091,Pull_Tower_L,Pull_Tower_L_Lower,1,461,21,1 long + 0 short,1,0,0,0,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C092,Pull_Tower_C_1,Pull_Tower_C_1_Back,1,461,80,NONE,0,0,0,0,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C093,Pull_Tower_C_1,Pull_Tower_C_1_Lower,1,461,21,1 long + 0 short,1,0,0,0,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C094,Pull_Tower_C_1,Pull_Tower_C_1_Upper,1,461,21,1 long + 0 short,1,0,0,0,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C095,Pull_Tower_C_2,Pull_Tower_C_2_Back,1,461,80,NONE,0,0,0,0,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C096,Pull_Tower_C_2,Pull_Tower_C_2_Lower,1,461,21,1 long + 0 short,1,0,0,0,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C097,Pull_Tower_C_2,Pull_Tower_C_2_Upper,1,461,21,1 long + 0 short,1,0,0,0,3,Drawer_Tower,modules/03_Drawer_Tower.pdf
+C035,Centre_TV_Makeup,Back_Panel_L,1,2070,650,NONE,0,0,0,0,4,Centre_TV_Makeup,modules/04_Centre_TV_Makeup.pdf
+C036,Centre_TV_Makeup,Back_Panel_R,1,2070,650,NONE,0,0,0,0,4,Centre_TV_Makeup,modules/04_Centre_TV_Makeup.pdf
+C037,Centre_TV_Makeup,TV_Ledge,1,1300,449,1 long + 0 short,1,0,0,0,4,Centre_TV_Makeup,modules/04_Centre_TV_Makeup.pdf
+C038,Centre_TV_Makeup,Table_Top,1,1300,449,1 long + 0 short,1,0,0,0,4,Centre_TV_Makeup,modules/04_Centre_TV_Makeup.pdf
+C039,Centre_TV_Makeup,Table_Drawer_Front,1,794,98,ALL FOUR,1,1,1,1,4,Centre_TV_Makeup,modules/04_Centre_TV_Makeup.pdf
+C040,Centre_TV_Makeup,Table_Drawer_Side_L,1,380,69,1 long + 0 short,1,0,0,0,4,Centre_TV_Makeup,modules/04_Centre_TV_Makeup.pdf
+C041,Centre_TV_Makeup,Table_Drawer_Side_R,1,380,69,1 long + 0 short,1,0,0,0,4,Centre_TV_Makeup,modules/04_Centre_TV_Makeup.pdf
+C042,Centre_TV_Makeup,Table_Drawer_Back,1,736,69,1 long + 0 short,1,0,0,0,4,Centre_TV_Makeup,modules/04_Centre_TV_Makeup.pdf
+C043,Centre_TV_Makeup,Table_Drawer_Bottom,1,736,361,NONE,0,0,0,0,4,Centre_TV_Makeup,modules/04_Centre_TV_Makeup.pdf
+C065,Centre_TV_Makeup,Divider,1,560,449,1 long + 0 short,1,0,0,0,4,Centre_TV_Makeup,modules/04_Centre_TV_Makeup.pdf
+C066,Centre_TV_Makeup,Makeup_Shelf_1,1,480,299,1 long + 0 short,1,0,0,0,4,Centre_TV_Makeup,modules/04_Centre_TV_Makeup.pdf
+C067,Centre_TV_Makeup,Makeup_Shelf_2,1,480,299,1 long + 0 short,1,0,0,0,4,Centre_TV_Makeup,modules/04_Centre_TV_Makeup.pdf
+C068,Top_Box_Left,Side_L,1,430,300,0 long + 1 short,0,0,1,0,5,Top_Box_Left,modules/05_Top_Box_Left.pdf
+C069,Top_Box_Left,Side_R,1,430,300,0 long + 1 short,0,0,1,0,5,Top_Box_Left,modules/05_Top_Box_Left.pdf
+C070,Top_Box_Left,Bottom,1,481,406,NONE,0,0,0,0,5,Top_Box_Left,modules/05_Top_Box_Left.pdf
+C071,Top_Box_Left,Top,1,481,430,1 long + 0 short,1,0,0,0,5,Top_Box_Left,modules/05_Top_Box_Left.pdf
+C072,Top_Box_Left,Back,1,520,300,NONE,0,0,0,0,5,Top_Box_Left,modules/05_Top_Box_Left.pdf
+C073,Top_Box_Left,Door_1,1,505,295,ALL FOUR,1,1,1,1,5,Top_Box_Left,modules/05_Top_Box_Left.pdf
+C074,Top_Box_Centre,Side_L,1,430,300,0 long + 1 short,0,0,1,0,6,Top_Box_Centre,modules/06_Top_Box_Centre.pdf
+C075,Top_Box_Centre,Side_R,1,430,300,0 long + 1 short,0,0,1,0,6,Top_Box_Centre,modules/06_Top_Box_Centre.pdf
+C076,Top_Box_Centre,Bottom,1,1261,406,NONE,0,0,0,0,6,Top_Box_Centre,modules/06_Top_Box_Centre.pdf
+C077,Top_Box_Centre,Top,1,1261,430,1 long + 0 short,1,0,0,0,6,Top_Box_Centre,modules/06_Top_Box_Centre.pdf
+C078,Top_Box_Centre,Back,1,1300,300,NONE,0,0,0,0,6,Top_Box_Centre,modules/06_Top_Box_Centre.pdf
+C079,Top_Box_Centre,Centre_Top_Divider_1,1,430,261,0 long + 1 short,0,0,1,0,6,Top_Box_Centre,modules/06_Top_Box_Centre.pdf
+C080,Top_Box_Centre,Door_1,1,645,295,ALL FOUR,1,1,1,1,6,Top_Box_Centre,modules/06_Top_Box_Centre.pdf
+C081,Top_Box_Centre,Door_2,1,645,295,ALL FOUR,1,1,1,1,6,Top_Box_Centre,modules/06_Top_Box_Centre.pdf
+C082,Top_Box_Right,Side_L,1,430,300,0 long + 1 short,0,0,1,0,7,Top_Box_Right,modules/07_Top_Box_Right.pdf
+C083,Top_Box_Right,Side_R,1,430,300,0 long + 1 short,0,0,1,0,7,Top_Box_Right,modules/07_Top_Box_Right.pdf
+C084,Top_Box_Right,Bottom,1,417,406,NONE,0,0,0,0,7,Top_Box_Right,modules/07_Top_Box_Right.pdf
+C085,Top_Box_Right,Top,1,430,417,0 long + 1 short,0,0,1,0,7,Top_Box_Right,modules/07_Top_Box_Right.pdf
+C086,Top_Box_Right,Back,1,456,300,NONE,0,0,0,0,7,Top_Box_Right,modules/07_Top_Box_Right.pdf
+C087,Top_Box_Right,Door_1,1,441,295,ALL FOUR,1,1,1,1,7,Top_Box_Right,modules/07_Top_Box_Right.pdf
+C088,Scribe_Strips,Scribe_Right_Wall,1,2380,10,NONE,0,0,0,0,8,Scribe_Strips,modules/08_Scribe_Strips.pdf
+C089,Scribe_Strips,Scribe_Ceiling,1,2276,10,NONE,0,0,0,0,8,Scribe_Strips,modules/08_Scribe_Strips.pdf

@@ -1,5 +1,19 @@
 # FreeCAD bedroom projects — start here
 
+**Build one complete module, then move to the next.**
+
+[Bed — module-by-module assembly PDF](Bedroom%20Cabinet/workshop/bed/Module_by_Module.pdf) · [Cabinet — module-by-module assembly PDF](Bedroom%20Cabinet/workshop/cabinet/Module_by_Module.pdf)
+
+[Bed: individual module checklist](Bedroom%20Cabinet/workshop/bed/modules/README.md) · [Cabinet: individual module checklist](Bedroom%20Cabinet/workshop/cabinet/modules/README.md)
+
+| Example: completed side drawer bay | Same bay — exploded construction |
+| --- | --- |
+| ![Completed side drawer module](Bedroom%20Cabinet/workshop/bed/modules/03_Side_Box_1L_Assembled.png) | ![Exploded side drawer module](Bedroom%20Cabinet/workshop/bed/modules/03_Side_Box_1L_Exploded.png) |
+
+Each module pack includes assembled / exploded / interior views, its own whole-mm parts targets and banding diagrams, build steps and a completion checklist. **Bed: 14 modules + final installation. Cabinet: 7 module groups + final installation.** Build that module's own drawers before moving on, subject to actual hardware fit. The TV centre and drawer tower share structure. Every plywood part appears once across the module packs; final site-fit scribes are assigned to installation.
+
+Sheet nesting remains a separate cutting-batch plan: gather labelled parts from their stock sheets into each module kit. Rounded targets still require dry-fit; connector / wall-fixing patterns and hardware fit are not finalized by these guides.
+
 **Manual cutting sheets updated — whole-mm targets with an edge-banding diagram for every part.**
 
 [Bed manual cut sheet](Bedroom%20Cabinet/workshop/bed/Manual_Whole_mm.pdf) · [Cabinet manual cut sheet](Bedroom%20Cabinet/workshop/cabinet/Manual_Whole_mm.pdf) · [Edge-banding instructions](Bedroom%20Cabinet/EDGE_BANDING_GUIDE.md)
@@ -34,8 +48,8 @@ Click your project's picture or **BUILDING MANUAL** below. The first module is o
 
 | Bed frame + surrounding cabinets | TV + makeup + wardrobe cabinet |
 | --- | --- |
-| [![Bed — click to open building manual](Bedroom%20Cabinet/screenshots/bedframe_v9_perspective.png)](Bedroom%20Cabinet/workshop/bed/Assembly_Manual.pdf) | [![Cabinet — click to open building manual](Bedroom%20Cabinet/screenshots/cabinet_v9_perspective.png)](Bedroom%20Cabinet/workshop/cabinet/Assembly_Manual.pdf) |
-| **[1. BUILDING MANUAL — START HERE](Bedroom%20Cabinet/workshop/bed/Assembly_Manual.pdf)** | **[1. BUILDING MANUAL — START HERE](Bedroom%20Cabinet/workshop/cabinet/Assembly_Manual.pdf)** |
+| [![Bed — click to open building manual](Bedroom%20Cabinet/screenshots/bedframe_v9_perspective.png)](Bedroom%20Cabinet/workshop/bed/Module_by_Module.pdf) | [![Cabinet — click to open building manual](Bedroom%20Cabinet/screenshots/cabinet_v9_perspective.png)](Bedroom%20Cabinet/workshop/cabinet/Module_by_Module.pdf) |
+| **[1. BUILDING MANUAL — START HERE](Bedroom%20Cabinet/workshop/bed/Module_by_Module.pdf)** | **[1. BUILDING MANUAL — START HERE](Bedroom%20Cabinet/workshop/cabinet/Module_by_Module.pdf)** |
 | [2. CUTTING SHEETS](Bedroom%20Cabinet/workshop/bed/Cutting_Layouts.pdf) | [2. CUTTING SHEETS](Bedroom%20Cabinet/workshop/cabinet/Cutting_Layouts.pdf) |
 | [3. LED WIRING DIAGRAM](Bedroom%20Cabinet/workshop/bed/LED_Wiring.pdf) | [3. LED WIRING DIAGRAM](Bedroom%20Cabinet/workshop/cabinet/LED_Wiring.pdf) |
 | [4. OPEN FREECAD MODEL v9](Bedroom%20Cabinet/Bed_Wall_Unit_v9.FCStd) | [4. OPEN FREECAD MODEL v9](Bedroom%20Cabinet/Bedroom_Cabinet_Modern_v9.FCStd) |
@@ -54,7 +68,7 @@ Select a module or drawer → **Macro → Macros… → Bedroom_Isolate_Module �
 
 **Backboard update — ONE plywood panel; upholstery deferred.**
 
-[![One plywood backboard on narrow timber supports](Bedroom%20Cabinet/workshop/bed/Assembly_08.png)](Bedroom%20Cabinet/workshop/bed/Assembly_Manual.pdf#page=9)
+[![One plywood backboard on narrow timber supports](Bedroom%20Cabinet/workshop/bed/Assembly_08.png)](Bedroom%20Cabinet/workshop/bed/Module_by_Module.pdf#page=9)
 
 [![Materials at a glance](Bedroom%20Cabinet/workshop/materials_overview.png)](Bedroom%20Cabinet/MATERIALS_LIST.md)
 

@@ -1,5 +1,19 @@
 # Cutting layouts and module assembly pack
 
+**Build one complete module, then move to the next.**
+
+[Bed — module-by-module assembly PDF](workshop/bed/Module_by_Module.pdf) · [Cabinet — module-by-module assembly PDF](workshop/cabinet/Module_by_Module.pdf)
+
+[Bed: individual module checklist](workshop/bed/modules/README.md) · [Cabinet: individual module checklist](workshop/cabinet/modules/README.md)
+
+| Example: completed side drawer bay | Same bay — exploded construction |
+| --- | --- |
+| ![Completed side drawer module](workshop/bed/modules/03_Side_Box_1L_Assembled.png) | ![Exploded side drawer module](workshop/bed/modules/03_Side_Box_1L_Exploded.png) |
+
+Each module pack includes assembled / exploded / interior views, its own whole-mm parts targets and banding diagrams, build steps and a completion checklist. **Bed: 14 modules + final installation. Cabinet: 7 module groups + final installation.** Build that module's own drawers before moving on, subject to actual hardware fit. The TV centre and drawer tower share structure. Every plywood part appears once across the module packs; final site-fit scribes are assigned to installation.
+
+Sheet nesting remains a separate cutting-batch plan: gather labelled parts from their stock sheets into each module kit. Rounded targets still require dry-fit; connector / wall-fixing patterns and hardware fit are not finalized by these guides.
+
 **Manual cutting sheets updated — whole-mm targets with an edge-banding diagram for every part.**
 
 [Bed manual cut sheet](workshop/bed/Manual_Whole_mm.pdf) · [Cabinet manual cut sheet](workshop/cabinet/Manual_Whole_mm.pdf) · [Edge-banding instructions](EDGE_BANDING_GUIDE.md)
@@ -74,6 +88,6 @@ The head lift-up lids now have 3 mm gaps between neighbouring finished lids. Squ
 
 This is a dimensioned planning and assembly pack. Supplier-specific hinge cups, runner fixings, caster plates, screw/connector patterns and wall anchors still require the selected hardware and actual wall. No load rating is claimed. Keep overhead modules temporarily supported until suitable wall fixing is complete. Do not substitute ordinary wood glue on laminate for mechanical joinery.
 
-[Bed assembly PDF](workshop/bed/Assembly_Manual.pdf) · [Cabinet assembly PDF](workshop/cabinet/Assembly_Manual.pdf) · [Bed cutting PDF](workshop/bed/Cutting_Layouts.pdf) · [Cabinet cutting PDF](workshop/cabinet/Cutting_Layouts.pdf) · [LED locations and wiring](LIGHTING_AND_WIRING.md).
+[Bed assembly PDF](workshop/bed/Module_by_Module.pdf) · [Cabinet assembly PDF](workshop/cabinet/Module_by_Module.pdf) · [Bed cutting PDF](workshop/bed/Cutting_Layouts.pdf) · [Cabinet cutting PDF](workshop/cabinet/Cutting_Layouts.pdf) · [LED locations and wiring](LIGHTING_AND_WIRING.md).
 
 Create bed v9 from the saved v8 with `build_bed_v9.py` in `freecadcmd`, then run `finish_bed_v9.FCMacro` in an isolated FreeCAD GUI to retain colours, rebuild the bed manual and export/capture the revision. `build_bed_drawing_v9.py` creates the companion shop drawings in `freecadcmd`. `readable_cutlists.main()` can reformat saved nesting data without rebuilding furniture. The previous full-build macros remain available for earlier revisions. The source builders preserve earlier revision files. The separate three-sheet `Bed_Wall_Unit_v9_Drawing.FCStd` is a general arrangement companion; the stock-sheet cutting pages and illustrated manuals are inside each main model.

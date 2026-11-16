@@ -12,21 +12,18 @@
 <text x="166.5" y="45.7" font-size="4.3" font-weight="bold">Edge diagram</text>
 <text x="231.5" y="45.7" font-size="4.3" font-weight="bold">Band instruction</text>
 <rect x="10" y="49" width="277" height="22" fill="#f6f8fa"/>
-<text x="12" y="57" font-size="4.3" font-weight="bold">C021</text>
-<text x="32" y="57" font-size="4.3" >Door</text>
-<text x="32" y="64" font-size="4.3" >Wardrobe Left Hanging</text>
-<text x="132" y="57" font-size="4.3" font-weight="bold">1960</text>
-<text x="132" y="64" font-size="4.3" font-weight="bold">505</text>
+<text x="12" y="57" font-size="4.3" font-weight="bold">C089</text>
+<text x="32" y="57" font-size="4.3" >Scribe Ceiling</text>
+<text x="32" y="64" font-size="4.3" >Scribe Strips</text>
+<text x="132" y="57" font-size="4.3" font-weight="bold">2276</text>
+<text x="132" y="64" font-size="4.3" font-weight="bold">10</text>
 <rect x="184" y="55" width="26" height="10" fill="#edf2f5" stroke="#52606b" stroke-width=".3"/>
-<path d="M184 55 L210 55" stroke="#b8590e" stroke-width="1.2"/>
-<path d="M184 65 L210 65" stroke="#b8590e" stroke-width="1.2"/>
-<path d="M184 55 L184 65" stroke="#b8590e" stroke-width="1.2"/>
-<path d="M210 55 L210 65" stroke="#b8590e" stroke-width="1.2"/>
 <text x="193" y="53.5" font-size="4.3" >L1</text>
 <text x="193" y="70" font-size="4.3" >L2</text>
 <text x="174" y="62" font-size="4.3" >W1</text>
 <text x="212" y="62" font-size="4.3" >W2</text>
-<text x="232" y="57" font-size="4.3" font-weight="bold">ALL FOUR</text>
+<text x="232" y="57" font-size="4.3" font-weight="bold">NONE</text>
+<text x="232" y="64" font-size="4.3" ></text>
 <text x="10" y="188" font-size="4.3" >Rounded targets: check matching parts before final sizing. Follow the reference legend on page 1.</text>
 <text x="10" y="195" font-size="4.3" >Existing CAD layouts / coordinates remain separate references. Hardware-dependent parts need checking.</text>
 </svg>

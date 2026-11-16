@@ -1,5 +1,19 @@
 # Cabinet LED lighting — bed v8 / TV and makeup cabinet v9
 
+**Build one complete module, then move to the next.**
+
+[Bed — module-by-module assembly PDF](workshop/bed/Module_by_Module.pdf) · [Cabinet — module-by-module assembly PDF](workshop/cabinet/Module_by_Module.pdf)
+
+[Bed: individual module checklist](workshop/bed/modules/README.md) · [Cabinet: individual module checklist](workshop/cabinet/modules/README.md)
+
+| Example: completed side drawer bay | Same bay — exploded construction |
+| --- | --- |
+| ![Completed side drawer module](workshop/bed/modules/03_Side_Box_1L_Assembled.png) | ![Exploded side drawer module](workshop/bed/modules/03_Side_Box_1L_Exploded.png) |
+
+Each module pack includes assembled / exploded / interior views, its own whole-mm parts targets and banding diagrams, build steps and a completion checklist. **Bed: 14 modules + final installation. Cabinet: 7 module groups + final installation.** Build that module's own drawers before moving on, subject to actual hardware fit. The TV centre and drawer tower share structure. Every plywood part appears once across the module packs; final site-fit scribes are assigned to installation.
+
+Sheet nesting remains a separate cutting-batch plan: gather labelled parts from their stock sheets into each module kit. Rounded targets still require dry-fit; connector / wall-fixing patterns and hardware fit are not finalized by these guides.
+
 Both saved models now contain real aluminium U-channel envelopes, separate LED strip and diffuser parts, accessible driver/distribution envelopes, orange two-core DC cable routes, and passages through intersecting plywood panels. The aluminium light profiles are separate from the **plywood L/C drawer grips**.
 
 This is a **provisional 24 V constant-voltage lighting plan**. No purchased LED kit has been confirmed. Assumptions: 10 W/m strip, 16 × 10 mm surface-mounted profile, 30 W driver per project. Confirm the actual strip voltage, W/m, cut pitch, profile, driver cooling requirements, wire gauge, fuse and connectors before buying or drilling. LED cut lengths must be adjusted to the strip's marked cutting interval; profile lengths below are the available design lengths.

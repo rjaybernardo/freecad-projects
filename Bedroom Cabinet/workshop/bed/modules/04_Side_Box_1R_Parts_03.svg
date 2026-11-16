@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="297mm" height="210mm" viewBox="0 0 297 210">
+<rect width="297" height="210" fill="white"/>
+<style>text {font-family:DejaVu Sans,sans-serif;fill:#172a38}</style>
+<text x="10" y="16" font-size="6.2" font-weight="bold">04 | Right side drawer bay 1 | PARTS 3</text>
+<text x="10" y="25" font-size="4.3" >Qty = 1 per ID | Whole-mm blank targets before banding | Orange = scheduled band.</text>
+<text x="10" y="201" font-size="4.3" >Band flags follow the existing CAD schedule; verify exposed faces during dry-fit.</text>
+<rect x="10" y="39" width="277" height="10" fill="#dce8ef"/>
+<text x="11.5" y="45.7" font-size="4.3" font-weight="bold">ID</text>
+<text x="31.5" y="45.7" font-size="4.3" font-weight="bold">Part / subassembly</text>
+<text x="131.5" y="45.7" font-size="4.3" font-weight="bold">Cut L / W</text>
+<text x="166.5" y="45.7" font-size="4.3" font-weight="bold">Edge diagram</text>
+<text x="231.5" y="45.7" font-size="4.3" font-weight="bold">Band instruction</text>
+<text x="12" y="57" font-size="4.3" font-weight="bold">B202</text>
+<text x="32" y="57" font-size="4.3" >Pull Side Box 1R Back</text>
+<text x="32" y="64" font-size="4.3" >Pull Side Box 1R L</text>
+<text x="132" y="57" font-size="4.3" >460</text>
+<text x="132" y="64" font-size="4.3" >60</text>
+<rect x="184" y="55" width="26" height="10" fill="#edf2f5" stroke="#52606b" stroke-width=".3"/>
+<text x="193" y="53.5" font-size="4.3" >L1</text>
+<text x="193" y="70" font-size="4.3" >L2</text>
+<text x="174" y="62" font-size="4.3" >W1</text>
+<text x="212" y="62" font-size="4.3" >W2</text>
+<text x="232" y="57" font-size="4.3" >NONE</text>
+<text x="12" y="79" font-size="4.3" font-weight="bold">B203</text>
+<text x="32" y="79" font-size="4.3" >Pull Side Box 1R Lower</text>
+<text x="32" y="86" font-size="4.3" >Pull Side Box 1R L</text>
+<text x="132" y="79" font-size="4.3" >460</text>
+<text x="132" y="86" font-size="4.3" >21</text>
+<rect x="184" y="77" width="26" height="10" fill="#edf2f5" stroke="#52606b" stroke-width=".3"/>
+<path d="M184 77 L210 77" stroke="#b8590e" stroke-width="1.2"/>
+<text x="193" y="75.5" font-size="4.3" >L1</text>
+<text x="193" y="92" font-size="4.3" >L2</text>
+<text x="174" y="84" font-size="4.3" >W1</text>
+<text x="212" y="84" font-size="4.3" >W2</text>
+<text x="232" y="79" font-size="4.3" >1 long + 0 short</text>
+<text x="10" y="190" font-size="4.3" >Rounded targets are not a checked redesign. Keep CAD saw coordinates separate.</text>
+</svg>

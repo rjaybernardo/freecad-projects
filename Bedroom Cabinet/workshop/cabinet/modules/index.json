@@ -1,0 +1,163 @@
+[
+  {
+    "number": 1,
+    "module": "Wardrobe_Left_Hanging",
+    "label": "Left wardrobe",
+    "ids": [
+      "C001",
+      "C002",
+      "C003",
+      "C004",
+      "C005",
+      "C006",
+      "C007",
+      "C008",
+      "C009",
+      "C010",
+      "C011",
+      "C012",
+      "C013",
+      "C014",
+      "C015",
+      "C016",
+      "C017",
+      "C018",
+      "C019",
+      "C020",
+      "C021"
+    ],
+    "pdf": "01_Wardrobe_Left_Hanging.pdf"
+  },
+  {
+    "number": 2,
+    "module": "Tower_Right_Shelves",
+    "label": "Right shelf cabinet",
+    "ids": [
+      "C022",
+      "C023",
+      "C024",
+      "C025",
+      "C026",
+      "C027",
+      "C028",
+      "C029",
+      "C030",
+      "C031",
+      "C032",
+      "C033",
+      "C034"
+    ],
+    "pdf": "02_Tower_Right_Shelves.pdf"
+  },
+  {
+    "number": 3,
+    "module": "Drawer_Tower",
+    "label": "Makeup drawer cabinet",
+    "ids": [
+      "C044",
+      "C045",
+      "C046",
+      "C047",
+      "C048",
+      "C049",
+      "C050",
+      "C051",
+      "C052",
+      "C053",
+      "C054",
+      "C055",
+      "C056",
+      "C057",
+      "C058",
+      "C059",
+      "C060",
+      "C061",
+      "C062",
+      "C063",
+      "C064",
+      "C090",
+      "C091",
+      "C092",
+      "C093",
+      "C094",
+      "C095",
+      "C096",
+      "C097"
+    ],
+    "pdf": "03_Drawer_Tower.pdf"
+  },
+  {
+    "number": 4,
+    "module": "Centre_TV_Makeup",
+    "label": "TV + makeup centre",
+    "ids": [
+      "C035",
+      "C036",
+      "C037",
+      "C038",
+      "C039",
+      "C040",
+      "C041",
+      "C042",
+      "C043",
+      "C065",
+      "C066",
+      "C067"
+    ],
+    "pdf": "04_Centre_TV_Makeup.pdf"
+  },
+  {
+    "number": 5,
+    "module": "Top_Box_Left",
+    "label": "Left top cabinet",
+    "ids": [
+      "C068",
+      "C069",
+      "C070",
+      "C071",
+      "C072",
+      "C073"
+    ],
+    "pdf": "05_Top_Box_Left.pdf"
+  },
+  {
+    "number": 6,
+    "module": "Top_Box_Centre",
+    "label": "Centre top cabinet",
+    "ids": [
+      "C074",
+      "C075",
+      "C076",
+      "C077",
+      "C078",
+      "C079",
+      "C080",
+      "C081"
+    ],
+    "pdf": "06_Top_Box_Centre.pdf"
+  },
+  {
+    "number": 7,
+    "module": "Top_Box_Right",
+    "label": "Right top cabinet",
+    "ids": [
+      "C082",
+      "C083",
+      "C084",
+      "C085",
+      "C086",
+      "C087"
+    ],
+    "pdf": "07_Top_Box_Right.pdf"
+  },
+  {
+    "number": 8,
+    "module": "Scribe_Strips",
+    "label": "Scribe_Strips",
+    "ids": [
+      "C088",
+      "C089"
+    ],
+    "pdf": "08_Scribe_Strips.pdf"
+  }
+]

@@ -1,5 +1,19 @@
 # START HERE — bedroom project file index
 
+**Build one complete module, then move to the next.**
+
+[Bed — module-by-module assembly PDF](workshop/bed/Module_by_Module.pdf) · [Cabinet — module-by-module assembly PDF](workshop/cabinet/Module_by_Module.pdf)
+
+[Bed: individual module checklist](workshop/bed/modules/README.md) · [Cabinet: individual module checklist](workshop/cabinet/modules/README.md)
+
+| Example: completed side drawer bay | Same bay — exploded construction |
+| --- | --- |
+| ![Completed side drawer module](workshop/bed/modules/03_Side_Box_1L_Assembled.png) | ![Exploded side drawer module](workshop/bed/modules/03_Side_Box_1L_Exploded.png) |
+
+Each module pack includes assembled / exploded / interior views, its own whole-mm parts targets and banding diagrams, build steps and a completion checklist. **Bed: 14 modules + final installation. Cabinet: 7 module groups + final installation.** Build that module's own drawers before moving on, subject to actual hardware fit. The TV centre and drawer tower share structure. Every plywood part appears once across the module packs; final site-fit scribes are assigned to installation.
+
+Sheet nesting remains a separate cutting-batch plan: gather labelled parts from their stock sheets into each module kit. Rounded targets still require dry-fit; connector / wall-fixing patterns and hardware fit are not finalized by these guides.
+
 **Manual cutting sheets updated — whole-mm targets with an edge-banding diagram for every part.**
 
 [Bed manual cut sheet](workshop/bed/Manual_Whole_mm.pdf) · [Cabinet manual cut sheet](workshop/cabinet/Manual_Whole_mm.pdf) · [Edge-banding instructions](EDGE_BANDING_GUIDE.md)
@@ -32,8 +46,8 @@ For the same readable pages inside FreeCAD, open [bed cutting pages](workshop/be
 
 | Bed frame + surrounding cabinets | TV + makeup + wardrobe cabinet |
 | --- | --- |
-| [![Bed — click to open building manual](screenshots/bedframe_v9_perspective.png)](workshop/bed/Assembly_Manual.pdf) | [![Cabinet — click to open building manual](screenshots/cabinet_v9_perspective.png)](workshop/cabinet/Assembly_Manual.pdf) |
-| **[1. BUILDING MANUAL — START HERE](workshop/bed/Assembly_Manual.pdf)** | **[1. BUILDING MANUAL — START HERE](workshop/cabinet/Assembly_Manual.pdf)** |
+| [![Bed — click to open building manual](screenshots/bedframe_v9_perspective.png)](workshop/bed/Module_by_Module.pdf) | [![Cabinet — click to open building manual](screenshots/cabinet_v9_perspective.png)](workshop/cabinet/Module_by_Module.pdf) |
+| **[1. BUILDING MANUAL — START HERE](workshop/bed/Module_by_Module.pdf)** | **[1. BUILDING MANUAL — START HERE](workshop/cabinet/Module_by_Module.pdf)** |
 | [2. CUTTING SHEETS](workshop/bed/Cutting_Layouts.pdf) | [2. CUTTING SHEETS](workshop/cabinet/Cutting_Layouts.pdf) |
 | [3. LED WIRING DIAGRAM](workshop/bed/LED_Wiring.pdf) | [3. LED WIRING DIAGRAM](workshop/cabinet/LED_Wiring.pdf) |
 | [4. OPEN FREECAD MODEL v9](Bed_Wall_Unit_v9.FCStd) | [4. OPEN FREECAD MODEL v9](Bedroom_Cabinet_Modern_v9.FCStd) |
@@ -42,7 +56,7 @@ The bed starts with the **two head lift-up boxes**. The TV/makeup cabinet starts
 
 | Bed — first module | Cabinet — first module |
 | --- | --- |
-| [![Head lift-up box assembly](workshop/bed/Assembly_01.png)](workshop/bed/Assembly_Manual.pdf) | [![Wardrobe case assembly](workshop/cabinet/Assembly_01.png)](workshop/cabinet/Assembly_Manual.pdf) |
+| [![Head lift-up box assembly](workshop/bed/Assembly_01.png)](workshop/bed/Module_by_Module.pdf) | [![Wardrobe case assembly](workshop/cabinet/Assembly_01.png)](workshop/cabinet/Module_by_Module.pdf) |
 
 **FreeCAD update — every drawer is grouped inside its cabinet module.**
 
@@ -58,7 +72,7 @@ Select a module or drawer → **Macro → Macros… → Bedroom_Isolate_Module �
 
 **Backboard update — ONE plywood panel; upholstery deferred.**
 
-[![One plywood backboard on narrow timber supports](workshop/bed/Assembly_08.png)](workshop/bed/Assembly_Manual.pdf#page=9)
+[![One plywood backboard on narrow timber supports](workshop/bed/Assembly_08.png)](workshop/bed/Module_by_Module.pdf#page=9)
 
 [![Shopping quantities](workshop/materials_overview.png)](MATERIALS_LIST.md)
 
@@ -79,10 +93,10 @@ The links above are enough to start. Extra files are grouped below; open a group
 - [MATERIALS_LIST.md](MATERIALS_LIST.md)
 - [materials_purchase_summary.csv](materials_purchase_summary.csv)
 - [shared_scribe_offcut.csv](shared_scribe_offcut.csv)
-- [workshop/bed/Assembly_Manual.pdf](workshop/bed/Assembly_Manual.pdf)
+- [workshop/bed/Module_by_Module.pdf](workshop/bed/Module_by_Module.pdf)
 - [workshop/bed/Cutting_Layouts.pdf](workshop/bed/Cutting_Layouts.pdf)
 - [workshop/bed/LED_Wiring.pdf](workshop/bed/LED_Wiring.pdf)
-- [workshop/cabinet/Assembly_Manual.pdf](workshop/cabinet/Assembly_Manual.pdf)
+- [workshop/cabinet/Module_by_Module.pdf](workshop/cabinet/Module_by_Module.pdf)
 - [workshop/cabinet/Cutting_Layouts.pdf](workshop/cabinet/Cutting_Layouts.pdf)
 - [workshop/cabinet/LED_Wiring.pdf](workshop/cabinet/LED_Wiring.pdf)
 

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="297mm" height="210mm" viewBox="0 0 297 210">
+<rect width="297" height="210" fill="white"/>
+<style>text {font-family:DejaVu Sans,sans-serif;fill:#172a38}</style>
+<text x="10" y="16" font-size="6.2" font-weight="bold">05 | Left top cabinet | PARTS 1</text>
+<text x="10" y="25" font-size="4.3" >Qty = 1 per ID | Whole-mm blank targets before banding | Orange = scheduled band.</text>
+<text x="10" y="201" font-size="4.3" >Band flags follow the existing CAD schedule; verify exposed faces during dry-fit.</text>
+<rect x="10" y="39" width="277" height="10" fill="#dce8ef"/>
+<text x="11.5" y="45.7" font-size="4.3" font-weight="bold">ID</text>
+<text x="31.5" y="45.7" font-size="4.3" font-weight="bold">Part / subassembly</text>
+<text x="131.5" y="45.7" font-size="4.3" font-weight="bold">Cut L / W</text>
+<text x="166.5" y="45.7" font-size="4.3" font-weight="bold">Edge diagram</text>
+<text x="231.5" y="45.7" font-size="4.3" font-weight="bold">Band instruction</text>
+<text x="12" y="57" font-size="4.3" font-weight="bold">C068</text>
+<text x="32" y="57" font-size="4.3" >Side L</text>
+<text x="32" y="64" font-size="4.3" >Top Box Left</text>
+<text x="132" y="57" font-size="4.3" >430</text>
+<text x="132" y="64" font-size="4.3" >300</text>
+<rect x="184" y="55" width="26" height="10" fill="#edf2f5" stroke="#52606b" stroke-width=".3"/>
+<path d="M184 55 L184 65" stroke="#b8590e" stroke-width="1.2"/>
+<text x="193" y="53.5" font-size="4.3" >L1</text>
+<text x="193" y="70" font-size="4.3" >L2</text>
+<text x="174" y="62" font-size="4.3" >W1</text>
+<text x="212" y="62" font-size="4.3" >W2</text>
+<text x="232" y="57" font-size="4.3" >0 long + 1 short</text>
+<text x="12" y="79" font-size="4.3" font-weight="bold">C069</text>
+<text x="32" y="79" font-size="4.3" >Side R</text>
+<text x="32" y="86" font-size="4.3" >Top Box Left</text>
+<text x="132" y="79" font-size="4.3" >430</text>
+<text x="132" y="86" font-size="4.3" >300</text>
+<rect x="184" y="77" width="26" height="10" fill="#edf2f5" stroke="#52606b" stroke-width=".3"/>
+<path d="M184 77 L184 87" stroke="#b8590e" stroke-width="1.2"/>
+<text x="193" y="75.5" font-size="4.3" >L1</text>
+<text x="193" y="92" font-size="4.3" >L2</text>
+<text x="174" y="84" font-size="4.3" >W1</text>
+<text x="212" y="84" font-size="4.3" >W2</text>
+<text x="232" y="79" font-size="4.3" >0 long + 1 short</text>
+<text x="12" y="101" font-size="4.3" font-weight="bold">C070</text>
+<text x="32" y="101" font-size="4.3" >Bottom</text>
+<text x="32" y="108" font-size="4.3" >Top Box Left</text>
+<text x="132" y="101" font-size="4.3" >481</text>
+<text x="132" y="108" font-size="4.3" >406</text>
+<rect x="184" y="99" width="26" height="10" fill="#edf2f5" stroke="#52606b" stroke-width=".3"/>
+<text x="193" y="97.5" font-size="4.3" >L1</text>
+<text x="193" y="114" font-size="4.3" >L2</text>
+<text x="174" y="106" font-size="4.3" >W1</text>
+<text x="212" y="106" font-size="4.3" >W2</text>
+<text x="232" y="101" font-size="4.3" >NONE</text>
+<text x="12" y="123" font-size="4.3" font-weight="bold">C071</text>
+<text x="32" y="123" font-size="4.3" >Top</text>
+<text x="32" y="130" font-size="4.3" >Top Box Left</text>
+<text x="132" y="123" font-size="4.3" >481</text>
+<text x="132" y="130" font-size="4.3" >430</text>
+<rect x="184" y="121" width="26" height="10" fill="#edf2f5" stroke="#52606b" stroke-width=".3"/>
+<path d="M184 121 L210 121" stroke="#b8590e" stroke-width="1.2"/>
+<text x="193" y="119.5" font-size="4.3" >L1</text>
+<text x="193" y="136" font-size="4.3" >L2</text>
+<text x="174" y="128" font-size="4.3" >W1</text>
+<text x="212" y="128" font-size="4.3" >W2</text>
+<text x="232" y="123" font-size="4.3" >1 long + 0 short</text>
+<text x="12" y="145" font-size="4.3" font-weight="bold">C072</text>
+<text x="32" y="145" font-size="4.3" >Back</text>
+<text x="32" y="152" font-size="4.3" >Top Box Left</text>
+<text x="132" y="145" font-size="4.3" >520</text>
+<text x="132" y="152" font-size="4.3" >300</text>
+<rect x="184" y="143" width="26" height="10" fill="#edf2f5" stroke="#52606b" stroke-width=".3"/>
+<text x="193" y="141.5" font-size="4.3" >L1</text>
+<text x="193" y="158" font-size="4.3" >L2</text>
+<text x="174" y="150" font-size="4.3" >W1</text>
+<text x="212" y="150" font-size="4.3" >W2</text>
+<text x="232" y="145" font-size="4.3" >NONE</text>
+<text x="12" y="167" font-size="4.3" font-weight="bold">C073</text>
+<text x="32" y="167" font-size="4.3" >Door 1</text>
+<text x="32" y="174" font-size="4.3" >Top Box Left</text>
+<text x="132" y="167" font-size="4.3" >505</text>
+<text x="132" y="174" font-size="4.3" >295</text>
+<rect x="184" y="165" width="26" height="10" fill="#edf2f5" stroke="#52606b" stroke-width=".3"/>
+<path d="M184 165 L210 165" stroke="#b8590e" stroke-width="1.2"/>
+<path d="M184 175 L210 175" stroke="#b8590e" stroke-width="1.2"/>
+<path d="M184 165 L184 175" stroke="#b8590e" stroke-width="1.2"/>
+<path d="M210 165 L210 175" stroke="#b8590e" stroke-width="1.2"/>
+<text x="193" y="163.5" font-size="4.3" >L1</text>
+<text x="193" y="180" font-size="4.3" >L2</text>
+<text x="174" y="172" font-size="4.3" >W1</text>
+<text x="212" y="172" font-size="4.3" >W2</text>
+<text x="232" y="167" font-size="4.3" >ALL FOUR</text>
+<text x="10" y="190" font-size="4.3" >Rounded targets are not a checked redesign. Keep CAD saw coordinates separate.</text>
+</svg>

@@ -12,11 +12,11 @@
 <text x="166.5" y="45.7" font-size="4.3" font-weight="bold">Edge diagram</text>
 <text x="231.5" y="45.7" font-size="4.3" font-weight="bold">Band instruction</text>
 <rect x="10" y="49" width="277" height="22" fill="#f6f8fa"/>
-<text x="12" y="57" font-size="4.3" font-weight="bold">C031</text>
-<text x="32" y="57" font-size="4.3" >Shelf 3</text>
-<text x="32" y="64" font-size="4.3" >Tower Right Shelves</text>
-<text x="132" y="57" font-size="4.3" font-weight="bold">417</text>
-<text x="132" y="64" font-size="4.3" font-weight="bold">410</text>
+<text x="12" y="57" font-size="4.3" font-weight="bold">C065</text>
+<text x="32" y="57" font-size="4.3" >Divider</text>
+<text x="32" y="64" font-size="4.3" >Centre TV Makeup</text>
+<text x="132" y="57" font-size="4.3" font-weight="bold">560</text>
+<text x="132" y="64" font-size="4.3" font-weight="bold">449</text>
 <rect x="184" y="55" width="26" height="10" fill="#edf2f5" stroke="#52606b" stroke-width=".3"/>
 <path d="M184 55 L210 55" stroke="#b8590e" stroke-width="1.2"/>
 <text x="193" y="53.5" font-size="4.3" >L1</text>
@@ -26,11 +26,11 @@
 <text x="232" y="57" font-size="4.3" font-weight="bold">1 long + 0 short</text>
 <text x="232" y="64" font-size="4.3" >L1</text>
 <rect x="10" y="71" width="277" height="22" fill="white"/>
-<text x="12" y="79" font-size="4.3" font-weight="bold">C032</text>
-<text x="32" y="79" font-size="4.3" >Shelf 4</text>
-<text x="32" y="86" font-size="4.3" >Tower Right Shelves</text>
-<text x="132" y="79" font-size="4.3" font-weight="bold">417</text>
-<text x="132" y="86" font-size="4.3" font-weight="bold">410</text>
+<text x="12" y="79" font-size="4.3" font-weight="bold">C066</text>
+<text x="32" y="79" font-size="4.3" >Makeup Shelf 1</text>
+<text x="32" y="86" font-size="4.3" >Centre TV Makeup</text>
+<text x="132" y="79" font-size="4.3" font-weight="bold">480</text>
+<text x="132" y="86" font-size="4.3" font-weight="bold">299</text>
 <rect x="184" y="77" width="26" height="10" fill="#edf2f5" stroke="#52606b" stroke-width=".3"/>
 <path d="M184 77 L210 77" stroke="#b8590e" stroke-width="1.2"/>
 <text x="193" y="75.5" font-size="4.3" >L1</text>
@@ -40,11 +40,11 @@
 <text x="232" y="79" font-size="4.3" font-weight="bold">1 long + 0 short</text>
 <text x="232" y="86" font-size="4.3" >L1</text>
 <rect x="10" y="93" width="277" height="22" fill="#f6f8fa"/>
-<text x="12" y="101" font-size="4.3" font-weight="bold">C033</text>
-<text x="32" y="101" font-size="4.3" >Shelf 5</text>
-<text x="32" y="108" font-size="4.3" >Tower Right Shelves</text>
-<text x="132" y="101" font-size="4.3" font-weight="bold">417</text>
-<text x="132" y="108" font-size="4.3" font-weight="bold">410</text>
+<text x="12" y="101" font-size="4.3" font-weight="bold">C067</text>
+<text x="32" y="101" font-size="4.3" >Makeup Shelf 2</text>
+<text x="32" y="108" font-size="4.3" >Centre TV Makeup</text>
+<text x="132" y="101" font-size="4.3" font-weight="bold">480</text>
+<text x="132" y="108" font-size="4.3" font-weight="bold">299</text>
 <rect x="184" y="99" width="26" height="10" fill="#edf2f5" stroke="#52606b" stroke-width=".3"/>
 <path d="M184 99 L210 99" stroke="#b8590e" stroke-width="1.2"/>
 <text x="193" y="97.5" font-size="4.3" >L1</text>
@@ -54,40 +54,39 @@
 <text x="232" y="101" font-size="4.3" font-weight="bold">1 long + 0 short</text>
 <text x="232" y="108" font-size="4.3" >L1</text>
 <rect x="10" y="115" width="277" height="22" fill="white"/>
-<text x="12" y="123" font-size="4.3" font-weight="bold">C034</text>
-<text x="32" y="123" font-size="4.3" >Door</text>
-<text x="32" y="130" font-size="4.3" >Tower Right Shelves</text>
-<text x="132" y="123" font-size="4.3" font-weight="bold">1960</text>
-<text x="132" y="130" font-size="4.3" font-weight="bold">441</text>
+<text x="12" y="123" font-size="4.3" font-weight="bold">C068</text>
+<text x="32" y="123" font-size="4.3" >Side L</text>
+<text x="32" y="130" font-size="4.3" >Top Box Left</text>
+<text x="132" y="123" font-size="4.3" font-weight="bold">430</text>
+<text x="132" y="130" font-size="4.3" font-weight="bold">300</text>
 <rect x="184" y="121" width="26" height="10" fill="#edf2f5" stroke="#52606b" stroke-width=".3"/>
-<path d="M184 121 L210 121" stroke="#b8590e" stroke-width="1.2"/>
-<path d="M184 131 L210 131" stroke="#b8590e" stroke-width="1.2"/>
 <path d="M184 121 L184 131" stroke="#b8590e" stroke-width="1.2"/>
-<path d="M210 121 L210 131" stroke="#b8590e" stroke-width="1.2"/>
 <text x="193" y="119.5" font-size="4.3" >L1</text>
 <text x="193" y="136" font-size="4.3" >L2</text>
 <text x="174" y="128" font-size="4.3" >W1</text>
 <text x="212" y="128" font-size="4.3" >W2</text>
-<text x="232" y="123" font-size="4.3" font-weight="bold">ALL FOUR</text>
+<text x="232" y="123" font-size="4.3" font-weight="bold">0 long + 1 short</text>
+<text x="232" y="130" font-size="4.3" >W1</text>
 <rect x="10" y="137" width="277" height="22" fill="#f6f8fa"/>
-<text x="12" y="145" font-size="4.3" font-weight="bold">C001</text>
-<text x="32" y="145" font-size="4.3" >Plinth Front</text>
-<text x="32" y="152" font-size="4.3" >Wardrobe Left Hanging</text>
-<text x="132" y="145" font-size="4.3" font-weight="bold">520</text>
-<text x="132" y="152" font-size="4.3" font-weight="bold">80</text>
+<text x="12" y="145" font-size="4.3" font-weight="bold">C069</text>
+<text x="32" y="145" font-size="4.3" >Side R</text>
+<text x="32" y="152" font-size="4.3" >Top Box Left</text>
+<text x="132" y="145" font-size="4.3" font-weight="bold">430</text>
+<text x="132" y="152" font-size="4.3" font-weight="bold">300</text>
 <rect x="184" y="143" width="26" height="10" fill="#edf2f5" stroke="#52606b" stroke-width=".3"/>
+<path d="M184 143 L184 153" stroke="#b8590e" stroke-width="1.2"/>
 <text x="193" y="141.5" font-size="4.3" >L1</text>
 <text x="193" y="158" font-size="4.3" >L2</text>
 <text x="174" y="150" font-size="4.3" >W1</text>
 <text x="212" y="150" font-size="4.3" >W2</text>
-<text x="232" y="145" font-size="4.3" font-weight="bold">NONE</text>
-<text x="232" y="152" font-size="4.3" ></text>
+<text x="232" y="145" font-size="4.3" font-weight="bold">0 long + 1 short</text>
+<text x="232" y="152" font-size="4.3" >W1</text>
 <rect x="10" y="159" width="277" height="22" fill="white"/>
-<text x="12" y="167" font-size="4.3" font-weight="bold">C002</text>
-<text x="32" y="167" font-size="4.3" >Plinth Back</text>
-<text x="32" y="174" font-size="4.3" >Wardrobe Left Hanging</text>
-<text x="132" y="167" font-size="4.3" font-weight="bold">520</text>
-<text x="132" y="174" font-size="4.3" font-weight="bold">80</text>
+<text x="12" y="167" font-size="4.3" font-weight="bold">C070</text>
+<text x="32" y="167" font-size="4.3" >Bottom</text>
+<text x="32" y="174" font-size="4.3" >Top Box Left</text>
+<text x="132" y="167" font-size="4.3" font-weight="bold">481</text>
+<text x="132" y="174" font-size="4.3" font-weight="bold">406</text>
 <rect x="184" y="165" width="26" height="10" fill="#edf2f5" stroke="#52606b" stroke-width=".3"/>
 <text x="193" y="163.5" font-size="4.3" >L1</text>
 <text x="193" y="180" font-size="4.3" >L2</text>

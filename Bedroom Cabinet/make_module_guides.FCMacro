@@ -1,0 +1,17 @@
+from pathlib import Path
+import sys,traceback
+import FreeCAD as App
+import FreeCADGui as Gui
+from PySide import QtCore
+P=Path('/home/rjaybernardo/Documents/FreeCAD/Bedroom Cabinet');sys.path.insert(0,str(P))
+def run():
+ try:
+  import build_module_guides
+  build_module_guides.main()
+  (P/'workshop/module-guide-build.log').write_text('DONE\n')
+ except Exception:
+  (P/'workshop/module-guide-build.log').write_text(traceback.format_exc())
+ finally:
+  for name in list(App.listDocuments()):App.closeDocument(name)
+  Gui.getMainWindow().close()
+QtCore.QTimer.singleShot(1200,run)

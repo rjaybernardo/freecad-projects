@@ -12,37 +12,41 @@
 <text x="166.5" y="45.7" font-size="4.3" font-weight="bold">Edge diagram</text>
 <text x="231.5" y="45.7" font-size="4.3" font-weight="bold">Band instruction</text>
 <rect x="10" y="49" width="277" height="22" fill="#f6f8fa"/>
-<text x="12" y="57" font-size="4.3" font-weight="bold">B101</text>
-<text x="32" y="57" font-size="4.3" >Inner Side</text>
-<text x="32" y="64" font-size="4.3" >Side Box 2L</text>
-<text x="132" y="57" font-size="4.3" font-weight="bold">460</text>
-<text x="132" y="64" font-size="4.3" font-weight="bold">277</text>
+<text x="12" y="57" font-size="4.3" font-weight="bold">B026</text>
+<text x="32" y="57" font-size="4.3" >Shelf Lit Niche</text>
+<text x="32" y="64" font-size="4.3" >Upper Left</text>
+<text x="132" y="57" font-size="4.3" font-weight="bold">304</text>
+<text x="132" y="64" font-size="4.3" font-weight="bold">302</text>
 <rect x="184" y="55" width="26" height="10" fill="#edf2f5" stroke="#52606b" stroke-width=".3"/>
+<path d="M184 55 L184 65" stroke="#b8590e" stroke-width="1.2"/>
 <text x="193" y="53.5" font-size="4.3" >L1</text>
 <text x="193" y="70" font-size="4.3" >L2</text>
 <text x="174" y="62" font-size="4.3" >W1</text>
 <text x="212" y="62" font-size="4.3" >W2</text>
-<text x="232" y="57" font-size="4.3" font-weight="bold">NONE</text>
-<text x="232" y="64" font-size="4.3" ></text>
+<text x="232" y="57" font-size="4.3" font-weight="bold">0 long + 1 short</text>
+<text x="232" y="64" font-size="4.3" >W1</text>
 <rect x="10" y="71" width="277" height="22" fill="white"/>
-<text x="12" y="79" font-size="4.3" font-weight="bold">B102</text>
-<text x="32" y="79" font-size="4.3" >Rear Base Brace</text>
-<text x="32" y="86" font-size="4.3" >Side Box 2L</text>
-<text x="132" y="79" font-size="4.3" font-weight="bold">460</text>
-<text x="132" y="86" font-size="4.3" font-weight="bold">272</text>
+<text x="12" y="79" font-size="4.3" font-weight="bold">B027</text>
+<text x="32" y="79" font-size="4.3" >Shelf Behind Door 1</text>
+<text x="32" y="86" font-size="4.3" >Upper Left</text>
+<text x="132" y="79" font-size="4.3" font-weight="bold">318</text>
+<text x="132" y="86" font-size="4.3" font-weight="bold">300</text>
 <rect x="184" y="77" width="26" height="10" fill="#edf2f5" stroke="#52606b" stroke-width=".3"/>
+<path d="M184 77 L210 77" stroke="#b8590e" stroke-width="1.2"/>
+<path d="M184 87 L210 87" stroke="#b8590e" stroke-width="1.2"/>
+<path d="M184 77 L184 87" stroke="#b8590e" stroke-width="1.2"/>
+<path d="M210 77 L210 87" stroke="#b8590e" stroke-width="1.2"/>
 <text x="193" y="75.5" font-size="4.3" >L1</text>
 <text x="193" y="92" font-size="4.3" >L2</text>
 <text x="174" y="84" font-size="4.3" >W1</text>
 <text x="212" y="84" font-size="4.3" >W2</text>
-<text x="232" y="79" font-size="4.3" font-weight="bold">NONE</text>
-<text x="232" y="86" font-size="4.3" ></text>
+<text x="232" y="79" font-size="4.3" font-weight="bold">ALL FOUR</text>
 <rect x="10" y="93" width="277" height="22" fill="#f6f8fa"/>
-<text x="12" y="101" font-size="4.3" font-weight="bold">B103</text>
-<text x="32" y="101" font-size="4.3" >Top</text>
-<text x="32" y="108" font-size="4.3" >Side Box 2L</text>
-<text x="132" y="101" font-size="4.3" font-weight="bold">790</text>
-<text x="132" y="108" font-size="4.3" font-weight="bold">497</text>
+<text x="12" y="101" font-size="4.3" font-weight="bold">B028</text>
+<text x="32" y="101" font-size="4.3" >Door</text>
+<text x="32" y="108" font-size="4.3" >Upper Left</text>
+<text x="132" y="101" font-size="4.3" font-weight="bold">1285</text>
+<text x="132" y="108" font-size="4.3" font-weight="bold">336</text>
 <rect x="184" y="99" width="26" height="10" fill="#edf2f5" stroke="#52606b" stroke-width=".3"/>
 <path d="M184 99 L210 99" stroke="#b8590e" stroke-width="1.2"/>
 <path d="M184 109 L210 109" stroke="#b8590e" stroke-width="1.2"/>
@@ -54,11 +58,11 @@
 <text x="212" y="106" font-size="4.3" >W2</text>
 <text x="232" y="101" font-size="4.3" font-weight="bold">ALL FOUR</text>
 <rect x="10" y="115" width="277" height="22" fill="white"/>
-<text x="12" y="123" font-size="4.3" font-weight="bold">B109</text>
-<text x="32" y="123" font-size="4.3" >Guide Side Box 2L A</text>
-<text x="32" y="130" font-size="4.3" >Side Box 2L</text>
-<text x="132" y="123" font-size="4.3" font-weight="bold">200</text>
-<text x="132" y="130" font-size="4.3" font-weight="bold">30</text>
+<text x="12" y="123" font-size="4.3" font-weight="bold">B048</text>
+<text x="32" y="123" font-size="4.3" >Back</text>
+<text x="32" y="130" font-size="4.3" >Upper Right</text>
+<text x="132" y="123" font-size="4.3" font-weight="bold">1870</text>
+<text x="132" y="130" font-size="4.3" font-weight="bold">341</text>
 <rect x="184" y="121" width="26" height="10" fill="#edf2f5" stroke="#52606b" stroke-width=".3"/>
 <text x="193" y="119.5" font-size="4.3" >L1</text>
 <text x="193" y="136" font-size="4.3" >L2</text>
@@ -67,32 +71,33 @@
 <text x="232" y="123" font-size="4.3" font-weight="bold">NONE</text>
 <text x="232" y="130" font-size="4.3" ></text>
 <rect x="10" y="137" width="277" height="22" fill="#f6f8fa"/>
-<text x="12" y="145" font-size="4.3" font-weight="bold">B110</text>
-<text x="32" y="145" font-size="4.3" >Guide Side Box 2L B</text>
-<text x="32" y="152" font-size="4.3" >Side Box 2L</text>
-<text x="132" y="145" font-size="4.3" font-weight="bold">200</text>
-<text x="132" y="152" font-size="4.3" font-weight="bold">30</text>
+<text x="12" y="145" font-size="4.3" font-weight="bold">B049</text>
+<text x="32" y="145" font-size="4.3" >Side L</text>
+<text x="32" y="152" font-size="4.3" >Upper Right</text>
+<text x="132" y="145" font-size="4.3" font-weight="bold">1870</text>
+<text x="132" y="152" font-size="4.3" font-weight="bold">329</text>
 <rect x="184" y="143" width="26" height="10" fill="#edf2f5" stroke="#52606b" stroke-width=".3"/>
+<path d="M184 143 L210 143" stroke="#b8590e" stroke-width="1.2"/>
 <text x="193" y="141.5" font-size="4.3" >L1</text>
 <text x="193" y="158" font-size="4.3" >L2</text>
 <text x="174" y="150" font-size="4.3" >W1</text>
 <text x="212" y="150" font-size="4.3" >W2</text>
-<text x="232" y="145" font-size="4.3" font-weight="bold">NONE</text>
-<text x="232" y="152" font-size="4.3" ></text>
+<text x="232" y="145" font-size="4.3" font-weight="bold">1 long + 0 short</text>
+<text x="232" y="152" font-size="4.3" >L1</text>
 <rect x="10" y="159" width="277" height="22" fill="white"/>
-<text x="12" y="167" font-size="4.3" font-weight="bold">B153</text>
-<text x="32" y="167" font-size="4.3" >Head</text>
-<text x="32" y="174" font-size="4.3" >Side Box 2R</text>
-<text x="132" y="167" font-size="4.3" font-weight="bold">791</text>
-<text x="132" y="174" font-size="4.3" font-weight="bold">277</text>
+<text x="12" y="167" font-size="4.3" font-weight="bold">B050</text>
+<text x="32" y="167" font-size="4.3" >Side R</text>
+<text x="32" y="174" font-size="4.3" >Upper Right</text>
+<text x="132" y="167" font-size="4.3" font-weight="bold">1870</text>
+<text x="132" y="174" font-size="4.3" font-weight="bold">329</text>
 <rect x="184" y="165" width="26" height="10" fill="#edf2f5" stroke="#52606b" stroke-width=".3"/>
-<path d="M184 165 L184 175" stroke="#b8590e" stroke-width="1.2"/>
+<path d="M184 165 L210 165" stroke="#b8590e" stroke-width="1.2"/>
 <text x="193" y="163.5" font-size="4.3" >L1</text>
 <text x="193" y="180" font-size="4.3" >L2</text>
 <text x="174" y="172" font-size="4.3" >W1</text>
 <text x="212" y="172" font-size="4.3" >W2</text>
-<text x="232" y="167" font-size="4.3" font-weight="bold">0 long + 1 short</text>
-<text x="232" y="174" font-size="4.3" >W1</text>
+<text x="232" y="167" font-size="4.3" font-weight="bold">1 long + 0 short</text>
+<text x="232" y="174" font-size="4.3" >L1</text>
 <text x="10" y="188" font-size="4.3" >Rounded targets: check matching parts before final sizing. Follow the reference legend on page 1.</text>
 <text x="10" y="195" font-size="4.3" >Existing CAD layouts / coordinates remain separate references. Hardware-dependent parts need checking.</text>
 </svg>

@@ -1,5 +1,19 @@
 # Current screenshots — bed v9 and cabinet v9
 
+**Build one complete module, then move to the next.**
+
+[Bed — module-by-module assembly PDF](../workshop/bed/Module_by_Module.pdf) · [Cabinet — module-by-module assembly PDF](../workshop/cabinet/Module_by_Module.pdf)
+
+[Bed: individual module checklist](../workshop/bed/modules/README.md) · [Cabinet: individual module checklist](../workshop/cabinet/modules/README.md)
+
+| Example: completed side drawer bay | Same bay — exploded construction |
+| --- | --- |
+| ![Completed side drawer module](../workshop/bed/modules/03_Side_Box_1L_Assembled.png) | ![Exploded side drawer module](../workshop/bed/modules/03_Side_Box_1L_Exploded.png) |
+
+Each module pack includes assembled / exploded / interior views, its own whole-mm parts targets and banding diagrams, build steps and a completion checklist. **Bed: 14 modules + final installation. Cabinet: 7 module groups + final installation.** Build that module's own drawers before moving on, subject to actual hardware fit. The TV centre and drawer tower share structure. Every plywood part appears once across the module packs; final site-fit scribes are assigned to installation.
+
+Sheet nesting remains a separate cutting-batch plan: gather labelled parts from their stock sheets into each module kit. Rounded targets still require dry-fit; connector / wall-fixing patterns and hardware fit are not finalized by these guides.
+
 **Updated 2026-11-17 — bed v9: wheels mount directly under the drawer bottoms.** All 24 plywood wheel pads are removed. The six drawer bottoms are 19.6 mm lower, with taller sides/backs; fronts and travel stay in place. Wheel diameter is 25.4 mm; the assumed 35 mm overall mounting height and actual fixings still need checking.
 
 | Current bed v9 — full design | TV / makeup / wardrobe v9 — current design |

@@ -17,6 +17,9 @@ def main():
  for project in ['bed','cabinet']:
   folder=root/'workshop'/project
   panels=sorted(json.loads((folder/'layout.json').read_text())['panels'],key=lambda p:(p['module'],p['id']))
+  index_path=folder/'modules/index.json'
+  module_map={identifier:item for item in json.loads(index_path.read_text()) for identifier in item['ids']} if index_path.exists() else {}
+  if module_map:panels.sort(key=lambda p:(module_map[p['id']]['number'],p['id']))
   pages=[];rows=[]
   s=start(project.upper()+' | MANUAL CUTTING + EDGE BANDING','Whole-mm cutting targets | Colour and edge names identify the banded edges.','Short bond / Letter: landscape, fit to printable area.')
   notes=['Do NOT edge-band every part. Follow each part ID and its orange edge marks.',
@@ -55,7 +58,10 @@ def main():
    label(s,10,195,'Existing CAD layouts / coordinates remain separate references. Hardware-dependent parts need checking.')
    pages.append(save(s,folder/f'Manual_mm_{page+1:02d}.svg'))
   with (folder/'Manual_Whole_mm.csv').open('w',newline='') as f:
-   writer=csv.writer(f,lineterminator="\n");writer.writerow(['ID','Module','Part','Qty','Target length mm','Target width mm','Band instruction','Band L1','Band L2','Band W1','Band W2']);writer.writerows(rows)
+   writer=csv.writer(f,lineterminator="\n");writer.writerow(['ID','Module','Part','Qty','Target length mm','Target width mm','Band instruction','Band L1','Band L2','Band W1','Band W2','Build step','Build module','Module guide'])
+   for row in rows:
+    item=module_map.get(row[0],{})
+    writer.writerow(row+[item.get('number',''),item.get('module',''),'modules/'+item['pdf'] if item else ''])
   export_pdf(pages,folder/'Manual_Whole_mm.pdf',['Manual_mm_01'])
   assert len(rows)==len(panels)
   print(project,len(rows),'parts with edge diagrams')

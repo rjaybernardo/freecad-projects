@@ -12,18 +12,21 @@
 <text x="166.5" y="45.7" font-size="4.3" font-weight="bold">Edge diagram</text>
 <text x="231.5" y="45.7" font-size="4.3" font-weight="bold">Band instruction</text>
 <rect x="10" y="49" width="277" height="22" fill="#f6f8fa"/>
-<text x="12" y="57" font-size="4.3" font-weight="bold">B092</text>
-<text x="32" y="57" font-size="4.3" >Drawer Bottom</text>
-<text x="32" y="64" font-size="4.3" >Drawer Assembly Side Box 1L</text>
-<text x="132" y="57" font-size="4.3" font-weight="bold">430</text>
-<text x="132" y="64" font-size="4.3" font-weight="bold">375</text>
+<text x="12" y="57" font-size="4.3" font-weight="bold">B141</text>
+<text x="32" y="57" font-size="4.3" >Top</text>
+<text x="32" y="64" font-size="4.3" >Side Box 1R</text>
+<text x="132" y="57" font-size="4.3" font-weight="bold">790</text>
+<text x="132" y="64" font-size="4.3" font-weight="bold">497</text>
 <rect x="184" y="55" width="26" height="10" fill="#edf2f5" stroke="#52606b" stroke-width=".3"/>
+<path d="M184 55 L210 55" stroke="#b8590e" stroke-width="1.2"/>
+<path d="M184 65 L210 65" stroke="#b8590e" stroke-width="1.2"/>
+<path d="M184 55 L184 65" stroke="#b8590e" stroke-width="1.2"/>
+<path d="M210 55 L210 65" stroke="#b8590e" stroke-width="1.2"/>
 <text x="193" y="53.5" font-size="4.3" >L1</text>
 <text x="193" y="70" font-size="4.3" >L2</text>
 <text x="174" y="62" font-size="4.3" >W1</text>
 <text x="212" y="62" font-size="4.3" >W2</text>
-<text x="232" y="57" font-size="4.3" font-weight="bold">NONE</text>
-<text x="232" y="64" font-size="4.3" ></text>
+<text x="232" y="57" font-size="4.3" font-weight="bold">ALL FOUR</text>
 <rect x="10" y="71" width="277" height="22" fill="white"/>
 <text x="12" y="79" font-size="4.3" font-weight="bold">B142</text>
 <text x="32" y="79" font-size="4.3" >Drawer Front</text>
