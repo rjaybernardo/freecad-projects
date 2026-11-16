@@ -120,3 +120,9 @@ sheet utilization, offcuts, and edge-band information.
 
 Every major subsequent design revision must include fresh screenshots in the
 authoritative Obsidian session under `Project Idea/Bedroom Cabinet/session.md`.
+
+## Under-bed drawer depth review
+
+Current depth remains **450 mm for all six drawers**. The four side drawers have about 750 mm of clear bay depth, but room clearance limits opening travel to **337 mm**: about **113 mm of drawer depth remains under the bed** at full opening. A 700 mm drawer would leave about 363 mm under the bed. Recommendation: retain 450 mm for everyday access; deeper drawers could store more rarely used bedding but require a separate brace / wheel-clearance revision. The two foot drawers use 450 mm of about 461 mm available depth and have 450 mm travel. No deeper-drawer revision was requested or made in this discussion.
+
+Documentation status: module-first PDFs, per-module part lists, whole-mm worksheets and banding diagrams are published. Whole-mm targets are rounded references, not a fully checked integer-size redesign. Band flags reproduce the existing CAD schedule and still require exposure/orientation checking during dry-fit. Actual caster installed height / fixing plates, runner and hinge compatibility, material thickness and blade kerf remain pending. The saved models retain their earlier native manual-page organization; the new PDF module packs provide the updated assembly workflow.
