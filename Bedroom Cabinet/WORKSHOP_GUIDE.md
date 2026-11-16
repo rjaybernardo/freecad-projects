@@ -1,5 +1,13 @@
 # Cutting layouts and module assembly pack
 
+**Manual cutting sheets updated — whole-mm targets with an edge-banding diagram for every part.**
+
+[Bed manual cut sheet](workshop/bed/Manual_Whole_mm.pdf) · [Cabinet manual cut sheet](workshop/cabinet/Manual_Whole_mm.pdf) · [Edge-banding instructions](EDGE_BANDING_GUIDE.md)
+
+![Example: cut targets and edges to band](workshop/bed/Manual_mm_01.png)
+
+**Do not band every edge.** Orange marks show the scheduled banding; **NONE** means no band and **ALL FOUR** means every edge. The new sheets reproduce existing CAD band flags; exposure/orientation still needs checking during dry-fit. Whole-mm targets are rounded references, not a checked redesign; the original CAD saw coordinates are separate.
+
 Current models: **Bed_Wall_Unit_v9.FCStd** and **Bedroom_Cabinet_Modern_v9.FCStd**. Their native FreeCAD pages contain the cutting layouts, illustrated module build order and LED wiring diagram. PDFs and CSVs are in `workshop/bed/` and `workshop/cabinet/`.
 
 ## Work on one module or drawer

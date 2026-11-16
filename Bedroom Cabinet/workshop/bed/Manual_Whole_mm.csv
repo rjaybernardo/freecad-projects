@@ -1,0 +1,181 @@
+ID,Module,Part,Qty,Target length mm,Target width mm,Band instruction,Band L1,Band L2,Band W1,Band W2
+B057,Bridge,Back,1,1593,650,NONE,0,0,0,0
+B058,Bridge,Side_L,1,650,329,1 long + 0 short,1,0,0,0
+B059,Bridge,Side_R,1,650,329,1 long + 0 short,1,0,0,0
+B060,Bridge,Bottom,1,1554,305,NONE,0,0,0,0
+B061,Bridge,Top,1,1554,329,1 long + 0 short,1,0,0,0
+B062,Bridge,Bridge_Divider_1,1,611,329,1 long + 0 short,1,0,0,0
+B063,Bridge,Bridge_Divider_2,1,611,329,1 long + 0 short,1,0,0,0
+B064,Bridge,Bridge_Divider_3,1,611,329,1 long + 0 short,1,0,0,0
+B065,Bridge,Bridge_Shelf_1,1,369,319,1 long + 0 short,1,0,0,0
+B066,Bridge,Door_1,1,645,393,ALL FOUR,1,1,1,1
+B067,Bridge,Bridge_Shelf_2,1,379,319,1 long + 0 short,1,0,0,0
+B068,Bridge,Door_2,1,645,393,ALL FOUR,1,1,1,1
+B069,Bridge,Bridge_Shelf_3,1,379,319,1 long + 0 short,1,0,0,0
+B070,Bridge,Door_3,1,645,393,ALL FOUR,1,1,1,1
+B071,Bridge,Bridge_Shelf_4,1,369,319,1 long + 0 short,1,0,0,0
+B072,Bridge,Door_4,1,645,393,ALL FOUR,1,1,1,1
+B120,Drawer_Assembly_Foot_Box_L,Drawer_Front,1,747,212,ALL FOUR,1,1,1,1
+B121,Drawer_Assembly_Foot_Box_L,Drawer_Side_A,1,450,182,1 long + 0 short,1,0,0,0
+B122,Drawer_Assembly_Foot_Box_L,Drawer_Side_B,1,450,182,1 long + 0 short,1,0,0,0
+B123,Drawer_Assembly_Foot_Box_L,Drawer_Back,1,668,182,1 long + 0 short,1,0,0,0
+B124,Drawer_Assembly_Foot_Box_L,Drawer_Bottom,1,668,430,NONE,0,0,0,0
+B174,Drawer_Assembly_Foot_Box_R,Drawer_Front,1,747,212,ALL FOUR,1,1,1,1
+B175,Drawer_Assembly_Foot_Box_R,Drawer_Side_A,1,450,182,1 long + 0 short,1,0,0,0
+B176,Drawer_Assembly_Foot_Box_R,Drawer_Side_B,1,450,182,1 long + 0 short,1,0,0,0
+B177,Drawer_Assembly_Foot_Box_R,Drawer_Back,1,668,182,1 long + 0 short,1,0,0,0
+B178,Drawer_Assembly_Foot_Box_R,Drawer_Bottom,1,668,430,NONE,0,0,0,0
+B088,Drawer_Assembly_Side_Box_1L,Drawer_Front,1,455,212,ALL FOUR,1,1,1,1
+B089,Drawer_Assembly_Side_Box_1L,Drawer_Side_A,1,450,182,1 long + 0 short,1,0,0,0
+B090,Drawer_Assembly_Side_Box_1L,Drawer_Side_B,1,450,182,1 long + 0 short,1,0,0,0
+B091,Drawer_Assembly_Side_Box_1L,Drawer_Back,1,375,182,1 long + 0 short,1,0,0,0
+B092,Drawer_Assembly_Side_Box_1L,Drawer_Bottom,1,430,375,NONE,0,0,0,0
+B142,Drawer_Assembly_Side_Box_1R,Drawer_Front,1,455,212,ALL FOUR,1,1,1,1
+B143,Drawer_Assembly_Side_Box_1R,Drawer_Side_A,1,450,182,1 long + 0 short,1,0,0,0
+B144,Drawer_Assembly_Side_Box_1R,Drawer_Side_B,1,450,182,1 long + 0 short,1,0,0,0
+B145,Drawer_Assembly_Side_Box_1R,Drawer_Back,1,375,182,1 long + 0 short,1,0,0,0
+B146,Drawer_Assembly_Side_Box_1R,Drawer_Bottom,1,430,375,NONE,0,0,0,0
+B104,Drawer_Assembly_Side_Box_2L,Drawer_Front,1,455,212,ALL FOUR,1,1,1,1
+B105,Drawer_Assembly_Side_Box_2L,Drawer_Side_A,1,450,182,1 long + 0 short,1,0,0,0
+B106,Drawer_Assembly_Side_Box_2L,Drawer_Side_B,1,450,182,1 long + 0 short,1,0,0,0
+B107,Drawer_Assembly_Side_Box_2L,Drawer_Back,1,375,182,1 long + 0 short,1,0,0,0
+B108,Drawer_Assembly_Side_Box_2L,Drawer_Bottom,1,430,375,NONE,0,0,0,0
+B158,Drawer_Assembly_Side_Box_2R,Drawer_Front,1,455,212,ALL FOUR,1,1,1,1
+B159,Drawer_Assembly_Side_Box_2R,Drawer_Side_A,1,450,182,1 long + 0 short,1,0,0,0
+B160,Drawer_Assembly_Side_Box_2R,Drawer_Side_B,1,450,182,1 long + 0 short,1,0,0,0
+B161,Drawer_Assembly_Side_Box_2R,Drawer_Back,1,375,182,1 long + 0 short,1,0,0,0
+B162,Drawer_Assembly_Side_Box_2R,Drawer_Bottom,1,430,375,NONE,0,0,0,0
+B115,Foot_Box_L,Side_L,1,499,277,0 long + 1 short,0,0,1,0
+B116,Foot_Box_L,Side_R,1,499,277,0 long + 1 short,0,0,1,0
+B117,Foot_Box_L,Head,1,752,277,NONE,0,0,0,0
+B118,Foot_Box_L,Rear_Base_Brace,1,752,50,NONE,0,0,0,0
+B119,Foot_Box_L,Top,1,790,498,ALL FOUR,1,1,1,1
+B125,Foot_Box_L,Guide_Foot_Box_L_A,1,200,30,NONE,0,0,0,0
+B126,Foot_Box_L,Guide_Foot_Box_L_B,1,200,30,NONE,0,0,0,0
+B169,Foot_Box_R,Side_L,1,499,277,0 long + 1 short,0,0,1,0
+B170,Foot_Box_R,Side_R,1,499,277,0 long + 1 short,0,0,1,0
+B171,Foot_Box_R,Head,1,752,277,NONE,0,0,0,0
+B172,Foot_Box_R,Rear_Base_Brace,1,752,50,NONE,0,0,0,0
+B173,Foot_Box_R,Top,1,790,498,ALL FOUR,1,1,1,1
+B179,Foot_Box_R,Guide_Foot_Box_R_A,1,200,30,NONE,0,0,0,0
+B180,Foot_Box_R,Guide_Foot_Box_R_B,1,200,30,NONE,0,0,0,0
+B077,Head_Box_L,Side_L,1,389,277,0 long + 1 short,0,0,1,0
+B078,Head_Box_L,Side_R,1,389,277,0 long + 1 short,0,0,1,0
+B079,Head_Box_L,Head,1,752,277,NONE,0,0,0,0
+B080,Head_Box_L,Foot,1,752,277,NONE,0,0,0,0
+B081,Head_Box_L,Bottom,1,752,351,NONE,0,0,0,0
+B082,Head_Box_L,Lid,1,787,385,ALL FOUR,1,1,1,1
+B131,Head_Box_R,Side_L,1,389,277,0 long + 1 short,0,0,1,0
+B132,Head_Box_R,Side_R,1,389,277,0 long + 1 short,0,0,1,0
+B133,Head_Box_R,Head,1,752,277,NONE,0,0,0,0
+B134,Head_Box_R,Foot,1,752,277,NONE,0,0,0,0
+B135,Head_Box_R,Bottom,1,752,351,NONE,0,0,0,0
+B136,Head_Box_R,Lid,1,787,385,ALL FOUR,1,1,1,1
+B073,Headboard,Plain_Backboard,1,1585,1198,ALL FOUR,1,1,1,1
+B001,Nightstand_Left,Plinth_Side_L,1,400,57,NONE,0,0,0,0
+B002,Nightstand_Left,Plinth_Side_R,1,400,57,NONE,0,0,0,0
+B003,Nightstand_Left,Plinth_Rear,1,262,57,NONE,0,0,0,0
+B004,Nightstand_Left,Plinth_Front,1,262,57,NONE,0,0,0,0
+B005,Nightstand_Left,Back,1,440,341,NONE,0,0,0,0
+B006,Nightstand_Left,Side_L,1,440,429,1 long + 0 short,1,0,0,0
+B007,Nightstand_Left,Side_R,1,440,429,1 long + 0 short,1,0,0,0
+B008,Nightstand_Left,Bottom,1,430,302,NONE,0,0,0,0
+B009,Nightstand_Left,Top,1,429,302,0 long + 1 short,0,0,1,0
+B010,Nightstand_Left,Drawer_1_Front,1,297,170,ALL FOUR,1,1,1,1
+B011,Nightstand_Left,Drawer_1_Side_L,1,349,131,0 long + 1 short,0,0,1,0
+B012,Nightstand_Left,Drawer_1_Side_R,1,349,131,0 long + 1 short,0,0,1,0
+B013,Nightstand_Left,Drawer_1_Back,1,238,131,NONE,0,0,0,0
+B014,Nightstand_Left,Drawer_1_Bottom,1,330,238,NONE,0,0,0,0
+B015,Nightstand_Left,Drawer_2_Front,1,297,170,ALL FOUR,1,1,1,1
+B016,Nightstand_Left,Drawer_2_Side_L,1,349,109,0 long + 1 short,0,0,1,0
+B017,Nightstand_Left,Drawer_2_Side_R,1,349,109,0 long + 1 short,0,0,1,0
+B018,Nightstand_Left,Drawer_2_Back,1,238,109,NONE,0,0,0,0
+B019,Nightstand_Left,Drawer_2_Bottom,1,330,238,NONE,0,0,0,0
+B029,Nightstand_Right,Plinth_Side_L,1,400,57,NONE,0,0,0,0
+B030,Nightstand_Right,Plinth_Side_R,1,400,57,NONE,0,0,0,0
+B031,Nightstand_Right,Plinth_Rear,1,262,57,NONE,0,0,0,0
+B032,Nightstand_Right,Plinth_Front,1,262,57,NONE,0,0,0,0
+B033,Nightstand_Right,Back,1,440,341,NONE,0,0,0,0
+B034,Nightstand_Right,Side_L,1,440,429,1 long + 0 short,1,0,0,0
+B035,Nightstand_Right,Side_R,1,440,429,1 long + 0 short,1,0,0,0
+B036,Nightstand_Right,Bottom,1,430,302,NONE,0,0,0,0
+B037,Nightstand_Right,Top,1,429,302,0 long + 1 short,0,0,1,0
+B038,Nightstand_Right,Drawer_1_Front,1,297,170,ALL FOUR,1,1,1,1
+B039,Nightstand_Right,Drawer_1_Side_L,1,349,131,0 long + 1 short,0,0,1,0
+B040,Nightstand_Right,Drawer_1_Side_R,1,349,131,0 long + 1 short,0,0,1,0
+B041,Nightstand_Right,Drawer_1_Back,1,238,131,NONE,0,0,0,0
+B042,Nightstand_Right,Drawer_1_Bottom,1,330,238,NONE,0,0,0,0
+B043,Nightstand_Right,Drawer_2_Front,1,297,170,ALL FOUR,1,1,1,1
+B044,Nightstand_Right,Drawer_2_Side_L,1,349,109,0 long + 1 short,0,0,1,0
+B045,Nightstand_Right,Drawer_2_Side_R,1,349,109,0 long + 1 short,0,0,1,0
+B046,Nightstand_Right,Drawer_2_Back,1,238,109,NONE,0,0,0,0
+B047,Nightstand_Right,Drawer_2_Bottom,1,330,238,NONE,0,0,0,0
+B200,Pull_Foot_Box_L_L,Pull_Foot_Box_L_L_Back,1,752,60,NONE,0,0,0,0
+B201,Pull_Foot_Box_L_L,Pull_Foot_Box_L_L_Lower,1,752,21,1 long + 0 short,1,0,0,0
+B206,Pull_Foot_Box_R_L,Pull_Foot_Box_R_L_Back,1,752,60,NONE,0,0,0,0
+B207,Pull_Foot_Box_R_L,Pull_Foot_Box_R_L_Lower,1,752,21,1 long + 0 short,1,0,0,0
+B188,Pull_Nightstand_Left_C,Pull_Nightstand_Left_C_Back,1,302,80,NONE,0,0,0,0
+B189,Pull_Nightstand_Left_C,Pull_Nightstand_Left_C_Lower,1,302,21,1 long + 0 short,1,0,0,0
+B190,Pull_Nightstand_Left_C,Pull_Nightstand_Left_C_Upper,1,302,21,1 long + 0 short,1,0,0,0
+B186,Pull_Nightstand_Left_L,Pull_Nightstand_Left_L_Back,1,302,60,NONE,0,0,0,0
+B187,Pull_Nightstand_Left_L,Pull_Nightstand_Left_L_Lower,1,302,21,1 long + 0 short,1,0,0,0
+B193,Pull_Nightstand_Right_C,Pull_Nightstand_Right_C_Back,1,302,80,NONE,0,0,0,0
+B194,Pull_Nightstand_Right_C,Pull_Nightstand_Right_C_Lower,1,302,21,1 long + 0 short,1,0,0,0
+B195,Pull_Nightstand_Right_C,Pull_Nightstand_Right_C_Upper,1,302,21,1 long + 0 short,1,0,0,0
+B191,Pull_Nightstand_Right_L,Pull_Nightstand_Right_L_Back,1,302,60,NONE,0,0,0,0
+B192,Pull_Nightstand_Right_L,Pull_Nightstand_Right_L_Lower,1,302,21,1 long + 0 short,1,0,0,0
+B196,Pull_Side_Box_1L_L,Pull_Side_Box_1L_Back,1,460,60,NONE,0,0,0,0
+B197,Pull_Side_Box_1L_L,Pull_Side_Box_1L_Lower,1,460,21,1 long + 0 short,1,0,0,0
+B202,Pull_Side_Box_1R_L,Pull_Side_Box_1R_Back,1,460,60,NONE,0,0,0,0
+B203,Pull_Side_Box_1R_L,Pull_Side_Box_1R_Lower,1,460,21,1 long + 0 short,1,0,0,0
+B198,Pull_Side_Box_2L_L,Pull_Side_Box_2L_Back,1,460,60,NONE,0,0,0,0
+B199,Pull_Side_Box_2L_L,Pull_Side_Box_2L_Lower,1,460,21,1 long + 0 short,1,0,0,0
+B204,Pull_Side_Box_2R_L,Pull_Side_Box_2R_Back,1,460,60,NONE,0,0,0,0
+B205,Pull_Side_Box_2R_L,Pull_Side_Box_2R_Lower,1,460,21,1 long + 0 short,1,0,0,0
+B185,Scribe_Strips,Scribe_Ceiling,1,2276,10,NONE,0,0,0,0
+B083,Side_Box_1L,Head,1,791,277,0 long + 1 short,0,0,1,0
+B084,Side_Box_1L,Foot,1,791,277,0 long + 1 short,0,0,1,0
+B085,Side_Box_1L,Inner_Side,1,460,277,NONE,0,0,0,0
+B086,Side_Box_1L,Rear_Base_Brace,1,460,272,NONE,0,0,0,0
+B087,Side_Box_1L,Top,1,790,497,ALL FOUR,1,1,1,1
+B093,Side_Box_1L,Guide_Side_Box_1L_A,1,200,30,NONE,0,0,0,0
+B094,Side_Box_1L,Guide_Side_Box_1L_B,1,200,30,NONE,0,0,0,0
+B137,Side_Box_1R,Head,1,791,277,0 long + 1 short,0,0,1,0
+B138,Side_Box_1R,Foot,1,791,277,0 long + 1 short,0,0,1,0
+B139,Side_Box_1R,Inner_Side,1,460,277,NONE,0,0,0,0
+B140,Side_Box_1R,Rear_Base_Brace,1,460,272,NONE,0,0,0,0
+B141,Side_Box_1R,Top,1,790,497,ALL FOUR,1,1,1,1
+B147,Side_Box_1R,Guide_Side_Box_1R_A,1,200,30,NONE,0,0,0,0
+B148,Side_Box_1R,Guide_Side_Box_1R_B,1,200,30,NONE,0,0,0,0
+B099,Side_Box_2L,Head,1,791,277,0 long + 1 short,0,0,1,0
+B100,Side_Box_2L,Foot,1,791,277,0 long + 1 short,0,0,1,0
+B101,Side_Box_2L,Inner_Side,1,460,277,NONE,0,0,0,0
+B102,Side_Box_2L,Rear_Base_Brace,1,460,272,NONE,0,0,0,0
+B103,Side_Box_2L,Top,1,790,497,ALL FOUR,1,1,1,1
+B109,Side_Box_2L,Guide_Side_Box_2L_A,1,200,30,NONE,0,0,0,0
+B110,Side_Box_2L,Guide_Side_Box_2L_B,1,200,30,NONE,0,0,0,0
+B153,Side_Box_2R,Head,1,791,277,0 long + 1 short,0,0,1,0
+B154,Side_Box_2R,Foot,1,791,277,0 long + 1 short,0,0,1,0
+B155,Side_Box_2R,Inner_Side,1,460,277,NONE,0,0,0,0
+B156,Side_Box_2R,Rear_Base_Brace,1,460,272,NONE,0,0,0,0
+B157,Side_Box_2R,Top,1,790,497,ALL FOUR,1,1,1,1
+B163,Side_Box_2R,Guide_Side_Box_2R_A,1,200,30,NONE,0,0,0,0
+B164,Side_Box_2R,Guide_Side_Box_2R_B,1,200,30,NONE,0,0,0,0
+B020,Upper_Left,Back,1,1870,341,NONE,0,0,0,0
+B021,Upper_Left,Side_L,1,1870,329,1 long + 0 short,1,0,0,0
+B022,Upper_Left,Side_R,1,1870,329,1 long + 0 short,1,0,0,0
+B023,Upper_Left,Bottom,1,330,302,NONE,0,0,0,0
+B024,Upper_Left,Top,1,329,302,0 long + 1 short,0,0,1,0
+B025,Upper_Left,Shelf_Open_Niche,1,319,302,0 long + 1 short,0,0,1,0
+B026,Upper_Left,Shelf_Lit_Niche,1,304,302,0 long + 1 short,0,0,1,0
+B027,Upper_Left,Shelf_Behind_Door_1,1,318,300,ALL FOUR,1,1,1,1
+B028,Upper_Left,Door,1,1285,336,ALL FOUR,1,1,1,1
+B048,Upper_Right,Back,1,1870,341,NONE,0,0,0,0
+B049,Upper_Right,Side_L,1,1870,329,1 long + 0 short,1,0,0,0
+B050,Upper_Right,Side_R,1,1870,329,1 long + 0 short,1,0,0,0
+B051,Upper_Right,Bottom,1,330,302,NONE,0,0,0,0
+B052,Upper_Right,Top,1,329,302,0 long + 1 short,0,0,1,0
+B053,Upper_Right,Shelf_Open_Niche,1,319,302,0 long + 1 short,0,0,1,0
+B054,Upper_Right,Shelf_Lit_Niche,1,304,302,0 long + 1 short,0,0,1,0
+B055,Upper_Right,Shelf_Behind_Door_1,1,318,300,ALL FOUR,1,1,1,1
+B056,Upper_Right,Door,1,1285,336,ALL FOUR,1,1,1,1

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="297mm" height="210mm" viewBox="0 0 297 210">
+<rect width="297" height="210" fill="white"/>
+<style>text {font-family:DejaVu Sans,sans-serif;fill:#172a38}</style>
+<text x="10" y="16" font-size="6.2" font-weight="bold">CABINET | MANUAL CUTTING + EDGE BANDING</text>
+<text x="10" y="25" font-size="4.3" >Whole-mm cutting targets | Colour and edge names identify the banded edges.</text>
+<text x="10" y="201" font-size="4.3" >Short bond / Letter: landscape, fit to printable area.</text>
+<text x="10" y="40" font-size="4.3" >Do NOT edge-band every part. Follow each part ID and its orange edge marks.</text>
+<text x="10" y="49" font-size="4.3" >NONE means no edge band. ALL FOUR means both long and both short edges.</text>
+<text x="10" y="58" font-size="4.3" >L1 / L2 run along Length. W1 / W2 run along Width. Diagram is not to scale.</text>
+<text x="10" y="67" font-size="4.3" >Keep the edge names with the part when rotating it; they are reference labels,</text>
+<text x="10" y="76" font-size="4.3" >not necessarily the installed top / bottom / left / right. Mark the exposed face</text>
+<text x="10" y="85" font-size="4.3" >during dry-fit and check against the model before applying a single-edge band.</text>
+<text x="10" y="94" font-size="4.3" >Band flags come from the existing CAD schedule; they have not been re-audited</text>
+<text x="10" y="103" font-size="4.3" >as a new exposure / joinery design. Do not band a mating edge without checking.</text>
+<text x="10" y="112" font-size="4.3" >Sizes are blank targets BEFORE banding, rounded to the nearest whole mm.</text>
+<text x="10" y="121" font-size="4.3" >Dry-fit related parts and check final sizing: rounding is not a checked redesign.</text>
+<text x="10" y="130" font-size="4.3" >Do not substitute these targets into the original CAD saw-step coordinates.</text>
+<text x="10" y="139" font-size="4.3" >Stock assumptions: core 18 mm + laminate each face; measure actual thickness.</text>
+<text x="10" y="148" font-size="4.3" >Edge-band thickness assumed 1 mm. Saw kerf assumed 4 mm; trim 5 mm per edge.</text>
+<text x="10" y="157" font-size="4.3" >Ordinary wood glue needs bare wood. Bare edge to laminate needs an adhesive</text>
+<text x="10" y="166" font-size="4.3" >rated for that bond, plus mechanical joints. Wheel plates need fixings, not glue.</text>
+</svg>

@@ -1,5 +1,13 @@
 # START HERE — bedroom project file index
 
+**Manual cutting sheets updated — whole-mm targets with an edge-banding diagram for every part.**
+
+[Bed manual cut sheet](workshop/bed/Manual_Whole_mm.pdf) · [Cabinet manual cut sheet](workshop/cabinet/Manual_Whole_mm.pdf) · [Edge-banding instructions](EDGE_BANDING_GUIDE.md)
+
+![Example: cut targets and edges to band](workshop/bed/Manual_mm_01.png)
+
+**Do not band every edge.** Orange marks show the scheduled banding; **NONE** means no band and **ALL FOUR** means every edge. The new sheets reproduce existing CAD band flags; exposure/orientation still needs checking during dry-fit. Whole-mm targets are rounded references, not a checked redesign; the original CAD saw coordinates are separate.
+
 **Updated 2026-11-17 — bed v9: wheels mount directly under the drawer bottoms.** All 24 plywood wheel pads are removed. The six drawer bottoms are 19.6 mm lower, with taller sides/backs; fronts and travel stay in place. Wheel diameter is 25.4 mm; the assumed 35 mm overall mounting height and actual fixings still need checking.
 
 | Current bed v9 — full design | TV / makeup / wardrobe v9 — current design |
